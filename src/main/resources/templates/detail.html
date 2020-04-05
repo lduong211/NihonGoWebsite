@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <title>日本語</title>
+</head>
+
+<body>
+    <header>
+        <header-title>日本の勉強</header-title>
+        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+        <hr>
+        <nav>
+            <ul>
+                <li class="link"><a href="./index.html">Home</a></li>
+                <li class="link"><a href="./detail.html">N5</a></li>
+                <li class="link"><a href="./detail.html">N4</a></li>
+                <li class="link"><a href="./detail.html">N3</a></li>
+                <li class="link"><a href="./happyo.html">Happyo</a></li>
+                <li class="link"><a href="./weekly.html">Weekly Vocabulary</a></li>
+                <li class="link"><a href="https://e-jan.vn/" target="_blank">Urban-shop</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <section class="title">
+            <tutorial-title>N3 TUTORIALS</tutorial-title>
+            <title-detail>Learning and Excelling Together</title-detail>
+        </section>
+        <section class="tutorials-detail">
+            <div class="fisrt">
+                <div style="width: 200px; height: 200px">
+                    <img style="width: 100%; height: 100%; border-radius: 50%;" src="./images/kotoba.png" alt="">
+                </div>
+                <h4>VOCABULARY</h4>
+                <div class="read-btn"><a href="./units.html">Read more</a></div>
+            </div>
+            <div class="fisrt">
+                <div style="width: 200px; height: 200px">
+                    <img style="width: 100%; height: 100%; border-radius: 50%;" src="./images/gramma.png" alt="">
+                </div>
+                <h4>GRAMMA</h4>
+                <div class="read-btn"><a href="./units.html">Read more</a></div>
+            </div>
+            <div class="fisrt">
+                <div style="width: 200px; height: 200px">
+                    <img style="width: 100%; height: 100%; border-radius: 50%;" src="./images/kanji.png" alt="">
+                </div>
+                <h4>KANJI</h4>
+                <div class="read-btn"><a href="./units.html">Read more</a></div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.menu-toggle').click(function () {
+                $('nav').toggleClass('active');
+            });
+            $('.link').click(function () {
+                $('nav').toggleClass('active');
+            })
+        })
+    </script>
+</body>
+
+</html>

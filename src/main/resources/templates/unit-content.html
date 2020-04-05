@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <title>日本語</title>
+</head>
+
+<body>
+    <header>
+        <header-title>日本の勉強</header-title>
+        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+        <hr>
+        <nav>
+            <ul>
+                <li class="link"><a href="./index.html">Home</a></li>
+                <li class="link"><a href="./detail.html">N5</a></li>
+                <li class="link"><a href="./detail.html">N4</a></li>
+                <li class="link"><a href="./detail.html">N3</a></li>
+                <li class="link"><a href="./happyo.html">Happyo</a></li>
+                <li class="link"><a href="./weekly.html">Weekly Vocabulary</a></li>
+                <li class="link"><a href="https://e-jan.vn/" target="_blank">Urban-shop</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+    	<div>
+    		<p class="units">UNIT 1</p>
+    	</div>
+        <table>
+        	<tr>
+        		<th>No.</th>
+        		<th>Voca</th>
+        		<th>Type</th>
+        		<th>Kanji</th>
+        		<th>Hán Việt</th>
+        		<th>Meaning</th>
+        	</tr>
+        	<tr>
+        		<td>1</td>
+        		<td>ほん</td>
+        		<td>N</td>
+        		<td>本</td>
+        		<td>Bản</td>
+        		<td>Book</td>
+        	</tr>
+        	<tr>
+        		<td>2</td>
+        		<td>だいがくせい</td>
+        		<td>N</td>
+        		<td>大学生</td>
+        		<td>Đại học sinh</td>
+        		<td>University student</td>
+        	</tr>
+        	<tr>
+        		<td>3</td>
+        		<td>ほん</td>
+        		<td>N</td>
+        		<td>本</td>
+        		<td>Bản</td>
+        		<td>Book</td>
+        	</tr>
+        	<tr>
+        		<td>4</td>
+        		<td>だいがくせい</td>
+        		<td>N</td>
+        		<td>大学生</td>
+        		<td>Đại học sinh</td>
+        		<td>University student</td>
+        	</tr>
+        	<tr>
+        		<td>5</td>
+        		<td>ほん</td>
+        		<td>A/n</td>
+        		<td>本</td>
+        		<td>Bản</td>
+        		<td>Book</td>
+        	</tr>
+        	<tr>
+        		<td>6</td>
+        		<td>だいがくせい</td>
+        		<td>A/i</td>
+        		<td>大学生</td>
+        		<td>Đại học sinh</td>
+        		<td>University student</td>
+        	</tr>
+        </table>
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.menu-toggle').click(function () {
+                $('nav').toggleClass('active');
+            });
+            $('.link').click(function () {
+                $('nav').toggleClass('active');
+            })
+        })
+    </script>
+</body>
+
+</html>
