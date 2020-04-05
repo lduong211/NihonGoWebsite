@@ -9,22 +9,22 @@
     <title>Admin Nihongo</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link th:href="@{bower_components/bootstrap/dist/css/bootstrap.min.css}" rel="stylesheet">
 
     <!-- MetisMenu CSS -->
-    <link href="bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+    <link th:href="@{bower_components/metisMenu/dist/metisMenu.min.css}" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="dist/css/sb-admin-2.css" rel="stylesheet">
+    <link th:href="@{dist/css/sb-admin-2.css}" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link th:href="@{bower_components/font-awesome/css/font-awesome.min.css}" rel="stylesheet" type="text/css">
 
     <!-- DataTables CSS -->
-    <link href="bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.css" rel="stylesheet">
+    <link th:href="@{bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.css}" rel="stylesheet">
 
     <!-- DataTables Responsive CSS -->
-    <link href="bower_components/datatables-responsive/css/dataTables.responsive.css" rel="stylesheet">
+    <link th:href="@{bower_components/datatables-responsive/css/dataTables.responsive.css}" rel="stylesheet">
 </head>
 
 <body>
@@ -40,23 +40,23 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Admin Area</a>
+                <a class="navbar-brand" th:href="@{index.html}">Admin Area</a>
             </div>
             <!-- /.navbar-header -->
 
             <ul class="nav navbar-top-links navbar-right">
                 <!-- /.dropdown -->
                 <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <a class="dropdown-toggle" data-toggle="dropdown" th:href="@{#}">
                         <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
-                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        <li><a th:href="@{#}"><i class="fa fa-user fa-fw"></i> User Profile</a>
                         </li>
-                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        <li><a th:href="@{#}"><i class="fa fa-gear fa-fw"></i> Settings</a>
                         </li>
                         <li class="divider"></li>
-                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        <li><a th:href="@{login.html}"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                         </li>
                     </ul>
                     <!-- /.dropdown-user -->
@@ -80,40 +80,40 @@
                             <!-- /input-group -->
                         </li>
                         <li>
-                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Homepage</a>
+                            <a th:href="@{index.html}"><i class="fa fa-dashboard fa-fw"></i> Homepage</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Vocabulary<span class="fa arrow"></span></a>
+                            <a th:href="@{#}"><i class="fa fa-bar-chart-o fa-fw"></i> Vocabulary<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="#">List Vocabulary</a>
+                                    <a th:href="@{#}">List Vocabulary</a>
                                 </li>
                                 <li>
-                                    <a href="#">Add Vocabulary</a>
+                                    <a th:href="@{#}">Add Vocabulary</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-cube fa-fw"></i> Happyo<span class="fa arrow"></span></a>
+                            <a th:href="@{#}"><i class="fa fa-cube fa-fw"></i> Happyo<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="#">List Happyo</a>
+                                    <a th:href="@{#}">List Happyo</a>
                                 </li>
                                 <li>
-                                    <a href="#">Add Happyo</a>
+                                    <a th:href="@{#}">Add Happyo</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-users fa-fw"></i> User<span class="fa arrow"></span></a>
+                            <a th:href="@{#}"><i class="fa fa-users fa-fw"></i> User<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="#">List User</a>
+                                    <a th:href="@{#}">List User</a>
                                 </li>
                                 <li>
-                                    <a href="#">Add User</a>
+                                    <a th:href="@{#}">Add User</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
@@ -152,24 +152,24 @@
                                 <td>Dương</td>
                                 <td>Superadmin</td>
                                 <td>Online</td>
-                                <td class="center"><i class="fa fa-trash-o  fa-fw"></i><a href="#"> Delete</a></td>
-                                <td class="center"><i class="fa fa-pencil fa-fw"></i> <a href="#">Edit</a></td>
+                                <td class="center"><i class="fa fa-trash-o  fa-fw"></i><a th:href="@{#}"> Delete</a></td>
+                                <td class="center"><i class="fa fa-pencil fa-fw"></i> <a th:href="@{#}">Edit</a></td>
                             </tr>
                             <tr class="even gradeC" align="center">
                                 <td>2</td>
                                 <td>Khanh</td>
                                 <td>Admin</td>
                                 <td>Offline</td>
-                                <td class="center"><i class="fa fa-trash-o  fa-fw"></i><a href="#"> Delete</a></td>
-                                <td class="center"><i class="fa fa-pencil fa-fw"></i> <a href="#">Edit</a></td>
+                                <td class="center"><i class="fa fa-trash-o  fa-fw"></i><a th:href="@{#}"> Delete</a></td>
+                                <td class="center"><i class="fa fa-pencil fa-fw"></i> <a th:href="@{#}">Edit</a></td>
                             </tr>
                             <tr class="odd gradeX" align="center">
                                 <td>3</td>
                                 <td>Nhẫn</td>
                                 <td>Member</td>
                                 <td>Offline</td>
-                                <td class="center"><i class="fa fa-trash-o  fa-fw"></i><a href="#"> Delete</a></td>
-                                <td class="center"><i class="fa fa-pencil fa-fw"></i> <a href="#">Edit</a></td>
+                                <td class="center"><i class="fa fa-trash-o  fa-fw"></i><a th:href="@{#}"> Delete</a></td>
+                                <td class="center"><i class="fa fa-pencil fa-fw"></i> <a th:href="@{#}">Edit</a></td>
                             </tr>
                         </tbody>
                     </table>
@@ -184,20 +184,20 @@
     <!-- /#wrapper -->
 
     <!-- jQuery -->
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script th:src="@{bower_components/jquery/dist/jquery.min.js}"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script th:src="@{bower_components/bootstrap/dist/js/bootstrap.min.js}"></script>
 
     <!-- Metis Menu Plugin JavaScript -->
-    <script src="bower_components/metisMenu/dist/metisMenu.min.js"></script>
+    <script th:src="@{bower_components/metisMenu/dist/metisMenu.min.js}"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="dist/js/sb-admin-2.js"></script>
+    <script th:src="@{dist/js/sb-admin-2.js}"></script>
 
     <!-- DataTables JavaScript -->
-    <script src="bower_components/DataTables/media/js/jquery.dataTables.min.js"></script>
-    <script src="bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js"></script>
+    <script th:src="@{bower_components/DataTables/media/js/jquery.dataTables.min.js}"></script>
+    <script th:src="@{bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js}"></script>
 
     <!-- Page-Level Demo Scripts - Tables - Use for reference -->
     <script>
