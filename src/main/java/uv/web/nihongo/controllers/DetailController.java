@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class DetailController {
 
-    @GetMapping(value="/detail")
+    @GetMapping(value = "/detail")
     public String getDetailPage() {
         return "detail";
     }
