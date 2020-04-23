@@ -173,18 +173,18 @@
               id="dataTables-example"
             >
               <thead>
-                <tr align="center">
-                  <th>ID</th>
-                  <th>Name</th>
-                  <th>Level</th>
-                  <th>Delete</th>
-                  <th>Edit</th>
+                <tr>
+                  <th style="text-align: center;">ID</th>
+                  <th style="text-align: center;">Name</th>
+                  <th style="text-align: center;">Level</th>
+                  <th style="text-align: center;">Delete</th>
+                  <th style="text-align: center;">Edit</th>
                 </tr>
               </thead>
               <tbody>
                 <tr th:each="admin,i : ${admins}"
                 th:class="${i.odd}? 'odd gradeX': 'even gradeC'"
-                align="center">
+                style="text-align: center;">
                   <td th:text="${i.count}">Name</td>
                   <td th:text="${admin.name}">Name</td>
                   <td th:text="${admin.roles}">Roles</td>
