@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head th:fragment="common_header(title,links)">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title sẽ bị biến đổi -->
+    <title th:replace="${title}">The awesome application</title>
+
+    <!-- Đoạn links và script dùng chung -->
+    <link rel="stylesheet" type="text/css" th:href="@{/css/awesomeapp.css}" />
+    <link rel="shortcut icon" th:href="@{/images/favicon.ico}" />
+    <script type="text/javascript" th:src="@{/sh/scripts/codebase.js}"></script>
+
+    <!--/* Nhét thêm link */-->
+    <th:block th:replace="${links}" />
+  </head>
+  <body>
+    <footer th:fragment="copy">
+      This is footer
+    </footer>
+    <!-- Có thể tạo nhiều fragment trong 1 file html, hãy đặt khác tên! -->
+  </body>
+</html>
