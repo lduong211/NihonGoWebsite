@@ -127,10 +127,10 @@
                 ></a>
                 <ul class="nav nav-second-level">
                   <li>
-                    <a href="#">List Vocabulary</a>
+                    <a th:href="@{/admin/weeklyword}">List Vocabulary</a>
                   </li>
                   <li>
-                    <a href="#">Add Vocabulary</a>
+                    <a th:href="@{/admin/weeklyword/new}">Add Vocabulary</a>
                   </li>
                 </ul>
                 <!-- /.nav-second-level -->
@@ -185,7 +185,7 @@
                 <tr th:each="admin,i : ${admins}"
                 th:class="${i.odd}? 'odd gradeX': 'even gradeC'"
                 style="text-align: center;">
-                  <td th:text="${i.count}">Name</td>
+                  <td th:text="${i.count}">STT</td>
                   <td th:text="${admin.name}">Name</td>
                   <td th:text="${admin.roles}">Roles</td>
                   <td class="center">

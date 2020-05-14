@@ -15,8 +15,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import uv.web.nihongo.entities.Admin;
 import uv.web.nihongo.entities.Happyo;
+import uv.web.nihongo.entities.WeeklyWord;
 import uv.web.nihongo.repositories.AdminRepo;
 import uv.web.nihongo.repositories.HappyoRepo;
+import uv.web.nihongo.repositories.WeeklyWordRepo;
 
 @Controller
 @RequestMapping("/admin")
@@ -27,6 +29,9 @@ public class AdminController {
 
     @Autowired
     private HappyoRepo happyoRepo;
+
+    @Autowired
+    private WeeklyWordRepo weeklyWordRepo;
 
     @GetMapping
     public String getUserListPage(Model model) {
@@ -54,7 +59,7 @@ public class AdminController {
     @GetMapping(value = "edituser/{id}")
     public String getEditPage(Model model, @PathVariable int id) {
         model.addAttribute("admin", adminRepo.findById(id).get());
-        return "admin/editUser";
+        return "admin/addUser";
     }
 
     @PostMapping("updateuser/{id}")
@@ -62,7 +67,7 @@ public class AdminController {
             BindingResult result, Model model) {
         if (result.hasErrors()) {
             admin.setId(id);
-            return "editUser/{id}";
+            return "addUser/{id}";
         }
         BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 	    admin.setPassword(passwordEncoder.encode(admin.getPwd()));
@@ -77,7 +82,7 @@ public class AdminController {
         return "redirect:/admin";
     }
 
-    //===============================Happyo==========================================
+    //================================Happyo=======================================
 
     @GetMapping("/happyo")
     private String getHappyos(Model model) {
@@ -119,5 +124,48 @@ public class AdminController {
     }
 
     //================================Happyo=======================================
+
+    //================================WeeklyWords=======================================
+
+    @GetMapping("/weeklyword")
+    private String getWeeklyWords(Model model) {
+        model.addAttribute("weeklywords", weeklyWordRepo.findAll());
+        return "admin/weeklyWord";
+    }
+
+    /* Edit Form */
+    @GetMapping("weeklyword/{id}")
+    private String editWeeklyWord(@PathVariable int id, Model model) {
+        model.addAttribute("weeklyword", weeklyWordRepo.findById(id).get());
+        return "admin/weeklyWordFrm";
+    }
+
+    @PostMapping("weeklyword/{id}")
+    private String editWeeklyWord(@ModelAttribute WeeklyWord weeklyWord) {
+        weeklyWordRepo.save(weeklyWord);
+        return "redirect:/admin/weeklyword";
+    }
+
+    /* Add Form */
+    @GetMapping("weeklyword/new")
+    private String newWeeklyWord(Model model) {
+        model.addAttribute("weeklyword", new WeeklyWord());
+        return "admin/weeklyWordFrm";
+    }
+
+    @PostMapping("weeklyword/new")
+    private String newWeeklyWord(@ModelAttribute WeeklyWord weeklyWord) {
+        weeklyWordRepo.save(weeklyWord);
+        return "redirect:/admin/weeklyWord";
+    }
+
+    /* Delete */
+    @GetMapping("weeklyword/delete/{id}")
+    private String delWeeklyWord(@PathVariable int id) {
+        weeklyWordRepo.deleteById(id);
+        return "redirect:/admin/weeklyword";
+    }
+
+    //================================WeeklyWords=======================================
 
 }

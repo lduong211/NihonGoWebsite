@@ -19,5 +19,6 @@ public class Happyo {
     private String title;
     private String content;
     private LocalDate date = LocalDate.now();
+    private String author;
     private String image;
 }

@@ -157,55 +157,59 @@
         </div>
         <!-- /.navbar-static-side -->
       </nav>
+
       <!-- Page Content -->
       <div id="page-wrapper">
         <div class="container-fluid">
           <div class="row">
             <div class="col-lg-12">
               <h1 class="page-header">
-                Happyo
-                <small>List</small>
+                Edit
+                <small>user</small>
               </h1>
             </div>
             <!-- /.col-lg-12 -->
-            <table
-              class="table table-striped table-bordered table-hover"
-              id="dataTables-example"
-            >
-              <thead>
-                <tr style="text-align: center;">
-                  <th style="text-align: center; width: 100px;">STT</th>
-                  <th style="text-align: center; width: 75px;">Author</th>
-                  <th style="text-align: center; width: 100px;">Title</th>
-                  <th style="text-align: center; width: 300px;">Content</th>
-                  <th style="text-align: center; width: 75px;">Date</th>
-                  <th style="text-align: center; width: 75px;">Url Image</th>
-                  <th style="text-align: center; width: 50px;">Delete</th>
-                  <th style="text-align: center; width: 50px;">Edit</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr th:each="happyo,i : ${happyos}"
-                th:class="${i.odd}? 'odd gradeX': 'even gradeC'"
-                style="text-align: center;"
-                >
-                  <td th:text="${i.count}">STT</td>
-                  <td th:text="${happyo.author}">Author</td>
-                  <td th:text="${happyo.title}">Title</td>
-                  <td th:text="${happyo.content}">Content</td>
-                  <td th:text="${happyo.date}">Date</td>
-                  <td th:text="${happyo.image}" style="width: 50px;">Image</td>
-                  <td class="center">
-                    <i class="fa fa-trash-o fa-fw"></i>
-                    <a th:href="@{/admin/happyo/delete/{id}(id=${happyo.id})}"> Delete</a>
-                  </td>
-                  <td class="center">
-                    <i class="fa fa-pencil fa-fw"></i>
-                    <a th:href="@{/admin/happyo/{id}(id=${happyo.id})}">Edit</a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <form action="#" th:action="@{/admin/weeklyword/{id}(id=${weeklyword}?  ${weeklyword.id}: 'new')}" th:object="${weeklyword}" method="post">
+              <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                <tbody>
+                  <tr align="center">
+                    <td><label for="title">Title</label></td>
+                    <td>
+                      <input style="text-align: center;" type="text" th:field="*{title}" placeholder="Title"> 
+                    </td>
+                  </tr>
+                  <tr align="center">
+                    <td><label for="word">Word</label></td>
+                    <td>
+                      <input style="text-align: center;" type="text" th:field="*{word}" placeholder="Word">   
+                    </td>
+                  </tr>
+                  <tr align="center">
+                    <td><label for="kanji">Kanji</label></td>
+                    <td>
+                      <input style="text-align: center;" type="text" th:field="*{kanji}"placeholder="Kanji">
+                    </td>
+                  </tr>
+                  <tr align="center">
+                    <td><label for="meaning">Meaning</label></td>
+                    <td>
+                      <input style="text-align: center;" type="text" th:field="*{meaning}" placeholder="Meaning">
+                    </td>
+                  </tr>
+                  <tr align="center">
+                    <td><label for="ex">Ex</label></td>
+                    <td>
+                      <input style="text-align: center;" type="text" th:field="*{ex}" placeholder="Example">
+                    </td>
+                  </tr>  
+                  <tr align="center">
+                    <td colspan="2"><input type="submit" value="Save"></td>
+                  </tr>
+                </tbody>
+              </table>    
+            </form>
+            <!-- <i class="fa fa-pencil fa-fw"></i>
+            <a th:href="@{edit}">Edit</a> -->
           </div>
           <!-- /.row -->
         </div>
@@ -235,12 +239,12 @@
     <script th:src="@{/bower_components/DataTables/media/js/jquery.dataTables.min.js}"></script>
     <script th:src="@{/bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js}"></script>
     <!-- Page-Level Demo Scripts - Tables - Use for reference -->
-    <script>
+    <!-- <script>
       $(document).ready(function() {
         $("#dataTables-example").DataTable({
           responsive: true
         });
       });
-    </script>
+    </script> -->
   </body>
 </html>
