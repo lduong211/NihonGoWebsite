@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" th:href="@{/css/style.css}">
+  <link rel="stylesheet" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css}">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+  <title>日本語</title>
+</head>
+
+<body>
+  <header>
+    <header-title>日本の勉強</header-title>
+    <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+    <hr>
+    <nav>
+      <ul>
+        <li class="link"><a th:href="homepage">Home</a></li>
+        <li class="link"><a th:href="detail">N5</a></li>
+        <li class="link"><a th:href="detail">N4</a></li>
+        <li class="link"><a th:href="detail">N3</a></li>
+        <li class="link"><a th:href="happyo">Happyo</a></li>
+        <li class="link"><a th:href="weekly">Weekly Vocabulary</a></li>
+        <li class="link"><a th:href="@{https://e-jan.vn/}" target="_blank">Urban-shop</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container" style="margin-top: 5%;">
+    <!-- Table -->
+    <table class="table table-bordered">
+      <thead class="thead-dark">
+        <tr>
+          <th>Ngữ pháp</th>
+          <th>Ý nghĩa</th>
+          <th>Cách sử dụng</th>
+          <th>Ví dụ</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>ここ / そこ / あそこ は N (địa điểm) です</th>
+          <td> Nghĩa : Chỗ này/ chỗ kia/ chỗ đó là N(địa điểm) .
+            [ここ] Chỗ này (ở gần người nói)
+            [そこ] Chỗ đó (ở gần người nghe)
+            [あそこ] Chỗ kia (ở xa người nói và người nghe)</td>
+          <td></td>
+          <td>ここは　うけつけ　です。
+            Đây là bàn tiếp tân
+            *Để thể hịên sự lịch thiệp, cung kính đối với người đang nghe, chúng ta có thể dùng những từ sau với nghĩa
+            tương tự :
+            [こちら] thay cho [ここ]
+            [そちら] thay cho [そこ]
+            [あちら] thay cho [あそこ]
+          </td>
+        </tr>
+        <tr>
+          <th>N は　どこ / どちら　ですか。</th>
+          <td>Nghĩa : N ở đâu ?
+            [どこ ] , [どちら] đều có nghĩa là ở đâu, nhưng [どちら] lịch sự hơn.</td>
+          <td>Cách dùng : Hỏi cái gì hay ai ở đâu
+            *N có thể là vật lẫn người hoặc là [ここ], [そこ] ,[あそこ]</td>
+          <td> トイレは　どこ / どちら　ですか。
+            Nhà vệ sinh ở đâu ?
+            – ミラーさんは どこ / どちら　ですか。
+            Anh Miller đang ở đâu ?
+            – ここは どこ / どちら ですか。
+            Đây là đâu ?</td>
+        </tr>
+        <tr>
+          <th>N1 は　N2 (ĐỊA ĐIỂM)　です</th>
+          <td>Nghĩa : N1 của/ từ N2
+            *N1 là tên một quốc gia hay tên một công ty, N2 là một sản phẩm nào đó.</td>
+          <td>Cách dùng : Nói về xuất xứ, nguồn gốc của một sản phẩm hay đồ vật nào đó<br>
+            いいえ、N2　じゃありません / ではありません。</td>
+          <td>IMCのコンピューターです。
+            Máy tinh của công ty IMC.
+            Để đặt câu hỏi về xuất xứ, nguồn gốc của một sản phẩm hay đồ vật nào đó, ta dùng thêm [どこの]　＋ sản phẩm:
+            VD:
+            これはどこのワインですか？
+            Đây là rượu nước nào vậy ?
+            イタリアのワインです。
+            Rượu Ý ạ.</td>
+        </tr>
+        <tr>
+          <th>お国はどちらですか</th>
+          <td>Nghĩa : Anh chị là người nước nào ?
+            *Phải sử dụng [どちら] để thể hiện sự lịch sự trong câu nói
+          </td>
+          <td>Cách dùng : Để hỏi về đất nước của ai đó</td>
+          <td>わたしは　がくせいです。<br>
+            お国はどちらですか?
+            Anh chị là người nước nào ?
+            ベトナムです。
+            Việt Nam.
+        </tr>
+
+      </tbody>
+      <tr>
+        <th>T? V?ng</th>
+        <th>H�n T?</th>
+        <th>�m H�n</th>
+        <th>Nghia</th>
+      </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th> Danh từ(công cụ/phương tiện) + で + Động từ</th>
+          <td>Nghĩa : Làm việc gì bằng cái gì</td>
+          <td>Cách dùng : trợ từ 「で」 dùng để biểu thị phương tiện hay cách thức tiến hành một việc gì đó</td>
+          <td>はしでたべます。
+            Tôi ăn cơm bằng đũa
+            にほんごでレポートをかきます。
+            Tôi viết báo cáo bằng tiếng Nhật<br>
+          </td>
+        </tr>
+        <tr>
+          <th>“Từ/câu” は ～ごでなんですか</th>
+          <td>Nghĩa : “Từ/câu” trong tiếng ～ là gì</td>
+          <td>Cách dùng : dùng để hỏi một từ, một ngữ hoặc một câu được nói như thế nào bằng một ngôn ngữ khác</td>
+          <td>[ありがとう」 はえいごでなんですか。
+            [ありがとう」 trong tiếng Anh là gì ?
+            [Thank You」 です。
+            Là　”Thank You”</td>
+        </tr>
+        <tr>
+          <th>Danh từ (người) に あげます</th>
+          <td>Cho/tặng ai</td>
+          <td>Cách dùng : Chúng ta đặt trợ từ 「に」 sau các danh từ này để chỉ ra đối tượng tiếp nhận hành động</td>
+          <td>やまださんはきむらさんにはなをあげました。
+            Ông Yamada tặng hoa cho chị Kimura
+            イーさんにほんをかしました。
+            Tôi cho chị Lee mượn sách</td>
+        </tr>
+        <tr>
+          <th>Danh từ (người) に もらいます</th>
+          <td>Nhận từ ai</td>
+          <td> Cách dùng : Chúng ta đặt trợ từ 「に」 sau các danh từ này để chỉ hành động từ phía người tiếp nhận
+          </td>
+          <td>きむらさんはやまださんにはなをもらいます。
+            Chị Kimura đã nhận hoa từ ông Yamada
+            カリナさんにCDをかりました。
+            Tôi đã mượn địa CD từ chị Karina</td>
+        </tr>
+        <tr>
+          <th>もう　Động từ　ました
+          </th>
+          <td>Nghĩa : Đã làm gì rồi</td>
+          <td>Cách trả lời câu hỏi :
+            はい、もう　Động từ　ました
+            Vâng, đã làm … rồi
+            いいえ、まだです
+            Vẫn chưa
+          </td>
+          <td>もうにもつをおくりましたか。
+            Anh/chị đã gửi đồ chưa?
+            はい、 「もう」 おくりました
+            Rồi, tôi đã gửi rồi
+            いいえ、まだです。
+            Chưa, tôi chưa gửi.</td>
+        </tr>
+        <tr>
+          <th>Động từ + ましょう</th>
+          <td>Cùng làm gi đó nào</td>
+          <td> đề nghị người nghe cùng làm gì với người nói
+          </td>
+          <td>ちょっと　やすみましょう
+            Cùng nghỉ một chút nào
+            いっしょにたべにいきましょ！
+            Cùng nhau đi ăn nào<br></td>
+        </tr>
+        <tr>
+          <th>お</th>
+          <td></td>
+          <td>
+          </td>
+          <td>Ở bài 3, tiền tố [お] được đặt trước những từ liên quan đến người nghe hoặc người khác để thể hiện sự kính
+            trọng.
+            Ví dụ:
+            [お］くに: đất nước bạn
+            [お] cũng được dùng với nhiều từ khác khi người nói thể hiện sự lịch sự.
+            Ví dụ:
+            [お］さけ: rượu
+            [お］はなみ: ngắm hoa anh đào nở
+            Cũng có những từ dùng với お nhưng không mang nghĩa kính trọng hay lịch sự.
+            Ví dụ:
+            おちゃ: chè
+            おかね: tiền</td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- End Table -->
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.menu-toggle').click(function () {
+        $('nav').toggleClass('active');
+      });
+      $('.link').click(function () {
+        $('nav').toggleClass('active');
+      })
+    })
+  </script>
+</body>
+
+</html>

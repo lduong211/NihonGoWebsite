@@ -22,6 +22,11 @@ h2,p,span,h4, .lesson, .date-time{
     text-align: center;
 }
 
+tutorial-title{
+    font-weight: 800;
+    font-size: large;
+}
+
 .center{
     margin: auto;
     display: block;
@@ -473,8 +478,8 @@ table{
     }
     .units-title{
         background-color: whitesmoke;
-        padding: 7%;
-        margin: auto;
+        padding: 10%;
+        margin-right: 2%;
         border-bottom: white;
     }
 
@@ -602,6 +607,8 @@ table{
 }
 
 @media only screen and (min-width: 1280px) {
+
+    
 
     .wrapper{
         margin-top: 5%;

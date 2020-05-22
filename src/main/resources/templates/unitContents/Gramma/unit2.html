@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" th:href="@{/css/style.css}">
+  <link rel="stylesheet" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css}">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+  <title>日本語</title>
+</head>
+
+<body>
+  <header>
+    <header-title>日本の勉強</header-title>
+    <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+    <hr>
+    <nav>
+      <ul>
+        <li class="link"><a th:href="homepage">Home</a></li>
+        <li class="link"><a th:href="detail">N5</a></li>
+        <li class="link"><a th:href="detail">N4</a></li>
+        <li class="link"><a th:href="detail">N3</a></li>
+        <li class="link"><a th:href="happyo">Happyo</a></li>
+        <li class="link"><a th:href="weekly">Weekly Vocabulary</a></li>
+        <li class="link"><a th:href="@{https://e-jan.vn/}" target="_blank">Urban-shop</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container" style="margin-top: 5%;">
+    <!-- Table -->
+    <table class="table table-bordered">
+      <thead class="thead-dark">
+        <tr>
+          <th>Ngữ pháp</th>
+          <th>Ý nghĩa</th>
+          <th>Cách sử dụng</th>
+          <th>Ví dụ</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>これ / それ / あれ　は　N　です</th>
+          <td> Cái này/cái đó/cái là N<br>
+            [これ]　：Cái này, này ( vật ở gần với người nói)<br>
+            [それ]　：Cái đó, đó ( Vật ở xa với người nói)<br>
+            [あれ]　：Cái kia, kia ( Vật ở xa người nói và người nghe)<br>
+          </td>
+          <td></td>
+          <td>これ　は　ほん　です。<br>
+            Đây là quyển sách<br>
+            それ　は　じしょです。<br>
+            Đó là quyển từ điển<br>
+            あれ　は　かばん　です。<br>
+            Kia là cái cặp sách<br>
+
+            Với câu hỏi xác nhận nội dung nào đó đúng hay sai, ta chỉ cần thêm [か] vào cuối câu.<br>
+            Ví dụ :
+            それ　は　テレホンカード　ですか。<br>
+            Kia có phải là thẻ điện thoại không?<br>
+          </td>
+        </tr>
+        <tr>
+          <th>そう です/そうじゃありません</th>
+          <td> Được dùng trong câu nghi vấn danh từ để xác nhận nội dung nào đó đúng hay sai, có
+            phải không?
+            はい、そうです。<br>
+            Vâng, phải.<br>
+            いいえ、そうじゃありません。<br>
+            Không, Không phải</td>
+          <td></td>
+          <td>それ　は　テレホンカード　ですか。<br>
+            Kia có phải là thẻ điện thoại không?<br>
+            はい、そうです。<br>
+            Vâng, phải.<br>
+            いいえ、そうじゃありません。<br>
+            Không, không phải<br></td>
+        </tr>
+        <tr>
+          <th>この/その/あの　N1　は　N2　の　です</th>
+          <td>Nghĩa : N1 này/ đó/kia là của N2</td>
+          <td></td>
+          <td>この　ノート　は　わたし　の　です。<br>
+            Quyển vở này là cửa tôi<br>
+            その　じしょ　は　さとうさん　の　です。<br>
+            Quyển từ điển đó là của bạn Sato<br>
+            あの　めいし　は　カリナさん　の　です。<br>
+            Danh thiếp kia là của bạn Karina</td>
+        </tr>
+        <tr>
+          <th>これ/それ/あれ　N1　ですか、N2　ですか</th>
+          <td>Cái này/ cái đó/ cái kia là N1 hay N2 ?<br>
+            Với câu nghi vấn dùng để hỏi về sự lựa chọn của người được hỏi. Người được hỏi sẽ lựa chọn N1 hoặc N2. Dạng
+            câu hỏi này, khi trả lời không dùng [はい] ( Vâng/có) hay [いいえ] ( Không), mà sẽ trả lời bằng cách lựa chọn N1
+            hoặc N2 + です（desu）.
+          </td>
+          <td></td>
+          <td>これ　は　ノート　です、　てちょう　です。<br>
+            Đây là quyển vở hay sổ tay?<br>
+            ノート　です。<br>
+            Đây là quyển vở<br>
+            それ　は　えんぴつ　です、　ポールペン　です。<br>
+            Đó là bút chì hay bút bi vậy?<br>
+            ポールペン　です。<br>
+            Đó là bút bi</td>
+        </tr>
+
+      </tbody>
+    </table>
+    <!-- End Table -->
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.menu-toggle').click(function () {
+        $('nav').toggleClass('active');
+      });
+      $('.link').click(function () {
+        $('nav').toggleClass('active');
+      })
+    })
+  </script>
+</body>
+
+</html>

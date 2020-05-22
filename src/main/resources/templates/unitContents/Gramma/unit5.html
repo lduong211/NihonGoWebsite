@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" th:href="@{/css/style.css}">
+  <link rel="stylesheet" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css}">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+  <title>日本語</title>
+</head>
+
+<body>
+  <header>
+    <header-title>日本の勉強</header-title>
+    <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+    <hr>
+    <nav>
+      <ul>
+        <li class="link"><a th:href="homepage">Home</a></li>
+        <li class="link"><a th:href="detail">N5</a></li>
+        <li class="link"><a th:href="detail">N4</a></li>
+        <li class="link"><a th:href="detail">N3</a></li>
+        <li class="link"><a th:href="happyo">Happyo</a></li>
+        <li class="link"><a th:href="weekly">Weekly Vocabulary</a></li>
+        <li class="link"><a th:href="@{https://e-jan.vn/}" target="_blank">Urban-shop</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container" style="margin-top: 5%;">
+    <!-- Table -->
+    <table class="table table-bordered">
+      <thead class="thead-dark">
+        <tr>
+          <th>Ngữ pháp</th>
+          <th>Ý nghĩa</th>
+          <th>Cách sử dụng</th>
+          <th>Ví dụ</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>N(địa điểm) + へ + いきます / きます / かえります</th>
+          <td> Đi / đến / trở về N(địa điểm)</td>
+          <td> Đi / đến / trở về N(địa điểm)</td>
+          <td>ながさきへ　いきます。
+            Tôi đi Nagasaki.
+            ブラジルへ　きました。
+            Tôi đã đến Brazin.
+            くにへ　かえります。
+            Tôi về nước.<br>
+          </td>
+        </tr>
+        <tr>
+          <th>どこ「へ」も　いきません / いきませんでした</th>
+          <td>Nghĩa : Không đi đâu cả!</td>
+          <td>Cách dùng : Khi muốn phủ định hoàn toàn đối tượng ( hoặc phạm vi) của từ nghi vấn thì dùng trợ từ　「も」.
+            Trong mẫu câu này thì động từ để ở dạng phủ định.<br></td>
+          <td>どこ「へ」もいきません。
+            Tôi không đi đâu cả
+            なんにもたべません。
+            Tôi không ăn gì cả ( Bài 6).
+            だれもいません。
+            Không có ai ( Bài 10).</td>
+        </tr>
+        <tr>
+          <th>N(phương tiện giao thông) + で　+ いきます / きます/ かえります<br></th>
+          <td>Nghĩa : Đi / đến / về bằng phương tiện gì</td>
+          <td>Cách dùng : Trợ từ 「で」biểu thị phương tiện hay cách thức tiến hành một việc gì đó. Khi dùng trợ từ này sau
+            danh từ chỉ phương tiện giao thông và dùng kèm với động từ di chuyển （いきます｜きます｜かえります）thì nó biểu thị cách
+            thức di chuyển.<br></td>
+          <td>でんしゃでいきます。
+            Tôi đi bằng tàu điện.
+            ﾀｸｼｰできました。
+            Tôi đã đến bằng taxi.
+            *Trong trường hợp đi bộ thì dùng 「あるいて」mà không kèm trợ từ「で」
+
+            えきからあるいてかえります
+            Tôi đã đi bộ từ ga về<br></td>
+        </tr>
+        <tr>
+          <th>N(người/động vật) + と　+ Động từ</th>
+          <td>Nghĩa : Làm gì với ai/ con gì</td>
+          <td>Cách dùng : dùng trợ từ「と」 để biểu thị một đối tượng nào đó (người hoặc động vật) cùng thực hiện hành động
+          </td>
+          <td>かぞくとにほんへきました。
+            Tôi đã đến Nhật Bản cùng gia đình.
+            *Trong trường hợp thực hiện hành động một mình thì dùng「ひとりで」 .Trong trường hợp này thì không dùng trợ
+            từ「と」.
+
+            ひとりでとうきょうへいきます。
+            Tôi đi Tokyo một mình.<br></td>
+        </tr>
+        <tr>
+          <th>いつ</th>
+          <td>Nghĩa : Khi nào</td>
+          <td>Cách dùng : Dùng để hỏi thời điểm làm gì hay xảy ra việc gì đó. Đối với 「いつ」　thì không dùng trợ từ 「に」ở
+            sau
+          </td>
+          <td>いつにほんへきましたか。
+            Bạn đến Nhật Bản bao giờ?
+            3月25日にきました。
+            Tôi đến Nhật vào ngày 25 tháng 3.
+            いつひろしまへいきますか。
+            Bao giờ bạn sẽ đi Hiroshima?
+            らいしゅういきます。
+            Tuần sau tôi sẽ đi.</td>
+        </tr>
+        <tr>
+          <th>よ</th>
+          <td></td>
+          <td>Cách dùng : đặt ở cuối câu để nhấn mạnh một thông tin nào đó mà người nghe chưa biết, hoặc để nhấn mạnh ý
+            kiến hoặc sự phán đoán của người nói đối với người nghe
+          </td>
+          <td>このでんしゃはこうしえんへいきますか。
+            Tàu điện này có đi đến Koshien không?
+            いいえ、いきません。つぎのふつうですよ。
+            Không, không đi. Chuyến tàu thường tiếp theo mới đi.<br></td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- End Table -->
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.menu-toggle').click(function () {
+        $('nav').toggleClass('active');
+      });
+      $('.link').click(function () {
+        $('nav').toggleClass('active');
+      })
+    })
+  </script>
+</body>
+
+</html>

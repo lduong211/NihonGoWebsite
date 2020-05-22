@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" th:href="@{/css/style.css}">
+	<link rel="stylesheet" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css}">
+	<link rel="stylesheet" th:href="@{https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css}" />
+	<title>日本語</title>
+</head>
+
+<body>
+	<header>
+		<header-title>日本の勉強</header-title>
+		<div class="menu-toggle"><i class="fas fa-bars"></i></div>
+		<hr>
+		<nav>
+			<ul>
+				<li class="link"><a th:href="homepage">Home</a></li>
+				<li class="link"><a th:href="detail">N5</a></li>
+				<li class="link"><a th:href="detail">N4</a></li>
+				<li class="link"><a th:href="detail">N3</a></li>
+				<li class="link"><a th:href="happyo">Happyo</a></li>
+				<li class="link"><a th:href="weekly">Weekly Vocabulary</a></li>
+				<li class="link"><a th:href="@{https://e-jan.vn/}" target="_blank">Urban-shop</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="container" style="margin-top: 5%;">
+		<!-- Table -->
+		<div class="table-responsive">
+			<table class="table table-bordered">
+				<thead class="thead-dark">
+					<tr>
+						<th class="ht">Hán Tự</th>
+						<th class="ah">Âm Hán</th>
+						<th class="tv">Từ Vựng</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>覚えます</td>
+						<td>GIÁC</td>
+						<td>おぼえます</td>
+					</tr>
+					<tr>
+						<td>忘れます</td>
+						<td>VONG</td>
+						<td>わすれます</td>
+					</tr>
+					<tr>
+						<td>払います</td>
+						<td>PHẤT</td>
+						<td>はらいます</td>
+					</tr>
+					<tr>
+						<td>返します</td>
+						<td>PHẢN</td>
+						<td>かえします</td>
+					</tr>
+					<tr>
+						<td>出かけます</td>
+						<td>XUẤT</td>
+						<td>でかけます</td>
+					</tr>
+					<tr>
+						<td>脱ぎます</td>
+						<td>THOÁT</td>
+						<td>ぬぎます</td>
+					</tr>
+					<tr>
+						<td>持って行きます</td>
+						<td>TRÌ HÀNH</td>
+						<td>もっていきます</td>
+					</tr>
+					<tr>
+						<td>持って来ます</td>
+						<td>TRÌ LAI</td>
+						<td>もってきます</td>
+					</tr>
+					<tr>
+						<td>心配します</td>
+						<td>TÂM PHỐI</td>
+						<td>しんぱいします</td>
+					</tr>
+					<tr>
+						<td>残業します</td>
+						<td>TÀN NGHIỆP</td>
+						<td>ざんぎょうします</td>
+					</tr>
+					<tr>
+						<td>出張します</td>
+						<td>XUẤT TRƯƠNG</td>
+						<td>しゅっちょうします</td>
+					</tr>
+					<tr>
+						<td>飲みます<br>[薬を～]</td>
+						<td>ẨM<br>DƯỢC</td>
+						<td>のみます<br> [くすりを～]</td>
+					</tr>
+					<tr>
+						<td>入ります<br>[おふろに～]</td>
+						<td>NHẬP</td>
+						<td>はいります<br> [おふろに～]</td>
+					</tr>
+					<tr>
+						<td>大切[な]</td>
+						<td>ĐẠI THIẾT</td>
+						<td>たいせつ[な]</td>
+					</tr>
+					<tr>
+						<td>大丈夫[な]</td>
+						<td>ĐẠI TRƯỢNG PHU</td>
+						<td>だいじょうぶ[な]</td>
+					</tr>
+					<tr>
+						<td>危ない</td>
+						<td>NGUY</td>
+						<td>あぶない</td>
+					</tr>
+					<tr>
+						<td>禁煙</td>
+						<td>CẤM YÊN</td>
+						<td>きんえん</td>
+					</tr>
+					<tr>
+						<td>[健康]保険証</td>
+						<td>KIỆN KHANG </td>
+						<td>[けんこう]ほけんしょう</td>
+					</tr>
+					<tr>
+						<td>熱</td>
+						<td>NHIỆT</td>
+						<td>ねつ</td>
+					</tr>
+					<tr>
+						<td>病気</td>
+						<td>BỆNH KHÍ</td>
+						<td>びょうき</td>
+					</tr>
+					<tr>
+						<td>薬</td>
+						<td>DƯỢC</td>
+						<td>くすり</td>
+					</tr>
+					<tr>
+						<td>上着</td>
+						<td>THƯỢNG TRƯỚC</td>
+						<td>うわぎ</td>
+					</tr>
+					<tr>
+						<td>下着</td>
+						<td>HẠ TRƯỚC</td>
+						<td>したぎ</td>
+					</tr>
+					<tr>
+						<td>２，３日</td>
+						<td>NHẬT</td>
+						<td>２，３にち</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- End Table -->
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('.menu-toggle').click(function () {
+				$('nav').toggleClass('active');
+			});
+			$('.link').click(function () {
+				$('nav').toggleClass('active');
+			})
+		})
+	</script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

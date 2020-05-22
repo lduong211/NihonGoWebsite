@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+	<link rel="stylesheet" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css}">
+	<link
+      rel="stylesheet" th:href="@{https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css}"
+	/>
+    <title>日本語</title>
+</head>
+
+<body>
+    <header>
+        <header-title>日本の勉強</header-title>
+        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+        <hr>
+        <nav>
+            <ul>
+                <li class="link"><a th:href="homepage">Home</a></li>
+                <li class="link"><a th:href="detail">N5</a></li>
+                <li class="link"><a th:href="detail">N4</a></li>
+                <li class="link"><a th:href="detail">N3</a></li>
+                <li class="link"><a th:href="happyo">Happyo</a></li>
+                <li class="link"><a th:href="weekly">Weekly Vocabulary</a></li>
+                <li class="link"><a th:href="@{https://e-jan.vn/}" target="_blank">Urban-shop</a></li>
+            </ul>
+        </nav>
+    </header>
+
+	<div class="container" style="margin-top: 5%;">
+		<!-- Table -->
+		<div class="table-responsive">
+			<table class="table table-bordered">
+			  <thead class="thead-dark">
+				<tr>
+				  <th>Từ Vựng</th>
+				  <th>Hán Tự</th>
+				  <th>Âm Hán</th>
+				  <th>Nghĩa</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr>
+				  <th>わかります</th>
+				  <td></td>
+				  <td></td>
+				  <td>hiểu, nắm được</td>
+				</tr>
+				<tr>
+				  <th>あります</th>
+				  <td></td>
+				  <td></td>
+				  <td>có (sở hữu)</td>
+				</tr>
+				<tr>
+				  <th>すき[な]</th>
+				  <td>好き[な]</td>
+				  <td>HIẾU/HẢO</td>
+				  <td>thích</td>
+				</tr>
+				<tr>
+				  <th>きらい[な]</th>
+				  <td>嫌い[な]</td>
+				  <td>HIỀM</td>
+				  <td>ghét, không thích</td>
+				</tr>
+				<tr>
+				  <th>じょうず[な]</th>
+				  <td>上手[な]</td>
+				  <td>THƯỢNG THỦ</td>
+				  <td>giỏi, khéo</td>
+				</tr>
+				<tr>
+				  <th>へた[な]</th>
+				  <td>下手[な]</td>
+				  <td>HẠ THỦ</td>
+				  <td>kém</td>
+				</tr>
+				<tr>
+				  <th>のみもの</th>
+				  <td>飲み物</td>
+				  <td>ẨM VẬT</td>
+				  <td>đồ uống</td>
+				</tr>
+				<tr>
+				  <th>りょうり</th>
+				  <td>料理</td>
+				  <td>LIỆU LÝ</td>
+				  <td>món ăn, việc nấu ăn</td>
+				</tr>
+				<tr>
+				  <th>スポーツ</th>
+				  <td></td>
+				  <td></td>
+				  <td>thể thao (～をします：chơi thể thao)</td>
+				</tr>
+				<tr>
+				  <th>やきゅう</th>
+				  <td>野球</td>
+				  <td>DÃ CẦU</td>
+				  <td>bóng chày (～をします：chơi bóng chày)</td>
+				</tr>
+				<tr>
+				  <th>ダンス</th>
+				  <td></td>
+				  <td></td>
+				  <td>nhảy, khiêu vũ(～をします：nhảy, khiêu vũ)</td>
+				</tr>
+				<tr>
+				  <th>りょこう</th>
+				  <td>旅行</td>
+				  <td>LỮ HÀNH</td>
+				  <td>du lịch, chuyến du lịch</td>
+				</tr>
+				<tr>
+				  <th>おんがく</th>
+				  <td>音楽</td>
+				  <td>ÂM NHẠC/LẠC</td>
+				  <td>âm nhạc</td>
+				</tr>
+				<tr>
+				  <th>うた</th>
+				  <td>歌</td>
+				  <td>CA</td>
+				  <td>bài hát</td>
+				</tr>
+				<tr>
+				  <th>クラシック</th>
+				  <td></td>
+				  <td></td>
+				  <td>nhạc cổ điển</td>
+				</tr>
+				<tr>
+				  <th>ジャズ</th>
+				  <td></td>
+				  <td></td>
+				  <td>nhạc jazz</td>
+				</tr>
+				<tr>
+				  <th>コンサート</th>
+				  <td></td>
+				  <td></td>
+				  <td>buổi hòa nhạc</td>
+				</tr>
+				<tr>
+				  <th>カラオケ</th>
+				  <td></td>
+				  <td></td>
+				  <td>karaoke</td>
+				</tr>
+				<tr>
+				  <th>かぶき</th>
+				  <td>歌舞伎</td>
+				  <td>CA VŨ KỸ</td>
+				  <td>
+					Kabuki (một loại ca kịch truyền thống <br />
+					của Nhật)
+				  </td>
+				</tr>
+				<tr>
+				  <th>え</th>
+				  <td>絵</td>
+				  <td>HỘI</td>
+				  <td>tranh, hội họa</td>
+				</tr>
+				<tr>
+				  <th>じ</th>
+				  <td>字</td>
+				  <td>TỰ</td>
+				  <td>chữ</td>
+				</tr>
+				<tr>
+				  <th>かんじ</th>
+				  <td>漢字</td>
+				  <td>HÁN TỰ</td>
+				  <td>chữ hán</td>
+				</tr>
+				<tr>
+				  <th>ひらがな</th>
+				  <td></td>
+				  <td></td>
+				  <td>chữ Hiragana</td>
+				</tr>
+				<tr>
+				  <th>かたかな</th>
+				  <td></td>
+				  <td></td>
+				  <td>Chữ Katakana</td>
+				</tr>
+				<tr>
+				  <th>ローマじ</th>
+				  <td>ローマ字</td>
+				  <td>TỰ</td>
+				  <td>chữ La Mã</td>
+				</tr>
+				<tr>
+				  <th>こまかいおかね</th>
+				  <td>細かいお金</td>
+				  <td>TẾ KIM</td>
+				  <td>tiền lẻ</td>
+				</tr>
+				<tr>
+				  <th>チケット</th>
+				  <td></td>
+				  <td></td>
+				  <td>vé (xem hòa nhạc, xem phim)</td>
+				</tr>
+				<tr>
+				  <th>じかん</th>
+				  <td>時間</td>
+				  <td>THÌ/THỜI GIAN</td>
+				  <td>thời gian</td>
+				</tr>
+				<tr>
+				  <th>ようじ</th>
+				  <td>用事</td>
+				  <td>DỤNG SỰ</td>
+				  <td>việc bận, công chuyện</td>
+				</tr>
+				<tr>
+				  <th>やくそく</th>
+				  <td>約束</td>
+				  <td>ƯỚC THÚC</td>
+				  <td>cuộc hẹn, lời hứa</td>
+				</tr>
+				<tr>
+				  <th>アルバイト</th>
+				  <td></td>
+				  <td></td>
+				  <td>việc làm thêm</td>
+				</tr>
+				<tr>
+				  <th>ごしゅじん</th>
+				  <td>ご主人</td>
+				  <td>CHỦ NHÂN</td>
+				  <td>chồng (dùng khi nói về chồng người khác)</td>
+				</tr>
+				<tr>
+				  <th>おっと/しゅじん</th>
+				  <td>夫 /主人</td>
+				  <td>PHU / CHỦ NHÂN</td>
+				  <td>chồng (dùng khi nói về chồng mình)</td>
+				</tr>
+				<tr>
+				  <th>おくさん</th>
+				  <td>奥さん</td>
+				  <td>ÁO</td>
+				  <td>vợ (dùng khi nói về vợ người khác)</td>
+				</tr>
+				<tr>
+				  <th>つま/かない</th>
+				  <td>妻/家内</td>
+				  <td>THÊ / GIA NỘI</td>
+				  <td>vợ (dùng khi nói về vợ mình)</td>
+				</tr>
+				<tr>
+				  <th>こども</th>
+				  <td>子ども</td>
+				  <td>TỬ</td>
+				  <td>con cái</td>
+				</tr>
+				<tr>
+				  <th>よく</th>
+				  <td></td>
+				  <td></td>
+				  <td>tốt, rõ (chỉ mức độ)</td>
+				</tr>
+				<tr>
+				  <th>だいたい</th>
+				  <td></td>
+				  <td></td>
+				  <td>đại khái, đại thể</td>
+				</tr>
+				<tr>
+				  <th>たくさん</th>
+				  <td></td>
+				  <td></td>
+				  <td>nhiều</td>
+				</tr>
+				<tr>
+				  <th>すこし</th>
+				  <td>少し</td>
+				  <td>THIẾU, THIỂU</td>
+				  <td>ít, một ít</td>
+				</tr>
+				<tr>
+				  <th>ぜんぜん</th>
+				  <td>全然</td>
+				  <td>TOÀN NHIÊN</td>
+				  <td>hoàn toàn ~ không</td>
+				</tr>
+				<tr>
+				  <th>はやく</th>
+				  <td>早く, 速く</td>
+				  <td>TẢO、TỐC</td>
+				  <td>sớm, nhanh</td>
+				</tr>
+				<tr>
+				  <th>～から</th>
+				  <td></td>
+				  <td></td>
+				  <td>vì ~</td>
+				</tr>
+				<tr>
+				  <th>どうして</th>
+				  <td></td>
+				  <td></td>
+				  <td>tại sao</td>
+				</tr>
+				<tr>
+				  <th colspan="3">
+					<ruby>貸<rp>（</rp><rt>か</rt><rp>）</rp></ruby>してください
+				  </th>
+				  <td>Hãy cho tôi mượn.</td>
+				</tr>
+				<tr>
+				  <th colspan="3">いいですよ。</th>
+				  <td>Được chứ./ Được ạ.</td>
+				</tr>
+				<tr>
+				  <th colspan="3">
+					<ruby>残念<rp>（</rp><rt>ざんねん</rt><rp>）</rp></ruby>ですね。
+				  </th>
+				  <td>Thật đáng tiếc nhỉ./ buồn nhỉ.</td>
+				</tr>
+				<tr>
+				  <td colspan="5">
+					＜<b
+					  ><ruby>会話<rp>(</rp><rt>かいわ</rt><rp>)</rp></ruby></b
+					>＞
+				  </td>
+				</tr>
+				<tr>
+				  <th colspan="3">ああ</th>
+				  <td>
+					Ah (cách nói khi đã gặp được đúng <br />
+					người trên điện thoại)
+				  </td>
+				</tr>
+				<tr>
+				  <th colspan="3">いっしょにいかがですか。</th>
+				  <td>
+					Anh/chị cùng ~ (làm cái gì đó) <br />
+					với chúng tôi được không?
+				  </td>
+				</tr>
+				<tr>
+				  <th colspan="3">[～は]ちょっと…。</th>
+				  <td>[~ thì] có lẽ không được rồi.</td>
+				</tr>
+				<tr>
+				  <th colspan="3">だめですか。</th>
+				  <td>Không được à?</td>
+				</tr>
+				<tr>
+				  <th colspan="3">
+					また
+					<ruby>今度<rp>（</rp><rt>こんど</rt><rp>）</rp></ruby> お<ruby
+					  >願<rp>（</rp><rt>ねが</rt><rp>）</rp></ruby
+					>いします
+				  </th>
+				  <td>Hẹn Anh/Chị lần sau vậy.</td>
+				</tr>
+			  </tbody>
+			</table>
+		  </div>
+		<!-- End Table -->
+	  </div>
+	  
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.menu-toggle').click(function () {
+                $('nav').toggleClass('active');
+            });
+            $('.link').click(function () {
+                $('nav').toggleClass('active');
+            })
+        })
+	</script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
