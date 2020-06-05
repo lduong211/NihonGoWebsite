@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" th:href="@{/css/style.css}">
+  <link rel="stylesheet" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css}">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+  <title>日本語</title>
+  <style>
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .flex-content {
+      width: 65%;
+      height: auto;
+      margin: 0 10px 0 0;
+      border: #888 1px solid;
+      padding: 15px;
+      box-shadow: 3px 8px #888888;
+    }
+
+    .flex-list {
+      width: 30%;
+      height: 300px;
+      padding: 5px;
+      position: sticky;
+      top: 0;
+      border: 1px solid #888;
+      box-shadow: 5px 10px #888888;
+    }
+
+
+    .title {
+      font-size: 2em;
+      letter-spacing: -1px;
+      text-align: left;
+    }
+
+    .structure {
+      color: #008080;
+      font-size: 20px;
+
+    }
+
+    .meaning {
+      color: coral;
+    }
+
+    .example {
+      margin-bottom: 15px;
+      line-height: 2em;
+    }
+
+
+
+    .example-title {
+      font-size: 20px;
+      font-style: oblique;
+      text-decoration: underline;
+
+    }
+
+    .list-title {
+      font-size: 20px;
+      color: #008080;
+      text-align: center;
+
+    }
+
+    @media screen and (max-width: 640px) {
+      .flex-content {
+        width: 100%;
+      }
+
+      .flex-list {
+        display: none;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <header-title>日本の勉強</header-title>
+    <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+    <hr>
+    <nav>
+      <ul>
+        <li class="link"><a th:href="homepage">Home</a></li>
+        <li class="link"><a th:href="detail">N5</a></li>
+        <li class="link"><a th:href="detail">N4</a></li>
+        <li class="link"><a th:href="detail">N3</a></li>
+        <li class="link"><a th:href="happyo">Happyo</a></li>
+        <li class="link"><a th:href="weekly">Weekly Vocabulary</a></li>
+        <li class="link"><a th:href="@{https://e-jan.vn/}" target="_blank">Urban-shop</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container" style="margin-top: 5%;">
+    <div class="flex-container">
+      <div class="flex-content">
+        <div class="title" id="1">
+          1. Kiểu lịch sữ và kiểu thông thường
+        </div>
+        <div class="structure">1. Kiểu lịch sữ và kiểu thông thường</div>
+        <div class="example">
+          <div class="example-title">Kiểu lịch sự :</div>
+          Là cách nói lịch sự có thể dùng trong mọi văn cảnh và nói với bất kì ai,
+          chính vì vậy mà đây Là kiểu được dùng phổ biến trong hội thoại hằng ngày với người không có quan hệ thân.<br>
+          Được dùng để nói với người mới gặp lần đầu hay người kém tuổi hơn và không thân<br>
+          Thể vị ngữ có các từ [ます] và [です] đi kèm dùng trong câu kiểu lịch sự gọi là thể lịch sự<br>
+          <div class="example-title">Kiểu thông thường :</div>
+          Đối vối bạn bè thân, đồng nghiệp hay người trong gia đình thì chúng ta sẽ dùng kiểu thông thường<br>
+          Để sử dụng thành thạp thể thông thường cần chú ý đến đến tuổi và mối quan hệ của người đang giao tiếp
+          vì nếu dùng không đúng sẽ dẫn đến sự mất lịch sự cho người mình giao tiếp,
+          vì nếu không chắc chắn thì hãy sử dụng biện pháp an toàn là thể lịch sự
+        </div>
+        <div class="title" id="2">
+          2. Tính từ đuôi い → ～くて、～
+        </div>
+        <div class="example">
+          <div class="example-title">Động từ</div>
+          Thể lịch sự :
+          <table border="1">
+            <tbody>
+              <tr>
+                <td></td>
+                <td>Hiện tại, tương lai</td>
+                <td>Quá khứ</td>
+              </tr>
+              <tr>
+                <td>Khẳng định</td>
+                <td><b>かきます</b></td>
+                <td><strong>かきました</strong></td>
+              </tr>
+              <tr>
+                <td>Phủ định</td>
+                <td><b>かきません</b></td>
+                <td><strong>かきませんでした</strong></td>
+              </tr>
+            </tbody>
+          </table>
+          Thể thông thường :
+          <table border="1">
+            <tbody>
+              <tr>
+                <td></td>
+                <td>Hiện tại, tương lai</td>
+                <td>Quá khứ</td>
+              </tr>
+              <tr>
+                <td>Khẳng định</td>
+                <td><b>かく</b></td>
+                <td><b>かいた</b></td>
+              </tr>
+              <tr>
+                <td>Phủ định</td>
+                <td>かかない</td>
+                <td><b>かかなかった</b></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="example-title">Tính từ đuôi [い]</div>
+          Thể lịch sự :
+          <table border="1">
+            <tbody>
+              <tr>
+                <td></td>
+                <td>Hiện tại, tương lai</td>
+                <td>Quá khứ</td>
+              </tr>
+              <tr>
+                <td>Khẳng định</td>
+                <td><strong>たかいです</strong></td>
+                <td><strong>たかかったです</strong></td>
+              </tr>
+              <tr>
+                <td>Phủ định</td>
+                <td><b>です</b></td>
+                <td><strong>たかくなかったです</strong></td>
+              </tr>
+            </tbody>
+          </table>
+          Thể thông thường :
+          <table border="1">
+            <tbody>
+              <tr>
+                <td></td>
+                <td>Hiện tại, tương lai</td>
+                <td>Quá khứ</td>
+              </tr>
+              <tr>
+                <td>Khẳng định</td>
+                <td><b>たかい</b></td>
+                <td><strong>たかかった</strong></td>
+              </tr>
+              <tr>
+                <td>Phủ định</td>
+                <td><b>たかくない</b></td>
+                <td><strong>たかくなかった</strong></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="example-title">Tính từ đuôi [な]</div>
+          Thể lịch sự :
+          <table border="1">
+            <tbody>
+              <tr>
+                <td></td>
+                <td>Hiện tại, tương lai</td>
+                <td>Quá khứ</td>
+              </tr>
+              <tr>
+                <td>Khẳng định</td>
+                <td><strong>げんきです</strong></td>
+                <td><strong>げんきでした</strong></td>
+              </tr>
+              <tr>
+                <td>Phủ định</td>
+                <td><strong>げんきじゃ/ では ありません</strong></td>
+                <td><strong>げんきじゃ / では ありませんでした</strong></td>
+              </tr>
+            </tbody>
+          </table>
+          Thể thông thường :
+          <table border="1">
+            <tbody>
+              <tr>
+                <td></td>
+                <td>Hiện tại, tương lai</td>
+                <td>Quá khứ</td>
+              </tr>
+              <tr>
+                <td>Khẳng định</td>
+                <td><strong>げんきだ</strong></td>
+                <td><strong>げんきだった</strong></td>
+              </tr>
+              <tr>
+                <td>Phủ định</td>
+                <td><strong>げんきじゃない</strong></td>
+                <td><strong>げんきじゃなかった</strong></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="example-title">Danh từ</div>
+          Thể lịch sự :
+          <table border="1">
+            <tbody>
+              <tr>
+                <td></td>
+                <td>Hiện tại, tương lai</td>
+                <td>Quá khứ</td>
+              </tr>
+              <tr>
+                <td>Khẳng định</td>
+                <td><b>あめです</b></td>
+                <td><strong>あめでした</strong></td>
+              </tr>
+              <tr>
+                <td>Phủ định</td>
+                <td><strong>あめじゃ / では ありません</strong></td>
+                <td><strong>あめじゃ / では ありませんでした</strong></td>
+              </tr>
+            </tbody>
+          </table>
+          Thể thông thường :
+          <table border="1">
+            <tbody>
+              <tr>
+                <td></td>
+                <td>Hiện tại, tương lai</td>
+                <td>Quá khứ</td>
+              </tr>
+              <tr>
+                <td>Khẳng định</td>
+                <td><strong>あめだ</strong></td>
+                <td><strong>あめだった</strong></td>
+              </tr>
+              <tr>
+                <td>Phủ định</td>
+                <td><strong>あめじゃない</strong></td>
+                <td><strong>あめじゃなかった</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="title" id="3">
+          3. Hội thoại dùng kiểu thông thường
+        </div>
+        <div class="structure">3. Hội thoại dùng kiểu thông thường</div>
+        <div class="meaning">Trong câu nghi vấn kiểu thông thường thì trợ từ [か] ở cuối câu thường được lược bỏ,
+          và từ ở cuối câu được phát âm với giọng cao hơn<br>
+        </div>
+        <div class="example">
+          <div class="example-title">Ví dụ</div>
+          こーひーをのむ？<br>
+          Uồng cà phê không?<br>
+          うん、のむ。<br>
+          Uống<br>
+        </div>
+        <div class="meaning">Trong câu nghi vấn danh từ và tính từ đuôi [な] thì từ [だ] thể thông thường của [です] bị lược
+          bỏ.
+          Trong câu khẳng định thì [だ] cũng bị lược bỏ nếu không nó sẽ mang sắc thái quả quyết quá.
+          Cũng có khi trợ từ được thêm vào cuối câu để làm sắc thái câu mềm mỏng hơn. Nữ giới thường không sử dụng
+          [だ]<br>
+        </div>
+        <div class="example">
+          <div class="example-title">Ví dụ</div>
+          こんばん　ひま？<br>
+          Tối nay cậu rảnh chứ ?<br>
+          うん、ひま/ ひまだ / ひまだよ。<br>
+          Ừa, tớ rãnh (Dùng cho nam)<br>
+          うん、ひま / ひまだよ。<br>
+          Ừa tớ rãnh (dùng cho nữ)<br>
+          ううん、ひまじゃない。<br>
+          Không, tớ không rãnh ( dùng cho cả nam và nữ)<br>
+        </div>
+        <div class="meaning">Trong câu văn thông thường trợ từ nhiều khi cũng được lược bỏ nếu ý nghĩa đã được hiểu rõ
+          trong văn cảnh<br>
+        </div>
+        <div class="example">
+          <div class="example-title">Ví dụ</div>
+          ごはん「を」たべる？<br>
+          Ăn cơm không ?<br>
+          あしたきょうと「へ」いかない？<br>
+          Ngày mai đi Kyoto không ?<br>
+          このりんご「は」おいしいね。<br>
+          Trái táo này ngon nhỉ!<br>
+          そこにはさみ「が」ある？<br>
+          Ở đó có cây kéo không ?<br>
+          *Các trợ từ [で],[に],[から],[まで],[と] không được lược bỏ vì sẽ làm câu không rõ nghĩa<br>
+        </div>
+        <div class="title" id="4">
+          4. けど
+        </div>
+        <div class="structure">4. けど</div>
+        <div class="meaning">[けど] có nghĩa giống như [が] nhưng được dùng trong hội thoại thông thường<br>
+        </div>
+        <div class="example">
+          <div class="example-title">Ví dụ</div>
+          そのカレーライス「は」おいしい？<br>
+          Món cà ri đó ngon chứ ?<br>
+          うん、ちょっとからいけど、おいしい。<br>
+          Ừa, hơi cay nhưng ngon.<br>
+          すもうのちけっとがあるけど、いっしょにいかない？<br>
+          Tôi có vé xem Sumo, đi cùng tôi không ?<br>
+          いいね！<br>
+          Được đấy!<br>
+        </div>
+      </div>
+      <div class="flex-list">
+        <div class="list-title">Danh sách tổng hợp</div>
+        <ul>
+          <a href="#1">
+            <li>1. Kiểu lịch sữ và kiểu thông thường</li>
+          </a>
+          <a href="#2">
+            <li>2. Cách chia thể lịch sự và thể thông thường</li>
+          </a>
+          <a href="#3">
+            <li>3. Hội thoại dùng kiểu thông thường</li>
+          </a>
+          <a href="#4">
+            <li>4. けど</li>
+          </a>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.menu-toggle').click(function () {
+        $('nav').toggleClass('active');
+      });
+      $('.link').click(function () {
+        $('nav').toggleClass('active');
+      })
+    })
+  </script>
+</body>
+
+</html>

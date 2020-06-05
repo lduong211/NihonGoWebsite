@@ -9,6 +9,80 @@
   <link rel="stylesheet" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css}">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
   <title>日本語</title>
+  <style>
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .flex-content {
+      width: 65%;
+      height: auto;
+      margin: 0 10px 0 0;
+      border: #888 1px solid;
+      padding: 15px;
+      box-shadow: 3px 8px #888888;
+    }
+
+    .flex-list {
+      width: 30%;
+      height: 300px;
+      padding: 5px;
+      position: sticky;
+      top: 0;
+      border: 1px solid #888;
+      box-shadow: 5px 10px #888888;
+    }
+
+
+    .title {
+      font-size: 2em;
+      letter-spacing: -1px;
+      text-align: left;
+    }
+
+    .structure {
+      color: #008080;
+      font-size: 20px;
+
+    }
+
+    .meaning {
+      color: coral;
+    }
+
+    .example {
+      margin-bottom: 15px;
+      line-height: 2em;
+    }
+
+
+
+    .example-title {
+      font-size: 20px;
+      font-style: oblique;
+      text-decoration: underline;
+
+    }
+
+    .list-title {
+      font-size: 20px;
+      color: #008080;
+      text-align: center;
+
+    }
+
+    @media screen and (max-width: 640px) {
+      .flex-content {
+        width: 100%;
+      }
+
+      .flex-list {
+        display: none;
+      }
+
+    }
+  </style>
 </head>
 
 <body>
@@ -30,169 +104,123 @@
   </header>
 
   <div class="container" style="margin-top: 5%;">
-    <!-- Table -->
-    <table class="table table-bordered">
-      <thead class="thead-dark">
-        <tr>
-          <th>Ngữ pháp</th>
-          <th>Ý nghĩa</th>
-          <th>Cách sử dụng</th>
-          <th>Ví dụ</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th>ここ / そこ / あそこ は N (địa điểm) です</th>
-          <td> Nghĩa : Chỗ này/ chỗ kia/ chỗ đó là N(địa điểm) .
-            [ここ] Chỗ này (ở gần người nói)
-            [そこ] Chỗ đó (ở gần người nghe)
-            [あそこ] Chỗ kia (ở xa người nói và người nghe)</td>
-          <td></td>
-          <td>ここは　うけつけ　です。
-            Đây là bàn tiếp tân
-            *Để thể hịên sự lịch thiệp, cung kính đối với người đang nghe, chúng ta có thể dùng những từ sau với nghĩa
-            tương tự :
-            [こちら] thay cho [ここ]
-            [そちら] thay cho [そこ]
-            [あちら] thay cho [あそこ]
-          </td>
-        </tr>
-        <tr>
-          <th>N は　どこ / どちら　ですか。</th>
-          <td>Nghĩa : N ở đâu ?
-            [どこ ] , [どちら] đều có nghĩa là ở đâu, nhưng [どちら] lịch sự hơn.</td>
-          <td>Cách dùng : Hỏi cái gì hay ai ở đâu
-            *N có thể là vật lẫn người hoặc là [ここ], [そこ] ,[あそこ]</td>
-          <td> トイレは　どこ / どちら　ですか。
-            Nhà vệ sinh ở đâu ?
-            – ミラーさんは どこ / どちら　ですか。
-            Anh Miller đang ở đâu ?
-            – ここは どこ / どちら ですか。
-            Đây là đâu ?</td>
-        </tr>
-        <tr>
-          <th>N1 は　N2 (ĐỊA ĐIỂM)　です</th>
-          <td>Nghĩa : N1 của/ từ N2
-            *N1 là tên một quốc gia hay tên một công ty, N2 là một sản phẩm nào đó.</td>
-          <td>Cách dùng : Nói về xuất xứ, nguồn gốc của một sản phẩm hay đồ vật nào đó<br>
-            いいえ、N2　じゃありません / ではありません。</td>
-          <td>IMCのコンピューターです。
-            Máy tinh của công ty IMC.
-            Để đặt câu hỏi về xuất xứ, nguồn gốc của một sản phẩm hay đồ vật nào đó, ta dùng thêm [どこの]　＋ sản phẩm:
-            VD:
-            これはどこのワインですか？
-            Đây là rượu nước nào vậy ?
-            イタリアのワインです。
-            Rượu Ý ạ.</td>
-        </tr>
-        <tr>
-          <th>お国はどちらですか</th>
-          <td>Nghĩa : Anh chị là người nước nào ?
-            *Phải sử dụng [どちら] để thể hiện sự lịch sự trong câu nói
-          </td>
-          <td>Cách dùng : Để hỏi về đất nước của ai đó</td>
-          <td>わたしは　がくせいです。<br>
-            お国はどちらですか?
-            Anh chị là người nước nào ?
-            ベトナムです。
-            Việt Nam.
-        </tr>
+    <div class="flex-container">
+      <div class="flex-content">
+        <div class="title" id="1">
+          1. Danh từ(công cụ/phương tiện) + で + Động từ
+        </div>
+        <div class="structure">1. Danh từ(công cụ/phương tiện) + で + Động từ</div>
+        <div class="meaning">Nghĩa : Làm việc gì bằng cái gì<br>
+          Cách dùng : trợ từ 「で」 dùng để biểu thị phương tiện hay cách thức tiến hành một việc gì đó</div>
+        <div class="example">
+          <div class="example-title">Ví dụ</div>
+          はしでたべます。<br>
+          Tôi ăn cơm bằng đũa<br>
+          にほんごでレポートをかきます。<br>
+          Tôi viết báo cáo bằng tiếng Nhật
+        </div>
+        <div class="title" id="2">
+          2. “Từ/câu” は ～ごでなんですか
+        </div>
+        <div class="structure">2. “Từ/câu” は ～ごでなんですか</div>
+        <div class="meaning">Nghĩa : “Từ/câu” trong tiếng ～ là gì<br>
+          Cách dùng : dùng để hỏi một từ, một ngữ hoặc một câu được nói như thế nào bằng một ngôn ngữ khác
+        </div>
+        <div class="example">
+          <div class="example-title">Ví dụ</div>
+          [ありがとう」 はえいごでなんですか。<br>
+          [ありがとう」 trong tiếng Anh là gì ?<br>
+          [Thank You」 です。<br>
+          Là　”Thank You”
+        </div>
+        <div class="title" id="3">
+          3. Danh từ (người) に あげます
+        </div>
+        <div class="structure">3. Danh từ (người) に あげます</div>
+        <div class="meaning">Nghĩa : Cho/tặng ai<br>
+          *ngoài ra còn có thể sử dụng các động từ khác như [かします], [おしえます], [おくります], [でんわをかけます]<br>
+          Cách dùng : Chúng ta đặt trợ từ 「に」 sau các danh từ này để chỉ ra đối tượng tiếp nhận hành động
+        </div>
+        <div class="example">
+          <div class="example-title">Ví dụ</div>
+          やまださんはきむらさんにはなをあげました。<br>
+          Ông Yamada tặng hoa cho chị Kimura<br>
+          イーさんにほんをかしました。<br>
+          Tôi cho chị Lee mượn sách<br>
+          *Đối với động từ [おくります], [でんわをかけます] thì đối tượng không chỉ là người mà còn có thể là địa điểm.
+          Trong trường hợp đó, ngoài trợ từ 「に」 chúng ta còn có thể dùng trợ từ [へ」<br>
+          Ví dụ :<br>
+          かいしゃへでんわをかけます。<br>
+          Tôi gọi điện thoại đến công ty
+        </div>
 
-      </tbody>
-      <tr>
-        <th>T? V?ng</th>
-        <th>H�n T?</th>
-        <th>�m H�n</th>
-        <th>Nghia</th>
-      </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th> Danh từ(công cụ/phương tiện) + で + Động từ</th>
-          <td>Nghĩa : Làm việc gì bằng cái gì</td>
-          <td>Cách dùng : trợ từ 「で」 dùng để biểu thị phương tiện hay cách thức tiến hành một việc gì đó</td>
-          <td>はしでたべます。
-            Tôi ăn cơm bằng đũa
-            にほんごでレポートをかきます。
-            Tôi viết báo cáo bằng tiếng Nhật<br>
-          </td>
-        </tr>
-        <tr>
-          <th>“Từ/câu” は ～ごでなんですか</th>
-          <td>Nghĩa : “Từ/câu” trong tiếng ～ là gì</td>
-          <td>Cách dùng : dùng để hỏi một từ, một ngữ hoặc một câu được nói như thế nào bằng một ngôn ngữ khác</td>
-          <td>[ありがとう」 はえいごでなんですか。
-            [ありがとう」 trong tiếng Anh là gì ?
-            [Thank You」 です。
-            Là　”Thank You”</td>
-        </tr>
-        <tr>
-          <th>Danh từ (người) に あげます</th>
-          <td>Cho/tặng ai</td>
-          <td>Cách dùng : Chúng ta đặt trợ từ 「に」 sau các danh từ này để chỉ ra đối tượng tiếp nhận hành động</td>
-          <td>やまださんはきむらさんにはなをあげました。
-            Ông Yamada tặng hoa cho chị Kimura
-            イーさんにほんをかしました。
-            Tôi cho chị Lee mượn sách</td>
-        </tr>
-        <tr>
-          <th>Danh từ (người) に もらいます</th>
-          <td>Nhận từ ai</td>
-          <td> Cách dùng : Chúng ta đặt trợ từ 「に」 sau các danh từ này để chỉ hành động từ phía người tiếp nhận
-          </td>
-          <td>きむらさんはやまださんにはなをもらいます。
-            Chị Kimura đã nhận hoa từ ông Yamada
-            カリナさんにCDをかりました。
-            Tôi đã mượn địa CD từ chị Karina</td>
-        </tr>
-        <tr>
-          <th>もう　Động từ　ました
-          </th>
-          <td>Nghĩa : Đã làm gì rồi</td>
-          <td>Cách trả lời câu hỏi :
-            はい、もう　Động từ　ました
-            Vâng, đã làm … rồi
-            いいえ、まだです
-            Vẫn chưa
-          </td>
-          <td>もうにもつをおくりましたか。
-            Anh/chị đã gửi đồ chưa?
-            はい、 「もう」 おくりました
-            Rồi, tôi đã gửi rồi
-            いいえ、まだです。
-            Chưa, tôi chưa gửi.</td>
-        </tr>
-        <tr>
-          <th>Động từ + ましょう</th>
-          <td>Cùng làm gi đó nào</td>
-          <td> đề nghị người nghe cùng làm gì với người nói
-          </td>
-          <td>ちょっと　やすみましょう
-            Cùng nghỉ một chút nào
-            いっしょにたべにいきましょ！
-            Cùng nhau đi ăn nào<br></td>
-        </tr>
-        <tr>
-          <th>お</th>
-          <td></td>
-          <td>
-          </td>
-          <td>Ở bài 3, tiền tố [お] được đặt trước những từ liên quan đến người nghe hoặc người khác để thể hiện sự kính
-            trọng.
-            Ví dụ:
-            [お］くに: đất nước bạn
-            [お] cũng được dùng với nhiều từ khác khi người nói thể hiện sự lịch sự.
-            Ví dụ:
-            [お］さけ: rượu
-            [お］はなみ: ngắm hoa anh đào nở
-            Cũng có những từ dùng với お nhưng không mang nghĩa kính trọng hay lịch sự.
-            Ví dụ:
-            おちゃ: chè
-            おかね: tiền</td>
-        </tr>
-      </tbody>
-    </table>
-    <!-- End Table -->
+        <div class="title" id="4">
+          4. Danh từ (người) に もらいます
+        </div>
+        <div class="structure">4. Danh từ (người) に もらいます</div>
+        <div class="meaning">Nghĩa : Nhận từ ai<br>
+          *ngoài ra còn có thể sử dụng các động từ khác như [かります], [ならいます]<br>
+          Cách dùng : Chúng ta đặt trợ từ 「に」 sau các danh từ này để chỉ hành động từ phía người tiếp nhận
+        </div>
+        <div class="example">
+          <div class="example-title">Ví dụ</div>
+          きむらさんはやまださんにはなをもらいます。<br>
+          Chị Kimura đã nhận hoa từ ông Yamada<br>
+          カリナさんにCDをかりました。<br>
+          Tôi đã mượn địa CD từ chị Karina<br>
+          *Chúng ta co thể dùng trợ từ 「から」 thay cho 「に, đặc biệt khi đối tác không phải là người mà là một tổ
+          chức nào đó (ví dụ công ty hoặc trường học) thì không dùng 「に」 mà dùng 「から」<br>
+          Ví dụ :<br>
+          きむらさんはやまださんからはなをもらいます。<br>
+          Chị Kimura đã nhận hoa từ ông Yamada<br>
+          ぎんこうからおかねをかりました。<br>
+          Tôi đã vay tiền từ ngân hàng.
+        </div>
+        <div class="title" id="5">
+          5. もう　Động từ　ました
+        </div>
+        <div class="structure">5. もう　Động từ　ました</div>
+        <div class="meaning">Nghĩa : Đã làm gì rồi<br>
+          *Nếu trong câu hỏi thì sẽ có nghĩa là Đã làm gì chưa<br>
+          Cách trả lời câu hỏi :<br>
+          はい、もう　Động từ　ました<br>
+          Vâng, đã làm … rồi<br>
+          いいえ、まだです<br>
+          Vẫn chưa</div>
+        <div class="example">
+          <div class="example-title">Ví dụ</div>
+          もうにもつをおくりましたか。<br>
+          Anh/chị đã gửi đồ chưa?<br>
+          はい、 「もう」 おくりました<br>
+          Rồi, tôi đã gửi rồi<br>
+          いいえ、まだです。<br>
+          Chưa, tôi chưa gửi<br>
+          *Khi câu trả lời đối với câu hỏi theo mẫu này là câu phủ định thì chúng ta không dùng (Động từ<br>
+          ませんでした). Lý do là vì (Động từ ませんでした) có nghĩa là ai đó đã không làm một việc gì đó trong quá khứ
+          chứ không mang nghĩa là chưa làm việc đó.
+        </div>
+      </div>
+      <div class="flex-list">
+        <div class="list-title">Danh sách tổng hợp</div>
+        <ul>
+          <a href="#1">
+            <li>1. Danh từ(công cụ/phương tiện) + で + Động từ</li>
+          </a>
+          <a href="#2">
+            <li>2. “Từ/câu” は ～ごでなんですか</li>
+          </a>
+          <a href="#3">
+            <li>3. Danh từ (người) に あげます</li>
+          </a>
+          <a href="#4">
+            <li>4. Danh từ (người) に もらいます</li>
+          </a>
+          <a href="#5">
+            <li>5. もう　Động từ　ました</li>
+          </a>
+        </ul>
+      </div>
+    </div>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

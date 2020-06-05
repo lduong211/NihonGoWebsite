@@ -55,6 +55,74 @@ public class UnitContentController {
     public String getGrammaUnit8Page() {
         return "unitContents/Gramma/unit8";
     }
+    @GetMapping(value = "/gramma-9")
+    public String getGrammaUnit9Page() {
+        return "unitContents/Gramma/unit9";
+    }
+    @GetMapping(value = "/gramma-10")
+    public String getGrammaUnit10Page() {
+        return "unitContents/Gramma/unit10";
+    }
+    @GetMapping(value = "/gramma-11")
+    public String getGrammaUnit11Page() {
+        return "unitContents/Gramma/unit11";
+    }
+    @GetMapping(value = "/gramma-12")
+    public String getGrammaUnit12Page() {
+        return "unitContents/Gramma/unit12";
+    }
+    @GetMapping(value = "/gramma-13")
+    public String getGrammaUnit13Page() {
+        return "unitContents/Gramma/unit13";
+    }
+    @GetMapping(value = "/gramma-14")
+    public String getGrammaUnit14Page() {
+        return "unitContents/Gramma/unit14";
+    }
+    @GetMapping(value = "/gramma-15")
+    public String getGrammaUnit15Page() {
+        return "unitContents/Gramma/unit15";
+    }
+    @GetMapping(value = "/gramma-16")
+    public String getGrammaUnit16Page() {
+        return "unitContents/Gramma/unit16";
+    }
+    @GetMapping(value = "/gramma-17")
+    public String getGrammaUnit17Page() {
+        return "unitContents/Gramma/unit17";
+    }
+    @GetMapping(value = "/gramma-18")
+    public String getGrammaUnit18Page() {
+        return "unitContents/Gramma/unit18";
+    }
+    @GetMapping(value = "/gramma-19")
+    public String getGrammaUnit19age() {
+        return "unitContents/Gramma/unit19";
+    }
+    @GetMapping(value = "/gramma-20")
+    public String getGrammaUnit20Page() {
+        return "unitContents/Gramma/unit20";
+    }
+    @GetMapping(value = "/gramma-21")
+    public String getGrammaUnit21Page() {
+        return "unitContents/Gramma/unit21";
+    }
+    @GetMapping(value = "/gramma-22")
+    public String getGrammaUnit22Page() {
+        return "unitContents/Gramma/unit22";
+    }
+    @GetMapping(value = "/gramma-23")
+    public String getGrammaUnit23Page() {
+        return "unitContents/Gramma/unit23";
+    }
+    @GetMapping(value = "/gramma-24")
+    public String getGrammaUnit24Page() {
+        return "unitContents/Gramma/unit24";
+    }
+    @GetMapping(value = "/gramma-25")
+    public String getGrammaUnit25Page() {
+        return "unitContents/Gramma/unit25";
+    }
 
     // Vocabulary Units
     @GetMapping(value = "/voca-1")
@@ -96,6 +164,66 @@ public class UnitContentController {
     @GetMapping(value = "/voca-10")
     public String getVocaUnit10Page() {
         return "unitContents/Voca/unit10";
+    }
+    @GetMapping(value = "/voca-11")
+    public String getVocaUnit11Page() {
+        return "unitContents/Voca/unit11";
+    }
+    @GetMapping(value = "/voca-12")
+    public String getVocaUnit12Page() {
+        return "unitContents/Voca/unit12";
+    }
+    @GetMapping(value = "/voca-13")
+    public String getVocaUnit13Page() {
+        return "unitContents/Voca/unit13";
+    }
+    @GetMapping(value = "/voca-14")
+    public String getVocaUnit14Page() {
+        return "unitContents/Voca/unit14";
+    }
+    @GetMapping(value = "/voca-15")
+    public String getVocaUnit15Page() {
+        return "unitContents/Voca/unit15";
+    }
+    @GetMapping(value = "/voca-16")
+    public String getVocaUnit16Page() {
+        return "unitContents/Voca/unit16";
+    }
+    @GetMapping(value = "/voca-17")
+    public String getVocaUnit17Page() {
+        return "unitContents/Voca/unit17";
+    }
+    @GetMapping(value = "/voca-18")
+    public String getVocaUnit18Page() {
+        return "unitContents/Voca/unit18";
+    }
+    @GetMapping(value = "/voca-19")
+    public String getVocaUnit19Page() {
+        return "unitContents/Voca/unit19";
+    }
+    @GetMapping(value = "/voca-20")
+    public String getVocaUnit20Page() {
+        return "unitContents/Voca/unit20";
+    }
+    @GetMapping(value = "/voca-21")
+    public String getVocaUnit21Page() {
+        return "unitContents/Voca/unit21";
+    }
+    @GetMapping(value = "/voca-22")
+    public String getVocaUnit22Page() {
+        return "unitContents/Voca/unit22";
+    }
+    @GetMapping(value = "/voca-23")
+    public String getVocaUnit23Page() {
+        return "unitContents/Voca/unit23";
+    }
+    @GetMapping(value = "/voca-24")
+    public String getVocaUnit24Page() {
+        return "unitContents/Voca/unit24";
+    }
+    @GetMapping(value = "/voca-25")
+    public String getVocaUnit25Page() {
+        return "unitContents/Voca/unit25";
     }
 
     // Kanji Units

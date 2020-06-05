@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link rel="stylesheet" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+    <title>日本語</title>
+    <style>
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .flex-content {
+            width: 65%;
+            height: auto;
+            margin: 0 10px 0 0;
+            border: #888 1px solid;
+            padding: 15px;
+            box-shadow: 3px 8px #888888;
+        }
+
+        .flex-list {
+            width: 30%;
+            height: 300px;
+            padding: 5px;
+            position: sticky;
+            top: 0;
+            border: 1px solid #888;
+            box-shadow: 5px 10px #888888;
+        }
+
+
+        .title {
+            font-size: 2em;
+            letter-spacing: -1px;
+            text-align: left;
+        }
+
+        .structure {
+            color: #008080;
+            font-size: 20px;
+
+        }
+
+        .meaning {
+            color: coral;
+        }
+
+        .example {
+            margin-bottom: 15px;
+            line-height: 2em;
+        }
+
+
+
+        .example-title {
+            font-size: 20px;
+            font-style: oblique;
+            text-decoration: underline;
+
+        }
+
+        .list-title {
+            font-size: 20px;
+            color: #008080;
+            text-align: center;
+
+        }
+
+        @media screen and (max-width: 640px) {
+            .flex-content {
+                width: 100%;
+            }
+
+            .flex-list {
+                display: none;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <header-title>日本の勉強</header-title>
+        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+        <hr>
+        <nav>
+            <ul>
+                <li class="link"><a th:href="homepage">Home</a></li>
+                <li class="link"><a th:href="detail">N5</a></li>
+                <li class="link"><a th:href="detail">N4</a></li>
+                <li class="link"><a th:href="detail">N3</a></li>
+                <li class="link"><a th:href="happyo">Happyo</a></li>
+                <li class="link"><a th:href="weekly">Weekly Vocabulary</a></li>
+                <li class="link"><a th:href="@{https://e-jan.vn/}" target="_blank">Urban-shop</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container" style="margin-top: 5%;">
+        <div class="flex-container">
+            <div class="flex-content">
+                <div class="title" id="1">
+                    1. Động từ thể thông thường ＋と + おもいます
+                </div>
+                <div class="structure">1. Động từ thể thông thường ＋と + おもいます</div>
+                <div class="meaning">Dùng để biểu thị sự phán đoán, suy xét :</div>
+                <div class="example">
+                    <div class="example-title">Ví dụ</div>
+                    あした　あめがふるとおもいます。<br>
+                    Tôi nghĩ mai trời sẽ mưa<br>
+                    テラさちゃんはねるとおもいます。<br>
+                    Tôi nghĩ em Terasa ngủ rồi<br>
+                </div>
+                <div class="meaning">* Khi phán đoán một nội dung mang ý nghĩa phủ định thì phần trước [と] là thể phủ
+                    định</div>
+                <div class="example">
+                    <div class="example-title">Ví dụ</div>
+                    ミラーさんは　このニュースをしっていますか？<br>
+                    Anh Miller biết tin này không?<br>
+                    いいえ、たぶん　しらないとおもいます。<br>
+                    Không, tôi nghĩ chắc là không.<br>
+                </div>
+                <div class="meaning">Dùng để bày tỏ ý kiến :</div>
+                <div class="example">
+                    <div class="example-title">Ví dụ</div>
+                    にほんはぶっかがたかいとおもいます。<br>
+                    Tôi nghĩa giá cả ở Nhật cao<br>
+                </div>
+                <div class="meaning">Khi muốn hỏi ý kiến của ai về vấn đề gì thì ta dùng mẫu câu [~について　どうおもいますか], không
+                    dùng [と] sau [どう]</div>
+                <div class="example">
+                    <div class="example-title">Ví dụ</div>
+                    あたらしいくうこうについてどうおもいますか？<br>
+                    Anh nghĩ sao về sân bay mới ?<br>
+                    きれいですが、ちょっと　こうつうが　ふべんだ　とおもいます。<br>
+                    Tôi nghĩa là đẹp nhưng mà đi lại hơi bất tiện một chút<br>
+                </div>
+                <div class="meaning">Để thể hiện sự đồng ý hay không đồng ý với người khác, ta dùng như sau :</div>
+                <div class="example">
+                    <div class="example-title">Ví dụ</div>
+                    ファクスはべんりですね。<br>
+                    Fax tiện lợi nhỉ!<br>
+                    わたしもそうおもいます。<br>
+                    Tọi cũng nghĩ vậy!<br>
+                    わたしはそう「は」おもいません。<br>
+                    Tôi không nghĩ vậy!<br>
+                </div>
+                <div class="title" id="2">
+                    2. 「Câu 」/ thể thông thường + と + いいます
+                </div>
+                <div class="structure">2. 「Câu 」/ thể thông thường + と + いいます</div>
+                <div class="meaning"> Trích dẫn trực tiếp<br>
+                    Chúng ta để nguyên phần trích dẫn vào 「」
+                </div>
+                <div class="example">
+                    <div class="example-title">Ví dụ</div>
+                    ねるまえに、「おやすみなさい」といいます。<br>
+                    Trước khi ngủ, chúng ta nói Oyasuminasai<br>
+                    みらーさんは「らいしゅうとうきょうへしゅっちょうします」といいました。<br>
+                    Anh Miller đã nói là tuần sau anh ấy sẽ đi công tác ở Tokyo<br>
+                </div>
+                <div class="meaning"> Trích dẫn gián tiếp<br>
+                    Dùng thể thông thường trước [と], thời của phần trích dẫn không phụ thuộc vào thời của câu
+                </div>
+                <div class="example">
+                    <div class="example-title">Ví dụ</div>
+                    みらーさんはらいしゅうとうきょうへしうっちょするといいました。<br>
+                    Anh Miller nói tuần sau anh ấy sẽ đi công tác ở Tokyo<br>
+                </div>
+                <div class="title" id="3">
+                    3. Động từ/ tính từ/ danh từ thể thông thường + でしょう？
+                </div>
+                <div class="structure">3. Động từ/ tính từ/ danh từ thể thông thường + でしょう？</div>
+                <div class="meaning">Nghĩa : ~ có đúng không/ có đúng không nhỉ<br>
+                    Cách dùng :<br>
+                    Dùng khi kỳ vọng rằng người nghe cũng biết hoặc có sự hiểu biết về chuyện mình nói
+                    và mong muốn người nghe sẽ tán thành ý kiến của mình.<br>
+                    でしょう được đọc lên giọng giống như 1 câu hỏi để xác nhận sự đồng tình của người nghe.
+                </div>
+                <div class="example">
+                    <div class="example-title">Ví dụ</div>
+                    にちようびえいがをみにいくでしょう？<br>
+                    Chủ nhật bạn đi xem phim chứ nhỉ?<br>
+                    ええ、いきます。<br>
+                    Ừ, đi chứ.<br>
+                    そのかばんはたかかったでしょう？<br>
+                    Cái túi xách đó chắc đắt lắm nhỉ?<br>
+                    いいえ、そんなにたかくなかったです。<br>
+                    Không, không đắt đến thế đâu<br>
+                    やまだせんせいはしんせつでしょう？<br>
+                    Thầy Yamada thân thiện nhỉ?<br>
+                    ええ、とてもしんせつです。<br>
+                    Ừ, rất thân thiện<br>
+                    ハイさんはにほんごのせんせいでしょう。<br>
+                    Hải là giáo viên tiếng Nhật nhỉ?<br>
+                    いいえ、えいごのせんせいです。<br>
+                    Không, là giáo viên tiếng anh<br>
+                </div>
+                <div class="title" id="4">
+                    4. Danh từ 1(địa điểm) で Danh từ 2 があります
+                </div>
+                <div class="structure">4. Danh từ 1(địa điểm) で Danh từ 2 があります</div>
+                <div class="meaning">Nghĩa : Ở danh từ 1 được tổ chức, diễn ra danh từ 2<br>
+                    Cách dùng: khi danh từ 2là các sự kiện như bữa tiệc, buổi hòa nhạc, ngày hội, vụ tai nạn hay thảm
+                    họa…
+                    thì lúc đó [あります] có nghĩa là được tổ chức, diễn ra
+                </div>
+                <div class="example">
+                    <div class="example-title">Ví dụ</div>
+                    こうべで おおきい じしん が ありました。<br>
+                    Ở Kobe đã (có) xảy ra trận động đất lớn<br>
+                    あした、ゆきちゃんのうちでパーティーがあります。<br>
+                    Ngày mai, ở nhà Yuki sẽ tổ chức tiệc<br>
+                </div>
+                <div class="title" id="5">
+                    5. Danh từ sự việc + で
+                </div>
+                <div class="structure">5. Danh từ sự việc + で</div>
+                <div class="meaning">Cách dùng : Dùng để biểu địa điểm, tình huống mà việc gì đó xảy ra, diễn ra</div>
+                <div class="example">
+                    <div class="example-title">Ví dụ</div>
+                    かいぎしつでなにかいけんをいいましたか？<br>
+                    Trong cuộc họp, anh / chị có phát biểu ý kiến gì không ?<br>
+                </div>
+                <div class="title" id="6">
+                    6. Danh từ + でも　+ động từ
+                </div>
+                <div class="structure">6. Danh từ + でも　+ động từ</div>
+                <div class="meaning">Khi muốn để nghị hay đề xuất gì đó với người khác,
+                    ta dùng trợ từ [でも] để biểu thị một thứ tượng trưng trong một nhóm các đối tượng có cùng phạm trù
+                </div>
+                <div class="example">
+                    <div class="example-title">Ví dụ</div>
+                    ちょっとびーるでものみませんか？<br>
+                    Bạn uống bia hay gì đó không ?<br>
+                </div>
+                <div class="title" id="7">
+                    7. Động từ thể ない　ないと。。。
+                </div>
+                <div class="structure">7. Động từ thể ない　ないと。。。</div>
+                <div class="meaning">Cách nói ngắn gọn của [động từ thể ない + といけません], trong đó [いけません] bị lược bỏ.<br>
+                    Mẫu câu này có nghĩa giống với [động từ thể ない + なければなりません]</div>
+                <div class="example">
+                    <div class="example-title">Ví dụ</div>
+                    もう　かえらないと。。。<br>
+                    Tôi phải về rồi<br>
+                </div>
+            </div>
+            <div class="flex-list">
+                <div class="list-title">Danh sách tổng hợp</div>
+                <ul>
+                    <a href="#1">
+                        <li>1. Động từ thể thông thường ＋と + おもいます</li>
+                    </a>
+                    <a href="#2">
+                        <li>2. 「Câu 」/ thể thông thường + と + いいます</li>
+                    </a>
+                    <a href="#3">
+                        <li>3. Động từ/ tính từ/ danh từ thể thông thường + でしょう？</li>
+                    </a>
+                    <a href="#4">
+                        <li>4. Danh từ 1(địa điểm) で Danh từ 2 があります</li>
+                    </a>
+                    <a href="#5">
+                        <li>5. Danh từ sự việc + で</li>
+                    </a>
+                    <a href="#6">
+                        <li>6. Danh từ + でも　+ động từ</li>
+                    </a>
+                    <a href="#7">
+                        <li>7. Động từ thể ない　ないと。。。</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.menu-toggle').click(function () {
+                $('nav').toggleClass('active');
+            });
+            $('.link').click(function () {
+                $('nav').toggleClass('active');
+            })
+        })
+    </script>
+</body>
+
+</html>
