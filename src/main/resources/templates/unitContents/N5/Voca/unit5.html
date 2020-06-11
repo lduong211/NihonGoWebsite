@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+	<link rel="stylesheet" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css}">
+	<link
+      rel="stylesheet" th:href="@{https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css}"
+	/>
+    <title>日本語</title>
+</head>
+
+<body>
+    <header>
+        <header-title>日本の勉強</header-title>
+        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+        <hr>
+        <nav>
+            <ul>
+                <li class="link"><a th:href="homepage">Home</a></li>
+                <li class="link"><a th:href="N5-detail">N5</a></li>
+                <li class="link"><a th:href="N4-detail">N4</a></li>
+                <li class="link"><a th:href="N3-detail">N3</a></li>
+                <li class="link"><a th:href="happyo">Happyo</a></li>
+                <li class="link"><a th:href="weekly">Weekly Vocabulary</a></li>
+                <li class="link"><a th:href="@{https://e-jan.vn/}" target="_blank">Urban-shop</a></li>
+            </ul>
+        </nav>
+    </header>
+
+	<div class="container" style="margin-top: 5%;">
+		<!-- Table -->
+		<div class="table-responsive">
+			<table class="table table-bordered">
+			  <thead class="thead-dark">
+				<tr>
+				  <th>Từ Vựng</th>
+				  <th>Hán Tự</th>
+				  <th>Âm Hán</th>
+				  <th>Nghĩa</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr>
+				  <th>いきます</th>
+				  <td>行きます</td>
+				  <td>HÀNH</td>
+				  <td>đi</td>
+				</tr>
+				<tr>
+				  <th>きます</th>
+				  <td>来ます</td>
+				  <td>LAI</td>
+				  <td>đến</td>
+				</tr>
+				<tr>
+				  <th>かえります</th>
+				  <td>帰ります</td>
+				  <td>QUY</td>
+				  <td>về</td>
+				</tr>
+				<tr>
+				  <th>がっこう</th>
+				  <td>学校</td>
+				  <td>HỌC HIỆU</td>
+				  <td>trường học</td>
+				</tr>
+				<tr>
+				  <th>スーパー</th>
+				  <td></td>
+				  <td></td>
+				  <td>siêu thị</td>
+				</tr>
+				<tr>
+				  <th>えき</th>
+				  <td>駅</td>
+				  <td>DỊCH</td>
+				  <td>ga, nhà ga</td>
+				</tr>
+				<tr>
+				  <th>ひこうき</th>
+				  <td>飛行機</td>
+				  <td>PHI HÀNH CƠ</td>
+				  <td>máy bay</td>
+				</tr>
+				<tr>
+				  <th>ふね</th>
+				  <td>船</td>
+				  <td>THUYỀN</td>
+				  <td>thuyền, tàu thủy</td>
+				</tr>
+				<tr>
+				  <th>でんしゃ</th>
+				  <td>電車</td>
+				  <td>ĐIỆN XA</td>
+				  <td>tàu điện</td>
+				</tr>
+				<tr>
+				  <th>ちかてつ</th>
+				  <td>地下鉄</td>
+				  <td>ĐỊA HẠ THIẾT</td>
+				  <td>tàu điện ngầm</td>
+				</tr>
+				<tr>
+				  <th>しんかんせん</th>
+				  <td>TÂN CÁN TUYẾN</td>
+				  <td>tàu Shinkansen (tàu điện siêu tốc của Nhật)</td>
+				</tr>
+				<tr>
+				  <th>バス</th>
+				  <td></td>
+				  <td></td>
+				  <td>xe buýt</td>
+				</tr>
+				<tr>
+				  <th>タクシー</th>
+				  <td></td>
+				  <td></td>
+				  <td>tắc-xi</td>
+				</tr>
+				<tr>
+				  <th>じてんしゃ</th>
+				  <td>自転車</td>
+				  <td>TỰ CHUYỂN XA</td>
+				  <td>xe đạp</td>
+				</tr>
+				<tr>
+				  <th>あるいて</th>
+				  <td>歩いて</td>
+				  <td>BỘ</td>
+				  <td>đi bộ</td>
+				</tr>
+				<tr>
+				  <th>ひと</th>
+				  <td>人</td>
+				  <td>NHÂN</td>
+				  <td>người</td>
+				</tr>
+				<tr>
+				  <th>ともだち</th>
+				  <td>友達</td>
+				  <td>HỮU ĐẠT</td>
+				  <td>bạn, bạn bè</td>
+				</tr>
+				<tr>
+				  <th>かれ</th>
+				  <td>彼</td>
+				  <td>BỈ</td>
+				  <td>anh ấy, bạn trai</td>
+				</tr>
+				<tr>
+				  <th>かのじょ</th>
+				  <td>彼女</td>
+				  <td>BỈ NỮ</td>
+				  <td>chị ấy, bạn gái</td>
+				</tr>
+				<tr>
+				  <th>かぞく</th>
+				  <td>家族</td>
+				  <td>GIA TỘC</td>
+				  <td>gia đình</td>
+				</tr>
+				<tr>
+				  <th>ひとりで</th>
+				  <td>一人で</td>
+				  <td>NHẤT NHÂN</td>
+				  <td>một mình</td>
+				</tr>
+				<tr>
+				  <th>せんしゅう</th>
+				  <td>先週</td>
+				  <td>TIÊN CHU</td>
+				  <td>tuần trước</td>
+				</tr>
+				<tr>
+				  <th>こんしゅう</th>
+				  <td>今週</td>
+				  <td>KIM CHU</td>
+				  <td>tuần này</td>
+				</tr>
+				<tr>
+				  <th>らいしゅう</th>
+				  <td>来週</td>
+				  <td>LAI CHU</td>
+				  <td>tuần sau</td>
+				</tr>
+				<tr>
+				  <th>こんげつ</th>
+				  <td>今月</td>
+				  <td>KIM NGUYỆT</td>
+				  <td>tháng này</td>
+				</tr>
+				<tr>
+				  <th>らいげつ</th>
+				  <td>来月</td>
+				  <td>LAI NGUYỆT</td>
+				  <td>tháng sau</td>
+				</tr>
+				<tr>
+				  <th>きょねん</th>
+				  <td>去年</td>
+				  <td>KHỨ NIÊN</td>
+				  <td>năm ngoái</td>
+				</tr>
+				<tr>
+				  <th>ことし</th>
+				  <td></td>
+				  <td></td>
+				  <td>năm nay</td>
+				</tr>
+				<tr>
+				  <th>らいねん</th>
+				  <td>来年</td>
+				  <td>LAI NIÊN</td>
+				  <td>năm sau</td>
+				</tr>
+				<tr>
+				  <th>―がつ</th>
+				  <td>―月</td>
+				  <td>NGUYỆT</td>
+				  <td>tháng -</td>
+				</tr>
+				<tr>
+				  <th>なんがつ</th>
+				  <td>何月</td>
+				  <td>HÀ NGUYỆT</td>
+				  <td>tháng mấy</td>
+				</tr>
+				<tr>
+				  <th>ついたち</th>
+				  <td>１日</td>
+				  <td>NHẬT</td>
+				  <td>ngày mồng 1</td>
+				</tr>
+				<tr>
+				  <th>ふつか</th>
+				  <td>２日</td>
+				  <td>NHẬT</td>
+				  <td>ngày mồng 2, 2 ngày</td>
+				</tr>
+				<tr>
+				  <th>みっか</th>
+				  <td>３日</td>
+				  <td>NHẬT</td>
+				  <td>ngày mồng 3, 3 ngày</td>
+				</tr>
+				<tr>
+				  <th>よっか</th>
+				  <td>４日</td>
+				  <td>NHẬT</td>
+				  <td>ngày mồng 4, 4 ngày</td>
+				</tr>
+				<tr>
+				  <th>いつか</th>
+				  <td>５日</td>
+				  <td>NHẬT</td>
+				  <td>ngày mồng 5, 5 ngày</td>
+				</tr>
+				<tr>
+				  <th>むいか</th>
+				  <td>６日</td>
+				  <td>NHẬT</td>
+				  <td>ngày mồng 6, 6 ngày</td>
+				</tr>
+				<tr>
+				  <th>なのか</th>
+				  <td>７日</td>
+				  <td>NHẬT</td>
+				  <td>ngày mồng 7, 7 ngày</td>
+				</tr>
+				<tr>
+				  <th>ようか</th>
+				  <td>８日</td>
+				  <td>NHẬT</td>
+				  <td>ngày mồng 8, 8 ngày</td>
+				</tr>
+				<tr>
+				  <th>ここのか</th>
+				  <td>９日</td>
+				  <td>NHẬT</td>
+				  <td>ngày mồng 9, 9 ngày</td>
+				</tr>
+				<tr>
+				  <th>とおか</th>
+				  <td>１０日</td>
+				  <td>NHẬT</td>
+				  <td>ngày mồng 10, 10 ngày</td>
+				</tr>
+				<tr>
+				  <th>じゅうよっか</th>
+				  <td>１４日</td>
+				  <td>NHẬT</td>
+				  <td>ngày 14, 14 ngày</td>
+				</tr>
+				<tr>
+				  <th>はつか</th>
+				  <td>２０日</td>
+				  <td>NHẬT</td>
+				  <td>ngày 20, 20 ngày</td>
+				</tr>
+				<tr>
+				  <th>にじゅうよっか</th>
+				  <td>２４日</td>
+				  <td>NHẬT</td>
+				  <td>ngày 24, 24 ngày</td>
+				</tr>
+				<tr>
+				  <th>―にち</th>
+				  <td>―日</td>
+				  <td>NHẬT</td>
+				  <td>ngày -, - ngày</td>
+				</tr>
+				<tr>
+				  <th>なんにち</th>
+				  <td>何日</td>
+				  <td>HÀ NHẬT</td>
+				  <td>ngày mấy, ngày bao nhiêu, mấy ngày, bao nhiêu ngày</td>
+				</tr>
+				<tr>
+				  <th>いつ</th>
+				  <td></td>
+				  <td></td>
+				  <td>bao giờ, khi nào</td>
+				</tr>
+				<tr>
+				  <th>たんじょうび</th>
+				  <td>誕生日</td>
+				  <td>ĐẢN SINH NHẬT</td>
+				  <td>sinh nhật</td>
+				</tr>
+				<tr>
+				  <th>ふつう</th>
+				  <td>普通</td>
+				  <td>PHỔ THÔNG</td>
+				  <td>tàu thường (dừng cả ở các ga lẻ)</td>
+				</tr>
+				<tr>
+				  <th>きゅうこう</th>
+				  <td>急行</td>
+				  <td>CẤP HÀNH</td>
+				  <td>tàu tốc hành</td>
+				</tr>
+				<tr>
+				  <th>とっきゅう</th>
+				  <td>特急</td>
+				  <td>ĐẶC CẤP</td>
+				  <td>tàu tốc hành đặc biệt</td>
+				</tr>
+				<tr>
+				  <th>つぎの</th>
+				  <td>次の</td>
+				  <td>THỨ</td>
+				  <td>tiếp theo</td>
+				</tr>
+				<tr>
+				  <th>どういたしまして</th>
+				  <td></td>
+				  <td></td>
+				  <td>Không có gì.</td>
+				</tr>
+				<tr>
+				  <th>―ばんせん</th>
+				  <td>―番線</td>
+				  <td>PHIÊN TUYẾN</td>
+				  <td>sân ga số -</td>
+				</tr>
+				<tr>
+				  <th>はかた</th>
+				  <td>博多</td>
+				  <td>BÁC ĐA</td>
+				  <td>tên một khu phố ở Kyushu</td>
+				</tr>
+				<tr>
+				  <th>ふしみ</th>
+				  <td>伏見</td>
+				  <td>PHỤC KIẾN</td>
+				  <td>tên một khu phố ở Kyoto</td>
+				</tr>
+				<tr>
+				  <th>こうしえん</th>
+				  <td>甲子園</td>
+				  <td>GIÁP TỬ VIÊN</td>
+				  <td>tên một khu phố ở Osaka</td>
+				</tr>
+				<tr>
+				  <th>おおさかじょう</th>
+				  <td>大阪城</td>
+				  <td>ĐẠI PHẢN THÀNH</td>
+				  <td>Lâu đài Osaka, một lâu đài nổi tiếng ở Osaka</td>
+				</tr>
+			  </tbody>
+			</table>
+		  </div>
+		<!-- End Table -->
+	  </div>
+	  
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.menu-toggle').click(function () {
+                $('nav').toggleClass('active');
+            });
+            $('.link').click(function () {
+                $('nav').toggleClass('active');
+            })
+        })
+	</script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

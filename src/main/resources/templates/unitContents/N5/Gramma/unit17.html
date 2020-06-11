@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" th:href="@{/css/style.css}">
+  <link rel="stylesheet" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css}">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+  <title>日本語</title>
+  <style>
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .flex-content {
+      width: 65%;
+      height: auto;
+      margin: 0 10px 0 0;
+      border: #888 1px solid;
+      padding: 15px;
+      box-shadow: 3px 8px #888888;
+    }
+
+    .flex-list {
+      width: 30%;
+      height: 300px;
+      padding: 5px;
+      position: sticky;
+      top: 0;
+      border: 1px solid #888;
+      box-shadow: 5px 10px #888888;
+    }
+
+
+    .title {
+      font-size: 2em;
+      letter-spacing: -1px;
+      text-align: left;
+    }
+
+    .structure {
+      color: #008080;
+      font-size: 20px;
+
+    }
+
+    .meaning {
+      color: coral;
+    }
+
+    .example {
+      margin-bottom: 15px;
+      line-height: 2em;
+    }
+
+
+
+    .example-title {
+      font-size: 20px;
+      font-style: oblique;
+      text-decoration: underline;
+
+    }
+
+    .list-title {
+      font-size: 20px;
+      color: #008080;
+      text-align: center;
+
+    }
+
+    @media screen and (max-width: 640px) {
+      .flex-content {
+        width: 100%;
+      }
+
+      .flex-list {
+        display: none;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <header-title>日本の勉強</header-title>
+    <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+    <hr>
+    <nav>
+      <ul>
+        <li class="link"><a th:href="homepage">Home</a></li>
+        <li class="link"><a th:href="N5-detail">N5</a></li>
+        <li class="link"><a th:href="N4-detail">N4</a></li>
+        <li class="link"><a th:href="N3-detail">N3</a></li>
+        <li class="link"><a th:href="happyo">Happyo</a></li>
+        <li class="link"><a th:href="weekly">Weekly Vocabulary</a></li>
+        <li class="link"><a th:href="@{https://e-jan.vn/}" target="_blank">Urban-shop</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container" style="margin-top: 5%;">
+    <div class="flex-container">
+      <div class="flex-content">
+        <div class="title" id="1">
+          1. Thể ない của động từ
+        </div>
+        <div class="structure">1. Thể ない của động từ</div>
+        <div class="example">
+          <div class="example-title">Ví dụ</div>
+          Thể của động từ khi đi kèm với [ない] được gọi là thể [ない] của động từ.
+          Ví dụ như [かかない] là thể [ない] của động từ [かきます].<br>
+        </div>
+        <div class="title" id="2">
+          2. Chia động từ thể [ない]
+        </div>
+        <div class="structure">2. Chia động từ thể [ない]</div>
+        <div class="meaning"> Nghĩa : Ở đâu có ai / cái gì
+          Cách dùng : Danh từ 1 là đại điểm tồn tại của danh từ 2 và được xác định bằng trợ từ [に]
+        </div>
+        <div class="example">
+          <div class="example-title">Động từ nhóm 1</div>
+          <table border="1">
+            <tbody>
+              <tr>
+                <td style="text-align: left"><b>Động từ</b></td>
+                <td style="text-align: left"><strong>Thể [ない]</strong></td>
+              </tr>
+              <tr>
+                <td style="text-align: left">か<strong>き</strong>ます</td>
+                <td style="text-align: left">か<strong>かない</strong></td>
+              </tr>
+              <tr>
+                <td style="text-align: left">き<strong>き</strong>ます</td>
+                <td style="text-align: left">き<strong>かない</strong></td>
+              </tr>
+              <tr>
+                <td style="text-align: left">およ<strong>ぎ</strong>ます</td>
+                <td style="text-align: left">およ<strong>がない</strong></td>
+              </tr>
+              <tr>
+                <td style="text-align: left">の<strong>み</strong>ます</td>
+                <td style="text-align: left">の<strong>まない</strong></td>
+              </tr>
+              <tr>
+                <td style="text-align: left">あそ<strong>び</strong>ます</td>
+                <td style="text-align: left">あそ<strong>ばない</strong></td>
+              </tr>
+              <tr>
+                <td style="text-align: left">ま<strong>ち</strong>ます</td>
+                <td style="text-align: left">ま<strong>たない</strong></td>
+              </tr>
+              <tr>
+                <td style="text-align: left">と<strong>り</strong>ます</td>
+                <td style="text-align: left">と<strong>らない</strong></td>
+              </tr>
+              <tr>
+                <td style="text-align: left">あ<strong>い</strong>ます</td>
+                <td style="text-align: left">あ<strong>わない</strong></td>
+              </tr>
+              <tr>
+                <td style="text-align: left">はな<strong>し</strong>ます</td>
+                <td style="text-align: left">はな<strong>さない</strong></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="example-title">Động từ nhóm 2</div>
+          <div class="example-title">Đối với động từ nhóm này thì thể [ない] giống như thể [ます]</div>
+          たべますーーー＞ たべない<br>
+          いれますーーー＞ いれない<br>
+          <div class="example-title">Động từ nhóm 3</div>
+          <div class="example-title">Đối với động từ [します] thì thể [ない] giống thể [ます], còn đối với động từ [きます] thì là
+            [こ(ない)]</div>
+          べんきょうしますーーー＞べんきょうしない<br>
+          きますーーーーーーーー＞こない<br>
+        </div>
+        <div class="title" id="3">
+          3. Động từ thể [ない] + ないでください
+        </div>
+        <div class="structure">3. Động từ thể [ない] + ないでください</div>
+        <div class="meaning">Nghĩa : Đừng làm ~<br>
+          Cách dùng : Khi muốn khuyên hay yêu cầu ai không làm gì việc gì đó<br>
+        </div>
+        <div class="example">
+          <div class="example-title">Ví dụ</div>
+          わたしはげんきですから、しんぱいしないでください。<br>
+          Tôi khỏe lắm nên đừng lo lắng.<br>
+          ここでしゃしんをとらないでください.<br>
+          Xin đừng chụp ảnh ở đây<br>
+        </div>
+        <div class="title" id="4">
+          4. Động từ thể [ない] + なければなりません
+        </div>
+        <div class="structure">4. Động từ thể [ない] + なければなりません</div>
+        <div class="meaning">Nghĩa : phải…, bắt buộc phải…<br>
+          Cách dùng: biểu thị một việc coi như nghĩa vụ phải làm, bất chấp ý hướng của người làm.<br>
+          *động từ chia sang thể [ない], bỏ [い] + [ければなりません]<br>
+        </div>
+        <div class="example">
+          <div class="example-title">Ví dụ</div>
+          くすり)をのまなければなりません。<br>
+          Phải uống thuốc.<br>
+          まいにちにほんごをべんきょうしなければなりません。<br>
+          Hàng ngày (tôi) phải học tiếng Nhật.<br>
+        </div>
+        <div class="title" id="5">
+          5. Động từ thể [ない] + なくてもいいです
+        </div>
+        <div class="structure">5. Động từ thể [ない] + なくてもいいです</div>
+        <div class="meaning">Nghĩa : Không phải làm ~<br>
+          Cách dùng : biểu thị sự không cần thiết của hành vi mà động từ diễn tả<br>
+          *động từ chia sang thể [ない] bỏ [い]<br></div>
+        <div class="example">
+          <div class="example-title">Ví dụ</div>
+          あすこなくてもいいです。<br>
+          Ngài mai bạn không đến cũng được.<br>
+          どようびのごごべんきょうしなくてもいいですか。<br>
+          Chiều thứ 7 không học có được không ạ?<br>
+        </div>
+        <div class="title" id="6">
+          6. Danh từ(tân ngữ) は
+        </div>
+        <div class="structure">6. Danh từ(tân ngữ) は</div>
+        <div class="meaning">Cách dùng:<br>
+          Đưa tân ngữ lên làm chủ đề nhằm nhấn mạnh ý muốn diễn tả<br>
+          Vì được đưa lên làm chủ đề nên trợ từ [を] của tân ngữ được thay bằng [は]<br></div>
+        <div class="example">
+          <div class="example-title">Ví dụ</div>
+          ここににもつをおかないでください。<br>
+          Đừng để hành lý ở đây<br>
+          ->にもつはここにおかないでください。<br>
+          Hành lý thì xin đừng để ở đây<br>
+        </div>
+        <div class="title" id="7">
+          7. Danh từ (thời gian) + までに + Động từ
+        </div>
+        <div class="structure">7. Danh từ (thời gian) + までに + Động từ</div>
+        <div class="meaning">Nghĩa : Trước<br>
+          Cách dùng : hành động hay công việc phải được tiến hành trước thời hạn được chỉ định bởi [までに]<br>
+          *[までに] khác với trợ từ [まで] và trợ từ [に]</div>
+        <div class="example">
+          <div class="example-title">Ví dụ</div>
+          かいぎは５じまでにおわります。<br>
+          Cuộc họp sẽ kết thúc trước 5 giờ<br>
+          どようびまでにほんをかえさなければなりません。<br>
+          Phải trả sách trước thứ 7<br>
+        </div>
+      </div>
+      <div class="flex-list">
+        <div class="list-title">Danh sách tổng hợp</div>
+        <ul>
+          <a href="#1">
+            <li>1. Thể ない của động từ</li>
+          </a>
+          <a href="#2">
+            <li>2. Chia động từ thể [ない]</li>
+          </a>
+          <a href="#3">
+            <li>3. Động từ thể [ない] + ないでください</li>
+          </a>
+          <a href="#4">
+            <li>4. Động từ thể [ない] + なければなりません</li>
+          </a>
+          <a href="#5">
+            <li>5. Động từ thể [ない] + なくてもいいです</li>
+          </a>
+          <a href="#6">
+            <li>6. Danh từ(tân ngữ) は</li>
+          </a>
+          <a href="#7">
+            <li>7. Danh từ (thời gian) + までに + Động từ</li>
+          </a>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.menu-toggle').click(function () {
+        $('nav').toggleClass('active');
+      });
+      $('.link').click(function () {
+        $('nav').toggleClass('active');
+      })
+    })
+  </script>
+</body>
+
+</html>

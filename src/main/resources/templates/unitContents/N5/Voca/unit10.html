@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+	<link rel="stylesheet" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css}">
+	<link
+      rel="stylesheet" th:href="@{https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css}"
+	/>
+    <title>日本語</title>
+</head>
+
+<body>
+    <header>
+        <header-title>日本の勉強</header-title>
+        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+        <hr>
+        <nav>
+            <ul>
+                <li class="link"><a th:href="homepage">Home</a></li>
+                <li class="link"><a th:href="N5-detail">N5</a></li>
+                <li class="link"><a th:href="N4-detail">N4</a></li>
+                <li class="link"><a th:href="N3-detail">N3</a></li>
+                <li class="link"><a th:href="happyo">Happyo</a></li>
+                <li class="link"><a th:href="weekly">Weekly Vocabulary</a></li>
+                <li class="link"><a th:href="@{https://e-jan.vn/}" target="_blank">Urban-shop</a></li>
+            </ul>
+        </nav>
+    </header>
+
+	<div class="container" style="margin-top: 5%;">
+		<!-- Table -->
+		<div class="table-responsive">
+			<table class="table table-bordered">
+			  <thead class="thead-dark">
+				<tr>
+				  <th>Từ Vựng</th>
+				  <th>Hán Tự</th>
+				  <th>Âm Hán</th>
+				  <th>Nghĩa</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr>
+				  <th>あります</th>
+				  <td></td>
+				  <td></td>
+				  <td>có (tồn tại, dùng cho đồ vật)</td>
+				</tr>
+				<tr>
+				  <th>います</th>
+				  <td></td>
+				  <td></td>
+				  <td>có, ở (tồn tại, dùng cho người và động vật)</td>
+				</tr>
+				<tr>
+				  <th>いろいろ[な]</th>
+				  <td></td>
+				  <td></td>
+				  <td>nhiều, đa dạng</td>
+				</tr>
+				<tr>
+				  <th>おとこのひと</th>
+				  <td>男の人</td>
+				  <td>NAM NHÂN</td>
+				  <td>người đàn ông</td>
+				</tr>
+				<tr>
+				  <th>おんなのひと</th>
+				  <td>女の人</td>
+				  <td>NỮ NHÂN</td>
+				  <td>người đàn bà</td>
+				</tr>
+				<tr>
+				  <th>おとこのこ</th>
+				  <td>男の子</td>
+				  <td>NAM TỬ</td>
+				  <td>cậu con trai</td>
+				</tr>
+				<tr>
+				  <th>おんなのこ</th>
+				  <td>女の子</td>
+				  <td>NỮ TỬ</td>
+				  <td>cô con gái</td>
+				</tr>
+				<tr>
+				  <th>いぬ</th>
+				  <td>犬</td>
+				  <td>KHUYỂN</td>
+				  <td>chó</td>
+				</tr>
+				<tr>
+				  <th>ねこ</th>
+				  <td>猫</td>
+				  <td>MIÊU</td>
+				  <td>mèo</td>
+				</tr>
+				<tr>
+				  <th>パンダ</th>
+				  <td></td>
+				  <td></td>
+				  <td>gấu trúc</td>
+				</tr>
+				<tr>
+				  <th>ぞう</th>
+				  <td>象</td>
+				  <td>TƯỢNG</td>
+				  <td>voi</td>
+				</tr>
+				<tr>
+				  <th>き</th>
+				  <td>木</td>
+				  <td>MỘC</td>
+				  <td>cây, gỗ</td>
+				</tr>
+				<tr>
+				  <th>もの</th>
+				  <td>物</td>
+				  <td>VẬT</td>
+				  <td>vật, đồ vật</td>
+				</tr>
+				<tr>
+				  <th>でんち</th>
+				  <td>電池</td>
+				  <td>ĐIỆN TRÌ</td>
+				  <td>Pin</td>
+				</tr>
+				<tr>
+				  <th>はこ</th>
+				  <td>箱</td>
+				  <td>TƯƠNG</td>
+				  <td>hộp</td>
+				</tr>
+				<tr>
+				  <th>スイッチ</th>
+				  <td></td>
+				  <td></td>
+				  <td>công tắc</td>
+				</tr>
+				<tr>
+				  <th>れいぞうこ</th>
+				  <td>冷蔵庫</td>
+				  <td>LÃNH TÀN KHỐ</td>
+				  <td>tủ lạnh</td>
+				</tr>
+				<tr>
+				  <th>テーブル</th>
+				  <td></td>
+				  <td></td>
+				  <td>bàn</td>
+				</tr>
+				<tr>
+				  <th>ベッド</th>
+				  <td></td>
+				  <td></td>
+				  <td>giường</td>
+				</tr>
+				<tr>
+				  <th>たな</th>
+				  <td>棚</td>
+				  <td>BẰNG</td>
+				  <td>giá sách</td>
+				</tr>
+				<tr>
+				  <th>ドア</th>
+				  <td></td>
+				  <td></td>
+				  <td>cửa</td>
+				</tr>
+				<tr>
+				  <th>まど</th>
+				  <td>窓</td>
+				  <td>SONG</td>
+				  <td>cửa sổ</td>
+				</tr>
+				<tr>
+				  <th>ポスト</th>
+				  <td></td>
+				  <td></td>
+				  <td>hộp thư, hòm thư</td>
+				</tr>
+				<tr>
+				  <th>ビル</th>
+				  <td></td>
+				  <td></td>
+				  <td>toà nhà</td>
+				</tr>
+				<tr>
+				  <th>ATM</th>
+				  <td></td>
+				  <td></td>
+				  <td>máy rút tiền tự động ATM</td>
+				</tr>
+				<tr>
+				  <th>コンビニ</th>
+				  <td></td>
+				  <td></td>
+				  <td>cửa hàng tiện lợi (mở 24/24)</td>
+				</tr>
+				<tr>
+				  <th>こうえん</th>
+				  <td>公園</td>
+				  <td>CÔNG VIÊN</td>
+				  <td>công viên</td>
+				</tr>
+				<tr>
+				  <th>きっさてん</th>
+				  <td>喫茶店</td>
+				  <td>KHIẾT TRÀ ĐIẾM</td>
+				  <td>quán giải khát, quán cà-phê</td>
+				</tr>
+				<tr>
+				  <th>～や</th>
+				  <td>～屋</td>
+				  <td>ỐC</td>
+				  <td>hiệu ~, cửa hàng ~</td>
+				</tr>
+				<tr>
+				  <th>のりば</th>
+				  <td>乗り場</td>
+				  <td>THỪA TRƯỜNG</td>
+				  <td>bến xe, điểm lên xuống xe</td>
+				</tr>
+				<tr>
+				  <th>けん</th>
+				  <td>県</td>
+				  <td>HUYỆN</td>
+				  <td>tỉnh</td>
+				</tr>
+				<tr>
+				  <th>うえ</th>
+				  <td>上</td>
+				  <td>THƯỢNG</td>
+				  <td>trên</td>
+				</tr>
+				<tr>
+				  <th>した</th>
+				  <td>下</td>
+				  <td>HẠ</td>
+				  <td>dưới</td>
+				</tr>
+				<tr>
+				  <th>まえ</th>
+				  <td>前</td>
+				  <td>TIỀN</td>
+				  <td>trước</td>
+				</tr>
+				<tr>
+				  <th>うしろ</th>
+				  <td></td>
+				  <td></td>
+				  <td>sau</td>
+				</tr>
+				<tr>
+				  <th>みぎ</th>
+				  <td>右</td>
+				  <td>HUỮ</td>
+				  <td>phải</td>
+				</tr>
+				<tr>
+				  <th>ひだり</th>
+				  <td>左</td>
+				  <td>TẢ</td>
+				  <td>trái</td>
+				</tr>
+				<tr>
+				  <th>なか</th>
+				  <td>中</td>
+				  <td>TRUNG</td>
+				  <td>trong, giữa</td>
+				</tr>
+				<tr>
+				  <th>そと</th>
+				  <td>外</td>
+				  <td>NGOẠI</td>
+				  <td>ngoài</td>
+				</tr>
+				<tr>
+				  <th>となり</th>
+				  <td>隣</td>
+				  <td>LÂN</td>
+				  <td>bên cạnh</td>
+				</tr>
+				<tr>
+				  <th>ちかく</th>
+				  <td>近く</td>
+				  <td>CẬN</td>
+				  <td>gần</td>
+				</tr>
+				<tr>
+				  <th>あいだ</th>
+				  <td>間</td>
+				  <td>GIAN</td>
+				  <td>giữa</td>
+				</tr>
+				<tr>
+				  <th>～や～[など] ~</th>
+				  <td></td>
+				  <td></td>
+				  <td>~và ~, [v.v.]</td>
+				</tr>
+				<tr>
+				  <th colspan="3">[どうも]すみません。</th>
+				  <td>Cám ơn</td>
+				</tr>
+				<tr>
+				  <th colspan="3">ナンプラー</th>
+				  <td>nampla, nước mắn</td>
+				</tr>
+				<tr>
+				  <th colspan="3">コーナー</th>
+				  <td>góc, khu vực</td>
+				</tr>
+				<tr>
+				  <th colspan="3">
+					いちばん<ruby>下<rp>（</rp><rt>した</rt><rp>）</rp></ruby>
+				  </th>
+				  <td>ở dưới cùng</td>
+				</tr>
+				<tr>
+				  <th colspan="3">
+					<ruby>東京<rp>（</rp><rt>とうきょう</rt><rp>）</rp></ruby
+					>ディズニーランド
+				  </th>
+				  <td>Công viên Tokyo Disneyland</td>
+				</tr>
+				<tr>
+				  <th colspan="3">アジアストア</th>
+				  <td>tên một siêu thị (giả định)</td>
+				</tr>
+			  </tbody>
+			</table>
+		  </div>
+		<!-- End Table -->
+	  </div>
+	  
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.menu-toggle').click(function () {
+                $('nav').toggleClass('active');
+            });
+            $('.link').click(function () {
+                $('nav').toggleClass('active');
+            })
+        })
+	</script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
