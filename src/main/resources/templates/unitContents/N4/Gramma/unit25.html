@@ -2,20 +2,87 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" th:href="@{/css/style.css}">
-	<link rel="stylesheet" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css}">
-	<link rel="stylesheet" th:href="@{https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css}" />
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" th:href="@{/css/style.css}" />
+	<link rel="stylesheet" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css}" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
 	<title>日本語</title>
+	<style>
+		.flex-container {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.flex-content {
+			width: 65%;
+			height: auto;
+			margin: 0 10px 0 0;
+			border: #888 1px solid;
+			padding: 15px;
+			box-shadow: 3px 8px #888888;
+		}
+
+		.flex-list {
+			width: 30%;
+			height: 300px;
+			padding: 5px;
+			position: sticky;
+			top: 0;
+			border: 1px solid #888;
+			box-shadow: 5px 10px #888888;
+		}
+
+		.title {
+			font-size: 2em;
+			letter-spacing: -1px;
+			text-align: left;
+		}
+
+		.structure {
+			color: #008080;
+			font-size: 20px;
+		}
+
+		.meaning {
+			color: coral;
+		}
+
+		.example {
+			margin-bottom: 15px;
+			line-height: 2em;
+		}
+
+		.example-title {
+			font-size: 20px;
+			font-style: oblique;
+			text-decoration: underline;
+		}
+
+		.list-title {
+			font-size: 20px;
+			color: #008080;
+			text-align: center;
+		}
+
+		@media screen and (max-width: 640px) {
+			.flex-content {
+				width: 100%;
+			}
+
+			.flex-list {
+				display: none;
+			}
+		}
+	</style>
 </head>
 
 <body>
 	<header>
 		<header-title>日本の勉強</header-title>
 		<div class="menu-toggle"><i class="fas fa-bars"></i></div>
-		<hr>
+		<hr />
 		<nav>
 			<ul>
 				<li class="link"><a th:href="homepage">Home</a></li>
@@ -24,158 +91,156 @@
                 <li class="link"><a th:href="N3-detail">N3</a></li>
 				<li class="link"><a th:href="happyo">Happyo</a></li>
 				<li class="link"><a th:href="weekly">Weekly Vocabulary</a></li>
-				<li class="link"><a th:href="@{https://e-jan.vn/}" target="_blank">Urban-shop</a></li>
+				<li class="link">
+					<a th:href="@{https://e-jan.vn/}" target="_blank">Urban-shop</a>
+				</li>
 			</ul>
 		</nav>
 	</header>
 
 	<div class="container" style="margin-top: 5%;">
-		<!-- Table -->
-		<div class="table-responsive">
-			<table class="table table-bordered">
-				<thead class="thead-dark">
-					<tr>
-						<th>Từ Vựng</th>
-						<th>Hán Tự</th>
-						<th>Âm Hán</th>
-						<th>Nghĩa</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<th>かんがえます</th>
-						<td>考えます</td>
-						<td>KHẢO</td>
-						<td>nghĩ, suy nghĩ</td>
-					</tr>
-					<tr>
-						<th>つきます</th>
-						<td>着きます</td>
-						<td>TRƯỚC</td>
-						<td>đến</td>
-					</tr>
-					<tr>
-						<th>とります<br />[としを～]</th>
-						<td>取ります<br />[年を～]</td>
-						<td>THỦ<br />NIÊN</td>
-						<td>thêm [tuổi]</td>
-					</tr>
-					<tr>
-						<th>たります</th>
-						<td>足ります</td>
-						<td>ĐỦ</td>
-						<td>đủ</td>
-					</tr>
-					<tr>
-						<th>いなか</th>
-						<td>&nbsp;田舎</td>
-						<td>ĐIỀN XÁ</td>
-						<td>quê, nông thôn</td>
-					</tr>
-					<tr>
-						<th>チャンス</th>
-						<td></td>
-						<td></td>
-						<td>cơ hội</td>
-					</tr>
-					<tr>
-						<th>おく</th>
-						<td>&nbsp;億</td>
-						<td>ỨC</td>
-						<td>một trăm triệu</td>
-					</tr>
-					<tr>
-						<th>もし[～たら]</th>
-						<td></td>
-						<td></td>
-						<td>nếu [~ thì]</td>
-					</tr>
-					<tr>
-						<th>いみ</th>
-						<td>意味</td>
-						<td>Ý VỊ</td>
-						<td>nghĩa, ý nghĩa</td>
-					</tr>
-					<tr>
-						<th colspan="3">もしもし</th>
-						<td>A-lô</td>
-					</tr>
-					<tr>
-						<th colspan="3">
-							<ruby>転勤<rp>（</rp>
-								<rt>てんきん</rt>
-								<rp>）</rp>
-							</ruby>
-						</th>
-						<td>
-							việc chuyển địa điểm làm việc<br />(～します：chuyển địa điểm
-							làm việc)
-						</td>
-					</tr>
-					<tr>
-						<th colspan="3">こと</th>
-						<td>việc , chuyện (~の　こと: việc ~)</td>
-					</tr>
-					<tr>
-						<th colspan="3">
-							<ruby>暇<rp>（</rp>
-								<rt>ひま</rt>
-								<rp>）</rp>
-							</ruby>
-						</th>
-						<td>thời gian rảnh</td>
-					</tr>
-					<tr>
-						<th colspan="3">
-							[いろいろ]お<ruby>世話<rp>（</rp>
-								<rt>せわ</rt>
-								<rp>）</rp>
-							</ruby>になりました。
-						</th>
-						<td>Anh/chị đã giúp tôi (nhiều).</td>
-					</tr>
-					<tr>
-						<th colspan="3">
-							<ruby>頑張<rp>（</rp>
-								<rt>がんば</rt>
-								<rp>）</rp>
-							</ruby>ります
-						</th>
-						<td>cố, cố gắng</td>
-					</tr>
-					<tr>
-						<th colspan="3">
-							どうぞお<ruby>元気<rp>（</rp>
-								<rt>げんき</rt>
-								<rp>）</rp>
-							</ruby>で。
-						</th>
-						<td>Chúc anh/chị mạnh khỏe.</td>
-					</tr>
-					<tr>
-						<th colspan="3">ベトナム</th>
-						<td>Việt Nam</td>
-					</tr>
-				</tbody>
-			</table>
+		<div class="flex-container">
+			<div class="flex-content">
+				<!-- Phần 1 -->
+				<div class="title" id="1">
+					1. Khiêm nhường ngữ
+				</div>
+				<div class="meaning">
+					Là cách nói hạ mình dùng để nói hành vi bản thân qua đó thể hiện sự
+					kính trọng với người nghe hay người được nói tới
+				</div>
+				<div class="structure">
+					1. お / ご～します
+					<br />
+					お / ご động từ nhóm I, II thể ます + します
+				</div>
+				<div class="example">
+					<div class="example-title">Ví dụ</div>
+					おもそうですね。おもちしましょうか (1) <br />
+					Trông nặng quá nhỉ. Tôi mang giúp anh chị nhé <br />
+					わたくじがしゃちょうにスケジュールをおしらせします (2) <br />
+					Tôi thông báo lịch làm việc tới giám đốc <br />
+					あにがくるまでおくります (3) <br />
+					<b>Người nói dùng cách nói khiêm nhường ngữ để nói với người nghe ở
+						(1) và ngườ được nói tới ở (2). Còn (3) chủ thể hành vi không phải
+						người nói nhưng là người ngoài thuộc cùng nhóm với người nói
+						<br />
+						Cần chú ý với cách nói này, không dùng với các động từ thể ます
+						một âm tiết</b>
+				</div>
+				<div class="structure">
+					2. ご động từ nhóm III
+					<br />
+					Cách nói này được dùng với động từ nhóm III . Ngoài ra còn có các
+					động từ khác như sau : [しょうかいします], [しょうたいします],
+					[そうだんします], [れんらくします] ,… Đối với các trường hợp ngoại
+					lệ như [でんわします], [やくそくします] ,… thì chúng ta không dùng
+					[ご] mà dùng [お] trước động từ
+				</div>
+				<div class="example">
+					<div class="example-title">Ví dụ</div>
+					きょうのよていをごせつめいします<br />
+					Tôi sẽ giải thích về lịch làm việc ngày hôm nay
+				</div>
+				<div class="structure">
+					3. Động từ khiêm nhường đặc biệt
+				</div>
+				<div class="example">
+					<table class="table table-bordered">
+						<tbody>
+							<tr>
+								<td><b>Động từ</b></td>
+								<td><b>Động từ khiêm nhường đặc biệt</b></td>
+							</tr>
+							<tr>
+								<td>いる</td>
+								<td>おる</td>
+							</tr>
+							<tr>
+								<td>言う</td>
+								<td>もうす</td>
+							</tr>
+							<tr>
+								<td>たべる/飲む</td>
+								<td>いただく</td>
+							</tr>
+							<tr>
+								<td>する</td>
+								<td>いたす</td>
+							</tr>
+							<tr>
+								<td>行く/来る</td>
+								<td>まいる</td>
+							</tr>
+							<tr>
+								<td>見る</td>
+								<td>はいけんする</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="example">
+					<div class="example-title">Ví dụ</div>
+					ベトナムからまいりました<br />
+					Tôi đến từ Việt Nam<br />
+					おおかしをいただきたいです<br />
+					Tôi muốn được nhận kẹo<br />
+					けんきゅうじょのなかにおります<br />
+					Tôi ở trong phòng nghiên cứu
+				</div>
+				<!-- Phần 2 -->
+				<div class="title" id="2">
+					2. Thể lịch sự
+				</div>
+				<div class="structure">
+					Cách dùng :
+					<b>cách nói lịch sự của người nói thể hiện sự kính trọng với người
+						nghe</b>
+				</div>
+				<div class="meaning">
+					Thể lịch sự của một số từ<br />
+					<b>ございます là thể lịch sự của あります</b><br />
+					<b>でございます là thể lịch sự của　です</b><br />
+					<b>よろしでしょうか là thể lịch sự của いいですか</b>
+				</div>
+				<div class="example">
+					<div class="example-title">Ví dụ</div>
+					でんわはかいだんのよこにございます<br />
+					Điện thoại ở cạnh cầu thang ạ<br />
+					がくせいでございます<br />
+					Tôi là học sinh ạ<br />
+					おのみものはなにがよろしでしょうか<br />
+					Đồ uống gì thì được ạ?
+				</div>
+			</div>
+
+			<div class="flex-list">
+				<div class="list-title">Danh sách tổng hợp</div>
+				<ul>
+					<a href="#1">
+						<li>1. Khiêm nhường ngữ</li>
+					</a>
+					<a href="#2">
+						<li>
+							2. Thể lịch sự
+						</li>
+					</a>
+				</ul>
+			</div>
 		</div>
-		<!-- End Table -->
 	</div>
 
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<script>
 		$(document).ready(function () {
-			$('.menu-toggle').click(function () {
-				$('nav').toggleClass('active');
+			$(".menu-toggle").click(function () {
+				$("nav").toggleClass("active");
 			});
-			$('.link').click(function () {
-				$('nav').toggleClass('active');
-			})
-		})
+			$(".link").click(function () {
+				$("nav").toggleClass("active");
+			});
+		});
 	</script>
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </body>
 
 </html>
