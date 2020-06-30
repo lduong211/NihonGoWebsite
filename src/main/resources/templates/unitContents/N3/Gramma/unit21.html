@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" th:href="@{/css/style.css}" />
+	<link rel="stylesheet" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css}" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+	<title>日本語</title>
+	<style>
+		.flex-container {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.flex-content {
+			width: 65%;
+			height: auto;
+			margin: 0 10px 0 0;
+			border: #888 1px solid;
+			padding: 15px;
+			box-shadow: 3px 8px #888888;
+		}
+
+		.flex-list {
+			width: 30%;
+			height: 300px;
+			padding: 5px;
+			position: sticky;
+			top: 0;
+			border: 1px solid #888;
+			box-shadow: 5px 10px #888888;
+		}
+
+		.title {
+			font-size: 2em;
+			letter-spacing: -1px;
+			text-align: left;
+		}
+
+		.structure {
+			color: #008080;
+			font-size: 20px;
+		}
+
+		.meaning {
+			color: coral;
+		}
+
+		.example {
+			margin-bottom: 15px;
+			line-height: 2em;
+		}
+
+		.example-title {
+			font-size: 20px;
+			font-style: oblique;
+			text-decoration: underline;
+		}
+
+		.list-title {
+			font-size: 20px;
+			color: #008080;
+			text-align: center;
+		}
+
+		@media screen and (max-width: 640px) {
+			.flex-content {
+				width: 100%;
+			}
+
+			.flex-list {
+				display: none;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<header-title>日本の勉強</header-title>
+		<div class="menu-toggle"><i class="fas fa-bars"></i></div>
+		<hr />
+		<nav>
+			<ul>
+				<li class="link"><a th:href="homepage">Home</a></li>
+				<li class="link"><a th:href="N5-detail">N5</a></li>
+                <li class="link"><a th:href="N4-detail">N4</a></li>
+                <li class="link"><a th:href="N3-detail">N3</a></li>
+				<li class="link"><a th:href="happyo">Happyo</a></li>
+				<li class="link"><a th:href="weekly">Weekly Vocabulary</a></li>
+				<li class="link">
+					<a th:href="@{https://e-jan.vn/}" target="_blank">Urban-shop</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="container" style="margin-top: 5%;">
+		<div class="flex-container">
+			<div class="flex-content">
+				<!-- Phần 1 -->
+				<div class="title" id="1">
+					1. ところです
+				</div>
+				<div class="meaning">
+					[ところ] có nghĩa gốc là địa điểm, ngoài ra nó còn biểu thị thời
+					điểm. Ở bài này chúng ta sẽ học nghĩa thứ 2. Mẫu câu này dùng để
+					biểu thị và nhấn mạnh rằng thời điểm hiện tại có vị trí như thế nào
+					trong quá trình diễn tiến của một hành vì hay một sự việc nào đó
+				</div>
+				<div class="structure">
+					Động từ nguyên dạng + ところです
+				</div>
+				<div class="meaning">
+					Nghĩa: sắp sửa (làm ～), chuẩn bị (làm ～)<br />
+					<b>Dùng để diễn tả ý nói một hành động sắp sửa, chuẩn bị diễn ra và
+						nhấn mạnh vào thời điểm trước khi diễn ra hành động đó. Mẫu câu
+						này Thường đi kèm với các cụm từ chỉ thời điểm như [これから] và
+						[（ちょうど）いまから]</b>
+				</div>
+				<div class="example">
+					<div class="example-title">Ví dụ</div>
+					かいぎはもうはじまりましたか<br />
+					Cuộc họp đã bắt đầu rồi à?<br />
+					いいえ、いまからはじまるところです<br />
+					Chưa, sắp sửa bắt đầu.<br />
+					ちょうどいまからおちゃをのむところです。いっしょにいかがですか<br />
+					Đúng lúc tôi chuẩn bị uống trà. Bạn uống cùng tôi nhé!<br />
+					ひるごはんはもう たべましたか<br />
+					Bạn đã ăn trưa rồi à?<br />
+					いいえ、これからたべるところです<br />
+					Chưa, tôi chuẩn bị ăn bây giờ
+				</div>
+				<div class="structure">
+					Động từ thể て いるところです
+				</div>
+				<div class="meaning">
+					Nghĩa: đang (làm ～), đang trong lúc (làm ～)<br />
+					<b>Dùng để diễn tả hành động đang diễn ra tại 1 thời điểm nào đó,
+						nhấn mạnh vào thời điểm hành động đang xảy ra (mạnh hơn V
+						ています). Mẫu câu này thường đi kèm với trạng từ chỉ thời gian
+						[いま]</b>
+				</div>
+				<div class="example">
+					<div class="example-title">Ví dụ</div>
+					こしょうのげんいんがわかりしか?<br />
+					Anh/ chị đã biết nguyên nhân hỏng chưa?<br />
+					いいえ、いま しらべて いるところです<br />
+					Chưa, bây giờ tôi đang xem
+				</div>
+				<div class="structure">
+					Động từ thể た ところです
+				</div>
+				<div class="meaning">
+					Nghĩa: vừa mới (làm ～) xong<br />
+					<b>Dùng để diễn tả 1 hành động vừa mới kết thúc trong và nhấn mạnh
+						vào thời điểm ngay sau khi hành động hoàn thành <br />Mẫu câu này
+						chỉ đi được với trạng từ chỉ thời gian [たったいま]</b>
+				</div>
+				<div class="example">
+					<div class="example-title">Ví dụ</div>
+					８じのバスはもうでましたか<br />
+					Chuyến xe 8 giờ đã đi rồi à?<br />
+					はい、たったいまでたところです。<br />
+					Vâng, vừa mới đi
+				</div>
+				<div class="structure">
+					Chú ý :<br />
+					Không sử dụng nếu chủ ngữ không phải là sinh vật<br />
+					Không sử dụng với các động từ chỉ trạng thái kết quả như :
+					けっこんしている、しっている,…
+				</div>
+				<!-- Phần 2 -->
+				<div class="title" id="2">
+					2. Động từ thể た + ばかりです
+				</div>
+				<div class="meaning">
+					Nghĩa: mới / vừa mới (làm ～)
+				</div>
+				<div class="structure">
+					Dùng để diễn tả hành động vừa mới hoàn thành, vừa mới kết thúc nhưng
+					chưa lâu lắm<br />
+					Thời điểm xảy ra chưa lâu đó hoàn toàn là do phán đoán chủ quan của
+					người nói (có thể là mới đây hoặc cũng có thể là đã lâu rồi)
+				</div>
+				<div class="example">
+					<div class="example-title">Ví dụ</div>
+					やまださんとやまもとさんは ３げつまえにけっこんしたばかりです<br />
+					Cô Yamada và anh Yamamoto vừa kết hôn 3 tháng trước<br />
+					このカメラはきのうかったばかりです<br />
+					Cái máy ảnh này hôm qua tôi vừa mua
+				</div>
+				<!-- Phần 3 -->
+				<div class="title" id="3">
+					3. + はずです
+				</div>
+				<div class="structure">
+					Động từ thể nguyên dạng + はずです<br />
+					Động từ thể　ない + はずです<br />
+					tính từ đuôi い（～い） + はずです<br />
+					Tính từ đuôi　な （～な） + はずです<br />
+					danh từ の + はずです
+				</div>
+				<div class="meaning">
+					Nghĩa : Chắc chắn<br />
+					Cách dùng :
+					<b>người nói dựa trên một căn cứ nào đó, phán đoán là chắc chắn một
+						việc gì đó sẽ xảy ra</b>
+				</div>
+				<div class="example">
+					<div class="example-title">Ví dụ</div>
+					ミラーさんはきょうくるでしょうか？<br />
+					Hôm nay anh Miller có đến không?<br />
+					くるはずですよ。きのうでんわがありましたから<br />
+					Chắn chắn anh ấy sẽ đến. Hôm qua tôi có nhận được điện thoại của anh
+					ấy
+				</div>
+			</div>
+
+			<div class="flex-list">
+				<div class="list-title">Danh sách tổng hợp</div>
+				<ul>
+					<a href="#1">
+						<li>1. ところです</li>
+					</a>
+					<a href="#2">
+						<li>
+							2. Động từ thể た + ばかりです
+						</li>
+					</a>
+					<a href="#3">
+						<li>
+							3. + はずです
+						</li>
+					</a>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$(".menu-toggle").click(function () {
+				$("nav").toggleClass("active");
+			});
+			$(".link").click(function () {
+				$("nav").toggleClass("active");
+			});
+		});
+	</script>
+</body>
+
+</html>

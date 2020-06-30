@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" th:href="@{/css/style.css}" />
+	<link rel="stylesheet" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css}" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+	<title>日本語</title>
+	<style>
+		.flex-container {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.flex-content {
+			width: 65%;
+			height: auto;
+			margin: 0 10px 0 0;
+			border: #888 1px solid;
+			padding: 15px;
+			box-shadow: 3px 8px #888888;
+		}
+
+		.flex-list {
+			width: 30%;
+			height: 300px;
+			padding: 5px;
+			position: sticky;
+			top: 0;
+			border: 1px solid #888;
+			box-shadow: 5px 10px #888888;
+		}
+
+		.title {
+			font-size: 2em;
+			letter-spacing: -1px;
+			text-align: left;
+		}
+
+		.structure {
+			color: #008080;
+			font-size: 20px;
+		}
+
+		.meaning {
+			color: coral;
+		}
+
+		.example {
+			margin-bottom: 15px;
+			line-height: 2em;
+		}
+
+		.example-title {
+			font-size: 20px;
+			font-style: oblique;
+			text-decoration: underline;
+		}
+
+		.list-title {
+			font-size: 20px;
+			color: #008080;
+			text-align: center;
+		}
+
+		@media screen and (max-width: 640px) {
+			.flex-content {
+				width: 100%;
+			}
+
+			.flex-list {
+				display: none;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<header-title>日本の勉強</header-title>
+		<div class="menu-toggle"><i class="fas fa-bars"></i></div>
+		<hr />
+		<nav>
+			<ul>
+				<li class="link"><a th:href="homepage">Home</a></li>
+				<li class="link"><a th:href="N5-detail">N5</a></li>
+                <li class="link"><a th:href="N4-detail">N4</a></li>
+                <li class="link"><a th:href="N3-detail">N3</a></li>
+				<li class="link"><a th:href="happyo">Happyo</a></li>
+				<li class="link"><a th:href="weekly">Weekly Vocabulary</a></li>
+				<li class="link">
+					<a th:href="@{https://e-jan.vn/}" target="_blank">Urban-shop</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="container" style="margin-top: 5%;">
+		<div class="flex-container">
+			<div class="flex-content">
+				<!-- Phần 1 -->
+				<div class="title" id="1">
+					1. そうです
+				</div>
+				<div class="meaning">
+					Mẫu câu này về cơ bản diễn tả suy đoán dựa trên thông tin thu thập
+					được từ thị giác
+				</div>
+				<div class="structure">
+					Động từ thể ます + そうです -
+					<b>khi một trạng thái nào đó khiến người ta suy đoán rằng một sự
+						việc nào đó có vẻ sẽ xảy ra</b>
+				</div>
+				<div class="meaning">
+					Nghĩa : Có vẻ sắp
+				</div>
+				<div class="example">
+					<div class="example-title">Ví dụ</div>
+					あめがふりそうです<br />
+					Trời trông có vẻ sắp mưa nhỉ<br />
+					シャンプーがなくなりそうです<br />
+					Dầu gội có vẻ sắp hết rồi
+				</div>
+				<div class="structure">
+					Tính từ đuôi い(bỏ [い]) / tính từ đuôi な(bỏ [な]) + そうです -
+					<b>diễn tả suy đoán dựa trên bề ngoài của sự vật dù chưa xác nhận
+						thực tế như thế nào</b>
+				</div>
+				<div class="meaning">
+					Nghĩa : Có vẻ
+				</div>
+				<div class="example">
+					<div class="example-title">Ví dụ</div>
+					このりょうりはおいしそうです<br />
+					Món này có vẻ ngon này<br />
+					このつくえはじょうぶそうです<br />
+					Cái bàn này có vẻ chắc chắn
+				</div>
+				<!-- Phần 2 -->
+				<div class="title" id="2">
+					2. Động từ thể て + きます
+				</div>
+				<div class="structure">
+					Động từ thể て + きます
+				</div>
+				<div class="meaning">
+					Nghĩa : Đi đến một đại điểm nào đó để thực hiện một hành vi nào đó
+					rồi về
+				</div>
+				<div class="example">
+					<div class="example-title">Ví dụ</div>
+					ちょっとたばこをかってきます。<br />
+					Tôi đi mua thuốc lá một chút rồi về<br />
+					スーパーでミルクをかってきます<br />
+					Tôi đến siêu thị mua sữa rồi về<br />
+					だいどころからコップをとってきます<br />
+					Tôi đi lấy cái cốc từ nhà bếp<br />
+					<b>Chú ý : Trong mẫu câu này, ta dùng [で] để biểu thị đia điểm.
+						Cũng có thể sử dụng [から] trong trường hợp sự di chuyển của đồ
+						vật là tiêu điểm của câu</b>
+				</div>
+				<div class="structure">
+					Danh từ (địa điểm) へ いって　きます
+				</div>
+				<div class="meaning">
+					Nghĩa : Đi đến một địa điểm nào đó rồi quay trở về
+				</div>
+				<div class="example">
+					<div class="example-title">Ví dụ</div>
+					ゆうびんきょくへいってきます<br />
+					Tôi đến bưu điện về rồi
+				</div>
+				<div class="structure">
+					でかけて きます
+				</div>
+				<div class="meaning">
+					Nghĩa : Đi đâu đó ra ngoài rồi trở về
+				</div>
+				<div class="example">
+					<div class="example-title">Ví dụ</div>
+					ちょっと でかけて きます<br />
+					Tôi ra ngoài một chút rồi về
+				</div>
+			</div>
+
+			<div class="flex-list">
+				<div class="list-title">Danh sách tổng hợp</div>
+				<ul>
+					<a href="#1">
+						<li>1. そうです</li>
+					</a>
+					<a href="#2">
+						<li>
+							2. Động từ thể て + きます
+						</li>
+					</a>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$(".menu-toggle").click(function () {
+				$("nav").toggleClass("active");
+			});
+			$(".link").click(function () {
+				$("nav").toggleClass("active");
+			});
+		});
+	</script>
+</body>
+
+</html>

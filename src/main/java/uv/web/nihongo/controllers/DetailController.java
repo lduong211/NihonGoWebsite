@@ -20,6 +20,6 @@ public class DetailController {
     //N3
     @GetMapping(value = "/N3-detail")
     public String getN3DetailPage() {
-        return "unitContents/N5/detail";
+        return "unitContents/N3/detail";
     }
 }
