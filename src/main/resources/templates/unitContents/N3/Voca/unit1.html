@@ -2,377 +2,753 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" th:href="@{/css/style.css}">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" th:href="@{/css/style.css}">
 	<link rel="stylesheet" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css}">
-	<link
-      rel="stylesheet" th:href="@{https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css}"
-	/>
-    <title>日本語</title>
+	<link rel="stylesheet" th:href="@{https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css}" />
+	<title>日本語</title>
 </head>
 
 <body>
-    <header>
-        <header-title>日本の勉強</header-title>
-        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
-        <hr>
-        <nav>
-            <ul>
-                <li class="link"><a th:href="homepage">Home</a></li>
-                <li class="link"><a th:href="N5-detail">N5</a></li>
-                <li class="link"><a th:href="N4-detail">N4</a></li>
-                <li class="link"><a th:href="N3-detail">N3</a></li>
-                <li class="link"><a th:href="happyo">Happyo</a></li>
-                <li class="link"><a th:href="weekly">Weekly Vocabulary</a></li>
-                <li class="link"><a th:href="@{https://e-jan.vn/}" target="_blank">Urban-shop</a></li>
-            </ul>
-        </nav>
+	<header>
+		<header-title>日本の勉強</header-title>
+		<div class="menu-toggle"><i class="fas fa-bars"></i></div>
+		<hr>
+		<nav>
+			<ul>
+				<li class="link"><a th:href="homepage">Home</a></li>
+				<li class="link"><a th:href="detail">N5</a></li>
+				<li class="link"><a th:href="detail">N4</a></li>
+				<li class="link"><a th:href="detail">N3</a></li>
+				<li class="link"><a th:href="happyo">Happyo</a></li>
+				<li class="link"><a th:href="weekly">Weekly Vocabulary</a></li>
+				<li class="link"><a th:href="@{https://e-jan.vn/}" target="_blank">Urban-shop</a></li>
+			</ul>
+		</nav>
 	</header>
-	
+
 	<div class="container" style="margin-top: 5%;">
 		<!-- Table -->
 		<div class="table-responsive">
 			<table class="table table-bordered">
-			  <thead class="thead-dark">
-				<tr>
-					<th>Từ Vựng</th>
-					<th>Hán Tự</th>
-					<th>Âm Hán</th>
-					<th>Nghĩa</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<th>みます</td>
-					<td>見る</td>
-					<td>kiến</td>`
-					<td>xem,nhìn</td>
-				</tr>
-				<tr>
-					<th>さがします</th>
-					<td>探します,捜します</td>
-					<td>THÁM、SƯU</td>
-					<td>tìm, tìm kiếm</td>
-				</tr>
-				<tr>
-					<th>[じかんに～] おくれます</th>
-					<td>[時間に～]遅れます
-					</td>
-					<td>THỜI GIAN TRÌ</td>
-					<td>chậm, muộn [cuộc hẹn,v.v.]</td>
-				</tr>
-				<tr>
-					<th>やります</th>
-					<td></td>
-					<td></td>
-					<td>làm</td>
-				</tr>
-				<tr>
-					<th>[パーティーに～]さんかします</th>
-					<td>[パーティーに～]参加します</td>
-					<td>THAM GIA</td>
-					<td>tham gia, dự [buổi tiệc]</td>
-				</tr>
-				<tr>
-					<th>もうしこみます</th>
-					<td>申し込みます</td>
-					<td>THÂN VÀO</td>
-					<td>đăng ký</td>
-				</tr>
-				<tr>
-					<th>つごうが　いい</th>
-					<td>都合が　いい</td>
-					<td>ĐÔ HỢP</td>
-					<td>có thời gian, thuận tiện</td>
-				</tr>
-				<tr>
-					<th>つごうが　わるい</th>
-					<td>都合が　悪い</td>
-					<td>ĐÔ HỢP ÁC</td>
-					<td>không có thời gian, bận, không thuận tiện</td>
-				</tr>
-				<tr>
-					<th>きぶんがいい</th>
-					<td>気分がいい</td>
-					<td>KHÍ PHÂN</td>
-					<td>cảm thấy tốt, cảm thấy khỏe</td>
-				</tr>
-				<tr>
-					<th>
-						しんぶんしゃ</th>
-					<td>新聞社</td>
-					<td>TÂN VĂN XÃ</td>
-					<td>công ty phát hành báo, tòa soạn báo
-				</tr>
-				<tr>
-					<th>うんどうかい</th>
-					<td>運動会</td>
-					<td>VẬN ĐỘNG HỘI</td>
-					<td>hội thi thể thao</td>
-				</tr>
-				<tr>
-					<th>ばしょ</th>
-					<td>場所</td>
-					<td>TRƯỜNG SỞ</td>
-					<td>địa điểm</td>
-				</tr>
-				<tr>
-					<th>ボランティア</th>
-					<td></td>
-					<td></td>
-					<td>tình nguyện viên</td>
-				</tr>
-				<tr>
-					<th>～べん</th>
-					<td>～弁</td>
-					<td>BIỆN</td>
-					<td>tiếng ~, giọng ~</td>
-				</tr>
-				<tr>
-					<th>こんど</th>
-					<td>今度</td>
-					<td>KIM ĐỘ</td>
-					<td>lần tới</td>
-				</tr>
-				<tr>
-					<th>ずいぶん</th>
-					<td></td>
-					<td></td>
-					<td>khá, tương đối</td>
-				</tr>
-				<tr>
-					<th>ちょくせつ</th>
-					<td>直接</td>
-					<td>TRỰC TIẾP</td>
-					<td>trực tiếp</td>
-				</tr>
-				<tr>
-					<th>いつでも</th>
-					<td></td>
-					<td></td>
-					<td>lúc nào cũng</td>
-				</tr>
-				<tr>
-					<th>どこでも</th>
-					<td></td>
-					<td></td>
-					<td>ở đâu cũng</td>
-				</tr>
-				<tr>
-					<th>だれでも</th>
-					<td></td>
-					<td></td>
-					<td>
-						ai cũng
-					</td>
-				</tr>
-				<tr>
-					<th>なんでも</th>
-					<td>何でも</td>
-					<td>HÀ</td>
-					<td>cái gì cũng</td>
-				</tr>
-				<tr>
-					<th>こんな～</th>
-					<td></td>
-					<td></td>
-					<td>như thế này</td>
-				</tr>
+				<thead class="thead-dark">
+					<tr>
+						<th>Mục từ</th>
+						<th>Hán tự</th>
+						<th>Loại</th>
+						<th>Nghĩa</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<strong>キッチン</strong>
+						</td>
+						<td>&nbsp;</td>
+						<td>n</td>
+						<td>nhà bếp</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>だいどころ</strong>
+						</td>
+						<td>
+							<strong>
+								<ruby>台所
+									<rp>(</rp>
+									<rt>だいどころ</rt>
+									<rp>)</rp>
+								</ruby>
+							</strong>
+						</td>
+						<td>n</td>
+						<td>nhà bếp</td>
+					</tr>
+					<tr>
+						<td>
+							<rt>
+								<strong>でんし</strong>
+							</rt>
+							<rp></rp>
+							<strong>レンジ</strong>
+						</td>
+						<td>
+							<ruby>
+								<rp></rp>
+								<rt></rt>
+							</ruby>
+							<strong>
+								<ruby>電子
+									<rp>(</rp>
+									<rt>でんし</rt>
+									<rp>)</rp>
+								</ruby>レンジ</strong>
+						</td>
+						<td>n</td>
+						<td>lò vi ba</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>ワイングラス</strong>
+						</td>
+						<td>&nbsp;</td>
+						<td>n</td>
+						<td>cốc uống rượu (có chân)</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>コーヒーカップ</strong>
+						</td>
+						<td>&nbsp;</td>
+						<td>n</td>
+						<td>cốc uống cà phê</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>（お）ちゃわん</strong>
+						</td>
+						<td>
+							<strong>（お）
+								<ruby>茶
+									<rp>(</rp>
+									<rt>ちゃ</rt>
+									<rp>)</rp>
+								</ruby>わん</strong>
+						</td>
+						<td>n</td>
+						<td>cốc uống trà</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>ゆのみ</strong>
+						</td>
+						<td>
+							<strong>
+								<ruby>湯飲
+									<rp>(</rp>
+									<rt>ゆの</rt>
+									<rp>)</rp>
+								</ruby>み</strong>
+						</td>
+						<td>n</td>
+						<td>cốc uống trà</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>れいぞうこ</strong>
+						</td>
+						<td>
+							<strong>
+								<ruby>冷蔵庫
+									<rp>(</rp>
+									<rt>れいぞうこ</rt>
+									<rp>)</rp>
+								</ruby>
+							</strong>
+						</td>
+						<td>n</td>
+						<td>tủ lạnh</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>ガスレンジ</strong>
+						</td>
+						<td>&nbsp;</td>
+						<td>n</td>
+						<td>bếp ga</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>ガスコンロ</strong>
+						</td>
+						<td>&nbsp;</td>
+						<td>n</td>
+						<td>bếp ga</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>ガラスのコップ</strong>
+						</td>
+						<td>&nbsp;</td>
+						<td>n</td>
+						<td>cốc thủy tinh</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>レバー</strong>
+						</td>
+						<td>&nbsp;</td>
+						<td>n</td>
+						<td>cái cần gạt</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>ながし</strong>
+						</td>
+						<td>
+							<strong>
+								<ruby>流
+									<rp>(</rp>
+									<rt>なが</rt>
+									<rp>)</rp>
+								</ruby>し</strong>
+						</td>
+						<td>n</td>
+						<td>bồn rửa; chậu rửa</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>リビング</strong>
+						</td>
+						<td>&nbsp;</td>
+						<td>n</td>
+						<td>phòng khách</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>いま</strong>
+						</td>
+						<td>
+							<strong>
+								<ruby>居間
+									<rp>(</rp>
+									<rt>いま</rt>
+									<rp>)</rp>
+								</ruby>
+							</strong>
+						</td>
+						<td>n</td>
+						<td>phòng khách</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>まどガラス</strong>
+						</td>
+						<td>
+							<strong>
+								<ruby>窓
+									<rp>(</rp>
+									<rt>まど</rt>
+									<rp>)</rp>
+								</ruby>
+								<ruby>ガラス
+									<rp>(</rp>
+									<rt>がらす</rt>
+									<rp>)</rp>
+								</ruby>
+							</strong>
+						</td>
+						<td>n</td>
+						<td>cửa sổ bằng kính</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>あまど</strong>
+						</td>
+						<td>
+							<strong>
+								<ruby>雨戸
+									<rp>(</rp>
+									<rt>あまど</rt>
+									<rp>)</rp>
+								</ruby>
+							</strong>
+						</td>
+						<td>n</td>
+						<td>cửa trượt bảo vệ</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>あみど</strong>
+						</td>
+						<td>
+							<strong>
+								<ruby>網戸
+									<rp>(</rp>
+									<rt>あみど</rt>
+									<rp>)</rp>
+								</ruby>
+							</strong>
+						</td>
+						<td>n</td>
+						<td>cửa lưới</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>てんじょう</strong>
+						</td>
+						<td>
+							<strong>
+								<ruby>天井
+									<rp>(</rp>
+									<rt>てんじょう</rt>
+									<rp>)</rp>
+								</ruby>
+							</strong>
+						</td>
+						<td>n</td>
+						<td>trần nhà</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>ゆか</strong>
+						</td>
+						<td>
+							<strong>
+								<ruby>床
+									<rp>(</rp>
+									<rt>ゆか</rt>
+									<rp>)</rp>
+								</ruby>
+							</strong>
+						</td>
+						<td>n</td>
+						<td>sàn nhà</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>コンセント</strong>
+						</td>
+						<td>&nbsp;</td>
+						<td>n</td>
+						<td>ổ cắm (điện)</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>コード</strong>
+						</td>
+						<td>&nbsp;</td>
+						<td>n</td>
+						<td>dây điện</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>エアコン</strong>
+						</td>
+						<td>&nbsp;</td>
+						<td>n</td>
+						<td>máy điều hòa không khí</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>ヒーター</strong>
+						</td>
+						<td>&nbsp;</td>
+						<td>n</td>
+						<td>máy sưởi; lò sưởi</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>じゅうたん</strong>
+						</td>
+						<td>&nbsp;</td>
+						<td>n</td>
+						<td>thảm trải nền nhà</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>カーペット</strong>
+						</td>
+						<td>&nbsp;</td>
+						<td>n</td>
+						<td>thảm trải nền nhà</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>
+				<span style="color:#ff0000;">
+					<span style="font-size: 22px;">
+						<strong>もっとおぼえましょう!</strong>
+					</span>
+				</span>
+			</p>
+			<div class="table-responsive">
+				<table class="table table-bordered">
+					<thead class="thead-dark">
+						<tr>
+							<th>Mục từ</th>
+							<th>Hán tự</th>
+							<th>Loại</th>
+							<th>Nghĩa</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<strong>すいどう</strong>
+							</td>
+							<td>
+								<strong>
+									<ruby>水道
+										<rp>(</rp>
+										<rt>すいどう</rt>
+										<rp>)</rp>
+									</ruby>
+								</strong>
+							</td>
+							<td>&nbsp;</td>
+							<td>nước máy</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>じゃぐち</strong>
+							</td>
+							<td>
+								<strong>
+									<ruby>蛇口
+										<rp>(</rp>
+										<rt>じゃぐち</rt>
+										<rp>)</rp>
+									</ruby>
+								</strong>
+							</td>
+							<td>&nbsp;</td>
+							<td>vòi nước</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>すいどうのじゃぐちをひねる</strong>
+							</td>
+							<td>
+								<strong>
+									<ruby>水道
+										<rp>(</rp>
+										<rt>すいどう</rt>
+										<rp>)</rp>
+									</ruby>の
+									<ruby>蛇口
+										<rp>(</rp>
+										<rt>じゃぐち</rt>
+										<rp>)</rp>
+									</ruby>をひねる</strong>
+							</td>
+							<td>&nbsp;</td>
+							<td>vặn vòi nước</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>みずがこおる</strong>
+							</td>
+							<td>
+								<strong>
+									<ruby>水
+										<rp>(</rp>
+										<rt>みず</rt>
+										<rp>)</rp>
+									</ruby>が
+									<ruby>凍
+										<rp>(</rp>
+										<rt>こお</rt>
+										<rp>)</rp>
+									</ruby>る</strong>
+							</td>
+							<td>&nbsp;</td>
+							<td>nước đóng băng</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>こおりになる</strong>
+							</td>
+							<td>
+								<strong>
+									<ruby>氷
+										<rp>(</rp>
+										<rt>こおり</rt>
+										<rp>)</rp>
+									</ruby>になる</strong>
+							</td>
+							<td>&nbsp;</td>
+							<td>thành nước đá</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>れいとうしてほぞんする</strong>
+							</td>
+							<td>
+								<strong>
+									<ruby>冷凍
+										<rp>(</rp>
+										<rt>れいとう</rt>
+										<rp>)</rp>
+									</ruby>して
+									<ruby>保存
+										<rp>(</rp>
+										<rt>ほぞん</rt>
+										<rp>)</rp>
+									</ruby>する</strong>
+							</td>
+							<td>&nbsp;</td>
+							<td>bảo quản lạnh</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>のこりもの</strong>
+							</td>
+							<td>
+								<strong>
+									<ruby>残
+										<rp>(</rp>
+										<rt>のこ</rt>
+										<rp>)</rp>
+									</ruby>り
+									<ruby>物
+										<rp>(</rp>
+										<rt>もの</rt>
+										<rp>)</rp>
+									</ruby>
+								</strong>
+							</td>
+							<td>&nbsp;</td>
+							<td>đồ còn lại</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>あたためる</strong>
+							</td>
+							<td>
+								<strong>
+									<ruby>残
+										<rp>(</rp>
+										<rt>のこ</rt>
+										<rp>)</rp>
+									</ruby>り
+									<ruby>物
+										<rp>(</rp>
+										<rt>もの</rt>
+										<rp>)</rp>
+									</ruby>を</strong>
+							</td>
+							<td>&nbsp;</td>
+							<td>hâm nóng đồ ăn</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>ビールをひやす</strong>
+							</td>
+							<td>
+								<strong>ビールを
+									<ruby>冷
+										<rp>(</rp>
+										<rt>ひ</rt>
+										<rp>)</rp>
+									</ruby>やす</strong>
+							</td>
+							<td>&nbsp;</td>
+							<td>làm lạnh bia</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>ビールがひえている</strong>
+							</td>
+							<td>
+								<strong>ビールが
+									<ruby>冷
+										<rp>(</rp>
+										<rt>ひ</rt>
+										<rp>)</rp>
+									</ruby>えている</strong>
+							</td>
+							<td>&nbsp;</td>
+							<td>bia lạnh</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>エアコンのリモコン</strong>
+							</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>cái điều khiển máy lạnh</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>スイッチ</strong>
+							</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>công tắc</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>でんげんをいれる</strong>
+							</td>
+							<td>
+								<strong>
+									<ruby>電源
+										<rp>(</rp>
+										<rt>でんげん</rt>
+										<rp>)</rp>
+									</ruby>を
+									<ruby>入
+										<rp>(</rp>
+										<rt>い</rt>
+										<rp>)</rp>
+									</ruby>れる</strong>
+							</td>
+							<td>&nbsp;</td>
+							<td>bật điện (nguồn)</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>でんげんをきる</strong>
+							</td>
+							<td>
+								<strong>
+									<ruby>電源
+										<rp>(</rp>
+										<rt>でんげん</rt>
+										<rp>)</rp>
+									</ruby>を
+									<ruby>切
+										<rp>(</rp>
+										<rt>き</rt>
+										<rp>)</rp>
+									</ruby>る</strong>
+							</td>
+							<td>&nbsp;</td>
+							<td>tắt điện (nguồn)</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>じゅうたんをしく</strong>
+							</td>
+							<td>
+								<strong>じゅうたんを
+									<ruby>敷
+										<rp>(</rp>
+										<rt>し</rt>
+										<rp>)</rp>
+									</ruby>く</strong>
+							</td>
+							<td>&nbsp;</td>
+							<td>trải thảm</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>へやをあたためる</strong>
+							</td>
+							<td>
+								<strong>
+									<ruby>部屋
+										<rp>(</rp>
+										<rt>へや</rt>
+										<rp>)</rp>
+									</ruby>を
+									<ruby>暖
+										<rp>(</rp>
+										<rt>あたた</rt>
+										<rp>)</rp>
+									</ruby>める</strong>
+							</td>
+							<td>&nbsp;</td>
+							<td>làm nóng phòng</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>だんぼうをつける</strong>
+							</td>
+							<td>
+								<strong>
+									<ruby>暖房
+										<rp>(</rp>
+										<rt>だんぼう</rt>
+										<rp>)</rp>
+									</ruby>をつける</strong>
+							</td>
+							<td>&nbsp;</td>
+							<td>bật lò sưởi</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>クーラーがきいている</strong>
+							</td>
+							<td>
+								<strong>クーラーが
+									<ruby>効
+										<rp>(</rp>
+										<rt>き</rt>
+										<rp>)</rp>
+									</ruby>いている</strong>
+							</td>
+							<td>&nbsp;</td>
+							<td>máy lạnh đang hoạt động</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>れいぼうがきいている</strong>
+							</td>
+							<td>
+								<strong>
+									<ruby>冷房
+										<rp>(</rp>
+										<rt>れいぼう</rt>
+										<rp>)</rp>
+									</ruby>が
+									<ruby>効
+										<rp>(</rp>
+										<rt>き</rt>
+										<rp>)</rp>
+									</ruby>いている</strong>
+							</td>
+							<td>&nbsp;</td>
+							<td>máy lạnh đang hoạt động</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>ひあたりがいい</strong>
+							</td>
+							<td>
+								<strong>
+									<ruby>日当
+										<rp>(</rp>
+										<rt>ひあ</rt>
+										<rp>)</rp>
+									</ruby>たりがいい</strong>
+							</td>
+							<td>&nbsp;</td>
+							<td>có ánh nắng chiếu vào</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>ひあたりがわるい</strong>
+							</td>
+							<td>
+								<strong>
+									<ruby>日当
+										<rp>(</rp>
+										<rt>ひあ</rt>
+										<rp>)</rp>
+									</ruby>たりが
+									<ruby>悪
+										<rp>(</rp>
+										<rt>わる</rt>
+										<rp>)</rp>
+									</ruby>い</strong>
+							</td>
+							<td>&nbsp;</td>
+							<td>không có ánh nắng chiếu vào</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- End Table -->
+		</div>
 
-				<tr>
-					<th>そんな～</th>
-					<td></td>
-					<td></td>
-					<td>~ như thế đó (gần người nghe)</td>
-				</tr>
-
-				<tr>
-					<th>ＮＨＫ</th>
-					<td></td>
-					<td></td>
-					<td>Nippon Hoso Kyokai (hãng phát thanh truyền hình)</td>
-				</tr>
-
-				<tr>
-					<th>こどものひ</th>
-					<td>こどもの日</td>
-					<td>NHẬT</td>
-					<td>ngày trẻ em</td>
-				</tr>
-
-				<tr>
-					<th>エドヤストア</th>
-					<td></td>
-					<td></td>
-					<td>tên một cửa hàng (giả tưởng)</td>
-				</tr>
-				<tr>
-					<th>こどものひ</th>
-					<td>こどもの日</td>
-					<td>NHẬT</td>
-					<td>ngày trẻ em</td>
-				</tr>
-				<tr>
-					<th>エドヤストア</th>
-					<td></td>
-					<td></td>
-					<td>tên một cửa hàng (giả tưởng)</td>
-				</tr>
-				<tr>
-					<th>[にもつが～] かたづきます</th>
-					<td>[荷物が～] 片付きます</td>
-					<td>HÀ VẬT PHIẾN PHÓ</td>
-					<td>được dọn dẹp ngăn nắp, gọn gàng [đồ đạc ~]</td>
-				</tr>
-				<tr>
-					<th>ごみ</th>
-					<td></td>
-					<td></td>
-					<td>rác</td>
-				</tr>
-				<tr>
-					<th>	
-						だします</th>
-					<td>[ごみを～] 出します</td>
-					<td>XUẤT</td>
-					<td>đổ, để [rác]</td>
-				</tr>
-				<tr>
-					<th>もえます</th>
-					<td>[ごみが～] 燃えます</td>
-					<td>NHIÊN</td>
-					<td>cháy được [rác ~]</td>
-				</tr>
-				<tr>
-					<th>げっ・すい・きん</th>
-					<td>月・水・金</td>
-					<td>NGUYỆT THỦY KIM</td>
-					<td>thứ hai, thứ tư, thứ sáu</td>
-				</tr>
-				<tr>
-					<th>おきば</th>
-					<td>置き場</td>
-					<td>TRÍ TRƯỜNG</td>
-					<td>nơi để</td>
-				</tr>
-				<tr>
-					<th>よこ</th>
-					<td>横</td>
-					<td>HOÀNH</td>
-					<td>bên cạnh</td>
-				</tr>
-				<tr>
-					<th>びん</th>
-					<td>瓶</td>
-					<td>BÌNH</td>
-					<td>cái chai</td>
-				</tr>
-				<tr>
-					<th>かん</th>
-					<td>缶</td>
-					<td>PHẪU</td>
-					<td>cái lon, hộp kim loại</td>
-				</tr>
-				<tr>
-					<th>「お」ゆ</th>
-					<td>[お]湯</td>
-					<td>THANG</td>
-					<td>nước nóng</td>
-				</tr>
-				<tr>
-					<th>ガス</th>
-					<td></td>
-					<td></td>
-					<td>ga</td>
-				</tr>
-				<tr>
-					<th>～がいしゃ</th>
-					<td>～会社</td>
-					<td>HỘI XÃ</td>
-					<td>công ty ~</td>
-				</tr>
-				<tr>
-					<th>れんらくします</th>
-					<td>連絡します</td>
-					<td>LIÊN LẠC</td>
-					<td>liên lạc</td>
-				</tr>
-				<tr>
-					<th>こまったなあ。</th>
-					<td>困ったなあ。</td>
-					<td>KHỐN</td>
-					<td>Làm thế nào đây!/ căng quá nhỉ!/ gay quá!</td>
-				</tr>
-				<tr>
-					<th>	
-						でんしメール</th>
-					<td>電子メール
-
-					</td>
-					<td>ĐIỆN TỬ</td>
-					<td>thư điện tử, e-mail</td>
-				</tr>
-				<tr>
-					<th>うちゅう</th>
-					<td>宇宙</td>
-					<td>VŨ TRỤ</td>
-					<td>VŨ TRỤ</td>
-				</tr>
-				<tr>
-					<th>こわい</th>
-					<td>怖い</td>
-					<td>BỐ</td>
-					<td>sợ</td>
-				</tr>
-				<tr>
-					<th>うちゅうせん</th>
-					<td>宇宙船</td>
-					<td>VŨ TRỤ THUYỀN</td>
-					<td>tàu vũ trụ</td>
-				</tr>
-				<tr>
-					<th>べつの</th>
-					<td>別の</td>
-					<td>BIỆT</td>
-					<td>khác</td>
-				</tr>
-				<tr>
-					<th>うちゅうひこうし</th>
-					<td>宇宙飛行士
-
-					</td>
-					<td>VŨ TRỤ PHI HÀNH SĨ</td>
-					<td>nhà du hành vũ trụ</td>
-				</tr>
-				<tr>
-					<th>どいたかお</th>
-					<td>土井隆雄</td>
-					<td>THỔ TỈNH LONG HÙNG</td>
-					<td>nhà du hành vũ trụ người Nhật (1954- )</td>
-				</tr>
-
-			</tbody>
-		</table>
-		  </div>
-		<!-- End Table -->
-	  </div>
-	  
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.menu-toggle').click(function () {
-                $('nav').toggleClass('active');
-            });
-            $('.link').click(function () {
-                $('nav').toggleClass('active');
-            })
-        })
-	</script>
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				$('.menu-toggle').click(function () {
+					$('nav').toggleClass('active');
+				});
+				$('.link').click(function () {
+					$('nav').toggleClass('active');
+				})
+			})
+		</script>
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </body>
 
 </html>

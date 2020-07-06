@@ -23,66 +23,66 @@ public class N3UnitContentController {
     }
 
     // Gramma Units
-    // @GetMapping(value = "/N3-gramma-1")
-    // public String getGrammaUnit1Page() {
-    //     return "unitContents/N3/Gramma/unit1";
-    // }
-    // @GetMapping(value = "/N3-gramma-2")
-    // public String getGrammaUnit2Page() {
-    //     return "unitContents/N3/Gramma/unit2";
-    // }
-    // @GetMapping(value = "/N3-gramma-3")
-    // public String getGrammaUnit3Page() {
-    //     return "unitContents/N3/Gramma/unit3";
-    // }
-    // @GetMapping(value = "/N3-gramma-4")
-    // public String getGrammaUnit4Page() {
-    //     return "unitContents/N3/Gramma/unit4";
-    // }
-    // @GetMapping(value = "/N3-gramma-5")
-    // public String getGrammaUnit5Page() {
-    //     return "unitContents/N3/Gramma/unit5";
-    // }
-    // @GetMapping(value = "/N3-gramma-6")
-    // public String getGrammaUnit6Page() {
-    //     return "unitContents/N3/Gramma/unit6";
-    // }
-    // @GetMapping(value = "/N3-gramma-7")
-    // public String getGrammaUnit7Page() {
-    //     return "unitContents/N3/Gramma/unit7";
-    // }
-    // @GetMapping(value = "/N3-gramma-8")
-    // public String getGrammaUnit8Page() {
-    //     return "unitContents/N3/Gramma/unit8";
-    // }
-    // @GetMapping(value = "/N3-gramma-9")
-    // public String getGrammaUnit9Page() {
-    //     return "unitContents/N3/Gramma/unit9";
-    // }
-    // @GetMapping(value = "/N3-gramma-10")
-    // public String getGrammaUnit10Page() {
-    //     return "unitContents/N3/Gramma/unit10";
-    // }
-    // @GetMapping(value = "/N3-gramma-11")
-    // public String getGrammaUnit11Page() {
-    //     return "unitContents/N3/Gramma/unit11";
-    // }
-    // @GetMapping(value = "/N3-gramma-12")
-    // public String getGrammaUnit12Page() {
-    //     return "unitContents/N3/Gramma/unit12";
-    // }
-    // @GetMapping(value = "/N3-gramma-13")
-    // public String getGrammaUnit13Page() {
-    //     return "unitContents/N3/Gramma/unit13";
-    // }
-    // @GetMapping(value = "/N3-gramma-14")
-    // public String getGrammaUnit14Page() {
-    //     return "unitContents/N3/Gramma/unit14";
-    // }
-    // @GetMapping(value = "/N3-gramma-15")
-    // public String getGrammaUnit15Page() {
-    //     return "unitContents/N3/Gramma/unit15";
-    // }
+    @GetMapping(value = "/N3-gramma-1")
+    public String getGrammaUnit1Page() {
+        return "unitContents/N3/Gramma/unit1";
+    }
+    @GetMapping(value = "/N3-gramma-2")
+    public String getGrammaUnit2Page() {
+        return "unitContents/N3/Gramma/unit2";
+    }
+    @GetMapping(value = "/N3-gramma-3")
+    public String getGrammaUnit3Page() {
+        return "unitContents/N3/Gramma/unit3";
+    }
+    @GetMapping(value = "/N3-gramma-4")
+    public String getGrammaUnit4Page() {
+        return "unitContents/N3/Gramma/unit4";
+    }
+    @GetMapping(value = "/N3-gramma-5")
+    public String getGrammaUnit5Page() {
+        return "unitContents/N3/Gramma/unit5";
+    }
+    @GetMapping(value = "/N3-gramma-6")
+    public String getGrammaUnit6Page() {
+        return "unitContents/N3/Gramma/unit6";
+    }
+    @GetMapping(value = "/N3-gramma-7")
+    public String getGrammaUnit7Page() {
+        return "unitContents/N3/Gramma/unit7";
+    }
+    @GetMapping(value = "/N3-gramma-8")
+    public String getGrammaUnit8Page() {
+        return "unitContents/N3/Gramma/unit8";
+    }
+    @GetMapping(value = "/N3-gramma-9")
+    public String getGrammaUnit9Page() {
+        return "unitContents/N3/Gramma/unit9";
+    }
+    @GetMapping(value = "/N3-gramma-10")
+    public String getGrammaUnit10Page() {
+        return "unitContents/N3/Gramma/unit10";
+    }
+    @GetMapping(value = "/N3-gramma-11")
+    public String getGrammaUnit11Page() {
+        return "unitContents/N3/Gramma/unit11";
+    }
+    @GetMapping(value = "/N3-gramma-12")
+    public String getGrammaUnit12Page() {
+        return "unitContents/N3/Gramma/unit12";
+    }
+    @GetMapping(value = "/N3-gramma-13")
+    public String getGrammaUnit13Page() {
+        return "unitContents/N3/Gramma/unit13";
+    }
+    @GetMapping(value = "/N3-gramma-14")
+    public String getGrammaUnit14Page() {
+        return "unitContents/N3/Gramma/unit14";
+    }
+    @GetMapping(value = "/N3-gramma-15")
+    public String getGrammaUnit15Page() {
+        return "unitContents/N3/Gramma/unit15";
+    }
     // @GetMapping(value = "/N3-gramma-16")
     // public String getGrammaUnit16Page() {
     //     return "unitContents/N3/Gramma/unit16";
@@ -125,10 +125,10 @@ public class N3UnitContentController {
     // }
 
     // Vocabulary Units
-    // @GetMapping(value = "/N3-voca-1")
-    // public String getVocaUnit1Page() {
-    //     return "unitContents/N3/Voca/unit1";
-    // }
+    @GetMapping(value = "/N3-voca-1")
+    public String getVocaUnit1Page() {
+        return "unitContents/N3/Voca/unit1";
+    }
     // @GetMapping(value = "/N3-voca-2")
     // public String getVocaUnit2Page() {
     //     return "unitContents/N3/Voca/unit2";
@@ -267,26 +267,26 @@ public class N3UnitContentController {
     public String getKanjiUnit10Page() {
         return "unitContents/N3/Kanji/unit10";
     }
-    // @GetMapping(value = "/N3-kanji-11")
-    // public String getKanjiUnit11Page() {
-    //     return "unitContents/N3/Kanji/unit11";
-    // }
-    // @GetMapping(value = "/N3-kanji-12")
-    // public String getKanjiUnit12Page() {
-    //     return "unitContents/N3/Kanji/unit12";
-    // }
-    // @GetMapping(value = "/N3-kanji-13")
-    // public String getKanjiUnit13Page() {
-    //     return "unitContents/N3/Kanji/unit13";
-    // }
-    // @GetMapping(value = "/N3-kanji-14")
-    // public String getKanjiUnit14Page() {
-    //     return "unitContents/N3/Kanji/unit14";
-    // }
-    // @GetMapping(value = "/N3-kanji-15")
-    // public String getKanjiUnit15Page() {
-    //     return "unitContents/N3/Kanji/unit15";
-    // }
+    @GetMapping(value = "/N3-kanji-11")
+    public String getKanjiUnit11Page() {
+        return "unitContents/N3/Kanji/unit11";
+    }
+    @GetMapping(value = "/N3-kanji-12")
+    public String getKanjiUnit12Page() {
+        return "unitContents/N3/Kanji/unit12";
+    }
+    @GetMapping(value = "/N3-kanji-13")
+    public String getKanjiUnit13Page() {
+        return "unitContents/N3/Kanji/unit13";
+    }
+    @GetMapping(value = "/N3-kanji-14")
+    public String getKanjiUnit14Page() {
+        return "unitContents/N3/Kanji/unit14";
+    }
+    @GetMapping(value = "/N3-kanji-15")
+    public String getKanjiUnit15Page() {
+        return "unitContents/N3/Kanji/unit15";
+    }
     // @GetMapping(value = "/N3-kanji-16")
     // public String getKanjiUnit16Page() {
     //     return "unitContents/N3/Kanji/unit16";
