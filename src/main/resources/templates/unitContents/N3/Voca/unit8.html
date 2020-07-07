@@ -19,9 +19,9 @@
 		<nav>
 			<ul>
 				<li class="link"><a th:href="homepage">Home</a></li>
-				<li class="link"><a th:href="N5-detail">N5</a></li>
-				<li class="link"><a th:href="N4-detail">N4</a></li>
-				<li class="link"><a th:href="N3-detail">N3</a></li>
+				<li class="link"><a th:href="detail">N5</a></li>
+				<li class="link"><a th:href="detail">N4</a></li>
+				<li class="link"><a th:href="detail">N3</a></li>
 				<li class="link"><a th:href="happyo">Happyo</a></li>
 				<li class="link"><a th:href="weekly">Weekly Vocabulary</a></li>
 				<li class="link"><a th:href="@{https://e-jan.vn/}" target="_blank">Urban-shop</a></li>
@@ -35,356 +35,471 @@
 			<table class="table table-bordered">
 				<thead class="thead-dark">
 					<tr>
-						<th class="tv">Từ Vựng</th>
-						<th class="ht">Hán Tự</th>
-						<th class="ah">Âm Hán</th>
+						<th>Mục từ</th>
+						<th>Hán tự</th>
+						<th>Loại</th>
 						<th>Nghĩa</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
-						<td>にげます</td>
-						<td>逃げます</td>
-						<td>ĐÀO</td>
-						<td>chạy trốn, bỏ chạy</td>
-					</tr>
-					<tr>
-						<td>さわぎます</td>
-						<td>騒ぎます</td>
-						<td>TAO</td>
-						<td>làm ồn, làm rùm beng</td>
-					</tr>
-					<tr>
-						<td>あきらめます</td>
-						<td></td>
-						<td></td>
-						<td>từ bỏ, đầu hàng</td>
-					</tr>
-					<tr>
-						<td>なげます</td>
-						<td>投げます</td>
-						<td>ĐẦU</td>
-						<td>ném</td>
-					</tr>
-					<tr>
-						<td>まもります</td>
-						<td>守ります</td>
-						<td>THỦ</td>
-						<td>bảo vệ, tuân thủ, giữ</td>
-					</tr>
-					<tr>
-						<td>はじまります<br>　[しきが～]</td>
-						<td>始まります<br>[式が～]</td>
-						<td>THỨC THỦY</td>
-						<td>bắt đầu [buổi lễ ~]</td>
-					</tr>
-					<tr>
-						<td>しゅっせきします<br>　[かいぎに～]</td>
-						<td>出席します[会議に～]</td>
-						<td>XUẤT TỊCH<br>HỘI NGHỊ </td>
-						<td>tham dự, tham gia [cuộc họp]</td>
-					</tr>
-					<tr>
-						<td>つたえます</td>
-						<td>伝えます</td>
-						<td>TRUYỀN</td>
-						<td>truyền, truyền đạt</td>
-					</tr>
-					<tr>
-						<td>ちゅういします<br> [くるまに～]　　</td>
-						<td>注意します<br>[車に～]　</td>
-						<td>CHÚ Ý<br>XA </td>
-						<td>chú ý [ô tô]</td>
-					</tr>
-					<tr>
-						<td>はずします<br> [せきを～]　　</td>
-						<td>外します<br>[席を～]　　</td>
-						<td>NGOẠI<br>TỊCH</td>
-						<td>rời, không có ở [chỗ ngồi]</td>
-					</tr>
-					<tr>
-						<td>もどります</td>
-						<td>戻ります</td>
-						<td>LỆ</td>
-						<td>trở lại, quay trở lại</td>
-					</tr>
-					<tr>
-						<td>あります<br>　[でんわが～]</td>
-						<td>[電話が～]</td>
-						<td>ĐIỆN THOẠI</td>
-						<td>có [điện thoại]</td>
-					</tr>
-					<tr>
-						<td>リサイクルします</td>
-						<td></td>
-						<td></td>
-						<td>tái chế</td>
-					</tr>
-					<tr>
-						<td>だめ[な]</td>
-						<td></td>
-						<td></td>
-						<td>hỏng, không được, không thể</td>
-					</tr>
-					<tr>
-						<td>おなじ</td>
-						<td>同じ</td>
-						<td>ĐỒNG</td>
-						<td>giống</td>
-					</tr>
-					<tr>
-						<td>けいさつ</td>
-						<td>警察</td>
-						<td>CẢNH SÁT</td>
-						<td>cảnh sát</td>
-					</tr>
-					<tr>
-						<td>せき</td>
-						<td>席</td>
-						<td>TỊCH</td>
-						<td>chỗ ngồi, ghế</td>
-					</tr>
-					<tr>
-						<td>マーク</td>
-						<td></td>
-						<td></td>
-						<td>ký hiệu (Mark)</td>
-					</tr>
-					<tr>
-						<td>ボール</td>
-						<td></td>
-						<td></td>
-						<td>quả bóng</td>
-					</tr>
-					<tr>
-						<td>しめきり</td>
-						<td>締め切り</td>
-						<td>ĐẾ THIẾT</td>
-						<td>hạn chót, hạn cuối</td>
-					</tr>
-					<tr>
-						<td>きそく</td>
-						<td>規則&nbsp;&nbsp;</td>
-						<td>QUY TẮC</td>
-						<td>quy tắc, kỷ luật&nbsp;&nbsp;&nbsp;</td>
-					</tr>
-					<tr>
-						<td>きけん</td>
-						<td>危険</td>
-						<td>NGUY HIỂM</td>
-						<td>nguy hiểm</td>
-					</tr>
-					<tr>
-						<td>しようきんし</td>
-						<td>使用禁止</td>
-						<td>SỬ DỤNG CẤM CHỈ</td>
-						<td>cấm sử dụng</td>
-					</tr>
-					<tr>
-						<td>たちいりきんし</td>
-						<td>立入禁止</td>
-						<td>LẬP NHẬP CẤM CHỈ</td>
-						<td>cấm vào</td>
-					</tr>
-					<tr>
-						<td>じょこう</td>
-						<td>徐行</td>
-						<td>TỪ HÀNH</td>
-						<td>chạy chậm</td>
-					</tr>
-					<tr>
-						<td>いりぐち</td>
-						<td>入口</td>
-						<td>NHẬP KHẨU</td>
-						<td>cửa vào</td>
-					</tr>
-					<tr>
-						<td>でぐち</td>
-						<td>出口</td>
-						<td>XUẤT KHẨU</td>
-						<td>cửa ra</td>
-					</tr>
-					<tr>
-						<td>ひじょうぐち</td>
-						<td>非常口</td>
-						<td>PHI THƯỜNG KHẨU</td>
-						<td>cửa thoát hiểm</td>
-					</tr>
-					<tr>
-						<td>むりょう</td>
-						<td>無料</td>
-						<td>VÔ LIỆU</td>
-						<td>miễn phí</td>
-					</tr>
-					<tr>
-						<td>わりびき</td>
-						<td>割引</td>
-						<td>CÁT DẪN</td>
-						<td>giảm giá</td>
-					</tr>
-					<tr>
-						<td>のみほうだい</td>
-						<td>飲み放題</td>
-						<td>ẨM PHÓNG ĐỀ</td>
-						<td>uống thoải mái không giới hạn</td>
-					</tr>
-					<tr>
-						<td>しようちゅう</td>
-						<td>使用中</td>
-						<td>SỬ DỤNG TRUNG</td>
-						<td>đang sử dụng</td>
-					</tr>
-					<tr>
-						<td>ぼしゅうちゅう</td>
-						<td>募集中</td>
-						<td>MỘ TẬP TRUNG</td>
-						<td>đang tuyển</td>
-					</tr>
-					<tr>
-						<td>～ちゅう</td>
-						<td>～中</td>
-						<td>TRUNG</td>
-						<td>đang ~</td>
-					</tr>
-					<tr>
-						<td>どういう～</td>
-						<td></td>
-						<td></td>
-						<td>~ gì, ~ thế nào</td>
-					</tr>
-					<tr>
-						<td>いくら[～ても]</td>
-						<td></td>
-						<td></td>
-						<td>[dù có] ~ bao nhiêu đi nữa</td>
-					</tr>
-					<tr>
-						<td>もう</td>
-						<td></td>
-						<td></td>
-						<td>không ~ nữa</td>
-					</tr>
-					<tr>
-						<td>あと～</td>
-						<td></td>
-						<td></td>
-						<td>còn ~</td>
-					</tr>
-					<tr>
-						<td>～ほど</td>
-						<td></td>
-						<td></td>
-						<td>khoảng ~</td>
-					</tr>
-					<tr>
-						<td colspan="4">＜<b><ruby>会話<rp>(</rp>
-									<rt>かいわ</rt>
+						<td>
+							<strong>かいだんをのぼる</strong></td>
+						<td>
+							<strong><ruby>階段<rp>(</rp>
+									<rt>かいだん</rt>
 									<rp>)</rp>
-								</ruby></b>＞</td>
-					</tr>
-					<tr>
-						<td colspan="3"><ruby>駐車<rp>（</rp>
-								<rt>ちゅうしゃ</rt>
-								<rp>）</rp>
-							</ruby><ruby>違反<rp>（</rp>
-								<rt>いはん</rt>
-								<rp>）</rp>
-							</ruby></td>
-						<td>đỗ xe trái phép</td>
-					</tr>
-					<tr>
-						<td colspan="3"><ruby>罰金<rp>（</rp>
-								<rt>ばっきん</rt>
-								<rp>）</rp>
-							</ruby></td>
-						<td>tiền phạt</td>
-					</tr>
-					<tr>
-						<td colspan="4">＜<b><ruby>読<rp>(</rp>
-									<rt>よ</rt>
+								</ruby>を<ruby>上<rp>(</rp>
+									<rt>のぼ</rt>
 									<rp>)</rp>
-								</ruby>み<ruby>物<rp>(</rp>
-									<rt>もの</rt>
+								</ruby>る</strong></td>
+						<td>
+							v</td>
+						<td>
+							bước lên cầu thang</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>かいだんをあがる</strong></td>
+						<td>
+							<strong><ruby>階段<rp>(</rp>
+									<rt>かいだん</rt>
 									<rp>)</rp>
-								</ruby></b>＞</td>
+								</ruby>を<ruby>上<rp>(</rp>
+									<rt>あ</rt>
+									<rp>)</rp>
+								</ruby>がる</strong></td>
+						<td>
+							v</td>
+						<td>
+							bước lên cầu thang</td>
 					</tr>
 					<tr>
-						<td colspan="3"><ruby>地震<rp>（</rp>
-								<rt>じしん</rt>
-								<rp>）</rp>
-							</ruby></td>
-						<td>động đất</td>
+						<td>
+							<strong>かいだんをくだる</strong></td>
+						<td>
+							<strong><ruby>階段<rp>(</rp>
+									<rt>かいだん</rt>
+									<rp>)</rp>
+								</ruby>を<ruby>下<rp>(</rp>
+									<rt>くだ</rt>
+									<rp>)</rp>
+								</ruby>る</strong></td>
+						<td>
+							v</td>
+						<td>
+							bước xuống cầu thang</td>
 					</tr>
 					<tr>
-						<td colspan="3"><ruby>起<rp>（</rp>
-								<rt>お</rt>
-								<rp>）</rp>
-							</ruby>きます</td>
-						<td>xảy ra</td>
+						<td>
+							<strong>かいだんをおりる</strong></td>
+						<td>
+							<strong><ruby>階段<rp>(</rp>
+									<rt>かいだん</rt>
+									<rp>)</rp>
+								</ruby>を<ruby>下<rp>(</rp>
+									<rt>お</rt>
+									<rp>)</rp>
+								</ruby>りる</strong></td>
+						<td>
+							v</td>
+						<td>
+							bước xuống cầu thang</td>
 					</tr>
 					<tr>
-						<td colspan="3"><ruby>助<rp>（</rp>
-								<rt>たす</rt>
-								<rp>）</rp>
-							</ruby>け<ruby>合<rp>（</rp>
-								<rt>あ</rt>
-								<rp>）</rp>
-							</ruby>います</td>
-						<td>giúp đỡ lẫn nhau</td>
+						<td>
+							<strong>くだりでんしゃ</strong></td>
+						<td>
+							<strong><ruby>下<rp>(</rp>
+									<rt>くだ</rt>
+									<rp>)</rp>
+								</ruby>り<ruby>電車<rp>(</rp>
+									<rt>でんしゃ</rt>
+									<rp>)</rp>
+								</ruby></strong></td>
+						<td>
+							n</td>
+						<td>
+							tàu đi về hướng Hokkaido</td>
 					</tr>
 					<tr>
-						<td colspan="3">もともと</td>
-						<td>vốn là, nguyên là</td>
+						<td>
+							<strong>のぼりでんしゃ</strong></td>
+						<td>
+							<strong><ruby>上<rp>(</rp>
+									<rt>のぼ</rt>
+									<rp>)</rp>
+								</ruby>り<ruby>電車<rp>(</rp>
+									<rt>でんしゃ</rt>
+									<rp>)</rp>
+								</ruby></strong></td>
+						<td>
+							n</td>
+						<td>
+							tàu đi về hướng Tokyo</td>
 					</tr>
 					<tr>
-						<td colspan="3"><ruby>悲<rp>（</rp>
-								<rt>かな</rt>
-								<rp>）</rp>
-							</ruby>しい</td>
-						<td>buồn</td>
+						<td>
+							<strong>エスカレーターののぼり</strong></td>
+						<td>
+							<strong>エスカレーターの<ruby>上<rp>(</rp>
+									<rt>のぼ</rt>
+									<rp>)</rp>
+								</ruby>り</strong></td>
+						<td>
+							n</td>
+						<td>
+							thang cuốn đi lên</td>
 					</tr>
 					<tr>
-						<td colspan="3">もっと</td>
-						<td>hơn</td>
-					</tr>
-					<tr>
-						<td colspan="3">あいさつ</td>
-						<td>chào hỏi</td>
-					</tr>
-					<tr>
-						<td colspan="3"><ruby>相手<rp>（</rp>
-								<rt>あいて</rt>
-								<rp>）</rp>
-							</ruby></td>
-						<td>đối phương</td>
-					</tr>
-					<tr>
-						<td colspan="3"><ruby>気持<rp>（</rp>
-								<rt>きも</rt>
-								<rp>）</rp>
-							</ruby>ち</td>
-						<td>tâm trạng</td>
+						<td>
+							<strong>エスカレーターのくだり</strong></td>
+						<td>
+							<strong>エスカレーターの<ruby>下<rp>(</rp>
+									<rt>くだ</rt>
+									<rp>)</rp>
+								</ruby>り</strong></td>
+						<td>
+							n</td>
+						<td>
+							thang cuốn đi xuống</td>
 					</tr>
 				</tbody>
 			</table>
+			<p>
+				<span style="color:#ff0000;">
+					<span style="font-size: 22px;">
+						<strong>もっとおぼえましょう!</strong>
+					</span>
+				</span>
+			</p>
+			<div class="table-responsive">
+				<table class="table table-bordered">
+					<thead class="thead-dark">
+						<tr>
+							<th>Mục từ</th>
+							<th>Hán tự</th>
+							<th>Loại</th>
+							<th>Nghĩa</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<strong>れっしゃのじこくをしらべる</strong></td>
+							<td>
+								<strong><ruby>列車<rp>(</rp>
+										<rt>れっしゃ</rt>
+										<rp>)</rp>
+									</ruby>の<ruby>時刻<rp>(</rp>
+										<rt>じこく</rt>
+										<rp>)</rp>
+									</ruby>を<ruby>調<rp>(</rp>
+										<rt>しら</rt>
+										<rp>)</rp>
+									</ruby>べる</strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								tìm kiếm giờ tàu chạy</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>じこくひょう</strong></td>
+							<td>
+								<strong><ruby>時刻表<rp>(</rp>
+										<rt>じこくひょう</rt>
+										<rp>)</rp>
+									</ruby></strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								bảng giờ tàu chạy</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>とうきょうはつよこはまい／ゆき</strong></td>
+							<td>
+								<strong><ruby>東京発<rp>(</rp>
+										<rt>とうきょうはつ</rt>
+										<rp>)</rp>
+									</ruby><ruby>横浜<rp>(</rp>
+										<rt>よこはま</rt>
+										<rp>)</rp>
+									</ruby><ruby>行<rp>(</rp>
+										<rt>ゆ</rt>
+										<rp>)</rp>
+									</ruby>き</strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								tàu xuất phát ở Tokyo đi đến Yokohama</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>してつ</strong></td>
+							<td>
+								<strong><ruby>私鉄<rp>(</rp>
+										<rt>してつ</rt>
+										<rp>)</rp>
+									</ruby></strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								đường sắt tư nhân</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>しんかんせん</strong></td>
+							<td>
+								<strong><ruby>新幹線<rp>(</rp>
+										<rt>しんかんせん</rt>
+										<rp>)</rp>
+									</ruby></strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								tàu siêu tốc Shinkansen</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>ざせきをしていする</strong></td>
+							<td>
+								<strong><ruby>座席<rp>(</rp>
+										<rt>ざせき</rt>
+										<rp>)</rp>
+									</ruby>を<ruby>指定<rp>(</rp>
+										<rt>してい</rt>
+										<rp>)</rp>
+									</ruby>する</strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								đặt ghế chỉ định</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>していせき</strong></td>
+							<td>
+								<strong><ruby>指定席<rp>(</rp>
+										<rt>していせき</rt>
+										<rp>)</rp>
+									</ruby></strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								ghế chỉ định</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>じゆうせき</strong></td>
+							<td>
+								<strong><ruby>自由席<rp>(</rp>
+										<rt>じゆうせき</rt>
+										<rp>)</rp>
+									</ruby></strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								ghế tự do</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>まどがわ</strong></td>
+							<td>
+								<strong><ruby>窓側<rp>(</rp>
+										<rt>まどがわ</rt>
+										<rp>)</rp>
+									</ruby></strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								hướng cửa sổ</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>つうろがわ</strong></td>
+							<td>
+								<strong><ruby>通路側<rp>(</rp>
+										<rt>つうろがわ</rt>
+										<rp>)</rp>
+									</ruby></strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								hướng về lối đi</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>じょうしゃけん</strong></td>
+							<td>
+								<strong><ruby>乗車券<rp>(</rp>
+										<rt>じょうしゃけん</rt>
+										<rp>)</rp>
+									</ruby></strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								vé lên tàu</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>かたみちきっぷ</strong></td>
+							<td>
+								<strong><ruby>片道<rp>(</rp>
+										<rt>かたみち</rt>
+										<rp>)</rp>
+									</ruby><ruby>切符<rp>(</rp>
+										<rt>きっぷ</rt>
+										<rp>)</rp>
+									</ruby></strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								vé một chiều</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>おうふくきっぷ</strong></td>
+							<td>
+								<strong><ruby>往復<rp>(</rp>
+										<rt>おうふく</rt>
+										<rp>)</rp>
+									</ruby><ruby>切符<rp>(</rp>
+										<rt>きっぷ</rt>
+										<rp>)</rp>
+									</ruby></strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								vé khứ hồi</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>とっきゅうけん</strong></td>
+							<td>
+								<strong><ruby>特急券<rp>(</rp>
+										<rt>とっきゅうけん</rt>
+										<rp>)</rp>
+									</ruby></strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								vé tàu tốc hành</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>とっきゅうりょうきん</strong></td>
+							<td>
+								<strong><ruby>特急<rp>(</rp>
+										<rt>とっきゅう</rt>
+										<rp>)</rp>
+									</ruby><ruby>料金<rp>(</rp>
+										<rt>りょうきん</rt>
+										<rp>)</rp>
+									</ruby></strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								cước tàu tốc hành</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>かいすうけん</strong></td>
+							<td>
+								<strong><ruby>回数券<rp>(</rp>
+										<rt>かいすうけん</rt>
+										<rp>)</rp>
+									</ruby></strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								vé tập</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>ていきけん</strong></td>
+							<td>
+								<strong><ruby>定期券<rp>(</rp>
+										<rt>ていきけん</rt>
+										<rp>)</rp>
+									</ruby></strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								vé định kỳ</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>かいさつぐちをとおる</strong></td>
+							<td>
+								<strong><ruby>改札口<rp>(</rp>
+										<rt>かいさつぐち</rt>
+										<rp>)</rp>
+									</ruby>を<ruby>通<rp>(</rp>
+										<rt>とお</rt>
+										<rp>)</rp>
+									</ruby>る</strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								qua cổng soát vé</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>きっぷをはらいもどす</strong></td>
+							<td>
+								<strong><ruby>切符<rp>(</rp>
+										<rt>きっぷ</rt>
+										<rp>)</rp>
+									</ruby>を<ruby>払<rp>(</rp>
+										<rt>はら</rt>
+										<rp>)</rp>
+									</ruby>い<ruby>戻<rp>(</rp>
+										<rt>もど</rt>
+										<rp>)</rp>
+									</ruby>す</strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								trả lại vé</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>はらいもどし</strong></td>
+							<td>
+								<strong><ruby>払<rp>(</rp>
+										<rt>はら</rt>
+										<rp>)</rp>
+									</ruby>い<ruby>戻<rp>(</rp>
+										<rt>もど</rt>
+										<rp>)</rp>
+									</ruby>し</strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								hoàn trả (tiền, vé…)</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- End Table -->
 		</div>
-		<!-- End Table -->
-	</div>
 
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-	<script>
-		$(document).ready(function () {
-			$('.menu-toggle').click(function () {
-				$('nav').toggleClass('active');
-			});
-			$('.link').click(function () {
-				$('nav').toggleClass('active');
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				$('.menu-toggle').click(function () {
+					$('nav').toggleClass('active');
+				});
+				$('.link').click(function () {
+					$('nav').toggleClass('active');
+				})
 			})
-		})
-	</script>
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+		</script>
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </body>
 
 </html>

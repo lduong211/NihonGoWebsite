@@ -19,9 +19,9 @@
 		<nav>
 			<ul>
 				<li class="link"><a th:href="homepage">Home</a></li>
-				<li class="link"><a th:href="N5-detail">N5</a></li>
-                <li class="link"><a th:href="N4-detail">N4</a></li>
-                <li class="link"><a th:href="N3-detail">N3</a></li>
+				<li class="link"><a th:href="detail">N5</a></li>
+				<li class="link"><a th:href="detail">N4</a></li>
+				<li class="link"><a th:href="detail">N3</a></li>
 				<li class="link"><a th:href="happyo">Happyo</a></li>
 				<li class="link"><a th:href="weekly">Weekly Vocabulary</a></li>
 				<li class="link"><a th:href="@{https://e-jan.vn/}" target="_blank">Urban-shop</a></li>
@@ -35,198 +35,577 @@
 			<table class="table table-bordered">
 				<thead class="thead-dark">
 					<tr>
-						<th class="tv">Từ Vựng</th>
-						<th class="ht">Hán Tự</th>
-						<th class="ah">Âm Hán</th>
+						<th>Mục từ</th>
+						<th>Hán tự</th>
+						<th>Loại</th>
 						<th>Nghĩa</th>
 					</tr>
 				</thead>
-				<tbody><tr>
-							<td>かいます</td>
-							<td>飼います</td>
-							<td>TỰ</td>
-							<td>nuôi (động vật)</td>
-							</tr><tr>
-							<td>はしります<br>　[みちを～]</td>
-							<td>走ります<br>[道を～]</td>
-							<td>TẨU<br>ĐẠO </td>
-							<td>chạy [trên đường]</td>
-							</tr><tr>
-							<td>みえます<br>　[やまが～] </td>
-							<td>見えます<br>[山が～]</td>
-							<td>KIẾN<br>SƠN </td>
-							<td>nhìn thấy, có thể nhìn thấy [núi]</td>
-							</tr><tr>
-							<td>きこえます<br>　[おとが～]</td>
-							<td>聞こえます<br>[音が～]</td>
-							<td>VĂN<br>ÂM </td>
-							<td>nghe thấy, có thể nghe thấy<br>      [âm thanh~]</td>
-							</tr><tr>
-							<td>できます<br>　[みちが～]</td>
-							<td>できます<br>[道が～]</td>
-							<td>ĐẠO</td>
-							<td>được xây dựng lên, hoàn thành <br>     [con đường~]</td>
-							</tr><tr>
-							<td>ひらきます<br>　[きょうしつを～]</td>
-							<td>開きます<br>[教室を～]</td>
-							<td>KHAI<br>GIÁO THẤT </td>
-							<td>mở [lớp học]</td>
-							</tr><tr>
-							<td>しんぱい[な]</td>
-							<td>心配[な]</td>
-							<td>TÂM PHỐI</td>
-							<td>lo lắng</td>
-							</tr><tr>
-							<td>ペット</td>
-							<td></td>
-							<td></td>
-							<td>động vật cảnh (pet)</td>
-							</tr><tr>
-							<td>とり</td>
-							<td>鳥</td>
-							<td>ĐIẾU</td>
-							<td>chim</td>
-							</tr><tr>
-							<td>こえ</td>
-							<td>声</td>
-							<td>THANH</td>
-							<td>tiếng nói, giọng nói</td>
-							</tr><tr>
-							<td>なみ</td>
-							<td>波</td>
-							<td>BA</td>
-							<td>sóng</td>
-							</tr><tr>
-							<td>はなび</td>
-							<td>花火</td>
-							<td>HOA HỎA</td>
-							<td>pháo hoa</td>
-							</tr><tr>
-							<td>どうぐ</td>
-							<td>道具</td>
-							<td>ĐẠO CỤ</td>
-							<td>dụng cụ, công cụ</td>
-							</tr><tr>
-							<td>クリーニング</td>
-							<td></td>
-							<td></td>
-							<td>giặt ủi</td>
-							</tr><tr>
-							<td>いえ</td>
-							<td>家</td>
-							<td>GIA</td>
-							<td>nhà</td>
-							</tr><tr>
-							<td>マンション</td>
-							<td></td>
-							<td></td>
-							<td>nhà chung cư</td>
-							</tr><tr>
-							<td>キッチン</td>
-							<td></td>
-							<td></td>
-							<td>bếp</td>
-							</tr><tr>
-							<td>～きょうしつ</td>
-							<td>～教室</td>
-							<td>GIÁO THẤT</td>
-							<td>lớp học ~</td>
-							</tr><tr>
-							<td>パーティールーム</td>
-							<td></td>
-							<td></td>
-							<td>phòng tiệc</td>
-							</tr><tr>
-							<td>かた</td>
-							<td>方</td>
-							<td>PHƯƠNG</td>
-							<td>vị, ngài (kính ngữ của ひと)</td>
-							</tr><tr>
-							<td>～ご</td>
-							<td>～後</td>
-							<td>HẬU</td>
-							<td>~ sau (khoảng thời gian)</td>
-							</tr><tr>
-							<td>～しか</td>
-							<td></td>
-							<td></td>
-							<td>chỉ ~ (dùng với thể phủ định)</td>
-							</tr><tr>
-							<td>ほかの</td>
-							<td></td>
-							<td></td>
-							<td>khác</td>
-							</tr><tr>
-							<td>はっきり</td>
-							<td></td>
-							<td></td>
-							<td>rõ, rõ ràng</td>
-							</tr><tr><td colspan="4">＜<b><ruby>会話<rp>(</rp><rt>かいわ</rt><rp>)</rp></ruby></b>＞</td></tr><tr>
-							<td colspan="2">かぐ</td>
-							<td>đồ gỗ trong nhà</td>
-							</tr><tr>
-							<td colspan="2">ほんだな</td>
-							<td>giá sách</td>
-							</tr><tr>
-							<td colspan="2">いつか</td>
-							<td>một ngày nào đó, một lúc nào đó</td>
-							</tr><tr>
-							<td colspan="2">たてます</td>
-							<td>xây</td>
-							</tr><tr>
-							<td colspan="2">すばらしい</td>
-							<td>tuyệt vời</td>
-							</tr><tr><td colspan="4">＜<b><ruby>読<rp>(</rp><rt>よ</rt><rp>)</rp></ruby>み<ruby>物<rp>(</rp><rt>もの</rt><rp>)</rp></ruby></b>＞</td></tr><tr>
-							<td colspan="3"><ruby>子<rp>（</rp><rt>こ</rt><rp>）</rp></ruby>どもたち</td><td>trẻ em, trẻ con, con cái</td>
-							</tr><tr>
-							<td colspan="3"><ruby>大好<rp>（</rp><rt>だいす</rt><rp>）</rp></ruby>き[な]　</td><td>rất thích</td>
-							</tr><tr>
-							<td colspan="3"><ruby>主人公<rp>（</rp><rt>しゅじんこう</rt><rp>）</rp></ruby></td><td>nhân vật chính</td>
-							</tr><tr>
-							<td colspan="3"><ruby>形<rp>（</rp><rt>かたち</rt><rp>）</rp></ruby></td><td>hình, dạng</td>
-							</tr><tr>
-							<td colspan="3"><ruby>不思議<rp>（</rp><rt>ふしぎ</rt><rp>）</rp></ruby>[な]</td><td>bí ẩn, kỳ thú</td>
-							</tr><tr>
-							<td colspan="3">ポケット</td><td>chiếc túi</td>
-							</tr><tr>
-							<td colspan="3"><ruby>例<rp>（</rp><rt>たと</rt><rp>）</rp></ruby>えば</td><td>ví dụ</td>
-							</tr><tr>
-							<td colspan="3"><ruby>付<rp>（</rp><rt>つ</rt><rp>）</rp></ruby>けます　</td><td>lắp, ghép thêm</td>
-							</tr><tr>
-							<td colspan="3"><ruby>自由<rp>（</rp><rt>じゆう</rt><rp>）</rp></ruby>に</td><td>tự do, tùy thích</td>
-							</tr><tr>
-							<td colspan="3"><ruby>空<rp>（</rp><rt>そら</rt><rp>）</rp></ruby></td><td>bầu trời</td>
-							</tr><tr>
-							<td colspan="3"><ruby>飛<rp>（</rp><rt>と</rt><rp>）</rp></ruby>びます</td><td>bay</td>
-							</tr><tr>
-							<td colspan="3"><ruby>昔<rp>（</rp><rt>むかし</rt><rp>）</rp></ruby></td><td>ngày xưa</td>
-							</tr><tr>
-							<td colspan="3"><ruby>自分<rp>（</rp><rt>じぶん</rt><rp>）</rp></ruby></td><td>bản thân, mình</td>
-							</tr><tr>
-							<td colspan="3"><ruby>将来<rp>（</rp><rt>しょうらい</rt><rp>）</rp></ruby></td><td>tương lai</td>
-							</tr><tr>
-							<td colspan="3">ドラえもん</td><td>tên một nhân vật trong truyện tranh<br> (Doremon)</td>
-							</tr>
-			</tbody>
-			</table>
-		</div>
-		<!-- End Table -->
-	</div>
 
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-	<script>
-		$(document).ready(function () {
-			$('.menu-toggle').click(function () {
-				$('nav').toggleClass('active');
-			});
-			$('.link').click(function () {
-				$('nav').toggleClass('active');
+				<tbody>
+					<tr>
+						<td>
+							<strong>つうちょう</strong></td>
+						<td>
+							<strong><ruby>通帳<rp>(</rp>
+									<rt>つうちょう</rt>
+									<rp>)</rp>
+								</ruby></strong></td>
+						<td>
+							n</td>
+						<td>
+							sổ tài khoản</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>（キャッシュ）カード</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							n</td>
+						<td>
+							thẻ tín dụng</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>はんこ</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							n</td>
+						<td>
+							con dấu</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>いんかん</strong></td>
+						<td>
+							<strong><ruby>印鑑<rp>(</rp>
+									<rt>いんかん</rt>
+									<rp>)</rp>
+								</ruby></strong></td>
+						<td>
+							n</td>
+						<td>
+							con dấu</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>サイン</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							n</td>
+						<td>
+							chữ ký</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>せんえんさつ</strong></td>
+						<td>
+							<strong><ruby>千円札<rp>(</rp>
+									<rt>せんえんさつ</rt>
+									<rp>)</rp>
+								</ruby></strong></td>
+						<td>
+							n</td>
+						<td>
+							tờ 1000 yên</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>しへい</strong></td>
+						<td>
+							<strong><ruby>紙幣<rp>(</rp>
+									<rt>しへい</rt>
+									<rp>)</rp>
+								</ruby></strong></td>
+						<td>
+							n</td>
+						<td>
+							tiền giấy</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>（お）さつ</strong></td>
+						<td>
+							<strong>（お）<ruby>札<rp>(</rp>
+									<rt>ふだ</rt>
+									<rp>)</rp>
+								</ruby></strong></td>
+						<td>
+							n</td>
+						<td>
+							tiền giấy</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>ひゃくえんだま</strong></td>
+						<td>
+							<strong><ruby>百円玉<rp>(</rp>
+									<rt>ひゃくえんだま</rt>
+									<rp>)</rp>
+								</ruby></strong></td>
+						<td>
+							n</td>
+						<td>
+							đồng xu 100 yên</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>こうか</strong></td>
+						<td>
+							<strong><ruby>硬貨<rp>(</rp>
+									<rt>こうか</rt>
+									<rp>)</rp>
+								</ruby></strong></td>
+						<td>
+							n</td>
+						<td>
+							tiền xu</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>
+				<span style="color:#ff0000;">
+					<span style="font-size: 22px;">
+						<strong>もっとおぼえましょう!</strong>
+					</span>
+				</span>
+			</p>
+			<div class="table-responsive">
+				<table class="table table-bordered">
+					<thead class="thead-dark">
+						<tr>
+							<th>Mục từ</th>
+							<th>Hán tự</th>
+							<th>Loại</th>
+							<th>Nghĩa</th>
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr>
+							<td>
+								<strong>おかねをためる</strong></td>
+							<td>
+								<strong>お<ruby>金<rp>(</rp>
+										<rt>かね</rt>
+										<rp>)</rp>
+									</ruby>をためる</strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								để dành tiền</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>ちょきんする</strong></td>
+							<td>
+								<strong><ruby>貯金<rp>(</rp>
+										<rt>ちょきん</rt>
+										<rp>)</rp>
+									</ruby>する</strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								để dành tiền</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>よきんする</strong></td>
+							<td>
+								<strong><ruby>預金<rp>(</rp>
+										<rt>よきん</rt>
+										<rp>)</rp>
+									</ruby>する</strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								gửi tiền</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>ぎんこうにおかねをあずける</strong></td>
+							<td>
+								<strong><ruby>銀行<rp>(</rp>
+										<rt>ぎんこう</rt>
+										<rp>)</rp>
+									</ruby>にお<ruby>金<rp>(</rp>
+										<rt>かね</rt>
+										<rp>)</rp>
+									</ruby>を<ruby>預<rp>(</rp>
+										<rt>あず</rt>
+										<rp>)</rp>
+									</ruby>ける</strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								gửi tiền ở ngân hàng</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>きゅうりょうをひきだす</strong></td>
+							<td>
+								<strong><ruby>給料<rp>(</rp>
+										<rt>きゅうりょう</rt>
+										<rp>)</rp>
+									</ruby>を<ruby>引<rp>(</rp>
+										<rt>ひ</rt>
+										<rp>)</rp>
+									</ruby>き<ruby>出<rp>(</rp>
+										<rt>だ</rt>
+										<rp>)</rp>
+									</ruby>す</strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								rút tiền lương</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>きゅうりょうをおろす</strong></td>
+							<td>
+								<strong><ruby>給料<rp>(</rp>
+										<rt>きゅうりょう</rt>
+										<rp>)</rp>
+									</ruby>を<ruby>下<rp>(</rp>
+										<rt>お</rt>
+										<rp>)</rp>
+									</ruby>ろす</strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								rút tiền lương</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>つうちょうきにゅうをする</strong></td>
+							<td>
+								<strong><ruby>通帳<rp>(</rp>
+										<rt>つうちょう</rt>
+										<rp>)</rp>
+									</ruby><ruby>記入<rp>(</rp>
+										<rt>きにゅう</rt>
+										<rp>)</rp>
+									</ruby>をする</strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								kí sổ (ngân hàng)</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>つうちょうにきにゅうする</strong></td>
+							<td>
+								<strong><ruby>通帳<rp>(</rp>
+										<rt>つうちょう</rt>
+										<rp>)</rp>
+									</ruby>に<ruby>記入<rp>(</rp>
+										<rt>きにゅう</rt>
+										<rp>)</rp>
+									</ruby>する</strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								kí sổ (ngân hàng)</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>あんしょうばんごう</strong></td>
+							<td>
+								<strong><ruby>暗証番号<rp>(</rp>
+										<rt>あんしょうばんごう</rt>
+										<rp>)</rp>
+									</ruby></strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								số pin</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>ぎんこうのほんてん</strong></td>
+							<td>
+								<strong><ruby>銀行<rp>(</rp>
+										<rt>ぎんこう</rt>
+										<rp>)</rp>
+									</ruby>の<ruby>本店<rp>(</rp>
+										<rt>ほんてん</rt>
+										<rp>)</rp>
+									</ruby></strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								cơ sở chính ngân hàng</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>ぎんこうのしてん</strong></td>
+							<td>
+								<strong><ruby>銀行<rp>(</rp>
+										<rt>ぎんこう</rt>
+										<rp>)</rp>
+									</ruby>の<ruby>支店<rp>(</rp>
+										<rt>してん</rt>
+										<rp>)</rp>
+									</ruby></strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								chi nhánh ngân hàng</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>こうざをひらく</strong></td>
+							<td>
+								<strong><ruby>口座<rp>(</rp>
+										<rt>こうざ</rt>
+										<rp>)</rp>
+									</ruby>を<ruby>開<rp>(</rp>
+										<rt>ひら</rt>
+										<rp>)</rp>
+									</ruby>く</strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								mở tài khoản</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>やちんをふりこむ</strong></td>
+							<td>
+								<strong><ruby>家賃<rp>(</rp>
+										<rt>やちん</rt>
+										<rp>)</rp>
+									</ruby>を<ruby>振<rp>(</rp>
+										<rt>ふ</rt>
+										<rp>)</rp>
+									</ruby>り<ruby>込<rp>(</rp>
+										<rt>こ</rt>
+										<rp>)</rp>
+									</ruby>む</strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								chuyển khoản thanh toán tiền thuê nhà</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>ふりこみ</strong></td>
+							<td>
+								<strong><ruby>振<rp>(</rp>
+										<rt>ふ</rt>
+										<rp>)</rp>
+									</ruby>り<ruby>込<rp>(</rp>
+										<rt>こ</rt>
+										<rp>)</rp>
+									</ruby>み</strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								chuyển khoản</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>こうきょうりょうきんをしはらう</strong></td>
+							<td>
+								<strong><ruby>公共<rp>(</rp>
+										<rt>こうきょう</rt>
+										<rp>)</rp>
+									</ruby><ruby>料金<rp>(</rp>
+										<rt>りょうきん</rt>
+										<rp>)</rp>
+									</ruby>を<ruby>支払<rp>(</rp>
+										<rt>しはら</rt>
+										<rp>)</rp>
+									</ruby>う</strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								trả cước công cộng</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>しはらい</strong></td>
+							<td>
+								<strong><ruby>支払<rp>(</rp>
+										<rt>しはら</rt>
+										<rp>)</rp>
+									</ruby>い</strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								thanh toán</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>しょうひんのだいきんをはらう</strong></td>
+							<td>
+								<strong><ruby>商品<rp>(</rp>
+										<rt>しょうひん</rt>
+										<rp>)</rp>
+									</ruby>の<ruby>代金<rp>(</rp>
+										<rt>だいきん</rt>
+										<rp>)</rp>
+									</ruby>を<ruby>払<rp>(</rp>
+										<rt>はら</rt>
+										<rp>)</rp>
+									</ruby>う</strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								thanh toán tiền mua hàng</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>あてな</strong></td>
+							<td>
+								<strong>あて<ruby>名<rp>(</rp>
+										<rt>な</rt>
+										<rp>)</rp>
+									</ruby></strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								tên và địa chỉ người nhận</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>まどぐちでりょうがえをする</strong></td>
+							<td>
+								<strong><ruby>窓口<rp>(</rp>
+										<rt>まどぐち</rt>
+										<rp>)</rp>
+									</ruby>で<ruby>両替<rp>(</rp>
+										<rt>りょうがえ</rt>
+										<rp>)</rp>
+									</ruby>をする</strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								đổi tiền ở quầy dịch vụ</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>さしだしにんめい</strong></td>
+							<td>
+								<strong><ruby>差出人<rp>(</rp>
+										<rt>さしだしにん</rt>
+										<rp>)</rp>
+									</ruby><ruby>名<rp>(</rp>
+										<rt>めい</rt>
+										<rp>)</rp>
+									</ruby></strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								người gửi</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>そうきんする</strong></td>
+							<td>
+								<strong><ruby>送金<rp>(</rp>
+										<rt>そうきん</rt>
+										<rp>)</rp>
+									</ruby>する</strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								gửi tiền</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>てがみをそくたつでだす</strong></td>
+							<td>
+								<strong><ruby>手紙<rp>(</rp>
+										<rt>てがみ</rt>
+										<rp>)</rp>
+									</ruby>を<ruby>速達<rp>(</rp>
+										<rt>そくたつ</rt>
+										<rp>)</rp>
+									</ruby>で<ruby>出<rp>(</rp>
+										<rt>だ</rt>
+										<rp>)</rp>
+									</ruby>す</strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								gửi thư chuyển phát nhanh</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>しおくりする</strong></td>
+							<td>
+								<strong><ruby>仕送<rp>(</rp>
+										<rt>しおく</rt>
+										<rp>)</rp>
+									</ruby>りする</strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								gửi tiền, chu cấp</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>こづつみ</strong></td>
+							<td>
+								<strong><ruby>小包<rp>(</rp>
+										<rt>こづつみ</rt>
+										<rp>)</rp>
+									</ruby></strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								bưu phẩm</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>てすうりょうがかかる</strong></td>
+							<td>
+								<strong><ruby>手数料<rp>(</rp>
+										<rt>てすうりょう</rt>
+										<rp>)</rp>
+									</ruby>がかかる</strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								tốn tiền dịch vụ</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>そうりょうがかかる</strong></td>
+							<td>
+								<strong><ruby>送料<rp>(</rp>
+										<rt>そうりょう</rt>
+										<rp>)</rp>
+									</ruby>がかかる</strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								tốn cước</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- End Table -->
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				$('.menu-toggle').click(function () {
+					$('nav').toggleClass('active');
+				});
+				$('.link').click(function () {
+					$('nav').toggleClass('active');
+				})
 			})
-		})
-	</script>
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+		</script>
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </body>
 
 </html>

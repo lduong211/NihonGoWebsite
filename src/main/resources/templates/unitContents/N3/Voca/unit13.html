@@ -19,9 +19,9 @@
 		<nav>
 			<ul>
 				<li class="link"><a th:href="homepage">Home</a></li>
-				<li class="link"><a th:href="N5-detail">N5</a></li>
-				<li class="link"><a th:href="N4-detail">N4</a></li>
-				<li class="link"><a th:href="N3-detail">N3</a></li>
+				<li class="link"><a th:href="detail">N5</a></li>
+				<li class="link"><a th:href="detail">N4</a></li>
+				<li class="link"><a th:href="detail">N3</a></li>
 				<li class="link"><a th:href="happyo">Happyo</a></li>
 				<li class="link"><a th:href="weekly">Weekly Vocabulary</a></li>
 				<li class="link"><a th:href="@{https://e-jan.vn/}" target="_blank">Urban-shop</a></li>
@@ -35,372 +35,588 @@
 			<table class="table table-bordered">
 				<thead class="thead-dark">
 					<tr>
-						<th class="tv">Từ Vựng</th>
-						<th class="ht">Hán Tự</th>
-						<th class="ah">Âm Hán</th>
+						<th>Mục từ</th>
+						<th>Hán tự</th>
+						<th>Loại</th>
 						<th>Nghĩa</th>
 					</tr>
 				</thead>
+
 				<tbody>
 					<tr>
-						<td>うれます<br>　[パンが～]</td>
-						<td>売れます</td>
-						<td>MẠI</td>
-						<td>bán chạy, được bán [bánh mì ~]</td>
-					</tr>
-					<tr>
-						<td>おどります</td>
-						<td>踊ります</td>
-						<td>DŨNG</td>
-						<td>nhảy, khiêu vũ</td>
-					</tr>
-					<tr>
-						<td>かみます</td>
-						<td></td>
-						<td></td>
-						<td>nhai</td>
-					</tr>
-					<tr>
-						<td>えらびます</td>
-						<td>選びます</td>
-						<td>TUYỂN</td>
-						<td>chọn</td>
-					</tr>
-					<tr>
-						<td>かよいます<br>　[だいがくに～]</td>
-						<td>通います<br>[大学に～]</td>
-						<td>THÔNG<br>ĐẠI HỌC </td>
-						<td>&nbsp;đi học [đại học]</td>
-					</tr>
-					<tr>
-						<td>メモします</td>
-						<td></td>
-						<td></td>
-						<td>ghi chép</td>
-					</tr>
-					<tr>
-						<td>まじめ[な]</td>
-						<td></td>
-						<td></td>
-						<td>nghiêm túc, nghiêm chỉnh</td>
-					</tr>
-					<tr>
-						<td>ねっしん[な]</td>
-						<td>熱心[な]</td>
-						<td>NHIỆT TÂM</td>
-						<td>nhiệt tâm, nhiệt tình, hết lòng</td>
-					</tr>
-					<tr>
-						<td>えらい</td>
-						<td>偉い</td>
-						<td>VĨ</td>
-						<td>vĩ đại, đáng kính, đáng khâm phục</td>
-					</tr>
-					<tr>
-						<td>ちょうどいい</td>
-						<td></td>
-						<td></td>
-						<td>vừa đủ, vừa đúng</td>
-					</tr>
-					<tr>
-						<td>けしき</td>
-						<td>景色</td>
-						<td>CẢNH SẮC</td>
-						<td>phong cảnh</td>
-					</tr>
-					<tr>
-						<td>びよういん</td>
-						<td>美容院</td>
-						<td>MỸ DUNG VIỆN</td>
-						<td>hiệu làm đẹp</td>
-					</tr>
-					<tr>
-						<td>だいどころ</td>
-						<td>台所</td>
-						<td>ĐÀI SỞ</td>
-						<td>nhà bếp</td>
-					</tr>
-					<tr>
-						<td>けいけん</td>
-						<td>経験</td>
-						<td>KINH NGHIỆM</td>
-						<td>kinh nghiệm</td>
-					</tr>
-					<tr>
-						<td>ちから</td>
-						<td>力</td>
-						<td>LỰC</td>
-						<td>sức lực, năng lực</td>
-					</tr>
-					<tr>
-						<td>にんき</td>
-						<td>人気</td>
-						<td>NHÂN KHÍ</td>
-						<td>được yêu thích(がくせいに～があります：<br> 　　được [sinh viên] yêu thích)</td>
-					</tr>
-					<tr>
-						<td>かたち</td>
-						<td>形</td>
-						<td>HÌNH</td>
-						<td>hình, hình dáng</td>
-					</tr>
-					<tr>
-						<td>いろ</td>
-						<td>色</td>
-						<td>SẮC</td>
-						<td>màu</td>
-					</tr>
-					<tr>
-						<td>あじ</td>
-						<td>味</td>
-						<td>VỊ</td>
-						<td>vị</td>
-					</tr>
-					<tr>
-						<td>ガム</td>
-						<td></td>
-						<td></td>
-						<td>kẹo cao su</td>
-					</tr>
-					<tr>
-						<td>しなもの</td>
-						<td>品物</td>
-						<td>PHẨM VẬT</td>
-						<td>hàng hóa, mặt hàng</td>
-					</tr>
-					<tr>
-						<td>ねだん</td>
-						<td>値段</td>
-						<td>TRỊ ĐOẠN</td>
-						<td>giá</td>
-					</tr>
-					<tr>
-						<td>きゅうりょう</td>
-						<td>給料</td>
-						<td>CẤP LIỆU</td>
-						<td>lương</td>
-					</tr>
-					<tr>
-						<td>ボーナス</td>
-						<td></td>
-						<td></td>
-						<td>thưởng</td>
-					</tr>
-					<tr>
-						<td>ゲーム</td>
-						<td></td>
-						<td></td>
-						<td>trò chơi, game</td>
-					</tr>
-					<tr>
-						<td>ばんぐみ</td>
-						<td>番組</td>
-						<td>PHIÊN TỔ</td>
-						<td>chương trình (phát thanh, truyền hình)</td>
-					</tr>
-					<tr>
-						<td>ドラマ</td>
-						<td></td>
-						<td></td>
-						<td>kịch, phim truyền hình</td>
-					</tr>
-					<tr>
-						<td>かしゅ</td>
-						<td>歌手</td>
-						<td>CA THỦ</td>
-						<td>ca sĩ</td>
-					</tr>
-					<tr>
-						<td>しょうせつ</td>
-						<td>小説</td>
-						<td>TIỂU THUYẾT</td>
-						<td>tiểu thuyết</td>
-					</tr>
-					<tr>
-						<td>しょうせつか</td>
-						<td>小説家</td>
-						<td>TIỂU THUYẾT GIA</td>
-						<td>tiểu thuyết gia, nhà văn</td>
-					</tr>
-					<tr>
-						<td>～か</td>
-						<td>～家</td>
-						<td>GIA</td>
-						<td>nhà ~</td>
-					</tr>
-					<tr>
-						<td>～き</td>
-						<td>～機</td>
-						<td>CƠ</td>
-						<td>máy ~</td>
-					</tr>
-					<tr>
-						<td>むすこ</td>
-						<td>息子</td>
-						<td>TỨC TỬ</td>
-						<td>con trai (dùng cho mình)</td>
-					</tr>
-					<tr>
-						<td>むすこさん</td>
-						<td>息子さん</td>
-						<td>TỨC TỬ</td>
-						<td>con trai (dùng cho người khác)</td>
-					</tr>
-					<tr>
-						<td>むすめ</td>
-						<td>娘</td>
-						<td>NƯƠNG</td>
-						<td>con gái (dùng cho mình)</td>
-					</tr>
-					<tr>
-						<td>むすめさん</td>
-						<td>娘さん</td>
-						<td>NƯƠNG</td>
-						<td>con gái (dùng cho người khác)</td>
-					</tr>
-					<tr>
-						<td>じぶん</td>
-						<td>自分</td>
-						<td>TỰ PHÂN</td>
-						<td>bản thân, mình</td>
-					</tr>
-					<tr>
-						<td>しょうらい</td>
-						<td>将来</td>
-						<td>TƯƠNG LAI</td>
-						<td>tương lai</td>
-					</tr>
-					<tr>
-						<td>しばらく</td>
-						<td></td>
-						<td></td>
-						<td>một khoảng thời gian ngắn, một lúc, một lát</td>
-					</tr>
-					<tr>
-						<td>たいてい</td>
-						<td></td>
-						<td></td>
-						<td>thường, thông thường</td>
-					</tr>
-					<tr>
-						<td>それに</td>
-						<td></td>
-						<td></td>
-						<td>thêm nữa là, thêm vào đó là</td>
-					</tr>
-					<tr>
-						<td>それで</td>
-						<td></td>
-						<td></td>
-						<td>thế thì, thế nên</td>
-					</tr>
-					<tr>
-						<td colspan="5">＜<b><ruby>会話<rp>(</rp>
-									<rt>かいわ</rt>
+						<td>
+							<strong>たなかさんとこうさいする</strong></td>
+						<td>
+							<strong><ruby>田中<rp>(</rp>
+									<rt>たなか</rt>
 									<rp>)</rp>
-								</ruby></b>＞</td>
-					</tr>
-					<tr>
-						<td colspan="3">[ちょっと]お<ruby>願<rp>（</rp>
-								<rt>ねが</rt>
-								<rp>）</rp>
-							</ruby>い<br>があるんですが。</td>
-						<td>&nbsp;Tôi có (chút) việc muốn nhờ.</td>
-					</tr>
-					<tr>
-						<td colspan="3">じつは</td>
-						<td>thực ra</td>
-					</tr>
-					<tr>
-						<td colspan="3">かいわ</td>
-						<td>hội thoại</td>
-					</tr>
-					<tr>
-						<td colspan="3">うーん</td>
-						<td>ừ</td>
-					</tr>
-					<tr>
-						<td colspan="4">＜<b><ruby>読<rp>(</rp>
-									<rt>よ</rt>
+								</ruby>さんと<ruby>交際<rp>(</rp>
+									<rt>こうさい</rt>
 									<rp>)</rp>
-								</ruby>み<ruby>物<rp>(</rp>
-									<rt>もの</rt>
+								</ruby>する</strong></td>
+						<td>
+							v</td>
+						<td>
+							giao du với anh Tanaka</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>たなかさんとつきあう</strong></td>
+						<td>
+							<strong><ruby>田中<rp>(</rp>
+									<rt>たなか</rt>
 									<rp>)</rp>
-								</ruby></b>＞</td>
+								</ruby>さんと<ruby>付<rp>(</rp>
+									<rt>つ</rt>
+									<rp>)</rp>
+								</ruby>き<ruby>合<rp>(</rp>
+									<rt>あ</rt>
+									<rp>)</rp>
+								</ruby>う</strong></td>
+						<td>
+							v</td>
+						<td>
+							kết giao với anh Tanaka</td>
 					</tr>
 					<tr>
-						<td colspan="3">お<ruby>知<rp>（</rp>
-								<rt>し</rt>
-								<rp>）</rp>
-							</ruby>らせ</td>
-						<td>thông báo</td>
+						<td>
+							<strong>たなかさんとけんかする</strong></td>
+						<td>
+							<strong><ruby>田中<rp>(</rp>
+									<rt>たなか</rt>
+									<rp>)</rp>
+								</ruby>さんとけんかする</strong></td>
+						<td>
+							v</td>
+						<td>
+							cãi nhau với anh Tanaka</td>
 					</tr>
 					<tr>
-						<td colspan="3"><ruby>参加<rp>（</rp>
-								<rt>さんか</rt>
-								<rp>）</rp>
-							</ruby>します</td>
-						<td>tham gia</td>
+						<td>
+							<strong>たなかさんとなかなおりする</strong></td>
+						<td>
+							<strong><ruby>田中<rp>(</rp>
+									<rt>たなか</rt>
+									<rp>)</rp>
+								</ruby>さんと<ruby>仲直<rp>(</rp>
+									<rt>なかなお</rt>
+									<rp>)</rp>
+								</ruby>りする</strong></td>
+						<td>
+							v</td>
+						<td>
+							hòa giải với anh Tanaka</td>
 					</tr>
 					<tr>
-						<td colspan="3"><ruby>日<rp>（</rp>
-								<rt>ひ</rt>
-								<rp>）</rp>
-							</ruby>にち</td>
-						<td>ngày</td>
+						<td>
+							<strong>たなかさんなかがいい</strong></td>
+						<td>
+							<strong><ruby>田中<rp>(</rp>
+									<rt>たなか</rt>
+									<rp>)</rp>
+								</ruby>さんと<ruby>仲<rp>(</rp>
+									<rt>なか</rt>
+									<rp>)</rp>
+								</ruby>がいい</strong></td>
+						<td>
+							v</td>
+						<td>
+							thân thiết với anh Tanaka</td>
 					</tr>
 					<tr>
-						<td colspan="3"><ruby>土<rp>（</rp>
-								<rt>ど</rt>
-								<rp>）</rp>
-							</ruby></td>
-						<td>thứ bảy</td>
+						<td>
+							<strong>たなかさんとなかよしだ</strong></td>
+						<td>
+							<strong><ruby>田中<rp>(</rp>
+									<rt>たなか</rt>
+									<rp>)</rp>
+								</ruby>さんと<ruby>仲良<rp>(</rp>
+									<rt>なかよ</rt>
+									<rp>)</rp>
+								</ruby>しだ</strong></td>
+						<td>
+							v</td>
+						<td>
+							có quan hệ tốt với anh Tanaka</td>
 					</tr>
 					<tr>
-						<td colspan="3"><ruby>体育館<rp>（</rp>
-								<rt>たいいくかん</rt>
-								<rp>）</rp>
-							</ruby></td>
-						<td>nhà tập, nhà thi đấu thể thao</td>
+						<td>
+							<strong>たなかさんをコンサートにさそう</strong></td>
+						<td>
+							<strong><ruby>田中<rp>(</rp>
+									<rt>たなか</rt>
+									<rp>)</rp>
+								</ruby>さんをコンサートにさそう</strong></td>
+						<td>
+							v</td>
+						<td>
+							rủ anh Tanaka đi xem hòa nhạc</td>
 					</tr>
 					<tr>
-						<td colspan="3"><ruby>無料<rp>（</rp>
-								<rt>むりょう</rt>
-								<rp>）</rp>
-							</ruby></td>
-						<td>miễn phí</td>
+						<td>
+							<strong>たなかさんをいやがる</strong></td>
+						<td>
+							<strong><ruby>田中<rp>(</rp>
+									<rt>たなか</rt>
+									<rp>)</rp>
+								</ruby>さんをいやがる</strong></td>
+						<td>
+							v</td>
+						<td>
+							không ưa anh Tanaka</td>
 					</tr>
 					<tr>
-						<td colspan="3"><ruby>誘<rp>（</rp>
-								<rt>さそ</rt>
-								<rp>）</rp>
-							</ruby>います</td>
-						<td>mời</td>
+						<td>
+							<strong>たなかさんをふる</strong></td>
+						<td>
+							<strong><ruby>田中<rp>(</rp>
+									<rt>たなか</rt>
+									<rp>)</rp>
+								</ruby>さんをふる</strong></td>
+						<td>
+							v</td>
+						<td>
+							không chơi với anh Tanaka</td>
 					</tr>
 					<tr>
-						<td colspan="3">イベント</td>
-						<td>sự kiện</td>
+						<td>
+							<strong>たなかさん（のこと）がきになる</strong></td>
+						<td>
+							<strong><ruby>田中<rp>(</rp>
+									<rt>たなか</rt>
+									<rp>)</rp>
+								</ruby>さん（のこと）が<ruby>気<rp>(</rp>
+									<rt>き</rt>
+									<rp>)</rp>
+								</ruby>になる</strong></td>
+						<td>
+							v</td>
+						<td>
+							để ý anh Tanaka</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>たなかさん（のこと）がすきになる</strong></td>
+						<td>
+							<strong><ruby>田中<rp>(</rp>
+									<rt>たなか</rt>
+									<rp>)</rp>
+								</ruby>さん（のこと）が<ruby>好<rp>(</rp>
+									<rt>す</rt>
+									<rp>)</rp>
+								</ruby>きになる</strong></td>
+						<td>
+							v</td>
+						<td>
+							thích anh Tanaka</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>たなかさん（のこと）きらいになる</strong></td>
+						<td>
+							<strong><ruby>田中<rp>(</rp>
+									<rt>たなか</rt>
+									<rp>)</rp>
+								</ruby>さん（のこと）がきらいになる</strong></td>
+						<td>
+							v</td>
+						<td>
+							ghét anh Tanaka</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>たなかさん（のこと）がいやになる</strong></td>
+						<td>
+							<strong><ruby>田中<rp>(</rp>
+									<rt>たなか</rt>
+									<rp>)</rp>
+								</ruby>さん（のこと）がいやになる</strong></td>
+						<td>
+							v</td>
+						<td>
+							không ưa anh Tanaka</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>たなかさん（のこと）がうらやましい</strong></td>
+						<td>
+							<strong><ruby>田中<rp>(</rp>
+									<rt>たなか</rt>
+									<rp>)</rp>
+								</ruby>さん（のこと）がうらやましい</strong></td>
+						<td>
+							v</td>
+						<td>
+							ganh tỵ với anh Tanaka</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>たなかさんにすかれる</strong></td>
+						<td>
+							<strong><ruby>田中<rp>(</rp>
+									<rt>たなか</rt>
+									<rp>)</rp>
+								</ruby>さんに<ruby>好<rp>(</rp>
+									<rt>す</rt>
+									<rp>)</rp>
+								</ruby>かれる</strong></td>
+						<td>
+							v</td>
+						<td>
+							được anh Tanaka yêu mến</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>たなかさんにきらわれる</strong></td>
+						<td>
+							<strong><ruby>田中<rp>(</rp>
+									<rt>たなか</rt>
+									<rp>)</rp>
+								</ruby>さんにきらわれる</strong></td>
+						<td>
+							v</td>
+						<td>
+							bị anh Tanaka ghét</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>たなかさんにいやがられる</strong></td>
+						<td>
+							<strong><ruby>田中<rp>(</rp>
+									<rt>たなか</rt>
+									<rp>)</rp>
+								</ruby>さんにいやがられる</strong></td>
+						<td>
+							v</td>
+						<td>
+							bị anh Tanaka không ưa</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>たなかさんにふられる</strong></td>
+						<td>
+							<strong><ruby>田中<rp>(</rp>
+									<rt>たなか</rt>
+									<rp>)</rp>
+								</ruby>さんにふられる</strong></td>
+						<td>
+							v</td>
+						<td>
+							bị anh Tanaka nghỉ chơi</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>たなかさんにきがある</strong></td>
+						<td>
+							<strong><ruby>田中<rp>(</rp>
+									<rt>たなか</rt>
+									<rp>)</rp>
+								</ruby>さんに<ruby>気<rp>(</rp>
+									<rt>き</rt>
+									<rp>)</rp>
+								</ruby>がある</strong></td>
+						<td>
+							v</td>
+						<td>
+							thích anh Tanaka</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>たなかさんにあこがれる</strong></td>
+						<td>
+							<strong><ruby>田中<rp>(</rp>
+									<rt>たなか</rt>
+									<rp>)</rp>
+								</ruby>さんにあこがれる</strong></td>
+						<td>
+							v</td>
+						<td>
+							ngưỡng mộ anh Tanaka</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>たなかさんにむちゅうになる</strong></td>
+						<td>
+							<strong><ruby>田中<rp>(</rp>
+									<rt>たなか</rt>
+									<rp>)</rp>
+								</ruby>さんに<ruby>夢中<rp>(</rp>
+									<rt>むちゅう</rt>
+									<rp>)</rp>
+								</ruby>になる</strong></td>
+						<td>
+							v</td>
+						<td>
+							mê mệt anh Tanaka</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>たなかさんにこいをする</strong></td>
+						<td>
+							<strong><ruby>田中<rp>(</rp>
+									<rt>たなか</rt>
+									<rp>)</rp>
+								</ruby>さんに<ruby>恋<rp>(</rp>
+									<rt>こい</rt>
+									<rp>)</rp>
+								</ruby>をする</strong></td>
+						<td>
+							v</td>
+						<td>
+							yêu anh Tanaka</td>
 					</tr>
 				</tbody>
 			</table>
+			<p>
+				<span style="color:#ff0000;">
+					<span style="font-size: 22px;">
+						<strong>もっとおぼえましょう!</strong>
+					</span>
+				</span>
+			</p>
+			<div class="table-responsive">
+				<table class="table table-bordered">
+					<thead class="thead-dark">
+						<tr>
+							<th>Mục từ</th>
+							<th>Hán tự</th>
+							<th>Loại</th>
+							<th>Nghĩa</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<strong>じょせいにもてる</strong></td>
+							<td>
+								<strong><ruby>女性<rp>(</rp>
+										<rt>じょせい</rt>
+										<rp>)</rp>
+									</ruby>にもてる</strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								được các cô gái yêu thích</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>（お）たがいにきにいる</strong></td>
+							<td>
+								<strong>（お）<ruby>互<rp>(</rp>
+										<rt>たが</rt>
+										<rp>)</rp>
+									</ruby>いに<ruby>入<rp>(</rp>
+										<rt>い</rt>
+										<rp>)</rp>
+									</ruby>る</strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								cùng hài lòng</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>あいてのよていをきく</strong></td>
+							<td>
+								<strong><ruby>相手<rp>(</rp>
+										<rt>あいて</rt>
+										<rp>)</rp>
+									</ruby>の<ruby>予定<rp>(</rp>
+										<rt>よてい</rt>
+										<rp>)</rp>
+									</ruby>を<ruby>聞<rp>(</rp>
+										<rt>き</rt>
+										<rp>)</rp>
+									</ruby>く</strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								hỏi về dự định của đối phương</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>つごうをつける</strong></td>
+							<td>
+								<strong><ruby>都合<rp>(</rp>
+										<rt>つごう</rt>
+										<rp>)</rp>
+									</ruby>をつける</strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								sắp xếp lịch trình cho thỏa đáng</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>つごうがつく</strong></td>
+							<td>
+								<strong><ruby>都合<rp>(</rp>
+										<rt>つごう</rt>
+										<rp>)</rp>
+									</ruby>がつく</strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								lịch trình được sắp xếp thỏa đáng</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>つきあい</strong></td>
+							<td>
+								<strong><ruby>付<rp>(</rp>
+										<rt>つ</rt>
+										<rp>)</rp>
+									</ruby>き<ruby>合<rp>(</rp>
+										<rt>あ</rt>
+										<rp>)</rp>
+									</ruby>い</strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								kết giao</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>かいものにつきあう</strong></td>
+							<td>
+								<strong><ruby>買<rp>(</rp>
+										<rt>か</rt>
+										<rp>)</rp>
+									</ruby>い<ruby>物<rp>(</rp>
+										<rt>もの</rt>
+										<rp>)</rp>
+									</ruby>にう</strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								mối quan hệ làm ăn, buôn bán</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>こいびと</strong></td>
+							<td>
+								<strong><ruby>恋人<rp>(</rp>
+										<rt>こいびと</rt>
+										<rp>)</rp>
+									</ruby></strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								người yêu</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>たなかさんのかれ</strong></td>
+							<td>
+								<strong><ruby>田中<rp>(</rp>
+										<rt>たなか</rt>
+										<rp>)</rp>
+									</ruby>さんの<ruby>彼<rp>(</rp>
+										<rt>かれ</rt>
+										<rp>)</rp>
+									</ruby></strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								người yêu của chị Tanaka</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>たなかさんのかれし</strong></td>
+							<td>
+								<strong><ruby>田中<rp>(</rp>
+										<rt>たなか</rt>
+										<rp>)</rp>
+									</ruby>さんの<ruby>彼氏<rp>(</rp>
+										<rt>かれし</rt>
+										<rp>)</rp>
+									</ruby></strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								người yêu của chị Tanaka</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>かのじょ</strong></td>
+							<td>
+								<strong><ruby>彼女<rp>(</rp>
+										<rt>かのじょ</rt>
+										<rp>)</rp>
+									</ruby></strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								bạn gái</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>けっこんをもうしこむ</strong></td>
+							<td>
+								<strong><ruby>結婚<rp>(</rp>
+										<rt>けっこん</rt>
+										<rp>)</rp>
+									</ruby>を<ruby>申<rp>(</rp>
+										<rt>もう</rt>
+										<rp>)</rp>
+									</ruby>し<ruby>込<rp>(</rp>
+										<rt>こ</rt>
+										<rp>)</rp>
+									</ruby>む</strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								cầu hôn</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>けっこんをことわる</strong></td>
+							<td>
+								<strong><ruby>結婚<rp>(</rp>
+										<rt>けっこん</rt>
+										<rp>)</rp>
+									</ruby>を<ruby>断<rp>(</rp>
+										<rt>ことわ</rt>
+										<rp>)</rp>
+									</ruby>る</strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								từ hôn</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>あいまいなへんじをする</strong></td>
+							<td>
+								<strong>あいまいな<ruby>返事<rp>(</rp>
+										<rt>へんじ</rt>
+										<rp>)</rp>
+									</ruby>をする</strong></td>
+							<td>
+								&nbsp;</td>
+							<td>
+								trả lời không rõ ràng</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- End Table -->
 		</div>
-		<!-- End Table -->
-	</div>
 
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-	<script>
-		$(document).ready(function () {
-			$('.menu-toggle').click(function () {
-				$('nav').toggleClass('active');
-			});
-			$('.link').click(function () {
-				$('nav').toggleClass('active');
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				$('.menu-toggle').click(function () {
+					$('nav').toggleClass('active');
+				});
+				$('.link').click(function () {
+					$('nav').toggleClass('active');
+				})
 			})
-		})
-	</script>
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+		</script>
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </body>
 
 </html>
