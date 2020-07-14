@@ -143,30 +143,30 @@ public class N3UnitContentController {
     public String getGrammaUnit30Page() {
         return "unitContents/N3/Gramma/unit30";
     }
-    @GetMapping(value = "/N3-gramma-31")
-    public String getGrammaUnit31Page() {
-        return "unitContents/N3/Gramma/unit31";
-    }
-    @GetMapping(value = "/N3-gramma-32")
-    public String getGrammaUnit32Page() {
-        return "unitContents/N3/Gramma/unit32";
-    }
-    @GetMapping(value = "/N3-gramma-33")
-    public String getGrammaUnit33Page() {
-        return "unitContents/N3/Gramma/unit33";
-    }
-    @GetMapping(value = "/N3-gramma-34")
-    public String getGrammaUnit34Page() {
-        return "unitContents/N3/Gramma/unit34";
-    }
-    @GetMapping(value = "/N3-gramma-35")
-    public String getGrammaUnit35Page() {
-        return "unitContents/N3/Gramma/unit35";
-    }
-    @GetMapping(value = "/N3-gramma-36")
-    public String getGrammaUnit36Page() {
-        return "unitContents/N3/Gramma/unit36";
-    }
+    // @GetMapping(value = "/N3-gramma-31")
+    // public String getGrammaUnit31Page() {
+    //     return "unitContents/N3/Gramma/unit31";
+    // }
+    // @GetMapping(value = "/N3-gramma-32")
+    // public String getGrammaUnit32Page() {
+    //     return "unitContents/N3/Gramma/unit32";
+    // }
+    // @GetMapping(value = "/N3-gramma-33")
+    // public String getGrammaUnit33Page() {
+    //     return "unitContents/N3/Gramma/unit33";
+    // }
+    // @GetMapping(value = "/N3-gramma-34")
+    // public String getGrammaUnit34Page() {
+    //     return "unitContents/N3/Gramma/unit34";
+    // }
+    // @GetMapping(value = "/N3-gramma-35")
+    // public String getGrammaUnit35Page() {
+    //     return "unitContents/N3/Gramma/unit35";
+    // }
+    // @GetMapping(value = "/N3-gramma-36")
+    // public String getGrammaUnit36Page() {
+    //     return "unitContents/N3/Gramma/unit36";
+    // }
 
     // Vocabulary Units
     @GetMapping(value = "/N3-voca-1")
@@ -391,28 +391,28 @@ public class N3UnitContentController {
     public String getKanjiUnit30Page() {
         return "unitContents/N3/Kanji/unit30";
     }
-    @GetMapping(value = "/N3-kanji-31")
-    public String getKanjiUnit31Page() {
-        return "unitContents/N3/Kanji/unit31";
-    }
-    @GetMapping(value = "/N3-kanji-32")
-    public String getKanjiUnit32Page() {
-        return "unitContents/N3/Kanji/unit32";
-    }
-    @GetMapping(value = "/N3-kanji-33")
-    public String getKanjiUnit33Page() {
-        return "unitContents/N3/Kanji/unit33";
-    }
-    @GetMapping(value = "/N3-kanji-34")
-    public String getKanjiUnit34Page() {
-        return "unitContents/N3/Kanji/unit34";
-    }
-    @GetMapping(value = "/N3-kanji-35")
-    public String getKanjiUnit35Page() {
-        return "unitContents/N3/Kanji/unit35";
-    }
-    @GetMapping(value = "/N3-kanji-36")
-    public String getKanjiUnit36Page() {
-        return "unitContents/N3/Kanji/unit36";
-    }
+    // @GetMapping(value = "/N3-kanji-31")
+    // public String getKanjiUnit31Page() {
+    //     return "unitContents/N3/Kanji/unit31";
+    // }
+    // @GetMapping(value = "/N3-kanji-32")
+    // public String getKanjiUnit32Page() {
+    //     return "unitContents/N3/Kanji/unit32";
+    // }
+    // @GetMapping(value = "/N3-kanji-33")
+    // public String getKanjiUnit33Page() {
+    //     return "unitContents/N3/Kanji/unit33";
+    // }
+    // @GetMapping(value = "/N3-kanji-34")
+    // public String getKanjiUnit34Page() {
+    //     return "unitContents/N3/Kanji/unit34";
+    // }
+    // @GetMapping(value = "/N3-kanji-35")
+    // public String getKanjiUnit35Page() {
+    //     return "unitContents/N3/Kanji/unit35";
+    // }
+    // @GetMapping(value = "/N3-kanji-36")
+    // public String getKanjiUnit36Page() {
+    //     return "unitContents/N3/Kanji/unit36";
+    // }
 }
