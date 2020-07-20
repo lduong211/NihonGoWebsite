@@ -20,8 +20,8 @@
 			<ul>
 				<li class="link"><a th:href="homepage">Home</a></li>
 				<li class="link"><a th:href="N5-detail">N5</a></li>
-                <li class="link"><a th:href="N4-detail">N4</a></li>
-                <li class="link"><a th:href="N3-detail">N3</a></li>
+				<li class="link"><a th:href="N4-detail">N4</a></li>
+				<li class="link"><a th:href="N3-detail">N3</a></li>
 				<li class="link"><a th:href="happyo">Happyo</a></li>
 				<li class="link"><a th:href="weekly">Weekly Vocabulary</a></li>
 				<li class="link"><a th:href="@{https://e-jan.vn/}" target="_blank">Urban-shop</a></li>
@@ -35,359 +35,497 @@
 			<table class="table table-bordered">
 				<thead class="thead-dark">
 					<tr>
-						<th>Từ Vựng</th>
-						<th>Hán Tự</th>
-						<th>Âm Hán</th>
+						<th>Mục từ</th>
+						<th>Hán tự</th>
+						<th>Loại</th>
 						<th>Nghĩa</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
-						<th>のります<br />[でんしゃに～]</th>
-						<td>乗ります<br />[電車に～]</td>
-						<td>THỪA<br />ĐIỆN XA</td>
-						<td>đi, lên [tàu]</td>
-					</tr>
-					<tr>
-						<th>おります<br />[でんしゃを～]</th>
-						<td>降ります<br />[電車を～]</td>
-						<td>GIÁNG<br />ĐIỆN XA</td>
-						<td>xuống [tàu]</td>
-					</tr>
-					<tr>
-						<th>のりかえます</th>
-						<td>乗り換えます</td>
-						<td>THỪA HOÁN</td>
-						<td>chuyển, đổi (tàu)</td>
-					</tr>
-					<tr>
-						<th>あびます<br />[シャワーを～]</th>
-						<td>浴びます<br />[シャワーを～]</td>
-						<td>DỤC</td>
-						<td>tắm [vòi hoa sen]</td>
-					</tr>
-					<tr>
-						<th>いれます</th>
-						<td>入れます</td>
-						<td>NHẬP</td>
-						<td>cho vào, bỏ vào</td>
-					</tr>
-					<tr>
-						<th>だします</th>
-						<td>出します</td>
-						<td>XUẤT</td>
-						<td>lấy ra, đưa ra, gửi</td>
-					</tr>
-					<tr>
-						<th>おろします<br />[おかねを～]</th>
-						<td>下ろします<br />[お金を～]</td>
-						<td>HẠ<br />KIM</td>
-						<td>rút [tiền]</td>
-					</tr>
-					<tr>
-						<th>はいります<br />[だいがくに～]</th>
-						<td>入ります<br />[大学に～]</td>
-						<td>NHẬP<br />ĐẠI HỌC</td>
-						<td>vào, nhập học [đại học]</td>
-					</tr>
-					<tr>
-						<th>でます<br />[だいがくを～]</th>
-						<td>出ます<br />[大学を～]</td>
-						<td>XUẤT<br />ĐẠI HỌC</td>
-						<td>ra, tốt nghiệp [đại học]</td>
-					</tr>
-					<tr>
-						<th>おします</th>
-						<td>押します</td>
-						<td>ÁP</td>
-						<td>bấm, ấn (nút)</td>
-					</tr>
-					<tr>
-						<th>のみます</th>
-						<td>飲みます</td>
-						<td>ẨM</td>
-						<td>uống (bia, rượu)</td>
-					</tr>
-					<tr>
-						<th>はじめます</th>
-						<td>始めます</td>
-						<td>THỦY</td>
-						<td>bắt đầu</td>
-					</tr>
-					<tr>
-						<th>けんがくします</th>
-						<td>見学します</td>
-						<td>KIẾN HỌC</td>
-						<td>tham quan kiến tập</td>
-					</tr>
-					<tr>
-						<th>でんわします</th>
-						<td>電話します</td>
-						<td>ĐIỆN THOẠI</td>
-						<td>gọi điện thoại</td>
-					</tr>
-					<tr>
-						<th>わかい</th>
-						<td>若い</td>
-						<td>NHƯỢC</td>
-						<td>trẻ</td>
-					</tr>
-					<tr>
-						<th>ながい</th>
-						<td>長い</td>
-						<td>TRƯỜNG</td>
-						<td>dài</td>
-					</tr>
-					<tr>
-						<th>みじかい</th>
-						<td>短い</td>
-						<td>ĐOẢN</td>
-						<td>ngắn</td>
-					</tr>
-					<tr>
-						<th>あかるい</th>
-						<td>明るい</td>
-						<td>MINH</td>
-						<td>sáng</td>
-					</tr>
-					<tr>
-						<th>くらい</th>
-						<td>暗い</td>
-						<td>ÁM</td>
-						<td>tối</td>
-					</tr>
-					<tr>
-						<th>からだ</th>
-						<td>体</td>
-						<td>THỂ</td>
-						<td>người, cơ thể</td>
-					</tr>
-					<tr>
-						<th>あたま</th>
-						<td>頭</td>
-						<td>ĐẦU</td>
-						<td>đầu</td>
-					</tr>
-					<tr>
-						<th>かみ</th>
-						<td>髪</td>
-						<td>PHÁT</td>
-						<td>tóc</td>
-					</tr>
-					<tr>
-						<th>かお</th>
-						<td>顔</td>
-						<td>NHAN</td>
-						<td>mặt</td>
-					</tr>
-					<tr>
-						<th>め</th>
-						<td>目</td>
-						<td>MỤC</td>
-						<td>mắt</td>
-					</tr>
-					<tr>
-						<th>みみ</th>
-						<td>耳</td>
-						<td>NHĨ</td>
-						<td>tai</td>
-					</tr>
-					<tr>
-						<th>はな</th>
-						<td>鼻</td>
-						<td>TỊ</td>
-						<td>mũi</td>
-					</tr>
-					<tr>
-						<th>くち</th>
-						<td>口</td>
-						<td>KHẨU</td>
-						<td>miệng</td>
-					</tr>
-					<tr>
-						<th>は</th>
-						<td>歯</td>
-						<td>XỈ</td>
-						<td>răng</td>
-					</tr>
-					<tr>
-						<th>おなか</th>
-						<td></td>
-						<td></td>
-						<td>bụng</td>
-					</tr>
-					<tr>
-						<th>あし</th>
-						<td>足</td>
-						<td>TÚC</td>
-						<td>chân</td>
-					</tr>
-					<tr>
-						<th>せ</th>
-						<td>背</td>
-						<td>BỐI</td>
-						<td>chiều cao (cơ thể)</td>
-					</tr>
-					<tr>
-						<th>サービス</th>
-						<td></td>
-						<td></td>
-						<td>dịch vụ</td>
-					</tr>
-					<tr>
-						<th>ジョギング</th>
-						<td></td>
-						<td></td>
-						<td>việc chạy bộ (~をします: chạy bộ)</td>
-					</tr>
-					<tr>
-						<th>シャワー</th>
-						<td></td>
-						<td></td>
-						<td>vòi hoa sen</td>
-					</tr>
-					<tr>
-						<th>みどり</th>
-						<td>緑</td>
-						<td>LỤC</td>
-						<td>màu xanh lá cây</td>
-					</tr>
-					<tr>
-						<th>[お]てら</th>
-						<td>[お]寺</td>
-						<td>TỰ</td>
-						<td>chùa</td>
-					</tr>
-					<tr>
-						<th>じんじゃ</th>
-						<td>神社</td>
-						<td>THẦN XÃ</td>
-						<td>đền thờ đạo thần</td>
-					</tr>
-					<tr>
-						<th>
-							<ruby>一<rp>（</rp>
-								<rt>いち</rt>
-								<rp>）</rp>
-							</ruby>ばん
-						</th>
-						<td>一番</td>
-						<td>PHIÊN</td>
-						<td>số ―</td>
-					</tr>
-					<tr>
-						<th>どうやって</th>
-						<td></td>
-						<td></td>
-						<td>làm thế nào~</td>
-					</tr>
-					<tr>
-						<th>どの～</th>
-						<td></td>
-						<td></td>
-						<td>cái nào~ (dùng với trường hợp từ ba thứ trở lên)</td>
-					</tr>
-					<tr>
-						<th>どれ</th>
-						<td></td>
-						<td></td>
-						<td>cái nào~ (dùng với trường hợp ba cái hoặc nhiều hơn)</td>
-					</tr>
-					<tr>
-						<th colspan="3">すごいですね。</th>
-						<td>Thật là tuyệt vời. / Kinh quá nhỉ.</td>
-					</tr>
-					<tr>
-						<th colspan="3">[いいえ、]まだまだです。</th>
 						<td>
-							[không,] tôi còn kém lắm. <br />(cách nói khiêm nhường khi ai đó
-							khen)
-						</td>
-					</tr>
-					<tr>
-						<th colspan="3">
-							お<ruby>引<rp>（</rp>
-								<rt>ひ</rt>
-								<rp>）</rp>
-							</ruby>き<ruby>出<rp>（</rp>
-								<rt>だ</rt>
-								<rp>）</rp>
-							</ruby>しですか。
-						</th>
-						<td>Anh/ chị rút tiền ạ?</td>
-					</tr>
-					<tr>
-						<th colspan="3">まず</th>
-						<td>trước hết, đầu tiên</td>
-					</tr>
-					<tr>
-						<th colspan="3">
-							<ruby>次<rp>（</rp>
-								<rt>つぎ</rt>
-								<rp>）</rp>
-							</ruby>に
-						</th>
-						<td>tiếp theo, sau đó</td>
-					</tr>
-					<tr>
-						<th colspan="3">キャッシュカード</th>
-						<td>thẻ ngân hàng, thẻ ATM</td>
-					</tr>
-					<tr>
-						<th colspan="3">
-							<ruby>暗証<rp>（</rp>
-								<rt>あんしょう</rt>
-								<rp>）</rp>
-							</ruby><ruby>番号<rp>（</rp>
-								<rt>ばんごう</rt>
-								<rp>）</rp>
-							</ruby>
-						</th>
-						<td>mã số bí mật (mật khẩu)</td>
-					</tr>
-					<tr>
-						<th colspan="3">
-							<ruby>金額<rp>（</rp>
-								<rt>きんがく</rt>
-								<rp>）</rp>
-							</ruby>
-						</th>
-						<td>số tiền, khoản tiền</td>
-					</tr>
-					<tr>
-						<th colspan="3">
-							<ruby>確認<rp>（</rp>
-								<rt>かくにん</rt>
-								<rp>）</rp>
-							</ruby>
-						</th>
-						<td>sự xác nhận, sự kiểm tra (~します：xác nhận)</td>
-					</tr>
-					<tr>
-						<th colspan="3">ボタン</th>
-						<td>nút</td>
-					</tr>
-					<tr>
-						<td colspan="3">
-							<ruby>雪祭<rp>（</rp>
-								<rt>ゆきまつ</rt>
-								<rp>）</rp>
-							</ruby>り
-						</td>
+							<strong>かぞくそろって</strong></td>
 						<td>
-							<center>
-								<div class="tv_ppq-audio-player">
-									<audio preload="auto" class="tvplay audio-hidden"
-										src="/Audio/minnamoi/bai16/00010101000100110.mp3" controls=""
-										__idm_id__="1044262920"></audio>
-									<div class="tv_play-pause-btn">
-										<a class="tv_play-pause-icon"></a>
-									</div>
-									<div class="tv_player-time"></div>
-								</div>
-							</center>
-						</td>
-						<td>Lễ hội tuyết</td>
+							<strong><ruby>家族<rp>(</rp>
+									<rt>かぞく</rt>
+									<rp>)</rp>
+								</ruby>そろって</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							tập trung gia đình lại</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>こどもをつれる</strong></td>
+						<td>
+							<strong><ruby>子<rp>(</rp>
+									<rt>こ</rt>
+									<rp>)</rp>
+								</ruby>どもを<ruby>連<rp>(</rp>
+									<rt>つ</rt>
+									<rp>)</rp>
+								</ruby>れる</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							dẫn theo trẻ em</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>こどもづれ</strong></td>
+						<td>
+							<strong><ruby>子<rp>(</rp>
+									<rt>こ</rt>
+									<rp>)</rp>
+								</ruby>ども<ruby>連<rp>(</rp>
+									<rt>つ</rt>
+									<rp>)</rp>
+								</ruby>れ</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							dẫn theo trẻ em</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>はらがへる</strong></td>
+						<td>
+							<strong><ruby>腹<rp>(</rp>
+									<rt>はら</rt>
+									<rp>)</rp>
+								</ruby>がへる</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							đói bụng</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>がいしょくをする</strong></td>
+						<td>
+							<strong><ruby>外食<rp>(</rp>
+									<rt>がいしょく</rt>
+									<rp>)</rp>
+								</ruby>をする</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							đi ăn ngoài</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>おひるをたべる</strong></td>
+						<td>
+							<strong>お<ruby>昼<rp>(</rp>
+									<rt>ひる</rt>
+									<rp>)</rp>
+								</ruby>を<ruby>食<rp>(</rp>
+									<rt>た</rt>
+									<rp>)</rp>
+								</ruby>べる</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							ăn trưa</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>ちゅうしょくをとる</strong></td>
+						<td>
+							<strong><ruby>昼食<rp>(</rp>
+									<rt>ちゅうしょく</rt>
+									<rp>)</rp>
+								</ruby>をとる</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							ăn trưa</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>ランチ</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							&nbsp;</td>
+						<td>
+							bữa trưa</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>ふんいきのいいみせ</strong></td>
+						<td>
+							<strong><ruby>雰囲気<rp>(</rp>
+									<rt>ふんいき</rt>
+									<rp>)</rp>
+								</ruby>のいい<ruby>店<rp>(</rp>
+									<rt>みせ</rt>
+									<rp>)</rp>
+								</ruby></strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							tiệm có bầu không khí tốt</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>まんせき</strong></td>
+						<td>
+							<strong><ruby>満席<rp>(</rp>
+									<rt>まんせき</rt>
+									<rp>)</rp>
+								</ruby></strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							không còn chỗ trống</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>すいている</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							&nbsp;</td>
+						<td>
+							trống</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>れつにならぶ</strong></td>
+						<td>
+							<strong><ruby>列<rp>(</rp>
+									<rt>れつ</rt>
+									<rp>)</rp>
+								</ruby>に<ruby>並<rp>(</rp>
+									<rt>なら</rt>
+									<rp>)</rp>
+								</ruby>ぶ</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							xếp thành hàng dọc</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>ぎょうれつができる</strong></td>
+						<td>
+							<strong><ruby>行列<rp>(</rp>
+									<rt>ぎょうれつ</rt>
+									<rp>)</rp>
+								</ruby>ができる</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							người xếp thành hàng</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>きんえんせき</strong></td>
+						<td>
+							<strong><ruby>禁煙席<rp>(</rp>
+									<rt>きんえんせき</rt>
+									<rp>)</rp>
+								</ruby></strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							ghế cấm hút thuốc</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>きつえんせき</strong></td>
+						<td>
+							<strong><ruby>喫煙席<rp>(</rp>
+									<rt>きつえんせき</rt>
+									<rp>)</rp>
+								</ruby></strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							ghế được phép hút thuốc</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>ウエートレスにおすすめをきく</strong></td>
+						<td>
+							<strong>ウ</strong><strong>エ</strong><strong>ートレスにおすすめを<ruby>聞<rp>(</rp>
+									<rt>き</rt>
+									<rp>)</rp>
+								</ruby>く</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							hỏi người phục vụ giới thiệu món</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>りょうがおおい</strong></td>
+						<td>
+							<strong><ruby>量<rp>(</rp>
+									<rt>りょう</rt>
+									<rp>)</rp>
+								</ruby>が<ruby>多<rp>(</rp>
+									<rt>おお</rt>
+									<rp>)</rp>
+								</ruby>い</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							lượng nhiều</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>りょうがすくない</strong></td>
+						<td>
+							<strong><ruby>量<rp>(</rp>
+									<rt>りょう</rt>
+									<rp>)</rp>
+								</ruby>が<ruby>少<rp>(</rp>
+									<rt>すく</rt>
+									<rp>)</rp>
+								</ruby>ない</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							lượng ít</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>ちゅうもんがきまる</strong></td>
+						<td>
+							<strong><ruby>注文<rp>(</rp>
+									<rt>ちゅうもん</rt>
+									<rp>)</rp>
+								</ruby>が<ruby>決<rp>(</rp>
+									<rt>き</rt>
+									<rp>)</rp>
+								</ruby>まる</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							quyết định gọi món</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>ちゅうもんする</strong></td>
+						<td>
+							<strong><ruby>注文<rp>(</rp>
+									<rt>ちゅうもん</rt>
+									<rp>)</rp>
+								</ruby>する</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							gọi món</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>ちゅうもんをとる</strong></td>
+						<td>
+							<strong><ruby>注文<rp>(</rp>
+									<rt>ちゅうもん</rt>
+									<rp>)</rp>
+								</ruby>を<ruby>取<rp>(</rp>
+									<rt>と</rt>
+									<rp>)</rp>
+								</ruby>る</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							nhận món</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>ちゅうもんをうける</strong></td>
+						<td>
+							<strong><ruby>注文<rp>(</rp>
+									<rt>ちゅうもん</rt>
+									<rp>)</rp>
+								</ruby>を<ruby>受<rp>(</rp>
+									<rt>う</rt>
+									<rp>)</rp>
+								</ruby>ける</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							nhận món</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>デザートをついかする</strong></td>
+						<td>
+							<strong>デザートを<ruby>追加<rp>(</rp>
+									<rt>ついか</rt>
+									<rp>)</rp>
+								</ruby>する</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							thêm món tráng miệng</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>コーヒーのおかわり</strong></td>
+						<td>
+							<strong>コーヒーのおかわり</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							thay café bằng cái khác</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>むりょう</strong></td>
+						<td>
+							<strong><ruby>無料<rp>(</rp>
+									<rt>むりょう</rt>
+									<rp>)</rp>
+								</ruby></strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							miễn phí</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>ただ</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							&nbsp;</td>
+						<td>
+							miễn phí</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>しょっきをさげる</strong></td>
+						<td>
+							<strong><ruby>食器<rp>(</rp>
+									<rt>しょっき</rt>
+									<rp>)</rp>
+								</ruby>を<ruby>下<rp>(</rp>
+									<rt>さ</rt>
+									<rp>)</rp>
+								</ruby>げる</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							dọn chén bát xuống</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>りょうりをのこす</strong></td>
+						<td>
+							<strong><ruby>料理<rp>(</rp>
+									<rt>りょうり</rt>
+									<rp>)</rp>
+								</ruby>を<ruby>残<rp>(</rp>
+									<rt>のこ</rt>
+									<rp>)</rp>
+								</ruby>す</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							chừa đồ ăn lại</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>もったいない</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							&nbsp;</td>
+						<td>
+							lãng phí</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>なんめいさまですか</strong></td>
+						<td>
+							<strong><ruby>何名<rp>(</rp>
+									<rt>なんめい</rt>
+									<rp>)</rp>
+								</ruby><ruby>様<rp>(</rp>
+									<rt>さま</rt>
+									<rp>)</rp>
+								</ruby>ですか</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							có mấy vị ạ</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>ふたりです</strong></td>
+						<td>
+							<strong><ruby>二人<rp>(</rp>
+									<rt>ふたり</rt>
+									<rp>)</rp>
+								</ruby>です</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							2 người</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>もうしわけありません</strong></td>
+						<td>
+							<strong><ruby>申<rp>(</rp>
+									<rt>もう</rt>
+									<rp>)</rp>
+								</ruby>し<ruby>訳<rp>(</rp>
+									<rt>わけ</rt>
+									<rp>)</rp>
+								</ruby>ありません</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							xin lỗi</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>もうしょうしょうおまちください</strong></td>
+						<td>
+							<strong>もう<ruby>少<rp>(</rp>
+									<rt>すくな</rt>
+									<rp>)</rp>
+								</ruby>々お<ruby>待<rp>(</rp>
+									<rt>ま</rt>
+									<rp>)</rp>
+								</ruby>ちください</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							xin đợi một chút</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>おまたせいたしました</strong></td>
+						<td>
+							<strong>お<ruby>待<rp>(</rp>
+									<rt>ま</rt>
+									<rp>)</rp>
+								</ruby>たせいたしました</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							xin lỗi đã bắt quý khách đợi</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>おまちどおさま</strong></td>
+						<td>
+							<strong>お<ruby>待<rp>(</rp>
+									<rt>ま</rt>
+									<rp>)</rp>
+								</ruby>ちどおさま</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							xin lỗi đã bắt quý khách đợi</td>
 					</tr>
 				</tbody>
 			</table>

@@ -20,8 +20,8 @@
 			<ul>
 				<li class="link"><a th:href="homepage">Home</a></li>
 				<li class="link"><a th:href="N5-detail">N5</a></li>
-                <li class="link"><a th:href="N4-detail">N4</a></li>
-                <li class="link"><a th:href="N3-detail">N3</a></li>
+				<li class="link"><a th:href="N4-detail">N4</a></li>
+				<li class="link"><a th:href="N3-detail">N3</a></li>
 				<li class="link"><a th:href="happyo">Happyo</a></li>
 				<li class="link"><a th:href="weekly">Weekly Vocabulary</a></li>
 				<li class="link"><a th:href="@{https://e-jan.vn/}" target="_blank">Urban-shop</a></li>
@@ -35,217 +35,474 @@
 			<table class="table table-bordered">
 				<thead class="thead-dark">
 					<tr>
-						<th>Từ Vựng</th>
-						<th>Hán Tự</th>
-						<th>Âm Hán</th>
+						<th>Mục từ</th>
+						<th>Hán tự</th>
+						<th>Loại</th>
 						<th>Nghĩa</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
-						<th>おぼえます</th>
-						<td>覚えます</td>
-						<td>GIÁC</td>
-						<td>nhớ</td>
-					</tr>
-					<tr>
-						<th>わすれます</th>
-						<td>忘れます</td>
-						<td>VONG</td>
-						<td>quên</td>
-					</tr>
-					<tr>
-						<th>なくします</th>
-						<td></td>
-						<td></td>
-						<td>mất, đánh mất</td>
-					</tr>
-					<tr>
-						<th>はらいます</th>
-						<td>払います</td>
-						<td>PHẤT</td>
-						<td>trả tiền</td>
-					</tr>
-					<tr>
-						<th>かえします</th>
-						<td>返します</td>
-						<td>PHẢN</td>
-						<td>trả lại</td>
-					</tr>
-					<tr>
-						<th>でかけます</th>
-						<td>出かけます</td>
-						<td>XUẤT</td>
-						<td>ra ngoài</td>
-					</tr>
-					<tr>
-						<th>ぬぎます</th>
-						<td>脱ぎます</td>
-						<td>THOÁT</td>
-						<td>cởi (quần áo, giầy)</td>
-					</tr>
-					<tr>
-						<th>もっていきます</th>
-						<td>持って行きます</td>
-						<td>TRÌ HÀNH</td>
-						<td>mang đi, mang theo</td>
-					</tr>
-					<tr>
-						<th>もってきます</th>
-						<td>持って来ます</td>
-						<td>TRÌ LAI</td>
-						<td>mang đến</td>
-					</tr>
-					<tr>
-						<th>しんぱいします</th>
-						<td>心配します</td>
-						<td>TÂM PHỐI</td>
-						<td>lo lắng</td>
-					</tr>
-					<tr>
-						<th>ざんぎょうします</th>
-						<td>残業します</td>
-						<td>TÀN NGHIỆP</td>
-						<td>làm thêm, làm quá giờ</td>
-					</tr>
-					<tr>
-						<th>しゅっちょうします</th>
-						<td>出張します</td>
-						<td>XUẤT TRƯƠNG</td>
-						<td>đi công tác</td>
-					</tr>
-					<tr>
-						<th>
-							のみます<br />
-							[くすりを～]
-						</th>
-						<td>飲みます<br />[薬を～]</td>
-						<td>ẨM<br />DƯỢC</td>
-						<td>uống [thuốc]</td>
-					</tr>
-					<tr>
-						<th>
-							はいります<br />
-							[おふろに～]
-						</th>
-						<td>入ります<br />[おふろに～]</td>
-						<td>NHẬP</td>
-						<td>tắm bồn [vào bồn tắm]</td>
-					</tr>
-					<tr>
-						<th>たいせつ[な]</th>
-						<td>大切[な]</td>
-						<td>ĐẠI THIẾT</td>
-						<td>quan trọng, quý giá</td>
-					</tr>
-					<tr>
-						<th>だいじょうぶ[な]</th>
-						<td>大丈夫[な]</td>
-						<td>ĐẠI TRƯỢNG PHU</td>
-						<td>không sao, không có vấn đề gì</td>
-					</tr>
-					<tr>
-						<th>あぶない</th>
-						<td>危ない</td>
-						<td>NGUY</td>
-						<td>nguy hiểm</td>
-					</tr>
-					<tr>
-						<th>きんえん</th>
-						<td>禁煙</td>
-						<td>CẤM YÊN</td>
-						<td>cấm hút thuốc</td>
-					</tr>
-					<tr>
-						<th>[けんこう]ほけんしょう</th>
-						<td>[健康]保険証</td>
-						<td>KIỆN KHANG</td>
-						<td>thẻ bảo hiểm [y tế]</td>
-					</tr>
-					<tr>
-						<th>ねつ</th>
-						<td>熱</td>
-						<td>NHIỆT</td>
-						<td>sốt</td>
-					</tr>
-					<tr>
-						<th>びょうき</th>
-						<td>病気</td>
-						<td>BỆNH KHÍ</td>
-						<td>ốm, bệnh</td>
-					</tr>
-					<tr>
-						<th>くすり</th>
-						<td>薬</td>
-						<td>DƯỢC</td>
-						<td>thuốc</td>
-					</tr>
-					<tr>
-						<th>[お]ふろ</th>
-						<td></td>
-						<td></td>
-						<td>bồn tắm</td>
-					</tr>
-					<tr>
-						<th>うわぎ</th>
-						<td>上着</td>
-						<td>THƯỢNG TRƯỚC</td>
-						<td>áo khoác</td>
-					</tr>
-					<tr>
-						<th>したぎ</th>
-						<td>下着</td>
-						<td>HẠ TRƯỚC</td>
-						<td>quần áo lót</td>
-					</tr>
-					<tr>
-						<th>～までに</th>
-						<td></td>
-						<td></td>
-						<td>trước ~ (chỉ thời hạn)</td>
-					</tr>
-					<tr>
-						<th>ですから</th>
-						<td></td>
-						<td></td>
-						<td>vì thế, vì vậy, do đó</td>
-					</tr>
-					<tr>
-						<th colspan="3">どうしましたか。</th>
-						<td>Có vần đề gì?<br />Anh/chị bị làm sao?</td>
-					</tr>
-					<tr>
-						<th colspan="3">のど</th>
-						<td>họng</td>
-					</tr>
-					<tr>
-						<th colspan="3">
-							[～が]<ruby>痛<rp>（</rp>
-								<rt>いた</rt>
-								<rp>）</rp>
-							</ruby>いです。
-						</th>
-						<td>Tôi bị đau [~].</td>
-					</tr>
-					<tr>
-						<th colspan="3">かぜ</th>
-						<td>cảm, cúm</td>
-					</tr>
-					<tr>
-						<th colspan="3">それから</th>
-						<td>và, sau đó</td>
-					</tr>
-					<tr>
-						<th colspan="3">
-							お<ruby>大事<rp>（</rp>
-								<rt>だいじ</rt>
-								<rp>）</rp>
-							</ruby>に
-						</th>
 						<td>
-							Anh/chị nhớ giữ gìn sức khỏe.<br />
-							(câu nói với người ốm,bị bệnh)
+							<strong>えんかいをひらく</strong></td>
+						<td>
+							<strong><ruby>宴会<rp>(</rp>
+									<rt>えんかい</rt>
+									<rp>)</rp>
+								</ruby>を<ruby>開<rp>(</rp>
+									<rt>ひら</rt>
+									<rp>)</rp>
+								</ruby>く</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							mở tiệc</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>のみかい</strong></td>
+						<td>
+							<strong><ruby>飲<rp>(</rp>
+									<rt>の</rt>
+									<rp>)</rp>
+								</ruby>み<ruby>会<rp>(</rp>
+									<rt>かい</rt>
+									<rp>)</rp>
+								</ruby></strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							tiệc nhậu</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>そうべつかい</strong></td>
+						<td>
+							<strong><ruby>送別会<rp>(</rp>
+									<rt>そうべつかい</rt>
+									<rp>)</rp>
+								</ruby></strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							tiệc chia tay</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>かんげいかい</strong></td>
+						<td>
+							<strong><ruby>歓迎会<rp>(</rp>
+									<rt>かんげいかい</rt>
+									<rp>)</rp>
+								</ruby></strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							tiệc nghênh đón</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>のみほうだい</strong></td>
+						<td>
+							<strong><ruby>飲<rp>(</rp>
+									<rt>の</rt>
+									<rp>)</rp>
+								</ruby>み<ruby>放題<rp>(</rp>
+									<rt>ほうだい</rt>
+									<rp>)</rp>
+								</ruby></strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							uống hết sức</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>たべほうだい</strong></td>
+						<td>
+							<strong><ruby>食<rp>(</rp>
+									<rt>た</rt>
+									<rp>)</rp>
+								</ruby>べ<ruby>放題<rp>(</rp>
+									<rt>ほうだい</rt>
+									<rp>)</rp>
+								</ruby></strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							ăn hết sức</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>（お）さけをつぐ</strong></td>
+						<td>
+							<strong>（お）<ruby>酒<rp>(</rp>
+									<rt>さけ</rt>
+									<rp>)</rp>
+								</ruby>を<ruby>注<rp>(</rp>
+									<rt>そそ</rt>
+									<rp>)</rp>
+								</ruby>ぐ</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							rót rượu</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>（お）ゆをそそぐ</strong></td>
+						<td>
+							<strong>（お）<ruby>湯<rp>(</rp>
+									<rt>ゆ</rt>
+									<rp>)</rp>
+								</ruby>を<ruby>注<rp>(</rp>
+									<rt>そそ</rt>
+									<rp>)</rp>
+								</ruby>ぐ</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							đổ nước nóng</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>かんぱいする</strong></td>
+						<td>
+							<strong><ruby>乾杯<rp>(</rp>
+									<rt>かんぱい</rt>
+									<rp>)</rp>
+								</ruby>する</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							cụng ly</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>もりあがる</strong></td>
+						<td>
+							<strong><ruby>盛<rp>(</rp>
+									<rt>も</rt>
+									<rp>)</rp>
+								</ruby>り<ruby>上<rp>(</rp>
+									<rt>あ</rt>
+									<rp>)</rp>
+								</ruby>がる</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							phấn khích, nhảy dựng lên</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>つちが</strong><strong>も</strong><strong>りあがる</strong></td>
+						<td>
+							<strong><ruby>土<rp>(</rp>
+									<rt>つち</rt>
+									<rp>)</rp>
+								</ruby>が<ruby>上<rp>(</rp>
+									<rt>あ</rt>
+									<rp>)</rp>
+								</ruby>がる</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							đất lồi lên</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>ビールのあわ</strong></td>
+						<td>
+							<strong>ビールの<ruby>泡<rp>(</rp>
+									<rt>あわ</rt>
+									<rp>)</rp>
+								</ruby></strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							bọt bia</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>あふれる</strong></td>
+						<td>
 						</td>
+						<td>
+							&nbsp;</td>
+						<td>
+							ngập, tràn đầy</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>こぼす</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							&nbsp;</td>
+						<td>
+							làm đổ</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>こぼれる</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							&nbsp;</td>
+						<td>
+							bị tràn, bị đổ</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>ビールをいっきにのむ</strong></td>
+						<td>
+							<strong>ビールを<ruby>一気<rp>(</rp>
+									<rt>いっき</rt>
+									<rp>)</rp>
+								</ruby>に<ruby>飲<rp>(</rp>
+									<rt>の</rt>
+									<rp>)</rp>
+								</ruby>む</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							uống 1 hơi bia</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>ウィスキーのみずわり</strong></td>
+						<td>
+							<strong>ウィスキーの<ruby>水割<rp>(</rp>
+									<rt>みずわ</rt>
+									<rp>)</rp>
+								</ruby>り</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							pha loãng rượu wisky</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>（お）つまみのチーズ</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							&nbsp;</td>
+						<td>
+							pho mát (mồi)</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>（お）さけによう</strong></td>
+						<td>
+							<strong>（お）<ruby>酒<rp>(</rp>
+									<rt>さけ</rt>
+									<rp>)</rp>
+								</ruby>によう</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							say rượu</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>よっぱらう</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							&nbsp;</td>
+						<td>
+							say xỉn</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>よっぱらい</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							&nbsp;</td>
+						<td>
+							say xỉn</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>あばれる</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							&nbsp;</td>
+						<td>
+							nổi xung</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>にぎやかな</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							&nbsp;</td>
+						<td>
+							huyên náo</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>やかましい</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							&nbsp;</td>
+						<td>
+							ồn ào</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>さわがしい</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							&nbsp;</td>
+						<td>
+							inh ỏi</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>さわぐ</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							&nbsp;</td>
+						<td>
+							làm ồn</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>そうぞうしい</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							&nbsp;</td>
+						<td>
+							ồn ào, sôi nổi</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>たばこのけむり</strong></td>
+						<td>
+							<strong>たばこの<ruby>煙<rp>(</rp>
+									<rt>けむり</rt>
+									<rp>)</rp>
+								</ruby></strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							khói thuốc</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>けむい</strong></td>
+						<td>
+							<strong><ruby>煙<rp>(</rp>
+									<rt>けむ</rt>
+									<rp>)</rp>
+								</ruby>い</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							khói mù mịt</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>けむたい</strong></td>
+						<td>
+							<strong><ruby>煙<rp>(</rp>
+									<rt>けむ</rt>
+									<rp>)</rp>
+								</ruby>たい</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							ngột ngạt (vì khói)</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>グラスをわる</strong></td>
+						<td>
+							<strong>グラスを<ruby>割<rp>(</rp>
+									<rt>わ</rt>
+									<rp>)</rp>
+								</ruby>る</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							làm vỡ cốc thủy tinh</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>グラスがわれる</strong></td>
+						<td>
+							<strong>グラスが<ruby>割<rp>(</rp>
+									<rt>わ</rt>
+									<rp>)</rp>
+								</ruby>れる</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							cốc bị vỡ</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>ビールびんをたおす</strong></td>
+						<td>
+							<strong>ビールびんを<ruby>倒<rp>(</rp>
+									<rt>たお</rt>
+									<rp>)</rp>
+								</ruby>す</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							làm ngã cốc bia</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>ビールびんがたおれる</strong></td>
+						<td>
+							<strong>ビールびんが<ruby>倒<rp>(</rp>
+									<rt>たお</rt>
+									<rp>)</rp>
+								</ruby>れる</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							cốc bia bị ngã</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>ほかのきゃくにめいわくをかける</strong></td>
+						<td>
+							<strong>ほかの<ruby>客<rp>(</rp>
+									<rt>きゃく</rt>
+									<rp>)</rp>
+								</ruby>に<ruby>迷惑<rp>(</rp>
+									<rt>めいわく</rt>
+									<rp>)</rp>
+								</ruby>をかける</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							làm phiền vị khách khác</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>めいわくがかかる</strong></td>
+						<td>
+							<strong><ruby>迷惑<rp>(</rp>
+									<rt>めいわく</rt>
+									<rp>)</rp>
+								</ruby>がかかる</strong></td>
+						<td>
+							&nbsp;</td>
+						<td>
+							bị làm phiền</td>
 					</tr>
 				</tbody>
 			</table>
