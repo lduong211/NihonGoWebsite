@@ -22,7 +22,7 @@
                 <li class="link"><a th:href="N4-detail">N4</a></li>
                 <li class="link"><a th:href="N3-detail">N3</a></li>
                 <li class="link"><a th:href="happyo">Happyo</a></li>
-                <li class="link"><a th:href="weekly">Weekly Vocabulary</a></li>
+                <li class="link"><a th:href="weekly-words">Weekly Vocabulary</a></li>
                 <li class="link"><a th:href="@{https://e-jan.vn/}" target="_blank">Urban-shop</a></li>
             </ul>
         </nav>
@@ -30,25 +30,23 @@
 
     <div class="wrr-wd">
         <section class="happyo-container">
-            <div class="happyo">
-                <div class="happyo-title">
-                    免疫力
-                </div>
+            <div th:class="happyo" th:each="happyo,i : ${happyos}">
+                <div class="happyo-title" th:text="${happyo.title}"></div>
                 <div class="image-happyo">
                     <img style="width: 100%; height: 100%;" th:src="@{/images/exhappyo.png}" alt="">
                 </div>
                 <div class="name">
                     <img style="height: 14px;" th:src="@{/images/signature-solid.svg}" alt="">
-                    <strong style="font-size: 20px; color: black;">カン</strong>
+                    <strong style="font-size: 20px; color: black;" th:text="${happyo.author}"></strong>
                 </div>
                 <div class="date">
                     <img style="height: 14px;" th:src="@{/images/clock-regular.svg}" alt="">
-                    <time style="font-style: italic;">15/21/2022</time>
+                    <time style="font-style: italic;" th:text="${happyo.date}"></time>
                 </div>
-                <div class="happyo-content">免疫力というのは、体を病気から守る力のことです。免疫力が弱くなると、病気にかかりやすくなります。この免疫力を強くするためには、どのようにすればいいのでしょうか。まず、食事が大切です。毎日食べるものは、私たちの体の基礎を作っています。近年、しいたけ、えのきだけ、まいたけなどの「きのこ」は、免疫力を強くする成分が多くふくまれていることで、注目されています。また、腸の環境を整える役割をするヨーグルトや納豆、食物繊維の多いこんにゃくなどの食品をとることも必要です。ストレスは、免疫力を低下させるといわれています。悲しいことやつらいことがあると、病気に対する抵抗力が弱くなるようです。反対に、「笑い」は免疫力をアップします。1日に数回は、大きな声で笑うようにしましょう。</div>
+                <div class="happyo-content" th:text="${happyo.content}"></div>
             </div>
 
-            <div class="happyo m-top">
+            <!-- <div class="happyo m-top">
                 <div class="happyo-title">
                     免疫力
                 </div>
@@ -64,7 +62,7 @@
                     <time style="font-style: italic;">15/21/2022</time>
                 </div>
                 <div class="happyo-content">免疫力というのは、体を病気から守る力のことです。免疫力が弱くなると、病気にかかりやすくなります。この免疫力を強くするためには、どのようにすればいいのでしょうか。まず、食事が大切です。毎日食べるものは、私たちの体の基礎を作っています。近年、しいたけ、えのきだけ、まいたけなどの「きのこ」は、免疫力を強くする成分が多くふくまれていることで、注目されています。また、腸の環境を整える役割をするヨーグルトや納豆、食物繊維の多いこんにゃくなどの食品をとることも必要です。ストレスは、免疫力を低下させるといわれています。悲しいことやつらいことがあると、病気に対する抵抗力が弱くなるようです。反対に、「笑い」は免疫力をアップします。1日に数回は、大きな声で笑うようにしましょう。</div>
-            </div>
+            </div> -->
         </section>
 
 
