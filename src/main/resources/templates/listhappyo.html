@@ -42,7 +42,7 @@
                         <a th:href="weekly-words" style="text-decoration: none; color: #737373">Weekly</a>
                     </li>
                     <li>
-                        <a target="_blank" href="https://e-jan.vn/" style="text-decoration: none; color: #737373">e-jan</a>
+                        <a href="https://e-jan.vn/" style="text-decoration: none; color: #737373">e-jan</a>
                     </li>
                 </ul>
                 <div class="icon">
@@ -58,31 +58,25 @@
         </div>
         <div class="right">
             <div class="List-Body">
-                <div class="List-Grammar">
-                    <p>List Kotoba</p>
+                <div class="List-Grammar"
+                    style="background-image: url('https://i.pinimg.com/originals/d9/5e/09/d95e0951aacb25246d2fda9373194918.jpg'); background-repeat: no-repeat; background-size: cover;">
+                    <img style="border-radius: 50%; width: 120px; height: 120px;"
+                        src="https://images.pexels.com/photos/3380875/pexels-photo-3380875.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940 ">
+                    <p>List Happyo</p>
                 </div>
-                <div class="body">
-                    <div class="content_body">
-                        <div class="row">
-                            <div class="activity" th:each="weeklyword,i : ${weeklywords}">
-                                <div class="activity_detail">
-                                    <p style="color: lightcoral; font-size: 20px; font-weight: 700; text-align: center;"
-                                        th:text="${weeklyword.word}"></p>
-                                    <p style="color: lightcoral; font-size: 20px; text-align: center;"
-                                        th:text="${weeklyword.kanji}"></p>
-                                    <p style="font-size: 20px; font-weight: bolder;">Type:</p>
-                                    <p th:text="${weeklyword.type}"></p><br>
-                                    <p style="font-size: 20px; font-weight: bolder;">Verb Meaning:</p>
-                                    <p th:text="${weeklyword.meaning}"></p><br>
-                                    <p style="font-size: 20px; font-weight: bolder;">Ex:</p>
-                                    <p th:text="${weeklyword.ex}"></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="Table-content">
+                    <p>Happyo's Title</p>
+                </div>
+                <div class="List-table">
+                    <table>
+                        <tr th:each="happyo,i : ${happyos}">
+                            <td th:text="${i.count}"></td>
+                            <td><a th:href="@{/happyo/{id}(id=${happyo.id})}" th:text="${happyo.title}"></a></td>
+                        </tr>
+                    </table>
                 </div>
             </div>
-            <div class="footer" style="height:80px;">
+            <div class="footer" style="height:80px; margin-top: 14%;">
                 <p style="text-align: center; color: #e6e6e6; padding-top: 20px;">Copyright 2020 URBAN Viet Nam, All
                     Right Reserved</p>
             </div>
