@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+	<link rel="stylesheet" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css}">
+	<link
+      rel="stylesheet" th:href="@{https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css}"
+	/>
+    <title>日本語</title>
+</head>
+
+<body>
+    <header>
+        <header-title>日本の勉強</header-title>
+        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+        <hr>
+        <nav>
+            <ul>
+                <li class="link"><a th:href="homepage">Home</a></li>
+                <li class="link"><a th:href="N5-detail">N5</a></li>
+                <li class="link"><a th:href="N4-detail">N4</a></li>
+                <li class="link"><a th:href="N3-detail">N3</a></li>
+                <li class="link"><a th:href="listhappyo">Happyo</a></li>
+                <li class="link"><a th:href="weekly-words">Weekly Vocabulary</a></li>
+                <li class="link"><a th:href="@{https://e-jan.vn/}" target="_blank">Urban-shop</a></li>
+            </ul>
+        </nav>
+	</header>
+	
+	<div class="container" style="margin-top: 5%;">
+		<!-- Table -->
+		<div class="table-responsive">
+			<table class="table table-bordered">
+			  <thead class="thead-dark">
+				<tr>
+				  <th>Từ Vựng</th>
+				  <th>Hán Tự</th>
+				  <th>Âm Hán</th>
+				  <th>Nghĩa</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr>
+				  <th>私</th>
+				  <td></td>
+				  <td></td>
+				  <td>Tôi</td>
+				</tr>
+				<tr>
+				  <th>あなた</th>
+				  <td></td>
+				  <td></td>
+				  <td>anh/ chị/ ông/ bà,</td>
+				</tr>
+				<tr>
+				  <th>あのひと</th>
+				  <td>あの人</td>
+				  <td>NHÂN</td>
+				  <td>người kia, người đó</td>
+				</tr>
+				<tr>
+				  <th>あのかた</th>
+				  <td>あの方</td>
+				  <td>PHƯƠNG</td>
+				  <td>vị kia (cách nói lịch sự của あのひと)</td>
+				</tr>
+				<tr>
+				  <th>〜さん</th>
+				  <td></td>
+				  <td></td>
+				  <td>anh, chị, ông, bà</td>
+				</tr>
+				<tr>
+				  <th>〜ちゃん</th>
+				  <td></td>
+				  <td></td>
+				  <td>(hậu tố thêm vào sau tên của trẻ em thay cho 「〜さん」)</td>
+				</tr>
+				<tr>
+				  <th>〜じん</th>
+				  <td>～人</td>
+				  <td>NHÂN</td>
+				  <td>người (nước)~ ví dụ 「アメリカじん」: người Mỹ)</td>
+				</tr>
+				<tr>
+				  <th>せんせい</th>
+				  <td>先生</td>
+				  <td>TIÊN SINH</td>
+				  <td>thầy/ cô</td>
+				</tr>
+				<tr>
+				  <th>きょうし</th>
+				  <td>教師</td>
+				  <td>GIÁO SƯ</td>
+				  <td>giáo viên</td>
+				</tr>
+				<tr>
+				  <th>がくせい</th>
+				  <td>学生</td>
+				  <td>HỌC SINH</td>
+				  <td>học sinh, sinh viên</td>
+				</tr>
+				<tr>
+				  <th>かいしゃいん</th>
+				  <td>会社員</td>
+				  <td>HỘI XÃ VIÊN</td>
+				  <td>nhân viên công ty</td>
+				</tr>
+				<tr>
+				  <th>しゃいん</th>
+				  <td>社員</td>
+				  <td>XÃ VIÊN</td>
+				  <td>nhân viên công ty ~ ví dụ 「ＩＭＣのしゃいん」</td>
+				</tr>
+				<tr>
+				  <th>ぎんこういん</th>
+				  <td>銀行員</td>
+				  <td>NGÂN HÀNH VIÊN</td>
+				  <td>nhân viên ngân hàng</td>
+				</tr>
+				<tr>
+				  <th>いしゃ</th>
+				  <td>医者</td>
+				  <td>Y GIẢ</td>
+				  <td>bác sĩ</td>
+				</tr>
+				<tr>
+				  <th>けんきゅうしゃ</th>
+				  <td>研究者</td>
+				  <td>NGHIÊN CỨU GIẢ</td>
+				  <td>nhà nghiên cứu</td>
+				</tr>
+				<tr>
+				  <th>だいがく</th>
+				  <td>大学</td>
+				  <td>ĐẠI HỌC</td>
+				  <td>đại học, trường đại học</td>
+				</tr>
+				<tr>
+				  <th>びょういん</th>
+				  <td>病院</td>
+				  <td>BỆNH VIỆN</td>
+				  <td>bệnh viện</td>
+				</tr>
+				<tr>
+				  <th>だれ （どなた）</th>
+				  <td></td>
+				  <td></td>
+				  <td>ai (「どなた」là cách nói lịch sự của 「だれ」, vị nào)</td>
+				</tr>
+				<tr>
+				  <th>―さい</th>
+				  <td>－歳</td>
+				  <td>NHẤT TUẾ</td>
+				  <td>―tuổi</td>
+				</tr>
+				<tr>
+				  <th>なんさい (おいくつ）</th>
+				  <td>何歳</td>
+				  <td>HÀ TUẾ</td>
+				  <td>
+					mấy tuổi, bao nhiêu tuổi (「おいくつ」là cách nói lịch sự
+					của「なんさ い」)
+				  </td>
+				</tr>
+				<tr>
+				  <th>はい</th>
+				  <td></td>
+				  <td></td>
+				  <td>vâng, dạ</td>
+				</tr>
+				<tr>
+				  <th>いいえ</th>
+				  <td></td>
+				  <td></td>
+				  <td>không</td>
+				</tr>
+			  </tbody>
+			</table>
+		  </div>
+		<!-- End Table -->
+	  </div>
+	  
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.menu-toggle').click(function () {
+                $('nav').toggleClass('active');
+            });
+            $('.link').click(function () {
+                $('nav').toggleClass('active');
+            })
+        })
+	</script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" th:href="@{/css/style.css}" />
+	<link rel="stylesheet" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css}" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+	<title>日本語</title>
+	<style>
+		.flex-container {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.flex-content {
+			width: 65%;
+			height: auto;
+			margin: 0 10px 0 0;
+			border: #888 1px solid;
+			padding: 15px;
+			box-shadow: 3px 8px #888888;
+		}
+
+		.flex-list {
+			width: 30%;
+			height: 300px;
+			padding: 5px;
+			position: sticky;
+			top: 0;
+			border: 1px solid #888;
+			box-shadow: 5px 10px #888888;
+		}
+
+		.title {
+			font-size: 2em;
+			letter-spacing: -1px;
+			text-align: left;
+		}
+
+		.structure {
+			color: #008080;
+			font-size: 20px;
+		}
+
+		.meaning {
+			color: coral;
+		}
+
+		.example {
+			margin-bottom: 15px;
+			line-height: 2em;
+		}
+
+		.example-title {
+			font-size: 20px;
+			font-style: oblique;
+			text-decoration: underline;
+		}
+
+		.list-title {
+			font-size: 20px;
+			color: #008080;
+			text-align: center;
+		}
+
+		@media screen and (max-width: 640px) {
+			.flex-content {
+				width: 100%;
+			}
+
+			.flex-list {
+				display: none;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<header-title>日本の勉強</header-title>
+		<div class="menu-toggle"><i class="fas fa-bars"></i></div>
+		<hr />
+		<nav>
+			<ul>
+				<li class="link"><a th:href="homepage">Home</a></li>
+				<li class="link"><a th:href="N5-detail">N5</a></li>
+				<li class="link"><a th:href="N4-detail">N4</a></li>
+				<li class="link"><a th:href="N3-detail">N3</a></li>
+				<li class="link"><a th:href="listhappyo">Happyo</a></li>
+				<li class="link"><a th:href="weekly-words">Weekly Vocabulary</a></li>
+				<li class="link">
+					<a th:href="@{https://e-jan.vn/}" target="_blank">Urban-shop</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="container" style="margin-top: 5%;">
+		<div class="flex-container">
+			<div class="flex-content">
+				<!-- 3 -->
+				<div class="title" id="1">
+					1. Vれる（<ruby>受身<rp>(</rp>
+						<rt>うけみ</rt>
+						<rp>)</rp>
+					</ruby>)
+				</div>
+				<div class="meaning">
+					Bị, được (Bị động)
+				</div>
+				<div class="structure">
+					<p>
+						Dùng tường thuật lại một sự việc mà được thực hiện bởi một chủ thể
+						khác (chủ thể bị ẩn)
+					</p>
+					<p>
+						Nói về những việc được biết đến rộng rãi.
+					</p>
+				</div>
+				<div class="example">
+					<div class="example-title">Ví dụ</div>
+					<div>
+						この<ruby>本<rp>(</rp>
+							<rt>ほん</rt>
+							<rp>)</rp>
+						</ruby>には、くわしい<ruby>説明<rp>(</rp>
+							<rt>せつめい</rt>
+							<rp>)</rp>
+						</ruby>は<ruby>書<rp>(</rp>
+							<rt>か</rt>
+							<rp>)</rp>
+						</ruby>かれていません。
+					</div>
+					<div>
+						これは、<ruby>世界<rp>(</rp>
+							<rt>せかい</rt>
+							<rp>)</rp>
+						</ruby>でいちばん<ruby>大<rp>(</rp>
+							<rt>おお</rt>
+							<rp>)</rp>
+						</ruby>きいダイヤモンドだと<ruby>言<rp>(</rp>
+							<rt>い</rt>
+							<rp>)</rp>
+						</ruby>われています。
+					</div>
+				</div>
+				<!-- 2 -->
+				<div class="title" id="2">
+					2. ～<ruby>赤<rp>(</rp>
+						<rt>あか</rt>
+						<rp>)</rp>
+					</ruby>ちゃんに泣かれた
+				</div>
+				<div class="meaning">
+					（Nに）Vれる: Bị (cái gì đó/ai đó)
+				</div>
+				<div class="structure">
+					<p>
+						Vれてしまった: Bị...mất rồi (ý tiếc nuối, khổ sở)
+					</p>
+					<p>
+						Thường dùng nói đến những tình huống gặp khó khăn, khổ sở do bởi
+						một yếu tố nào đó.&nbsp;
+					</p>
+				</div>
+				<div class="example">
+					<div class="example-title">Ví dụ</div>
+					<div>
+						<ruby>友<rp>(</rp>
+							<rt>とも</rt>
+							<rp>)</rp>
+						</ruby>だちの<ruby>赤<rp>(</rp>
+							<rt>あか</rt>
+							<rp>)</rp>
+						</ruby>ちゃんを<ruby>抱<rp>(</rp>
+							<rt>だ</rt>
+							<rp>)</rp>
+						</ruby>っこしたら、<ruby>泣<rp>(</rp>
+							<rt>な</rt>
+							<rp>)</rp>
+						</ruby>かれてしまった。
+					</div>
+					<div>
+						<ruby>雨<rp>(</rp>
+							<rt>あめ</rt>
+							<rp>)</rp>
+						</ruby>に<ruby>降<rp>(</rp>
+							<rt>ふ</rt>
+							<rp>)</rp>
+						</ruby>られて、<ruby>服<rp>(</rp>
+							<rt>ふく</rt>
+							<rp>)</rp>
+						</ruby>がぬれてしまった。
+					</div>
+				</div>
+				<!-- 3 -->
+				<div class="title" id="3">
+					3. ～<ruby>早<rp>(</rp>
+						<rt>はや</rt>
+						<rp>)</rp>
+					</ruby>く<ruby>帰<rp>(</rp>
+						<rt>かえ</rt>
+						<rp>)</rp>
+					</ruby>らせてください
+				</div>
+				<div class="structure">
+					V（させて）ください/もらえますか/もらえませんか
+				</div>
+				<div class="meaning">
+					Có thể cho phép tôi ~ được không?
+				</div>
+				<div class="structure">
+					<p>
+						Dùng để xin phép đối phương&nbsp; cho mình làm một việc gì đó.
+					</p>
+					<p>
+						Cùng có ý như nhau nhưng mức độ lịch sự sẽ khác nhau. Cụ thể:
+					</p>
+					<p>
+						Vさせて　ください　＜　Vさせて　もらえます　＜　Vさせて　もらえませんか。
+					</p>
+				</div>
+				<div class="example">
+					<div class="example-title">Ví dụ</div>
+					<div>
+						ちょっと<ruby>気<rp>(</rp>
+							<rt>き</rt>
+							<rp>)</rp>
+						</ruby><ruby>分<rp>(</rp>
+							<rt>ぶ</rt>
+							<rp>)</rp>
+						</ruby>が<ruby>悪<rp>(</rp>
+							<rt>わる</rt>
+							<rp>)</rp>
+						</ruby>いので、<ruby>早<rp>(</rp>
+							<rt>はや</rt>
+							<rp>)</rp>
+						</ruby>く<ruby>帰<rp>(</rp>
+							<rt>かえ</rt>
+							<rp>)</rp>
+						</ruby>らせてください。
+					</div>
+					<div>
+						あなたの<ruby>会社<rp>(</rp>
+							<rt>かいしゃ</rt>
+							<rp>)</rp>
+						</ruby>のお<ruby>話<rp>(</rp>
+							<rt>はなし</rt>
+							<rp>)</rp>
+						</ruby>を<ruby>聞<rp>(</rp>
+							<rt>き</rt>
+							<rp>)</rp>
+						</ruby>かせてください。
+					</div>
+				</div>
+			</div>
+			<div class="flex-list">
+				<div class="list-title">Danh sách tổng hợp</div>
+				<ul>
+					<a href="#1">
+						<li>
+							1. Vれる（<ruby>受身<rp>(</rp>
+								<rt>うけみ</rt>
+								<rp>)</rp>
+							</ruby>)
+						</li>
+					</a>
+					<a href="#2">
+						<li>
+							2. ～<ruby>赤<rp>(</rp>
+								<rt>あか</rt>
+								<rp>)</rp>
+							</ruby>ちゃんに泣かれた
+						</li>
+					</a>
+					<a href="#3">
+						<li>
+							3. ～<ruby>早<rp>(</rp>
+								<rt>はや</rt>
+								<rp>)</rp>
+							</ruby>く<ruby>帰<rp>(</rp>
+								<rt>かえ</rt>
+								<rp>)</rp>
+							</ruby>らせてください
+						</li>
+					</a>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$(".menu-toggle").click(function () {
+				$("nav").toggleClass("active");
+			});
+			$(".link").click(function () {
+				$("nav").toggleClass("active");
+			});
+		});
+	</script>
+</body>
+
+</html>

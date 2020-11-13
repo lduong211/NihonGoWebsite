@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" th:href="@{/css/style.css}">
+	<link rel="stylesheet" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css}">
+	<link rel="stylesheet" th:href="@{https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css}" />
+	<title>日本語</title>
+</head>
+
+<body>
+	<header>
+		<header-title>日本の勉強</header-title>
+		<div class="menu-toggle"><i class="fas fa-bars"></i></div>
+		<hr>
+		<nav>
+			<ul>
+				<li class="link"><a th:href="homepage">Home</a></li>
+				<li class="link"><a th:href="N5-detail">N5</a></li>
+				<li class="link"><a th:href="N4-detail">N4</a></li>
+				<li class="link"><a th:href="N3-detail">N3</a></li>
+				<li class="link"><a th:href="listhappyo">Happyo</a></li>
+				<li class="link"><a th:href="weekly-words">Weekly Vocabulary</a></li>
+				<li class="link"><a th:href="@{https://e-jan.vn/}" target="_blank">Urban-shop</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="container" style="margin-top: 5%;">
+		<!-- Table -->
+		<div class="table-responsive">
+			<table class="table table-bordered">
+				<thead class="thead-dark">
+					<tr>
+						<th class="ht">Hán Tự</th>
+						<th class="ah">Âm Hán</th>
+						<th class="tv">Từ Vựng</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>泣きます</td>
+						<td>KHẤP</td>
+						<td>なきます</td>
+					</tr>
+					<tr>
+						<td>笑います</td>
+						<td>TIẾU</td>
+						<td>わらいます</td>
+					</tr>
+					<tr>
+						<td>眠ります</td>
+						<td>MIÊN</td>
+						<td>ねむります</td>
+					</tr>
+					<tr>
+						<td>乾きます</td>
+						<td>CAN</td>
+						<td>かわきます<br>　[シャツが～]</td>
+					</tr>
+					<tr>
+						<td>滑ります</td>
+						<td>HOẠT</td>
+						<td>すべります</td>
+					</tr>
+					<tr>
+						<td>起きます<br>[事故が～]</td>
+						<td>KHỞI<br>SỰ CỐ</td>
+						<td>おきます<br> [じこが～]</td>
+					</tr>
+					<tr>
+						<td>調節します</td>
+						<td>ĐIỀU TIẾT</td>
+						<td>ちょうせつします</td>
+					</tr>
+					<tr>
+						<td>安全[な]</td>
+						<td>AN TOÀN</td>
+						<td>あんぜん[な]</td>
+					</tr>
+					<tr>
+						<td>危険[な]</td>
+						<td>NGUY HIỂM</td>
+						<td>きけん[な]</td>
+					</tr>
+					<tr>
+						<td>濃い</td>
+						<td>NỒNG</td>
+						<td>こい</td>
+					</tr>
+					<tr>
+						<td>薄い</td>
+						<td>BẠC</td>
+						<td>うすい</td>
+					</tr>
+					<tr>
+						<td>厚い</td>
+						<td>HẬU</td>
+						<td>あつい</td>
+					</tr>
+					<tr>
+						<td>太い</td>
+						<td>THÁI</td>
+						<td>ふとい</td>
+					</tr>
+					<tr>
+						<td>細い</td>
+						<td>TẾ</td>
+						<td>ほそい</td>
+					</tr>
+					<tr>
+						<td>空気</td>
+						<td>KHÔNG KHÍ</td>
+						<td>くうき</td>
+					</tr>
+					<tr>
+						<td>涙</td>
+						<td>LỆ</td>
+						<td>なみだ</td>
+					</tr>
+					<tr>
+						<td>和食</td>
+						<td>HÒA THỰC</td>
+						<td>わしょく</td>
+					</tr>
+					<tr>
+						<td>洋食</td>
+						<td>DƯƠNG THỰC</td>
+						<td>ようしょく</td>
+					</tr>
+					<tr>
+						<td>量</td>
+						<td>LƯỢNG</td>
+						<td>りょう</td>
+					</tr>
+					<tr>
+						<td>―倍</td>
+						<td>BỘI</td>
+						<td>―ばい</td>
+					</tr>
+					<tr>
+						<td>洗濯物</td>
+						<td>TẨY TRẠC VẬT</td>
+						<td>せんたくもの</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- End Table -->
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('.menu-toggle').click(function () {
+				$('nav').toggleClass('active');
+			});
+			$('.link').click(function () {
+				$('nav').toggleClass('active');
+			})
+		})
+	</script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

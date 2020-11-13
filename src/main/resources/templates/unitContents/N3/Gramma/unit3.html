@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" th:href="@{/css/style.css}" />
+	<link rel="stylesheet" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css}" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+	<title>日本語</title>
+	<style>
+		.flex-container {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.flex-content {
+			width: 65%;
+			height: auto;
+			margin: 0 10px 0 0;
+			border: #888 1px solid;
+			padding: 15px;
+			box-shadow: 3px 8px #888888;
+		}
+
+		.flex-list {
+			width: 30%;
+			height: 300px;
+			padding: 5px;
+			position: sticky;
+			top: 0;
+			border: 1px solid #888;
+			box-shadow: 5px 10px #888888;
+		}
+
+		.title {
+			font-size: 2em;
+			letter-spacing: -1px;
+			text-align: left;
+		}
+
+		.structure {
+			color: #008080;
+			font-size: 20px;
+		}
+
+		.meaning {
+			color: coral;
+		}
+
+		.example {
+			margin-bottom: 15px;
+			line-height: 2em;
+		}
+
+		.example-title {
+			font-size: 20px;
+			font-style: oblique;
+			text-decoration: underline;
+		}
+
+		.list-title {
+			font-size: 20px;
+			color: #008080;
+			text-align: center;
+		}
+
+		@media screen and (max-width: 640px) {
+			.flex-content {
+				width: 100%;
+			}
+
+			.flex-list {
+				display: none;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<header-title>日本の勉強</header-title>
+		<div class="menu-toggle"><i class="fas fa-bars"></i></div>
+		<hr />
+		<nav>
+			<ul>
+				<li class="link"><a th:href="homepage">Home</a></li>
+				<li class="link"><a th:href="N5-detail">N5</a></li>
+				<li class="link"><a th:href="N4-detail">N4</a></li>
+				<li class="link"><a th:href="N3-detail">N3</a></li>
+				<li class="link"><a th:href="listhappyo">Happyo</a></li>
+				<li class="link"><a th:href="weekly-words">Weekly Vocabulary</a></li>
+				<li class="link">
+					<a th:href="@{https://e-jan.vn/}" target="_blank">Urban-shop</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="container" style="margin-top: 5%;">
+		<div class="flex-container">
+			<div class="flex-content">
+				<!-- 3 -->
+				<div class="title" id="1">
+					1.
+					<p style="text-align: center;">
+						<font color="#ff0000" size="5">N</font>
+						<font size="5"><strike>だ</strike></font>
+						<font color="#ff0000" size="5">／V（<ruby>普通<rp>(</rp>
+								<rt>ふつう</rt>
+								<rp>)</rp>
+							</ruby><ruby>形<rp>(</rp>
+								<rt>けい</rt>
+								<rp>)</rp>
+							</ruby>）／A　+　みたいだ／みたいに</font>
+					</p>
+					<p style="text-align: center;">
+						&nbsp;
+					</p>
+					<p style="text-align: center;">
+						<span style="color: rgb(255, 0, 0); font-size: x-large;">V（<ruby>普通<rp>(</rp>
+								<rt>ふつう</rt>
+								<rp>)</rp>
+							</ruby><ruby>形<rp>(</rp>
+								<rt>けい</rt>
+								<rp>)</rp>
+							</ruby>）／A　+ </span><span style="color: rgb(255, 0, 0); font-size: x-large;">みたいな　+　N</span>
+					</p>
+				</div>
+				<div class="meaning">
+					Giống như, trông có vẻ
+				</div>
+				<div class="structure">
+					<p>
+						Dùng trong văn nói để miêu tả về người, sự vật mang vẻ, dáng dấp
+						gì đó mà đối phương so sánh được
+					</p>
+				</div>
+				<div class="example">
+					<div class="example-title">Ví dụ</div>
+					<div>
+						<ruby>彼<rp>(</rp>
+							<rt>かれ</rt>
+							<rp>)</rp>
+						</ruby>の<ruby>話<rp>(</rp>
+							<rt>はな</rt>
+							<rp>)</rp>
+						</ruby>し<ruby>方<rp>(</rp>
+							<rt>かた</rt>
+							<rp>)</rp>
+						</ruby>は、<ruby>女<rp>(</rp>
+							<rt>おんな</rt>
+							<rp>)</rp>
+						</ruby>みたいだ。
+					</div>
+					<div>
+						リンさんみたいに<ruby>日本語<rp>(</rp>
+							<rt>にほんご</rt>
+							<rp>)</rp>
+						</ruby>がうまくなりたい。
+					</div>
+				</div>
+				<!-- 2 -->
+				<div class="title" id="2">
+					2.Nらしい
+				</div>
+				<div class="meaning">
+					Có vẻ (nam tính, nữ tính, trẻ con....)
+				</div>
+				<div class="structure">
+					Dùng trong văn nói. Dùng khi muốn miêu tả đặc tính mà mình cảm nhận
+					được từ sự vật sự việc
+				</div>
+				<div class="example">
+					<div class="example-title">Ví dụ</div>
+					<div>
+						<ruby>今日<rp>(</rp>
+							<rt>きょう</rt>
+							<rp>)</rp>
+						</ruby>は、<ruby>春<rp>(</rp>
+							<rt>はる</rt>
+							<rp>)</rp>
+						</ruby>らしい<ruby>暖<rp>(</rp>
+							<rt>あたた</rt>
+							<rp>)</rp>
+						</ruby>かい<ruby>日<rp>(</rp>
+							<rt>ひ</rt>
+							<rp>)</rp>
+						</ruby>でした。
+					</div>
+					<div>
+						<ruby>私<rp>(</rp>
+							<rt>わたし</rt>
+							<rp>)</rp>
+						</ruby>は<ruby>女性<rp>(</rp>
+							<rt>じょせい</rt>
+							<rp>)</rp>
+						</ruby>らしい<ruby>洋服<rp>(</rp>
+							<rt>ようふく</rt>
+							<rp>)</rp>
+						</ruby>はあまり<ruby>着<rp>(</rp>
+							<rt>き</rt>
+							<rp>)</rp>
+						</ruby>ない。
+					</div>
+				</div>
+				<!-- 3 -->
+				<div class="title" id="3">
+					3. Nっぽい
+				</div>
+				<div class="meaning">
+					Tràn, đầy, đậm chất
+				</div>
+				<div class="structure">
+					Thường dùng trong văn nói. Dùng để nói đến sự vật, sự việc, con
+					người với đặc điểm thấm đẫm một tính chất nào đó.
+				</div>
+				<div class="example">
+					<div class="example-title">Ví dụ</div>
+					<div>
+						あの<ruby>小学生<rp>(</rp>
+							<rt>しょうがくせい</rt>
+							<rp>)</rp>
+						</ruby>は、<ruby>大人<rp>(</rp>
+							<rt>おとな</rt>
+							<rp>)</rp>
+						</ruby>っぽい。
+					</div>
+					<div>
+						この<ruby>料理<rp>(</rp>
+							<rt>りょうり</rt>
+							<rp>)</rp>
+						</ruby>は<ruby>油<rp>(</rp>
+							<rt>あぶら</rt>
+							<rp>)</rp>
+						</ruby>っぽくていやだ。
+					</div>
+				</div>
+			</div>
+			<div class="flex-list">
+				<div class="list-title">Danh sách tổng hợp</div>
+				<ul>
+					<a href="#1">
+						<li>
+							1.
+							<span>～<ruby>女<rp>(</rp>
+									<rt>おんな</rt>
+									<rp>)</rp>
+								</ruby>みたいだ</span>
+						</li>
+					</a>
+					<a href="#2">
+						<li>
+							2.
+							<span>～<ruby>春<rp>(</rp>
+									<rt>はる</rt>
+									<rp>)</rp>
+								</ruby>らしい</span>
+						</li>
+					</a>
+					<a href="#3">
+						<li>
+							3.
+							<span>～<ruby>大人<rp>(</rp>
+									<rt>おとな</rt>
+									<rp>)</rp>
+								</ruby>っぽい</span>
+						</li>
+					</a>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$(".menu-toggle").click(function () {
+				$("nav").toggleClass("active");
+			});
+			$(".link").click(function () {
+				$("nav").toggleClass("active");
+			});
+		});
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" th:href="@{/css/style.css}">
+	<link rel="stylesheet" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css}">
+	<link rel="stylesheet" th:href="@{https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css}" />
+	<title>日本語</title>
+</head>
+
+<body>
+	<header>
+		<header-title>日本の勉強</header-title>
+		<div class="menu-toggle"><i class="fas fa-bars"></i></div>
+		<hr>
+		<nav>
+			<ul>
+				<li class="link"><a th:href="homepage">Home</a></li>
+				<li class="link"><a th:href="N5-detail">N5</a></li>
+                <li class="link"><a th:href="N4-detail">N4</a></li>
+                <li class="link"><a th:href="N3-detail">N3</a></li>
+				<li class="link"><a th:href="listhappyo">Happyo</a></li>
+				<li class="link"><a th:href="weekly-words">Weekly Vocabulary</a></li>
+				<li class="link"><a th:href="@{https://e-jan.vn/}" target="_blank">Urban-shop</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="container" style="margin-top: 5%;">
+		<!-- Table -->
+		<div class="table-responsive">
+			<table class="table table-bordered">
+				<thead class="thead-dark">
+					<tr>
+						<th>Từ Vựng</th>
+						<th>Hán Tự</th>
+						<th>Âm Hán</th>
+						<th>Nghĩa</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>[こどもが～] います</th>
+						<td>[子供が～]</td>
+						<td>TỬ CUNG</td>
+						<td>có [con]</td>
+					</tr>
+					<tr>
+						<th>[にほんに～] います</th>
+						<td>[日本に～]</td>
+						<td>NHẬT BẢN</td>
+						<td>ở [Nhật]</td>
+					</tr>
+					<tr>
+						<th>かかります</th>
+						<td></td>
+						<td></td>
+						<td>mất, tốn (thời gian, tiền bạc)</td>
+					</tr>
+					<tr>
+						<th>やすみます<br />[かいしゃを～]</th>
+						<td>休みます<br />[会社を～]</td>
+						<td>HƯU<br />HỘI XÃ</td>
+						<td>nghỉ [làm việc]</td>
+					</tr>
+					<tr>
+						<th>ひとつ</th>
+						<td>１つ</td>
+						<td></td>
+						<td>một cái (dùng để đếm đồ vật)</td>
+					</tr>
+					<tr>
+						<th>ふたつ</th>
+						<td>２つ</td>
+						<td></td>
+						<td>hai cái</td>
+					</tr>
+					<tr>
+						<th>みっつ</th>
+						<td>３つ</td>
+						<td></td>
+						<td>ba cái</td>
+					</tr>
+					<tr>
+						<th>よっつ</th>
+						<td>４つ</td>
+						<td></td>
+						<td>bốn cái</td>
+					</tr>
+					<tr>
+						<th>いつつ</th>
+						<td>５つ</td>
+						<td></td>
+						<td>năm cái</td>
+					</tr>
+					<tr>
+						<th>むっつ</th>
+						<td>６つ</td>
+						<td></td>
+						<td>sáu cái</td>
+					</tr>
+					<tr>
+						<th>ななつ</th>
+						<td>７つ</td>
+						<td></td>
+						<td>bảy cái</td>
+					</tr>
+					<tr>
+						<th>やっつ</th>
+						<td>８つ</td>
+						<td></td>
+						<td>tám cái</td>
+					</tr>
+					<tr>
+						<th>ここのつ</th>
+						<td>９つ</td>
+						<td></td>
+						<td>chín cái</td>
+					</tr>
+					<tr>
+						<th>とお</th>
+						<td>10</td>
+						<td></td>
+						<td>mười cái</td>
+					</tr>
+					<tr>
+						<th>いくつ</th>
+						<td></td>
+						<td></td>
+						<td>mấy cái, bao nhiêu cái</td>
+					</tr>
+					<tr>
+						<th>ひとり</th>
+						<td>１人</td>
+						<td>NHÂN</td>
+						<td>một người</td>
+					</tr>
+					<tr>
+						<th>ふたり</th>
+						<td>２人</td>
+						<td>NHÂN</td>
+						<td>hai người</td>
+					</tr>
+					<tr>
+						<th>―にん</th>
+						<td>－人</td>
+						<td>NHÂN</td>
+						<td>- người</td>
+					</tr>
+					<tr>
+						<th>―だい</th>
+						<td>－台</td>
+						<td>ĐÀI</td>
+						<td>- cái (dùng để đếm máy móc, xe cộ v.v.)</td>
+					</tr>
+					<tr>
+						<th>―まい</th>
+						<td>－枚</td>
+						<td>MAI</td>
+						<td>
+							tờ, tấm (dùng để đếm những vật mỏng<br />
+							như giấy, con tem v.v.)
+						</td>
+					</tr>
+					<tr>
+						<th>―かい</th>
+						<td>―回</td>
+						<td>HỒI</td>
+						<td>- lần</td>
+					</tr>
+					<tr>
+						<th>りんご</th>
+						<td></td>
+						<td></td>
+						<td>táo</td>
+					</tr>
+					<tr>
+						<th>みかん</th>
+						<td></td>
+						<td></td>
+						<td>quýt</td>
+					</tr>
+					<tr>
+						<th>サンドイッチ</th>
+						<td></td>
+						<td></td>
+						<td>bánh San Uých</td>
+					</tr>
+					<tr>
+						<th>カレー[ライス]</th>
+						<td></td>
+						<td></td>
+						<td>món [cơm] ca-ri</td>
+					</tr>
+					<tr>
+						<th>アイスクリーム</th>
+						<td></td>
+						<td></td>
+						<td>kem</td>
+					</tr>
+					<tr>
+						<th>きって</th>
+						<td>切手</td>
+						<td>THIẾT THỦ</td>
+						<td>tem</td>
+					</tr>
+					<tr>
+						<th>はがき</th>
+						<td></td>
+						<td></td>
+						<td>bưu thiếp</td>
+					</tr>
+					<tr>
+						<th>ふうとう</th>
+						<td>封筒</td>
+						<td>PHONG ĐỒNG</td>
+						<td>phong bì</td>
+					</tr>
+					<tr>
+						<th>りょうしん</th>
+						<td>両親</td>
+						<td>LƯỠNG THÂN</td>
+						<td>bố mẹ</td>
+					</tr>
+					<tr>
+						<th>きょうだい</th>
+						<td>兄弟</td>
+						<td>HUYNH ĐỆ</td>
+						<td>anh chị em</td>
+					</tr>
+					<tr>
+						<th>あに</th>
+						<td>兄</td>
+						<td>HUYNH</td>
+						<td>anh trai</td>
+					</tr>
+					<tr>
+						<th>おにいさん</th>
+						<td>お兄さん</td>
+						<td>HUYNH</td>
+						<td>anh trai (dùng cho người khác)</td>
+					</tr>
+					<tr>
+						<th>あね</th>
+						<td>姉</td>
+						<td>TỶ</td>
+						<td>chị gái</td>
+					</tr>
+					<tr>
+						<th>おねえさん</th>
+						<td>お姉さん</td>
+						<td>TỶ</td>
+						<td>chị gái (dùng cho người khác)</td>
+					</tr>
+					<tr>
+						<th>おとうと</th>
+						<td>弟</td>
+						<td>ĐỆ</td>
+						<td>em trai</td>
+					</tr>
+					<tr>
+						<th>おとうとさん</th>
+						<td>弟さん</td>
+						<td>ĐỆ</td>
+						<td>em trai (dùng cho người khác)</td>
+					</tr>
+					<tr>
+						<th>いもうと</th>
+						<td>妹</td>
+						<td>MUỘI</td>
+						<td>em gái</td>
+					</tr>
+					<tr>
+						<th>いもうとさん</th>
+						<td>妹さん</td>
+						<td>MUỘI</td>
+						<td>em gái (dùng cho người khác)</td>
+					</tr>
+					<tr>
+						<th>がいこく</th>
+						<td>外国</td>
+						<td>NGOẠI QUỐC</td>
+						<td>nước ngoài</td>
+					</tr>
+					<tr>
+						<th>りゅうがくせい</th>
+						<td>留学生</td>
+						<td>LƯU HỌC SINH</td>
+						<td>lưu học sinh, sinh viên nước ngoài</td>
+					</tr>
+					<tr>
+						<th>クラス</th>
+						<td></td>
+						<td></td>
+						<td>lớp học</td>
+					</tr>
+					<tr>
+						<th>―じかん</th>
+						<td>―時間</td>
+						<td>THỜI GIAN</td>
+						<td>- tiếng</td>
+					</tr>
+					<tr>
+						<th>―しゅうかん</th>
+						<td>―週間</td>
+						<td>CHU GIAN</td>
+						<td>- tuần</td>
+					</tr>
+					<tr>
+						<th>―かげつ</th>
+						<td>－か月</td>
+						<td>NGUYỆT</td>
+						<td>- tháng</td>
+					</tr>
+					<tr>
+						<th>―ねん</th>
+						<td>―年</td>
+						<td>NIÊN</td>
+						<td>- năm</td>
+					</tr>
+					<tr>
+						<th>～ぐらい</th>
+						<td></td>
+						<td></td>
+						<td>khoảng ~</td>
+					</tr>
+					<tr>
+						<th>どのくらい</th>
+						<td></td>
+						<td></td>
+						<td>bao lâu</td>
+					</tr>
+					<tr>
+						<th>ぜんぶで</th>
+						<td>全部で</td>
+						<td>TOÀN BỘ</td>
+						<td>tổng cộng</td>
+					</tr>
+					<tr>
+						<th>みんな</th>
+						<td></td>
+						<td></td>
+						<td>tất cả</td>
+					</tr>
+					<tr>
+						<th>～だけ</th>
+						<td></td>
+						<td></td>
+						<td>chỉ ~</td>
+					</tr>
+					<tr>
+						<td colspan="5">
+							＜<b><ruby>練習<rp>(</rp>
+									<rt>れんしゅう</rt>
+									<rp>)</rp>
+								</ruby> C</b>＞
+						</td>
+					</tr>
+					<tr>
+						<th colspan="3">かしこまりました。</th>
+						<td>Tôi đã rõ rồi ạ (thưa ông/bà)</td>
+					</tr>
+					<tr>
+						<th colspan="3">
+							いい[お]<ruby>天気<rp>（</rp>
+								<rt>てんき</rt>
+								<rp>）</rp>
+							</ruby>ですね。
+						</th>
+						<td>Trời đẹp nhỉ.</td>
+					</tr>
+					<tr>
+						<th colspan="3">
+							お<ruby>出<rp>（</rp>
+								<rt>で</rt>
+								<rp>）</rp>
+							</ruby>かけですか。
+						</th>
+						<td>Anh/ chị đi ra ngoài đấy à?</td>
+					</tr>
+					<tr>
+						<th colspan="3">ちょっと～まで。</th>
+						<td>Tôi đi ~ một chút.</td>
+					</tr>
+					<tr>
+						<th colspan="3">
+							<ruby>行<rp>（</rp>
+								<rt>い</rt>
+								<rp>）</rp>
+							</ruby>っていらっしゃい。
+						</th>
+						<td>Anh/chị đi nhé.</td>
+					</tr>
+					<tr>
+						<th colspan="3">
+							<ruby>行<rp>（</rp>
+								<rt>い</rt>
+								<rp>）</rp>
+							</ruby>ってきます。
+						</th>
+						<td>Tôi đi đây.</td>
+					</tr>
+					<tr>
+						<th colspan="3">
+							<ruby>船便<rp>（</rp>
+								<rt>ふなびん</rt>
+								<rp>）</rp>
+							</ruby>
+						</th>
+						<td>gửi bằng đường biển</td>
+					</tr>
+					<tr>
+						<th colspan="3">
+							<ruby>航空便<rp>（</rp>
+								<rt>こうくうびん</rt>
+								<rp>）</rp>
+							</ruby>(エアメール)
+						</th>
+						<td>gửi bằng đường hàng không</td>
+					</tr>
+					<tr>
+						<th colspan="3">
+							お<ruby>願<rp>（</rp>
+								<rt>ねが</rt>
+								<rp>）</rp>
+							</ruby>いします。
+						</th>
+						<td>Nhờ anh/chị.</td>
+					</tr>
+					<tr>
+						<th colspan="3">オーストラリア</th>
+						<td>Úc</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- End Table -->
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('.menu-toggle').click(function () {
+				$('nav').toggleClass('active');
+			});
+			$('.link').click(function () {
+				$('nav').toggleClass('active');
+			})
+		})
+	</script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

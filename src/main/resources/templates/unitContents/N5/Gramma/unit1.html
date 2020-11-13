@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link rel="stylesheet" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+    <title>日本語</title>
+    <style>
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .flex-content {
+            width: 65%;
+            height: auto;
+            margin: 0 10px 0 0;
+            border: #888 1px solid;
+            padding: 15px;
+            box-shadow: 3px 8px #888888;
+        }
+
+        .flex-list {
+            width: 30%;
+            height: 300px;
+            padding: 5px;
+            position: sticky;
+            top: 0;
+            border: 1px solid #888;
+            box-shadow: 5px 10px #888888;
+        }
+
+
+        .title {
+            font-size: 2em;
+            letter-spacing: -1px;
+            text-align: left;
+        }
+
+        .structure {
+            color: #008080;
+            font-size: 20px;
+
+        }
+
+        .meaning {
+            color: coral;
+        }
+
+        .example {
+            margin-bottom: 15px;
+            line-height: 2em;
+        }
+
+
+
+        .example-title {
+            font-size: 20px;
+            font-style: oblique;
+            text-decoration: underline;
+
+        }
+
+        .list-title {
+            font-size: 20px;
+            color: #008080;
+            text-align: center;
+
+        }
+
+        @media screen and (max-width: 640px) {
+            .flex-content {
+                width: 100%;
+            }
+
+            .flex-list {
+                display: none;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <header-title>日本の勉強</header-title>
+        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+        <hr>
+        <nav>
+            <ul>
+                <li class="link"><a th:href="homepage">Home</a></li>
+                <li class="link"><a th:href="N5-detail">N5</a></li>
+                <li class="link"><a th:href="N4-detail">N4</a></li>
+                <li class="link"><a th:href="N3-detail">N3</a></li>
+                <li class="link"><a th:href="listhappyo">Happyo</a></li>
+                <li class="link"><a th:href="weekly-words">Weekly Vocabulary</a></li>
+                <li class="link"><a th:href="@{https://e-jan.vn/}" target="_blank">Urban-shop</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container" style="margin-top: 5%;">
+        <div class="flex-container">
+            <div class="flex-content">
+                <div class="title" id="1">
+                    1. N1 は N2 です
+                </div>
+                <div class="structure">N1　は　N2　です</div>
+                <div class="meaning">N1 là N2</div>
+                <div class="example">
+                    <div class="example-title">Ví dụ</div>
+                    わたしは　がくせいです。<br>
+                    Tôi là học sinh<br>
+                    さとさんは　せんせいです<br>
+                    Sato là giáo viên
+                    <div class="note">*Chú ý: [は]　đọc [わ]</div>
+                </div>
+                <div class="title" id="2">
+                    2. N1 は N2 じゃありません
+                </div>
+                <div class="structure">N1　は　N2　じゃありません</div>
+                <div class="meaning">N1 không phải là N2</div>
+                <div class="example">
+                    <div class="example-title">Ví dụ</div>
+                    わたしは　せんせい　じゃありません。<br>
+                    Tôi không phải là giáo viên<br>
+                    ワンさんは　エンジニアじゃありません<br>
+                    Wan không phải là kĩ sư
+                </div>
+                <div class="title" id="3">
+                    3. N1 は N2 ですか
+                </div>
+                <div class="structure">N1　は　N2　ですか</div>
+                <div class="meaning"> N1 có phải là N2 không?</div>
+                <div class="example">
+                    <div class="example-title">Ví dụ</div>
+                    Cách trả lời :<br>
+                    はい、 N2 です。<br>
+                    いいえ、N2　じゃありません / ではありません。<br>
+                    あなた　は　さとさんですか。<br>
+                    Bạn có phải là Miller không ?<br>
+                    はい、わたし　です。<br>
+                    Vâng, tôi là Miller<br>
+
+                    あのひと　は　かいしゃいんですか。<br>
+                    Người kia có phải là Nhân viên văn phòng không ?<br>
+                    いいえ、かいしゃいん　じゃありません。<br>
+                    Không, Không phải là nhân viên văn phòng<br>
+                </div>
+
+                <div class="title" id="4">
+
+                    4. N1 も N2 です
+                </div>
+                <div class="structure">N1　も　N2　です</div>
+                <div class="meaning">N1 cũng là N2</div>
+                <div class="example">
+                    <div class="example-title">Ví dụ</div>
+                    Ví dụ :<br>
+                    わたしは　がくせいです。<br>
+                    Tôi là học sinh<br>
+                    やまださんも　がくせいです。<br>
+                    Yamada cũng là học sinh<br>
+                    (さとさんは　いしゃ　じゃありません。<br>
+                    Sato không phải là bác sĩ<br>
+                    あわやさんも　いしゃ　じゃありません。<br>
+                    Awaya cũng không phải là bác sĩ
+                </div>
+                <div class="title" id="5">
+
+                    5. N1 は N2 の N3 です
+                </div>
+                <div class="structure">N1 は　N2　の　N3 です</div>
+                <div class="meaning">N1 là N2 của N3<br>Danh từ 2 (N2) bổ nghĩa cho Danh từ 3 (N3). Chữ の có nghĩa là
+                    của.</div>
+                <div class="example">
+                    <div class="example-title">Ví dụ</div>
+                    Ví dụ :<br>
+                    わたしは　Jellyfish Education　のしゃいんです。<br>
+                    Tôi là nhân viên của Jellyfish Education<br>
+                    ミラーさんは　ふじだいがく　の　かぐせいです。<br>
+                    Mira là sinh viên của trường đại học Fuji<br>
+                    <div class="note">*Chú ý:
+                        + Từ [さん], trong Tiếng Nhật, nó được dùng ngay sau họ của người nghe để thế hiện sự kính trọng
+                        khi gọi tên người đó. Từ [さん] không dùng đối với chính bản thân người nói.<br>
+                        + Trong trường hợp đã biết tên người nghe thì không dùng [あなた] mà dùng tên + [さん] để gọi tên
+                        người đó.</div>
+                </div>
+
+            </div>
+            <div class="flex-list">
+                <div class="list-title">Danh sách tổng hợp</div>
+                <ul>
+                    <a href="#1">
+                        <li>1. N1 は N2 です</li>
+                    </a>
+                    <a href="#2">
+                        <li>2. N1 は N2 じゃありません</li>
+                    </a>
+                    <a href="#3">
+                        <li>3. N1 は N2 ですか</li>
+                    </a>
+                    <a href="#4">
+                        <li>4. N1 も N2 です</li>
+                    </a>
+                    <a href="#5">
+                        <li>5. N1 は N2 の N3 です</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.menu-toggle').click(function () {
+                $('nav').toggleClass('active');
+            });
+            $('.link').click(function () {
+                $('nav').toggleClass('active');
+            })
+        })
+    </script>
+</body>
+
+</html>

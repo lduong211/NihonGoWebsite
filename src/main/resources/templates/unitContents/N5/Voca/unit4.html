@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+	<link rel="stylesheet" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css}">
+	<link
+      rel="stylesheet" th:href="@{https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css}"
+	/>
+    <title>日本語</title>
+</head>
+
+<body>
+    <header>
+        <header-title>日本の勉強</header-title>
+        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+        <hr>
+        <nav>
+            <ul>
+                <li class="link"><a th:href="homepage">Home</a></li>
+                <li class="link"><a th:href="N5-detail">N5</a></li>
+                <li class="link"><a th:href="N4-detail">N4</a></li>
+                <li class="link"><a th:href="N3-detail">N3</a></li>
+                <li class="link"><a th:href="listhappyo">Happyo</a></li>
+                <li class="link"><a th:href="weekly-words">Weekly Vocabulary</a></li>
+                <li class="link"><a th:href="@{https://e-jan.vn/}" target="_blank">Urban-shop</a></li>
+            </ul>
+        </nav>
+    </header>
+
+	<div class="container" style="margin-top: 5%;">
+		<!-- Table -->
+		<div class="table-responsive">
+			<table class="table table-bordered">
+			  <thead class="thead-dark">
+				<tr>
+				  <th>Từ Vựng</th>
+				  <th>Hán Tự</th>
+				  <th>Âm Hán</th>
+				  <th>Nghĩa</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr>
+				  <th>おきます</th>
+				  <td>起きます</td>
+				  <td>KHỞI</td>
+				  <td>dậy, thức dậy</td>
+				</tr>
+				<tr>
+				  <th>ねます</th>
+				  <td>寝ます</td>
+				  <td>TẨM</td>
+				  <td>ngủ, đi ngủ</td>
+				</tr>
+				<tr>
+				  <th>はたらきます</th>
+				  <td>働きます</td>
+				  <td>ĐỘNG</td>
+				  <td>làm việc</td>
+				</tr>
+				<tr>
+				  <th>やすみます</th>
+				  <td>休みます</td>
+				  <td>HƯU</td>
+				  <td>nghỉ, nghỉ ngơi</td>
+				</tr>
+				<tr>
+				  <th>べんきょうします</th>
+				  <td>勉強します</td>
+				  <td>MIỄN CƯỜNG</td>
+				  <td>học</td>
+				</tr>
+				<tr>
+				  <th>おわります</th>
+				  <td>終わります</td>
+				  <td>CHUNG</td>
+				  <td>hết, kết thúc, xong</td>
+				</tr>
+				<tr>
+				  <th>デパート</th>
+				  <td></td>
+				  <td></td>
+				  <td>bách hóa</td>
+				</tr>
+				<tr>
+				  <th>ぎんこう</th>
+				  <td>銀行</td>
+				  <td>NGÂN HÀNH</td>
+				  <td>ngân hàng</td>
+				</tr>
+				<tr>
+				  <th>ゆうびんきょく</th>
+				  <td>郵便局</td>
+				  <td>BƯU TIỆN CỤC</td>
+				  <td>bưu điện</td>
+				</tr>
+				<tr>
+				  <th>としょかん</th>
+				  <td>図書館</td>
+				  <td>ĐỒ THƯ QUÁN</td>
+				  <td>thư viện</td>
+				</tr>
+				<tr>
+				  <th>びじゅつかん</th>
+				  <td>美術館</td>
+				  <td>MỸ THUẬT QUÁN</td>
+				  <td>bảo tàng mỹ thuật</td>
+				</tr>
+				<tr>
+				  <th>いま</th>
+				  <td>今</td>
+				  <td>KIM</td>
+				  <td>bây giờ</td>
+				</tr>
+				<tr>
+				  <th>―じ</th>
+				  <td>－時</td>
+				  <td>THỜI</td>
+				  <td>-giờ</td>
+				</tr>
+				<tr>
+				  <th>―ふん（－ぷん）</th>
+				  <td>―分</td>
+				  <td>PHÂN</td>
+				  <td>- phút</td>
+				</tr>
+				<tr>
+				  <th>はん</th>
+				  <td>半</td>
+				  <td>BÁN</td>
+				  <td>rưỡi, nửa</td>
+				</tr>
+				<tr>
+				  <th>なんじ</th>
+				  <td>何時</td>
+				  <td>HÀ THỜI</td>
+				  <td>mấy giờ</td>
+				</tr>
+				<tr>
+				  <th>なんぷん</th>
+				  <td>何分</td>
+				  <td>HÀ PHÂN</td>
+				  <td>mấy phút</td>
+				</tr>
+				<tr>
+				  <th>ごぜん</th>
+				  <td>午前</td>
+				  <td>NGỌ TIỀN</td>
+				  <td>sáng, trước 12 giờ trưa</td>
+				</tr>
+				<tr>
+				  <th>ごご</th>
+				  <td>午後</td>
+				  <td>NGỌ HẬU</td>
+				  <td>chiều, sau 12 giờ trưa</td>
+				</tr>
+				<tr>
+				  <th>あさ</th>
+				  <td>朝</td>
+				  <td>TRIỀU</td>
+				  <td>buổi sáng, sáng</td>
+				</tr>
+				<tr>
+				  <th>ひる</th>
+				  <td>昼</td>
+				  <td>TRÚ</td>
+				  <td>buổi trưa, trưa</td>
+				</tr>
+				<tr>
+				  <th>ばん（よる）</th>
+				  <td>晩(夜)</td>
+				  <td>VÃN(DẠ)</td>
+				  <td>buổi tối, tối</td>
+				</tr>
+				<tr>
+				  <th>おととい</th>
+				  <td></td>
+				  <td></td>
+				  <td>hôm kia</td>
+				</tr>
+				<tr>
+				  <th>きのう</th>
+				  <td></td>
+				  <td></td>
+				  <td>hôm qua</td>
+				</tr>
+				<tr>
+				  <th>きょう</th>
+				  <td></td>
+				  <td></td>
+				  <td>hôm nay</td>
+				</tr>
+				<tr>
+				  <th>あした</th>
+				  <td></td>
+				  <td></td>
+				  <td>ngày mai</td>
+				</tr>
+				<tr>
+				  <th>あさって</th>
+				  <td></td>
+				  <td></td>
+				  <td>ngày kia</td>
+				</tr>
+				<tr>
+				  <th>けさ</th>
+				  <td></td>
+				  <td></td>
+				  <td>sáng nay</td>
+				</tr>
+				<tr>
+				  <th>こんばん</th>
+				  <td>今晩</td>
+				  <td>KIM VÃN</td>
+				  <td>tối nay</td>
+				</tr>
+				<tr>
+				  <th>やすみ</th>
+				  <td>休み</td>
+				  <td>HƯU</td>
+				  <td>nghỉ, nghỉ phép, ngày nghỉ</td>
+				</tr>
+				<tr>
+				  <th>ひるやすみ</th>
+				  <td>昼休み</td>
+				  <td>TRÚ HƯU</td>
+				  <td>nghỉ trưa</td>
+				</tr>
+				<tr>
+				  <th>まいあさ</th>
+				  <td>MỖI TRIỀU</td>
+				  <td>hàng sáng, mỗi sáng</td>
+				</tr>
+				<tr>
+				  <th>まいばん</th>
+				  <td>毎晩</td>
+				  <td>MỖI VÃN</td>
+				  <td>hàng tối, mỗi tối</td>
+				</tr>
+				<tr>
+				  <th>まいにち</th>
+				  <td>毎日</td>
+				  <td>MỖI NHẬT</td>
+				  <td>hàng ngày, mỗi ngày</td>
+				</tr>
+				<tr>
+				  <th>げつようび</th>
+				  <td>月曜日</td>
+				  <td>NGUYỆT DIỆU NHẬT</td>
+				  <td>thứ hai</td>
+				</tr>
+				<tr>
+				  <th>かようび</th>
+				  <td>火曜日</td>
+				  <td>HỎA DIỆU NHẬT</td>
+				  <td>thứ ba</td>
+				</tr>
+				<tr>
+				  <th>すいようび</th>
+				  <td>水曜日</td>
+				  <td>THỦY DIỆU NHẬT</td>
+				  <td>thứ tư</td>
+				</tr>
+				<tr>
+				  <th>もくようび</th>
+				  <td>木曜日</td>
+				  <td>MỘC DIỆU NHẬT</td>
+				  <td>thứ năm</td>
+				</tr>
+				<tr>
+				  <th>きんようび</th>
+				  <td>金曜日</td>
+				  <td>KIM DIỆU NHẬT</td>
+				  <td>thứ sáu</td>
+				</tr>
+				<tr>
+				  <th>どようび</th>
+				  <td>土曜日</td>
+				  <td>THỔ DIỆU NHẬT</td>
+				  <td>thứ bảy</td>
+				</tr>
+				<tr>
+				  <th>にちようび</th>
+				  <td>日曜日</td>
+				  <td>NHẬT DIỆU NHẬT</td>
+				  <td>chủ nhật</td>
+				</tr>
+				<tr>
+				  <th>なんようび</th>
+				  <td>何曜日</td>
+				  <td>HÀ DIỆU NHẬT</td>
+				  <td>thứ mấy</td>
+				</tr>
+				<tr>
+				  <th>ばんごう</th>
+				  <td>番号</td>
+				  <td>PHIÊN HIỆU</td>
+				  <td>số (số điện thoại, số phòng)</td>
+				</tr>
+				<tr>
+				  <th>なんばん</th>
+				  <td>何番</td>
+				  <td>HÀ PHIÊN</td>
+				  <td>số bao nhiêu, số mấy</td>
+				</tr>
+				<tr>
+				  <th>～から</th>
+				  <td></td>
+				  <td></td>
+				  <td>~ từ</td>
+				</tr>
+				<tr>
+				  <th>～まで</th>
+				  <td></td>
+				  <td></td>
+				  <td>~ đến</td>
+				</tr>
+				<tr>
+				  <th>～と</th>
+				  <td></td>
+				  <td></td>
+				  <td>~ và (dùng để nối hai danh từ)</td>
+				</tr>
+				<tr>
+				  <th>そちら</th>
+				  <td></td>
+				  <td></td>
+				  <td>phía đó, đằng đó, chỗ đó, đó</td>
+				</tr>
+				<tr>
+				  <th>たいへんですね</th>
+				  <td>大変ですね</td>
+				  <td>ĐẠI BIẾN</td>
+				  <td>Anh/chị vất vả quá.</td>
+				</tr>
+				<tr>
+				  <th>えーと</th>
+				  <td></td>
+				  <td></td>
+				  <td>ừ, à</td>
+				</tr>
+				<tr>
+				  <th>104</th>
+				  <td></td>
+				  <td></td>
+				  <td>Số điện thoại của dịch vụ hướng dẫn số điện thoại</td>
+				</tr>
+				<tr>
+				  <th>おねがいします</th>
+				  <td>お願いします</td>
+				  <td>NGUYÊỆN</td>
+				  <td>Nhờ anh/chị. Phiền anh/chị. Xin vui lòng giúp đỡ</td>
+				</tr>
+				<tr>
+				  <th>かしこまりました</th>
+				  <td></td>
+				  <td></td>
+				  <td>Tôi hiểu rồi ạ./ vâng, được rồi ạ.</td>
+				</tr>
+				<tr>
+				  <th>おといあわせのばんごう</th>
+				  <td>お問い合わせの番号</td>
+				  <td>VẤN HỢP PHIÊN HIỆU</td>
+				  <td>Số điện thoại mà ông/ bà muốn hỏi</td>
+				</tr>
+				<tr>
+				  <th>[どうも]ありがとうございました。</th>
+				  <td></td>
+				  <td></td>
+				  <td>Xin cám ơn ông/bà</td>
+				</tr>
+				<tr>
+				  <th>ニューヨーク</th>
+				  <td></td>
+				  <td></td>
+				  <td>New York</td>
+				</tr>
+				<tr>
+				  <th>ペキン</th>
+				  <td></td>
+				  <td></td>
+				  <td>Bắc Kinh</td>
+				</tr>
+				<tr>
+				  <th>ロンドン</th>
+				  <td></td>
+				  <td></td>
+				  <td>Luân Đôn</td>
+				</tr>
+				<tr>
+				  <th>バンコク</th>
+				  <td></td>
+				  <td></td>
+				  <td>Băng Cốc</td>
+				</tr>
+				<tr>
+				  <th>ロサンゼルス</th>
+				  <td></td>
+				  <td></td>
+				  <td>Los Angeles</td>
+				</tr>
+				<tr>
+				  <th>やまとびじゅつかん</th>
+				  <td>やまと美術館</td>
+				  <td>MỸ THUẬT QUÁN</td>
+				  <td>tên một bảo tàng Mỹ thuật (giả tưởng)</td>
+				</tr>
+				<tr>
+				  <th>おおさかデパート</th>
+				  <td>大阪デパート</td>
+				  <td>ĐẠI PHẢN</td>
+				  <td>tên một bách hóa (giả tưởng)</td>
+				</tr>
+				<tr>
+				  <th>みどりとしょかん</th>
+				  <td>みどり図書館</td>
+				  <td>ĐỒ THƯ QUÁN</td>
+				  <td>tên một thư viện (giả tưởng)</td>
+				</tr>
+				<tr>
+				  <th>アップルぎんこう</th>
+				  <td>アップル銀行</td>
+				  <td>NGÂN HÀNH</td>
+				  <td>tên một ngân hàng (giả tưởng)</td>
+				</tr>
+			  </tbody>
+			</table>
+		  </div>
+		<!-- End Table -->
+	  </div>
+	  
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.menu-toggle').click(function () {
+                $('nav').toggleClass('active');
+            });
+            $('.link').click(function () {
+                $('nav').toggleClass('active');
+            })
+        })
+	</script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

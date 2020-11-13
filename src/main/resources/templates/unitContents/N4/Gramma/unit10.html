@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" th:href="@{/css/style.css}" />
+	<link rel="stylesheet" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css}" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+	<title>日本語</title>
+	<style>
+		.flex-container {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.flex-content {
+			width: 65%;
+			height: auto;
+			margin: 0 10px 0 0;
+			border: #888 1px solid;
+			padding: 15px;
+			box-shadow: 3px 8px #888888;
+		}
+
+		.flex-list {
+			width: 30%;
+			height: 300px;
+			padding: 5px;
+			position: sticky;
+			top: 0;
+			border: 1px solid #888;
+			box-shadow: 5px 10px #888888;
+		}
+
+		.title {
+			font-size: 2em;
+			letter-spacing: -1px;
+			text-align: left;
+		}
+
+		.structure {
+			color: #008080;
+			font-size: 20px;
+		}
+
+		.meaning {
+			color: coral;
+		}
+
+		.example {
+			margin-bottom: 15px;
+			line-height: 2em;
+		}
+
+		.example-title {
+			font-size: 20px;
+			font-style: oblique;
+			text-decoration: underline;
+		}
+
+		.list-title {
+			font-size: 20px;
+			color: #008080;
+			text-align: center;
+		}
+
+		@media screen and (max-width: 640px) {
+			.flex-content {
+				width: 100%;
+			}
+
+			.flex-list {
+				display: none;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<header-title>日本の勉強</header-title>
+		<div class="menu-toggle"><i class="fas fa-bars"></i></div>
+		<hr />
+		<nav>
+			<ul>
+				<li class="link"><a th:href="homepage">Home</a></li>
+				<li class="link"><a th:href="N5-detail">N5</a></li>
+                <li class="link"><a th:href="N4-detail">N4</a></li>
+                <li class="link"><a th:href="N3-detail">N3</a></li>
+				<li class="link"><a th:href="listhappyo">Happyo</a></li>
+				<li class="link"><a th:href="weekly-words">Weekly Vocabulary</a></li>
+				<li class="link">
+					<a th:href="@{https://e-jan.vn/}" target="_blank">Urban-shop</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="container" style="margin-top: 5%;">
+		<div class="flex-container">
+			<div class="flex-content">
+				<!-- Phần 1 -->
+				<div class="title" id="1">
+					1. Cách tạo thể điều kiện
+				</div>
+				<div class="meaning">Động từ</div>
+				<div class="structure">
+					Động từ nhóm 1 : Chuyển từ cột [い] sang cột [え] + [ば]
+				</div>
+				<div class="example">
+					<table class="table table-bordered">
+						<tbody>
+							<tr>
+								<td><b>Động từ</b></td>
+								<td>
+									<strong>Thể điều kiện</strong>
+								</td>
+							</tr>
+							<tr>
+								<td>か<strong>き</strong>ます</td>
+								<td>か<b>けば</b></td>
+							</tr>
+							<tr>
+								<td>き<strong>き</strong>ます</td>
+								<td>き<b>げば</b></td>
+							</tr>
+							<tr>
+								<td>およ<strong>ぎ</strong>ます</td>
+								<td>およ<b>げば</b></td>
+							</tr>
+							<tr>
+								<td>の<strong>み</strong>ます</td>
+								<td>の<b>めば</b></td>
+							</tr>
+							<tr>
+								<td>あそ<strong>び</strong>ます</td>
+								<td>あ<strong>そべば</strong></td>
+							</tr>
+							<tr>
+								<td>ま<strong>ち</strong>ます</td>
+								<td>ま<b>てば</b></td>
+							</tr>
+							<tr>
+								<td>と<strong>り</strong>ます</td>
+								<td>と<b>れば</b></td>
+							</tr>
+							<tr>
+								<td>あ<strong>い</strong>ます</td>
+								<td>あ<b>えば</b></td>
+							</tr>
+							<tr>
+								<td>はな<strong>し</strong>ます</td>
+								<td>はな<b>せば</b></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="structure">
+					Động từ nhóm 2 Bỏ [ます] và thay bằng [れば] sau động từ
+				</div>
+				<div class="example">
+					<div class="example-title">Ví dụ</div>
+					たべます　　ーーー＞　たべれば<br />
+					おしえます　ーーー＞　おしえれば
+				</div>
+				<div class="structure">
+					Động từ nhóm 3:
+				</div>
+				<div class="example">
+					<div class="example-title">Ví dụ</div>
+					きます　ーーー＞　くれば<br />
+					します　ーーー＞　すれば
+				</div>
+				<div class="meaning">Tính từ</div>
+				<div class="structure">
+					Tính từ đuôi な: Bỏ đuôi [な] thêm [なら]
+				</div>
+				<div class="example">
+					<div class="example-title">Ví dụ</div>
+					きれい ーーー＞　きれいなら<br />
+					ひま　ーーー＞　ひまなら
+				</div>
+				<div class="structure">
+					Đổi đuôi [い] thành [ければ]
+				</div>
+				<div class="example">
+					<div class="example-title">Ví dụ</div>
+					おいしい　ーーー＞　おいしければ<br />
+					わるい 　ーーー＞　わるければ
+				</div>
+				<div class="meaning">Danh từ:</div>
+				<div class="structure">
+					Thêm [なら]
+				</div>
+				<div class="example">
+					<div class="example-title">Ví dụ</div>
+					あめ　　 ーーー＞　あめなら<br />
+					むりょう ーーー＞　むりょうなら
+				</div>
+				<!-- Phần 2 -->
+				<div class="title" id="2">
+					2. Trường hợp sử dụng thể điều kiện
+				</div>
+				<div class="structure">
+					Diễn tả một điều kiện cần thiết để việc gì đó xảy ra
+				</div>
+				<div class="example">
+					<div class="example-title">Ví dụ</div>
+					ボタンをおせば, ドアがあきます<br />
+					Nếu ấn nút thì cửa sẽ mở<br />
+					いい天気てんきなら, はながさきます<br />
+					Nếu trời đẹp thì hoa sẽ nở<br />
+					めがねをかけなければ、しんぶんをよめません<br />
+					Nếu không đeo kính, không thể đọc được báo
+				</div>
+				<div class="structure">
+					Trong trường hợp người nói muốn biểu thị quyết định của mình trong
+					một tình huống nhất định hoặc khi người nghe nói về một điều gì đó
+				</div>
+				<div class="example">
+					<div class="example-title">Ví dụ</div>
+					ほかにいけんがなければ、これでおわります<br />
+					Nếu không có ý kiến gì khác, chúng ta dừng ở đây<br />
+					このほんがやすければ, かいいます<br />
+					Nếu mà quyển sách này rẻ thì sẽ mua<br />
+					きょう, いそがしければ, あしたきてください<br />
+					Nếu hôm nay bận thì hãy đến vào ngày mai
+				</div>
+				<!-- Phần 3 -->
+				<div class="title" id="3">
+					3. Các hạn chế về cách dùng của thể điều kiện
+				</div>
+				<div class="structure">
+					Một trong hai vế câu không biểu thị chủ ý:
+				</div>
+				<div class="meaning"></div>
+				<div class="example">
+					<div class="example-title">Ví dụ</div>
+					じかんがあれば、テレビをみます<br />
+					Nếu có thời gian, sẽ xem ti vi<br />
+					ボタンをおせば、でんきがつきます<br />
+					Nếu ấn cái nút, điện sẽ sáng
+				</div>
+				<div class="structure">
+					Hai vế câu không cùng chủ ngữ
+				</div>
+				<div class="meaning"></div>
+				<div class="example">
+					<div class="example-title">Ví dụ</div>
+					ミラーさんはじむしょにもどれば、でんわしてください<br />
+					Nếu anh Mira quay về văn phòng, bạn hãy gọi tôi nhé<br />
+					わたしはいけば、かのじょはなきます<br />
+					Nếu tôi đi, cô ấy sẽ khóc
+				</div>
+				<!-- Phần 4 -->
+				<div class="title" id="4">
+					4. Phân biệt thể điều kiện với [と] và [たら]
+				</div>
+				<div class="meaning">
+					と
+				</div>
+				<div class="structure">
+					Diễn tả một kết quả tất yếu, một sự việc có thể dự đoán được,vế sau
+					của mẫu câu [と] không dùng với các mẫu câu biểu thị chủ ý của người
+					nói.( như てください、～なければなりません,…)
+				</div>
+				<div class="example">
+					<div class="example-title">Ví dụ</div>
+					ここをすと, ドアがあきます<br />
+					Nếu ấn vào đây thì cửa sẽ mở<br />
+					<b>*Ở câu văn này, cũng có thể sử dụng thể điều kiện ば.</b><br />
+					Ví dụ :<br />
+					ここをおせば, ドアがあきます.<br />
+					Nếu ấn vào đây thì cửa sẽ mở
+				</div>
+				<div class="meaning">
+					たら
+				</div>
+				<div class="structure">
+					Cách dùng : Biểu thị thể điều kiện. Nhưng khác với thể điều kiện ば,
+					たらcó thể sử dụng với trường hợp trong 2 vế câu có cùng chủ ngữ.
+				</div>
+				<div class="example">
+					<div class="example-title">Ví dụ</div>
+					ハイフォンへきたら, ぜひれんらくしてください<br />
+					Nếu bạn tới Hải Phòng thì nhất định (bạn) phải liên lạc với tôi
+					nhé<br />
+					<b>
+						*Câu văn này sẽ không đúng　với thể điều kiện　[ば] vì 2 vế có
+						cùng chủ ngữ :</b><br />
+					Ví dụ :<br />
+					ハイフォンへくれば, ぜひれんらくしてください<br />
+					Nếu bạn tới Hải Phòng thì nhất định (bạn) phải liên lạc với tôi nhé
+				</div>
+				<!-- Phần 5 -->
+				<div class="title" id="5">
+					5. Từ nghi vấn + động từ thể điều kiện + いいですか
+				</div>
+				<div class="structure">
+					Mẫu câu được sử dụng để yêu cầu người nghe cho chỉ thị hoặc lời
+					khuyên làm 1 việc gì đó <br />Được dùng tương tự như mẫu câu
+					[たらいいですか] trong bài 26
+				</div>
+				<div class="meaning">Nghĩa : nên làm gì, đi đâu ,…</div>
+				<div class="example">
+					<div class="example-title">Ví dụ</div>
+					でわばんごうがわからないんですが, どうすればいいですか　？<br />
+					Tôi không biết số điện thoại, làm thế nào thì tốt ạ?<br />
+					でわばんごうがわからないんですが, どうしたらいいですか ？(Bài 26)
+				</div>
+				<!-- Phần 6 -->
+				<div class="title" id="6">
+					6. Tính từ đuôi い / な thể điều kiện + động từ nguyên dạng, tính từ
+					đuôi い, tính từ đuôi な + ほど
+				</div>
+				<div class="structure">
+					Cách dùng :<br />
+					Diễn tả sự biến đổi tương ứng về mức độ hoặc phạm vi của nội dung
+					được nêu ở phần sau của câu sau khi mà điều kiện ở câu trước thay
+					đổi
+					<br />Tính từ đuôi な không bỏ [な]
+				</div>
+				<div class="meaning">Nghĩa : càng…càng</div>
+				<div class="example">
+					<div class="example-title">Ví dụ</div>
+					あたらしければ, あたらしいほどいいです<br />
+					Càng mới thì càng tốt<br />
+					そうさがかんたんなら,かんたんなほどわかり安いです<br />
+					Thao tác càng đơn giản thì càng dễ hiểu
+				</div>
+			</div>
+
+			<div class="flex-list">
+				<div class="list-title">Danh sách tổng hợp</div>
+				<ul>
+					<a href="#1">
+						<li>1. Cách tạo thể điều kiện</li>
+					</a>
+					<a href="#2">
+						<li>
+							2. Trường hợp sử dụng thể điều kiện
+						</li>
+					</a>
+					<a href="#3">
+						<li>
+							3. Các hạn chế về cách dùng của thể điều kiện
+						</li>
+					</a>
+					<a href="#4">
+						<li>4. Phân biệt thể điều kiện với [と] và [たら]</li>
+					</a>
+					<a href="#5">
+						<li>5. Từ nghi vấn + động từ thể điều kiện + いいですか</li>
+					</a>
+					<a href="#6">
+						<li>
+							6. Tính từ đuôi い / な thể điều kiện + động từ nguyên dạng,
+							tính từ đuôi い, tính từ đuôi な + ほど
+						</li>
+					</a>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$(".menu-toggle").click(function () {
+				$("nav").toggleClass("active");
+			});
+			$(".link").click(function () {
+				$("nav").toggleClass("active");
+			});
+		});
+	</script>
+</body>
+
+</html>

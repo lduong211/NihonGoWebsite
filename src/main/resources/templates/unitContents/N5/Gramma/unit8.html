@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" th:href="@{/css/style.css}">
+  <link rel="stylesheet" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css}">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+  <title>日本語</title>
+  <style>
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .flex-content {
+      width: 65%;
+      height: auto;
+      margin: 0 10px 0 0;
+      border: #888 1px solid;
+      padding: 15px;
+      box-shadow: 3px 8px #888888;
+    }
+
+    .flex-list {
+      width: 30%;
+      height: 300px;
+      padding: 5px;
+      position: sticky;
+      top: 0;
+      border: 1px solid #888;
+      box-shadow: 5px 10px #888888;
+    }
+
+
+    .title {
+      font-size: 2em;
+      letter-spacing: -1px;
+      text-align: left;
+    }
+
+    .structure {
+      color: #008080;
+      font-size: 20px;
+
+    }
+
+    .meaning {
+      color: coral;
+    }
+
+    .example {
+      margin-bottom: 15px;
+      line-height: 2em;
+    }
+
+
+
+    .example-title {
+      font-size: 20px;
+      font-style: oblique;
+      text-decoration: underline;
+
+    }
+
+    .list-title {
+      font-size: 20px;
+      color: #008080;
+      text-align: center;
+
+    }
+
+    @media screen and (max-width: 640px) {
+      .flex-content {
+        width: 100%;
+      }
+
+      .flex-list {
+        display: none;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <header-title>日本の勉強</header-title>
+    <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+    <hr>
+    <nav>
+      <ul>
+        <li class="link"><a th:href="homepage">Home</a></li>
+        <li class="link"><a th:href="N5-detail">N5</a></li>
+        <li class="link"><a th:href="N4-detail">N4</a></li>
+        <li class="link"><a th:href="N3-detail">N3</a></li>
+        <li class="link"><a th:href="listhappyo">Happyo</a></li>
+        <li class="link"><a th:href="weekly-words">Weekly Vocabulary</a></li>
+        <li class="link"><a th:href="@{https://e-jan.vn/}" target="_blank">Urban-shop</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container" style="margin-top: 5%;">
+    <div class="flex-container">
+      <div class="flex-content">
+        <div class="title" id="1">
+          1. Tính từ
+        </div>
+        <div class="structure"> 1. Tính từ</div>
+        <div class="meaning"></div>
+        <div class="example">
+          <div class="example-title">Ví dụ</div>
+          Tính từ là những từ biểu thị tính chất, trạng thái, tình cảm… của sự vật, con người.
+          Chúng được sử dụng làm vị ngữ hoặc bổ nghĩa cho danh từ.
+          Dựa trên sự biến đổi của tính từ trong tiếng Nhật mà chúng được chia thành hai loại: tính từ đuôi な
+          và tính từ đuôi い.
+        </div>
+        <div class="title" id="2">
+          2. Danh từ + tính từ đuôi な / い + です
+        </div>
+        <div class="structure">2. Danh từ + tính từ đuôi な / い + です</div>
+        <div class="meaning">Khẳng định :
+
+          [です] được đặt ở cuối câu kết thúc bằng tính từ để thể hiện sự lịch sự của người nói đối với người
+          nghe. Tính từ đuôi [い] giữ nguyên [い], tính từ đuôi [な] bỏ [な] rồi thêm [です] phía sau</div>
+        <div class="example">
+          <div class="example-title">Ví dụ</div>
+          ワットせんせい は しんせつ です。<br>
+          Thầy Watt tốt bụng.<br>
+          ふじさん は たかい です。<br>
+          Núi Phú Sĩ cao.<br>
+          *Dùng [です] khi là câu khẳng định và không ở dạng thức quá khứ<br>
+
+          Phủ định :<br>
+
+          Tính từ đuôi [な[ bỏ [な] thêm [じゃありません] hoặc [ではありません], tính từ đuôi [い] thì bỏ [い] thêm [くないです]
+          Ví dụ :``<br>
+          あそこ は しずか じゃ / では ありません。<br>
+          Ở kia không yên tĩnh.<br>
+          このほん は おもしろくないです。<br>
+          Cuốn sách này không hay.<br>
+          *Dạng phủ định của [いいです] là [よくないです]<br>
+
+          Nghi vấn :<br>
+
+          Khi chuyển sang dạng câu hỏi, cũng giống như câu danh từ và câu động từ, ta thêm [か] vào cuối
+          câu<br>
+          tính từ. Khi trả lời thì dùng tính từ trong câu hỏi để trả lời chứ không dùng [そうです] hay [そうじゃありません]
+          Ví dụ :<br>
+          ペキンは さむいですか。<br>
+          Bắc Kinh có lạnh không?<br>
+          はい、さむいです。<br>
+          Có, có lạnh.<br>
+          びわこ の みず は きれいですか。<br>
+          Nước hồ Biwa có sạch không?<br>
+          いいえ、きれいじゃありません。<br>
+          Không, không sạch.
+        </div>
+        <div class="title" id="3">
+          3. Tính từ đuôi な / い + Danh từ
+        </div>
+        <div class="structure">3. Tính từ đuôi な / い + Danh từ</div>
+        <div class="meaning"></div>
+        <div class="example">
+          <div class="example-title">Ví dụ</div>
+          Tính từ được đặt trước danh từ để bổ nghĩa cho danh từ đó<br>
+
+          Tính từ đuôi な giữ nguyên な rồi thêm danh từ vào phía sau<br>
+          ワットせんせい は しんせつな せんせいです。<br>
+          Thầy Watt là một giáo viên tốt<br>
+          Tính từ đuôi い giữ nguyên い rồi thêm danh từ vào phía sau<br>
+          ふじさん は たか)い やまです。<br>
+          Núi Phú Sĩ là một ngọn núi cao<br>
+        </div>
+
+        <div class="title" id="4">
+          4. とても và あまり
+        </div>
+        <div class="structure">4. とても và あまり</div>
+        <div class="meaning">
+        </div>
+        <div class="example">
+          <div class="example-title">Ví dụ</div>
+          [とても]<br>
+          Được dùng trong câu khẳng định, và có nghĩa là “rất”<br>
+          これ は とても ゆうめいな えいがです。<br>
+          Đây là một bộ phim rất nổi tiếng.<br>
+          [あまり]<br>
+          Được dùng trong câu phủ định, mang ý nghĩa là “không ~ lắm”<br>
+          シャンハイ は あまり さむくないです。<br>
+          Thượng Hải không lạnh lắm.~<br>
+        </div>
+        <div class="title" id="5">
+          5. Danh từ + は + どうですか
+        </div>
+        <div class="structure">5. Danh từ + は + どうですか</div>
+        <div class="meaning">Nghĩa : Cái gì như thế nào
+          Cách dùng : để hỏi ấn tượng, ý kiến về một vật, một địa điểm, một người… mà người nghe đã biết, đã
+          đến, hoặc đã gặp</div>
+        <div class="example">
+          <div class="example-title">Ví dụ</div>
+          にほん の せいかつ は どうですか
+          Cuộc sống ở Nhật thế nào?
+          たの)しいです。
+          Cuộc sống ở Nhật vui
+        </div>
+        <div class="title" id="6">
+          6. Danh từ 1 + は + どんな Danh từ 2 ですか
+        </div>
+        <div class="structure">6. Danh từ 1 + は + どんな Danh từ 2 ですか
+        </div>
+        <div class="meaning">Cách dùng : khi người nói muốn người nghe miêu tả, giải thích về N1. N2 là một danh
+          từ mang ý nghĩa rộng hơn, bao trùm N1. Từ để hỏi どんな luôn đứng trước danh từ.<br>
+
+        </div>
+        <div class="example">
+          <div class="example-title">Ví dụ</div>
+          ならは どんなまちですか。<br>
+          Nara là một thành phố như thế nào?<br>
+          ふるいまちです。<br>
+          Là một thành phố cổ
+        </div>
+        <div class="title">
+
+          7. Câu 1 が, Câu 2
+
+        </div>
+        <div class="structure">7. Câu 1 が, Câu 2`
+        </div>
+        <div class="meaning">Nghĩa : Nhưng
+          Cách dùng :dùng để nối 2 câu lại thành 1<br>
+
+        </div>
+        <div class="example">
+          <div class="example-title">Ví dụ</div>
+          にほんのたべものはおいしいですが、たかいです。
+          Đồ ăn của Nhật ngon, nhưng mà đắt
+        </div>```
+
+      </div>
+      <div class="flex-list">
+        <div class="list-title">Danh sách tổng hợp</div>
+        <ul>
+          <a href="#1">
+            <li>1. Tính từ</li>
+          </a>
+          <a href="#2">
+            <li>2. Danh từ + tính từ đuôi な / い + です</li>
+          </a>
+          <a href="#3">
+            <li>3. Tính từ đuôi な / い + Danh từ</li>
+          </a>
+          <a href="#4">
+            <li>4. とても và あまり</li>
+          </a>
+          <a href="#5">
+            <li>5. Danh từ + は + どうですか</li>
+          </a>
+          <a href="#6">
+            <li>6. Danh từ 1 + は + どんな Danh từ 2 ですか</li>
+          </a>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.menu-toggle').click(function () {
+        $('nav').toggleClass('active');
+      });
+      $('.link').click(function () {
+        $('nav').toggleClass('active');
+      })
+    })
+  </script>
+</body>
+
+</html>

@@ -5,103 +5,167 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" th:href="@{/css/style.css}">
-    <link rel="stylesheet" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css}">
-    <title>日本語</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
 </head>
 
 <body>
-    <header>
-        <header-title>日本の勉強</header-title>
-        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
-        <hr>
-        <nav>
-            <ul>
-                <li class="link"><a th:href="index">Home</a></li>
-                <li class="link"><a th:href="detail">N5</a></li>
-                <li class="link"><a th:href="detail">N4</a></li>
-                <li class="link"><a th:href="detail">N3</a></li>
-                <li class="link"><a th:href="happyo">Happyo</a></li>
-                <li class="link"><a th:href="weekly">Weekly Vocabulary</a></li>
-                <li class="link"><a th:href="@{https://e-jan.vn/}" target="_blank">Urban-shop</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <div class="wrapper">
-        <section class="title">
-            <body-title>EXPERIENCE URBAN</body-title>
-            <title-detail>Learning Beyond the Classroom</title-detail>
-        </section>
-        <section style="padding:0; margin: 0;">
-            <img class="first-image" th:src="@{/images/banner-1.jpg}" alt="">
-        </section>
-        <section>
-            <div class="container">
-                <div class="flex-left">
-                    <img class="image-size banner-PC" th:src="@{/images/banner-HD.jpg}">
-                    <img class="image-size banner-IP" th:src="@{/images/banner-2.png}">
+    <div class="container">
+        <div class="left">
+            <div class="left-item">
+                <div class="logo" style="font-size: 25px; color: #737373;">
+                    日本語の勉強
                 </div>
-                <div class="flex-right">
-                    <div class="level-detail">LEVEL OF THE VOCABULARY</div>
-                    <div class="list-level">
-                        <img class="small-star" th:src="@{/images/star.svg}" alt="">
-                        <div class="level">N5</div>
-                        <div class="detail">Basic Vocabulary</div>
-                    </div>
-                    <div class="list-level">
-                        <img class="small-star" th:src="@{/images/star.svg}" alt="">
-                        <div class="level">N4</div>
-                        <div class="detail">Daily Vocabulary</div>
-                    </div>
-                    <div class="list-level">
-                        <img class="small-star" th:src="@{/images/star.svg}" alt="">
-                        <div class="level">N3</div>
-                        <div class="detail">Advance</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <a th:href="@{https://e-jan.vn/}"><img style="width: 100%;" th:src="@{/images/e-jan.png}" alt=""></a>
-        </section>
-        <!-- <section class="blue-background">
-            <a th:href="http://urban-vietnam.vn/"><img style="width: 100%; height: 100%" th:src="./images/urban.png" alt=""></a>
-        </section> -->
-        <footer>
-            <div style="padding-top: 5%;" class="footer-content">
-                <h2 style="color: black">CONTACT ME</h2>
-                <p style="color: black">95A, Nguyễn Thần Hiến, p.16, Q4, TPHCM
-                </p>
-                <p style="color: black">
-                    info@e-jan.vn
-                </p>
-                <p style="color: black">
-                    028 225 37034</p>
+                <ul>
+                    <li>
+                        <a th:href="homepage" style="text-decoration: none; color: #737373">Home</a>
+                    </li>
+                    <li>
+                        <a th:href="N5-detail" style="text-decoration: none; color: #737373">N5</a>
+                    </li>
+                    <li>
+                        <a th:href="N4-detail" style="text-decoration: none; color: #737373">N4</a>
+                    </li>
+                    <li>
+                        <a th:href="N3-detail" style="text-decoration: none; color: #737373">N3</a>
+                    </li>
+                    <li>
+                        <a th:href="listhappyo" style="text-decoration: none; color: #737373">Happyo</a>
+                    </li>
+                    <li>
+                        <a th:href="weekly-words" style="text-decoration: none; color: #737373">Weekly</a>
+                    </li>
+                    <li>
+                        <a th:href="recipe" style="text-decoration: none; color: #737373">Recipe's cooking</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://e-jan.vn/" style="text-decoration: none; color: #737373">e-jan</a>
+                    </li>
+                </ul>
                 <div class="icon">
-                    <a th:href="@{https://www.facebook.com/ejanvietnam/}"><img style="width: 15%;height: 15%;"  th:src="@{/images/FB.png}" alt=""></a>
-                    <!-- <span>tw</span>
-                    <span>in</span> -->
+                    <ul>
+                        <li><i class="fa fa-facebook"></i></li>
+                        <li><i class="fa fa-google"></i></li>
+                        <li><i class="fa fa-pinterest-p"></i></li>
+                        <li><i class="fa fa-twitter"></i></li>
+                        <li><i class="fa fa-vimeo"></i></li>
+                    </ul>
                 </div>
             </div>
-        </footer>
+        </div>
+        <div class="right">
+            <div class="header">
+                <div class="image">
+                    <img src="./hp2-hero-bg.jpg">
+                    <div style=" transform: translate(-50%, -50%); position: absolute; top: 20%; left: 50%; border-radius: 50%; height: 120px; width: 120px;
+                    border: 24px solid #f3f3f3;">
+                        <img style="border-radius: 50%; width: 120px; height: 120px;" src="https://images.pexels.com/photos/3380875/pexels-photo-3380875.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                    </div>
+                    <div style=" transform: translate(-50%, -50%); position: absolute; top: 50%; left: 50%;">
+                        <div class="greeting">Hello Everyone</div>
+                        <div class="name">This is the Japanese learning website of urban Vietnam</div>
+                        <p class="infomation">Hoping to create a website that can help people improve their Japanese knowledge, hope can help a part of learners.</p>
+                    </div>
+                    <!-- <div  style=" position: absolute; ">infomation</div> -->
+                    <!-- <div style=" position: absolute; top: 50%; left: 50%;transform: translate(-50%, -50%);">
+                   <img style="border-radius: 50%; width: 150px; height:150px;" src="./hp2-hero-bg.jpg">
+                </div> -->
+                </div>
+            </div>
+            <div class="body">
+                <div class="content">
+                    <div class="title">
+                        Recent Activity
+                    </div>
+                    <div class="more">
+                        More in Activity
+                    </div>
+                </div>
+
+                <div class="content_body">
+                    <div class="row">
+                        <div class="activity">
+                            <div class="activity_image">
+                                <img src="https://images.pexels.com/photos/3786153/pexels-photo-3786153.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                            </div>
+                            <div class="activity_detail">
+                                <p style="color: lightcoral; font-size: 15px;">HAPPYO</p>
+                                <p style="font-size: 20px; font-weight: bolder;">免疫力</p>
+                                <p>免疫力というのは、体を病気から守る力のことです。免疫力が弱くなると、病気にかかりやすくなります。この免疫力を強くするためには、どのようにすればいいのでしょうか。...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="activity">
+                            <div class="activity_image">
+                                <img src="https://japanesetest4you.com/infographic/057/jpvocab-kotoba-s.jpg" alt="">
+                            </div>
+                            <div class="activity_detail">
+                                <p style="color: lightcoral; font-size: 15px;">WEEKLY</p>
+                                <p style="font-size: 20px; font-weight: bolder;">毎週の言葉</p>
+                                <p>つながる<br> ひょう<br> かんしゃ...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="activity">
+                            <div class="activity_image">
+                                <img src="https://cdn.daotaobeptruong.vn/wp-content/uploads/2020/03/cach-nau-pho-bo.jpg" alt="">
+                            </div>
+                            <div class="activity_detail">
+                                <p style="color: lightcoral; font-size: 15px;">HAPPYO</p>
+                                <p style="font-size: 20px; font-weight: bolder;">ベトナムのフォー</p>
+                                <p>フォーはベトナムの伝統的な（でんとうてきな）料理で、ナムディンに由来されています。特にベトナム料理の代表的な（だいひょうてきな）料理の1つと考えることもできます。...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="activity">
+                            <div class="activity_image">
+                                <img src="https://giangbe.com/wp-content/uploads/2020/05/BFDA2C5D-BF58-427A-8AA6-590FAA0DD0F4.png" alt=""></a>
+                            </div>
+                            <div class="activity_detail">
+                                <p style="color: lightcoral; font-size: 15px;">N5 Tutorial</p>
+                                <p style="font-size: 20px; font-weight: bolder;">
+                                    <a th:href="N5-gramma">Grammar</a> </p>
+                                <p>This is a list of grammar rules you need to study for the Japanese Language Proficiency Test level N5. JLPT N5 Grammar List. Click on each grammar for more ...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="activity">
+                            <div class="activity_image">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/BTS_N4.png" alt="">
+                            </div>
+                            <div class="activity_detail">
+                                <p style="color: lightcoral; font-size: 15px;">N4 Tutorial</p>
+                                <p style="font-size: 20px; font-weight: bolder;">
+                                    <a th:href="N4-gramma">Grammar</a>
+                                </p>
+                                <p>This is the list of the Japanese grammar rules needed to study for the Japanese Language Proficiency Test N4. (JLPT N4 Grammar List)...</p>
+                            </div>
+                        </div>
+                        <div class="activity">
+                            <div class="activity_image">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/BTS_N3.svg" alt="">
+                            </div>
+                            <div class="activity_detail">
+                                <p style="color: lightcoral; font-size: 15px;">N3 Tutorial</p>
+                                <p style="font-size: 20px; font-weight: bolder;"><a th:href="N3-gramma">Grammar</a></p>
+                                <p>This is a complete list of the Japanese grammar rules needed to study for and pass the N3 Japanese Language Proficiency Test. Although there is no official ...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="footer">
+                <p style="text-align: center; color: #e6e6e6; padding-top: 20px;">Copyright 2020 URBAN Viet Nam, All Right Reserved</p>
+            </div>
+        </div>
+
     </div>
-
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.menu-toggle').click(function () {
-                $('nav').toggleClass('active');
-            });
-            $('.link').click(function () {
-                $('nav').toggleClass('active');
-            })
-        })
-    </script>
 </body>
 
 </html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="left-item">
+                <div class="logo" style="font-size: 25px; color: #737373;">
+                    日本語の勉強
+                </div>
+                <ul>
+                    <li>
+                        <a th:href="homepage" style="text-decoration: none; color: #737373">Home</a>
+                    </li>
+                    <li>
+                        <a th:href="N5-detail" style="text-decoration: none; color: #737373">N5</a>
+                    </li>
+                    <li>
+                        <a th:href="N4-detail" style="text-decoration: none; color: #737373">N4</a>
+                    </li>
+                    <li>
+                        <a th:href="N3-detail" style="text-decoration: none; color: #737373">N3</a>
+                    </li>
+                    <li>
+                        <a th:href="listhappyo" style="text-decoration: none; color: #737373">Happyo</a>
+                    </li>
+                    <li>
+                        <a th:href="weekly-words" style="text-decoration: none; color: #737373">Weekly</a>
+                    </li>
+                    <li>
+                        <a href="recipe" style="text-decoration: none; color: #737373">Recipe's cooking</a>
+                    </li>
+                    <li>
+                        <a href="https://e-jan.vn/" style="text-decoration: none; color: #737373">e-jan</a>
+                    </li>
+                </ul>
+                <div class="icon">
+                    <ul>
+                        <li><i class="fa fa-facebook"></i></li>
+                        <li><i class="fa fa-google"></i></li>
+                        <li><i class="fa fa-pinterest-p"></i></li>
+                        <li><i class="fa fa-twitter"></i></li>
+                        <li><i class="fa fa-vimeo"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="List-Body">
+                <div class="List-Grammar" style="background-image: url('https://cdn.yeudulich.com/1200x630/media/attraction/attraction/JPNFJS01.JPG'); background-repeat: no-repeat; background-size: cover;">
+                    <img style="border-radius: 50%; width: 120px; height: 120px;" src="https://images.pexels.com/photos/3380875/pexels-photo-3380875.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940 ">
+                    <p style="font-family: cursive; font-size: 50px; color: #fff;">List Happyo</p>
+                </div>
+                <div class="Table-content">
+                    <p>Happyo's Title</p>
+                </div>
+                <div class="List-table">
+                    <table>
+                        <tr th:each="happyo,i : ${happyos}">
+                            <td th:text="${i.count}"></td>
+                            <td>
+                                <a th:href="@{/happyo/{id}(id=${happyo.id})}" th:text="${happyo.title}"></a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="footer" style="height:80px; margin-top: 14%;">
+                <p style="text-align: center; color: #e6e6e6; padding-top: 20px;">Copyright 2020 URBAN Viet Nam, All Right Reserved</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

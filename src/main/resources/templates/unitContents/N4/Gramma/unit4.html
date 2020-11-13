@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" th:href="@{/css/style.css}" />
+	<link rel="stylesheet" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css}" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+	<title>日本語</title>
+	<style>
+		.flex-container {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.flex-content {
+			width: 65%;
+			height: auto;
+			margin: 0 10px 0 0;
+			border: #888 1px solid;
+			padding: 15px;
+			box-shadow: 3px 8px #888888;
+		}
+
+		.flex-list {
+			width: 30%;
+			height: 300px;
+			padding: 5px;
+			position: sticky;
+			top: 0;
+			border: 1px solid #888;
+			box-shadow: 5px 10px #888888;
+		}
+
+		.title {
+			font-size: 2em;
+			letter-spacing: -1px;
+			text-align: left;
+		}
+
+		.structure {
+			color: #008080;
+			font-size: 20px;
+		}
+
+		.meaning {
+			color: coral;
+		}
+
+		.example {
+			margin-bottom: 15px;
+			line-height: 2em;
+		}
+
+		.example-title {
+			font-size: 20px;
+			font-style: oblique;
+			text-decoration: underline;
+		}
+
+		.list-title {
+			font-size: 20px;
+			color: #008080;
+			text-align: center;
+		}
+
+		@media screen and (max-width: 640px) {
+			.flex-content {
+				width: 100%;
+			}
+
+			.flex-list {
+				display: none;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<header-title>日本の勉強</header-title>
+		<div class="menu-toggle"><i class="fas fa-bars"></i></div>
+		<hr />
+		<nav>
+			<ul>
+				<li class="link"><a th:href="homepage">Home</a></li>
+				<li class="link"><a th:href="N5-detail">N5</a></li>
+                <li class="link"><a th:href="N4-detail">N4</a></li>
+                <li class="link"><a th:href="N3-detail">N3</a></li>
+				<li class="link"><a th:href="listhappyo">Happyo</a></li>
+				<li class="link"><a th:href="weekly-words">Weekly Vocabulary</a></li>
+				<li class="link">
+					<a th:href="@{https://e-jan.vn/}" target="_blank">Urban-shop</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="container" style="margin-top: 5%;">
+		<div class="flex-container">
+			<div class="flex-content">
+				<!-- Phần 1 -->
+				<div class="title" id="1">
+					1. Động từ thể て　+　います
+				</div>
+				<div class="structure">
+					Diễn tả trạng thái phát sinh do kết quả của động tác hoặc hành động
+					được biểu thị bởi động từ
+				</div>
+				<!-- Phần 2 -->
+				<div class="title" id="2">
+					2. Danh từ +　が + động từ thể て　います
+				</div>
+				<div class="structure">
+					Cách dùng : Miêu tả nguyên vẹn trạng thái hiện ta trước mặt mình thì
+					động tác hoặc chủ thể của trạng thái được biểu thị bằng trợ từ [が]
+				</div>
+				<div class="meaning">Nghĩa : Cái gì như thế nào</div>
+				<div class="example">
+					<div class="example-title">Ví dụ</div>
+					まどが しまっています<br />
+					Cửa sổ đóng<br />
+					ふくろが やぶれています<br />
+					Cái túi bị rách<br />
+					いすが こわれています<br />
+					Cái ghế bị hỏng<br />
+					*Nếu diễn tả một trạng thái trong quá khứ thì ta dùng [いました]<br />
+					Ví dụ :<br />
+					けさ みちが こんでいました<br />
+					Sáng nay đường đông
+				</div>
+				<!-- Phần 3 -->
+				<div class="title" id="3">
+					3. Danh từ + は + Động từ thể ています
+				</div>
+				<div class="structure">
+					Cách dùng :<br />
+					Khi muốn đưa 1 sự vật, sự việc nào đó làm chủ đề của câu nói thì
+					thay trợ từ「が」 bằng 「は」<br />
+					Với cách nói này người ta thường sử dụng các đại từ chỉ định
+					như「この」「その」「あの」 để chỉ rõ chủ thể được nhắc đến
+				</div>
+				<div class="meaning"></div>
+				<div class="example">
+					<div class="example-title">Ví dụ</div>
+					このいすは こわれています<br />
+					Cái ghế này thì bị hỏng rồi<br />
+					そのさらは われています<br />
+					Cái đĩa đó thì vỡ rồi<br />
+					あのをさらは よごれていますから、あらってください<br />
+					Cái đĩa kia thì bẩn quá, đem đi rửa đi
+				</div>
+				<!-- Phần 4 -->
+				<div class="title" id="4">
+					4. Động từ thể て しまいます ／ て しまいました
+				</div>
+				<div class="meaning">
+					Dùng để nhấn mạnh rằng động tác nào đó hoặc việc nào đó đã kết thúc
+				</div>
+				<div class="structure">
+					て しまいます<br />
+					Cách dùng : Diễn tả sự hoàn thành kết thúc một hành động trong tương
+					lai
+				</div>
+				<div class="example">
+					<div class="example-title">Ví dụ</div>
+					あしたまでに レポートを かいいてしまいます<br />
+					Đến ngày mai tôi sẽ viết xong báo cáo
+				</div>
+				<div class="structure">
+					て しまいます<br />
+					Cách dùng : Nhấn mạnh sự hoàn thành của hành động và thường đi với
+					các trợ từ [もう] và [ぜんぶ]
+				</div>
+				<div class="example">
+					<div class="example-title">Ví dụ</div>
+					しゅくだい は もう やってしまいました<br />
+					Bài tập thì tôi đã làm hết rồi<br />
+					おさけを ぜんぶ のんでしまいました<br />
+					Tôi đã uống hết rượu rồi
+				</div>
+				<!-- Phần 5 -->
+				<div class="title" id="5">
+					5. Động từ thể て しまいました
+				</div>
+				<div class="structure">
+					Cách dùng: Biểu thị sự hối tiếc, tâm trạng biết lỗi của người nói
+				</div>
+				<div class="meaning">
+					Nghĩa : Mất… rồi
+				</div>
+				<div class="example">
+					<div class="example-title">Ví dụ</div>
+					パスポートを なくしてしまいました<br />
+					Tôi làm mất hộ chiếu mất rồi<br />
+					でんしゃに かばんを わすれてしまいました<br />
+					Tôi để quên cặp trên xe điện mất rồi<br />
+					スーパーで さいふを おとしてしまいました<br />
+					Tôi đánh rơi ví tại siêu thị mất rồi
+				</div>
+				<!-- Phần 6 -->
+				<div class="title" id="6">
+					6.　ありました
+				</div>
+				<div class="structure">
+					Cách dùng : Biểu thị rằng người nói đã tìm thấy được thứ gì
+				</div>
+				<div class="meaning"></div>
+				<div class="example">
+					<div class="example-title">Ví dụ</div>
+					[かばんが] ありましたよ<br />
+					Tìm thấy cái cặp rồi
+				</div>
+				<!-- Phần 7 -->
+				<div class="title" id="7">7.どこかで và どこかに</div>
+				<div class="structure">
+					Cách dùng : Như chúng ta đã được học trong bài 13, từ [へ] trong
+					[どこかへ] và từ [を] trong [なにかを] đều có thể lược bỏ nhưng từ
+					[で] trong [どこかで] và từ [に] trong [どこかに] thì không thể lược
+					bỏ
+				</div>
+				<div class="meaning"></div>
+				<div class="example">
+					<div class="example-title">Ví dụ</div>
+					どこかでさいふをなくしてしまいました<br />
+					Tôi đánh rơi ví ở đâu đó rồi<br />
+					どこかにでんわがありませんか<br />
+					Có chỗ nào có điện thoại không ?
+				</div>
+			</div>
+
+			<div class="flex-list">
+				<div class="list-title">Danh sách tổng hợp</div>
+				<ul>
+					<a href="#1">
+						<li>1. Động từ thể て　+　います</li>
+					</a>
+					<a href="#2">
+						<li>2. Danh từ +　が + động từ thể て　います</li>
+					</a>
+					<a href="#3">
+						<li>3. みえます và きこえます</li>
+					</a>
+					<a href="#4">
+						<li>4. Động từ thể て しまいます ／ て しまいました</li>
+					</a>
+					<a href="#5">
+						<li>5. Động từ thể て しまいました</li>
+					</a>
+					<a href="#6">
+						<li>6.　ありました</li>
+					</a>
+					<a href="#7">
+						<li>7.どこかで và どこかに</li>
+					</a>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$(".menu-toggle").click(function () {
+				$("nav").toggleClass("active");
+			});
+			$(".link").click(function () {
+				$("nav").toggleClass("active");
+			});
+		});
+	</script>
+</body>
+
+</html>

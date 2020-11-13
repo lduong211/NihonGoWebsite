@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" th:href="@{/css/style.css}" />
+	<link rel="stylesheet" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css}" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+	<title>日本語</title>
+	<style>
+		.flex-container {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.flex-content {
+			width: 65%;
+			height: auto;
+			margin: 0 10px 0 0;
+			border: #888 1px solid;
+			padding: 15px;
+			box-shadow: 3px 8px #888888;
+		}
+
+		.flex-list {
+			width: 30%;
+			height: 300px;
+			padding: 5px;
+			position: sticky;
+			top: 0;
+			border: 1px solid #888;
+			box-shadow: 5px 10px #888888;
+		}
+
+		.title {
+			font-size: 2em;
+			letter-spacing: -1px;
+			text-align: left;
+		}
+
+		.structure {
+			color: #008080;
+			font-size: 20px;
+		}
+
+		.meaning {
+			color: coral;
+		}
+
+		.example {
+			margin-bottom: 15px;
+			line-height: 2em;
+		}
+
+		.example-title {
+			font-size: 20px;
+			font-style: oblique;
+			text-decoration: underline;
+		}
+
+		.list-title {
+			font-size: 20px;
+			color: #008080;
+			text-align: center;
+		}
+
+		@media screen and (max-width: 640px) {
+			.flex-content {
+				width: 100%;
+			}
+
+			.flex-list {
+				display: none;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<header-title>日本の勉強</header-title>
+		<div class="menu-toggle"><i class="fas fa-bars"></i></div>
+		<hr />
+		<nav>
+			<ul>
+				<li class="link"><a th:href="homepage">Home</a></li>
+				<li class="link"><a th:href="N5-detail">N5</a></li>
+				<li class="link"><a th:href="N4-detail">N4</a></li>
+				<li class="link"><a th:href="N3-detail">N3</a></li>
+				<li class="link"><a th:href="listhappyo">Happyo</a></li>
+				<li class="link"><a th:href="weekly-words">Weekly Vocabulary</a></li>
+				<li class="link">
+					<a th:href="@{https://e-jan.vn/}" target="_blank">Urban-shop</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="container" style="margin-top: 5%;">
+		<div class="flex-container">
+			<div class="flex-content">
+				<!-- 1 -->
+				<div class="title" id="1">
+					1.<span style="font-size: 24px;">V／<span
+							style="font-size: 24px; color: rgb(255, 0, 0);">A<strike>だ</strike>な</span>／<span
+							style="font-size: 24px;">N<strike>だ</strike>の</span>（<ruby>普通<rp>(</rp>
+							<rt>ふつう</rt>
+							<rp>)</rp>
+						</ruby><ruby>形<rp>(</rp>
+							<rt>けい</rt>
+							<rp>)</rp>
+						</ruby>）</span><span style="
+                color: rgb(255, 0, 0);
+                font-size: 24px;
+                text-align: center;
+              ">おかげで</span>
+				</div>
+				<div class="meaning">
+					Nhờ có
+				</div>
+				<div class="structure">
+					<p>
+						Dùng để nhắc đến kết quả tốt đẹp nhờ vào sự việc, con người nào
+						đó. (lý do)
+					</p>
+					<p>
+						Mang hàm ý biết ơn
+					</p>
+				</div>
+				<div class="example">
+					<div class="example-title">Ví dụ</div>
+					<div>
+						<ruby>先生<rp>(</rp>
+							<rt>せんせい</rt>
+							<rp>)</rp>
+						</ruby>のおかげで<ruby>合格<rp>(</rp>
+							<rt>ごうかく</rt>
+							<rp>)</rp>
+						</ruby>できました。
+					</div>
+					<div>
+						<ruby>日本<rp>(</rp>
+							<rt>にっぽん</rt>
+							<rp>)</rp>
+						</ruby>へ<ruby>来<rp>(</rp>
+							<rt>き</rt>
+							<rp>)</rp>
+						</ruby>たおかげで、<ruby>日本語<rp>(</rp>
+							<rt>にほんご</rt>
+							<rp>)</rp>
+						</ruby>が<ruby>上手<rp>(</rp>
+							<rt>じょうず</rt>
+							<rp>)</rp>
+						</ruby>になった。
+					</div>
+				</div>
+				<!-- 2 -->
+				<div class="title" id="2">
+					2.
+					<span style="font-size: 24px; color: rgb(255, 0, 0);">V／A／N（<ruby>普通<rp>(</rp>
+							<rt>ふつう</rt>
+							<rp>)</rp>
+						</ruby><ruby>形<rp>(</rp>
+							<rt>けい</rt>
+							<rp>)</rp>
+						</ruby>）</span><span style="
+                color: rgb(255, 0, 0);
+                font-size: 24px;
+                text-align: center;
+              ">せいで</span>
+				</div>
+				<div class="meaning">
+					<p>
+						Vì, do
+					</p>
+					<p>
+						せいか：Hình như là vì
+					</p>
+				</div>
+				<div class="structure">
+					<p>
+						Dùng khi muốn nhắc đến lý do liên đới tới một kết quả xấu
+					</p>
+					<p>
+						Mang hàm ý trách móc
+					</p>
+				</div>
+				<div class="example">
+					<div class="example-title">Ví dụ</div>
+					<div>
+						バスが<ruby>遅<rp>(</rp>
+							<rt>おく</rt>
+							<rp>)</rp>
+						</ruby>れたせいで、<ruby>約束<rp>(</rp>
+							<rt>やくそく</rt>
+							<rp>)</rp>
+						</ruby>の<ruby>時間<rp>(</rp>
+							<rt>じかん</rt>
+							<rp>)</rp>
+						</ruby>に<ruby>間<rp>(</rp>
+							<rt>ま</rt>
+							<rp>)</rp>
+						</ruby>に<ruby>合<rp>(</rp>
+							<rt>あ</rt>
+							<rp>)</rp>
+						</ruby>わなかった。
+					</div>
+					<div>
+						<ruby>疲<rp>(</rp>
+							<rt>つか</rt>
+							<rp>)</rp>
+						</ruby>れたせいか、<ruby>頭<rp>(</rp>
+							<rt>あたま</rt>
+							<rp>)</rp>
+						</ruby>が<ruby>痛<rp>(</rp>
+							<rt>いた</rt>
+							<rp>)</rp>
+						</ruby>い。
+					</div>
+				</div>
+				<!-- 3 -->
+				<div class="title" id="3">
+					3.
+					<span style="font-size: 24px; color: rgb(255, 0, 0);">V／A／N（<ruby>普通<rp>(</rp>
+							<rt>ふつう</rt>
+							<rp>)</rp>
+						</ruby><ruby>形<rp>(</rp>
+							<rt>けい</rt>
+							<rp>)</rp>
+						</ruby>）</span>
+					<font color="#ff0000" size="5">かわりに</font>
+				</div>
+				<div class="meaning">
+					Thay cho....
+				</div>
+				<div class="structure">
+					<p>
+						Dùng để thể hiện sự thay thế tương đương của sự vật, sự việc này
+						với sự vật, sự việc khác
+					</p>
+				</div>
+				<div class="example">
+					<div class="example-title">Ví dụ</div>
+					<div>
+						<span><ruby>車<rp>(</rp>
+								<rt>くるま</rt>
+								<rp>)</rp>
+							</ruby>で</span><ruby>来<rp>(</rp>
+							<rt>き</rt>
+							<rp>)</rp>
+						</ruby>たので、ビールのかわりにジュースをください。
+					</div>
+					<div>
+						<ruby>日曜日<rp>(</rp>
+							<rt>にちようび</rt>
+							<rp>)</rp>
+						</ruby>に<ruby>働<rp>(</rp>
+							<rt>はたら</rt>
+							<rp>)</rp>
+						</ruby>いたかわりに、<ruby>今日<rp>(</rp>
+							<rt>きょう</rt>
+							<rp>)</rp>
+						</ruby><ruby>休<rp>(</rp>
+							<rt>やす</rt>
+							<rp>)</rp>
+						</ruby>みを<ruby>取<rp>(</rp>
+							<rt>と</rt>
+							<rp>)</rp>
+						</ruby>りました。
+					</div>
+				</div>
+				<!-- 4 -->
+				<div class="title" id="4">
+					4.
+					<span style="font-size: 24px;">Nに</span>
+					<font color="#ff0000" size="5">かわって</font>
+				</div>
+				<div class="meaning">
+					Thay thế cho, thay mặt cho
+				</div>
+				<div class="structure">
+					<p>
+						Dùng để thể hiện sự thay thế tương đương của sự vật, sự việc, con
+						người
+					</p>
+					<p>
+						Đi sau thường không dùng thể mệnh lệnh, sai khiến
+					</p>
+				</div>
+				<div class="example">
+					<div class="example-title">Ví dụ</div>
+					<div>
+						<span><ruby>出張中<rp>(</rp>
+								<rt>しゅっちょうちゅう</rt>
+								<rp>)</rp>
+							</ruby>の<ruby>部長<rp>(</rp>
+								<rt>ぶちょう</rt>
+								<rp>)</rp>
+							</ruby>にかわって、<ruby>私<rp>(</rp>
+								<rt>わたし</rt>
+								<rp>)</rp>
+							</ruby>がごあいさつさせていただきます</span>。
+					</div>
+					<div>
+						<ruby>野球<rp>(</rp>
+							<rt>やきゅう</rt>
+							<rp>)</rp>
+						</ruby>にかわり、サッカーがさかんになってきた。
+					</div>
+				</div>
+			</div>
+			<div class="flex-list">
+				<div class="list-title">Danh sách tổng hợp</div>
+				<ul>
+					<a href="#1">
+						<li>
+							1.
+							<span>～<ruby>先生<rp>(</rp>
+									<rt>せんせい</rt>
+									<rp>)</rp>
+								</ruby>のおかげで</span>
+						</li>
+					</a>
+					<a href="#2">
+						<li>
+							2.
+							<span>～<ruby>遅<rp>(</rp>
+									<rt>おく</rt>
+									<rp>)</rp>
+								</ruby>れたせいで</span>
+						</li>
+					</a>
+					<a href="#3">
+						<li>
+							3.
+							<span>～ビールのかわりに</span>
+						</li>
+					</a>
+					<a href="#4">
+						<li>
+							4.
+							<span>～<ruby>部長<rp>(</rp>
+									<rt>ぶちょう</rt>
+									<rp>)</rp>
+								</ruby>にかわって</span>
+						</li>
+					</a>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$(".menu-toggle").click(function () {
+				$("nav").toggleClass("active");
+			});
+			$(".link").click(function () {
+				$("nav").toggleClass("active");
+			});
+		});
+	</script>
+</body>
+
+</html>

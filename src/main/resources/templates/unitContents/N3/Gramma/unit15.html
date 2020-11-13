@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" th:href="@{/css/style.css}" />
+	<link rel="stylesheet" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css}" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+	<title>日本語</title>
+	<style>
+		.flex-container {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.flex-content {
+			width: 65%;
+			height: auto;
+			margin: 0 10px 0 0;
+			border: #888 1px solid;
+			padding: 15px;
+			box-shadow: 3px 8px #888888;
+		}
+
+		.flex-list {
+			width: 30%;
+			height: 300px;
+			padding: 5px;
+			position: sticky;
+			top: 0;
+			border: 1px solid #888;
+			box-shadow: 5px 10px #888888;
+		}
+
+		.title {
+			font-size: 2em;
+			letter-spacing: -1px;
+			text-align: left;
+		}
+
+		.structure {
+			color: #008080;
+			font-size: 20px;
+		}
+
+		.meaning {
+			color: coral;
+		}
+
+		.example {
+			margin-bottom: 15px;
+			line-height: 2em;
+		}
+
+		.example-title {
+			font-size: 20px;
+			font-style: oblique;
+			text-decoration: underline;
+		}
+
+		.list-title {
+			font-size: 20px;
+			color: #008080;
+			text-align: center;
+		}
+
+		@media screen and (max-width: 640px) {
+			.flex-content {
+				width: 100%;
+			}
+
+			.flex-list {
+				display: none;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<header-title>日本の勉強</header-title>
+		<div class="menu-toggle"><i class="fas fa-bars"></i></div>
+		<hr />
+		<nav>
+			<ul>
+				<li class="link"><a th:href="homepage">Home</a></li>
+				<li class="link"><a th:href="N5-detail">N5</a></li>
+				<li class="link"><a th:href="N4-detail">N4</a></li>
+				<li class="link"><a th:href="N3-detail">N3</a></li>
+				<li class="link"><a th:href="listhappyo">Happyo</a></li>
+				<li class="link"><a th:href="weekly-words">Weekly Vocabulary</a></li>
+				<li class="link">
+					<a th:href="@{https://e-jan.vn/}" target="_blank">Urban-shop</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="container" style="margin-top: 5%;">
+		<div class="flex-container">
+			<div class="flex-content">
+				<!-- 1 -->
+				<div class="title" id="1">
+					1.<font color="#ff0000" size="5">Vる／Vない　+　つもりだった</font>
+				</div>
+				<div class="meaning">
+					Đã dự định làm gì/ không làm gì
+				</div>
+				<div class="structure">
+					Dùng để nói đến một dự định, ý định thực hiện một hành động nào đó
+					trong quá khứ nhưng sau đó lại không thực hiện như vậy
+				</div>
+				<div class="example">
+					<div class="example-title">Ví dụ</div>
+					<div>
+						<ruby>昨日<rp>(</rp>
+							<rt>きのう</rt>
+							<rp>)</rp>
+						</ruby>は<ruby>買<rp>(</rp>
+							<rt>か</rt>
+							<rp>)</rp>
+						</ruby>い<ruby>物<rp>(</rp>
+							<rt>もの</rt>
+							<rp>)</rp>
+						</ruby>に<ruby>行<rp>(</rp>
+							<rt>い</rt>
+							<rp>)</rp>
+						</ruby>きつもりでしたが、<ruby>頭<rp>(</rp>
+							<rt>あたま</rt>
+							<rp>)</rp>
+						</ruby>が<ruby>痛<rp>(</rp>
+							<rt>いた</rt>
+							<rp>)</rp>
+						</ruby>かったのでずっと<ruby>家<rp>(</rp>
+							<rt>いえ</rt>
+							<rp>)</rp>
+						</ruby>にいました。
+					</div>
+					<div>
+						お<ruby>菓子<rp>(</rp>
+							<rt>かし</rt>
+							<rp>)</rp>
+						</ruby>を<ruby>食<rp>(</rp>
+							<rt>た</rt>
+							<rp>)</rp>
+						</ruby>べないつもりでしたが、つい<ruby>食<rp>(</rp>
+							<rt>た</rt>
+							<rp>)</rp>
+						</ruby>べてしまいました。
+					</div>
+				</div>
+				<!-- 2 -->
+				<div class="title" id="2">
+					2.
+					<span style="font-size: 24px;">V／A／N（<ruby>普通<rp>(</rp>
+							<rt>ふつう</rt>
+							<rp>)</rp>
+						</ruby><ruby>形<rp>(</rp>
+							<rt>けい</rt>
+							<rp>)</rp>
+						</ruby>）/A<strike>だ</strike>な/N<strike>だ</strike>の</span>
+					<span style="
+                color: rgb(255, 0, 0);
+                font-size: 24px;
+                text-align: center;
+              ">はずだ/はずがない</span>
+				</div>
+				<div class="meaning">
+					Chắn chắn là/ chắn chắn không
+				</div>
+				<div class="structure">
+					<p>
+						Dùng thể hiện ý khẳng định của người nói dựa trên một căn cứ nào
+						đó.
+					</p>
+					<p>
+						Riêng cụm "はずがない" mang ý nghĩa phủ định mạnh hơn.
+					</p>
+				</div>
+				<div class="example">
+					<div class="example-title">Ví dụ</div>
+					<div>
+						<ruby>田中<rp>(</rp>
+							<rt>たなか</rt>
+							<rp>)</rp>
+						</ruby>さんは<ruby>今<rp>(</rp>
+							<rt>いま</rt>
+							<rp>)</rp>
+						</ruby>、<ruby>旅行中<rp>(</rp>
+							<rt>りょこうちゅう</rt>
+							<rp>)</rp>
+						</ruby>だから、<ruby>家<rp>(</rp>
+							<rt>いえ</rt>
+							<rp>)</rp>
+						</ruby>にいないはずだ。
+					</div>
+					<div>
+						まじめな<ruby>田中<rp>(</rp>
+							<rt>たなか</rt>
+							<rp>)</rp>
+						</ruby>さんが、<ruby>無断<rp>(</rp>
+							<rt>むだん</rt>
+							<rp>)</rp>
+						</ruby>で<ruby>休<rp>(</rp>
+							<rt>やす</rt>
+							<rp>)</rp>
+						</ruby>むはずがない。
+					</div>
+				</div>
+				<!-- 3 -->
+				<div class="title" id="3">
+					3.
+					<span style="color: rgb(255, 0, 0);"><span
+							style="font-size: 24px;">Vる/A（な）である/A（い）くある/</span></span><span style="
+                color: rgb(255, 0, 0);
+                font-size: 24px;
+                text-align: center;
+              ">べきだ/べきではない</span>
+					<p style="text-align: center;">
+						（すべき　＝　するべきだ）
+					</p>
+				</div>
+				<div class="meaning">
+					Phải, nên làm gì/ không làm gì
+				</div>
+				<div class="structure">
+					<p>
+						Dùng để thể hiện việc ở một tình huống nào đó thì phải (mang ý bắt
+						buộc) thực hiện /không thực hành động nào đó. Nếu không làm được
+						thì không thể chấp nhận được ở vị trí đó, tình huống đó.
+					</p>
+				</div>
+				<div class="example">
+					<div class="example-title">Ví dụ</div>
+					<div>
+						<ruby>約束<rp>(</rp>
+							<rt>やくそく</rt>
+							<rp>)</rp>
+						</ruby>は<ruby>守<rp>(</rp>
+							<rt>まも</rt>
+							<rp>)</rp>
+						</ruby>るべきだ。
+					</div>
+					<div>
+						おもちゃは、まず<ruby>安全<rp>(</rp>
+							<rt>あんぜん</rt>
+							<rp>)</rp>
+						</ruby>であるべきだ。
+					</div>
+				</div>
+				<!-- 4 -->
+				<div class="title" id="4">
+					4.
+					<span style="color: rgb(255, 0, 0); font-size: 24px;">Vた/Vなかった</span><span style="
+                color: rgb(255, 0, 0);
+                font-size: 24px;
+                text-align: center;
+              ">ものだ/もんだ</span>
+				</div>
+				<div class="meaning">
+					Đã thường làm gì/ không làm gì
+				</div>
+				<div class="structure">
+					<p>
+						Dùng để nhắc đến những việc trong quá khứ. Thường là thói quen,
+						những hành động thường xuyên.
+					</p>
+					<p>
+						Nhấn mạnh về kỷ niệm, hồi ức
+					</p>
+				</div>
+				<div class="example">
+					<div class="example-title">Ví dụ</div>
+					<div>
+						<ruby>子<rp>(</rp>
+							<rt>こ</rt>
+							<rp>)</rp>
+						</ruby>どものころはよく<ruby>川<rp>(</rp>
+							<rt>かわ</rt>
+							<rp>)</rp>
+						</ruby>で<ruby>遊<rp>(</rp>
+							<rt>あそ</rt>
+							<rp>)</rp>
+						</ruby>んだものだ
+					</div>
+					<div>
+						<ruby>学生<rp>(</rp>
+							<rt>がくせい</rt>
+							<rp>)</rp>
+						</ruby><ruby>時代<rp>(</rp>
+							<rt>じだい</rt>
+							<rp>)</rp>
+						</ruby>は<ruby>毎日<rp>(</rp>
+							<rt>まいにち</rt>
+							<rp>)</rp>
+						</ruby><ruby>図書館<rp>(</rp>
+							<rt>としょかん</rt>
+							<rp>)</rp>
+						</ruby>へ<ruby>通<rp>(</rp>
+							<rt>とお</rt>
+							<rp>)</rp>
+						</ruby>ったものだ。
+					</div>
+				</div>
+			</div>
+			<div class="flex-list">
+				<div class="list-title">Danh sách tổng hợp</div>
+				<ul>
+					<a href="#1">
+						<li>
+							1.
+							<span>～<ruby>行<rp>(</rp>
+									<rt>い</rt>
+									<rp>)</rp>
+								</ruby>くつもりでした</span>
+						</li>
+					</a>
+					<a href="#2">
+						<li>
+							2.
+							<span>～<ruby>家<rp>(</rp>
+									<rt>いえ</rt>
+									<rp>)</rp>
+								</ruby>にいないはずだ</span>
+						</li>
+					</a>
+					<a href="#3">
+						<li>
+							3.<span>～<ruby>守<rp>(</rp>
+									<rt>まも</rt>
+									<rp>)</rp>
+								</ruby>るべきだ</span>
+						</li>
+					</a>
+					<a href="#4">
+						<li>
+							4.
+							<span>～よく<ruby>遊<rp>(</rp>
+									<rt>あそ</rt>
+									<rp>)</rp>
+								</ruby>んだものだ</span>
+						</li>
+					</a>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$(".menu-toggle").click(function () {
+				$("nav").toggleClass("active");
+			});
+			$(".link").click(function () {
+				$("nav").toggleClass("active");
+			});
+		});
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="left-item">
+                <div class="logo" style="font-size: 25px; color: #737373;">
+                    日本語の勉強
+                </div>
+                <ul>
+                    <li>
+                        <a th:href="homepage" style="text-decoration: none; color: #737373">Home</a>
+                    </li>
+                    <li>
+                        <a th:href="N5-detail" style="text-decoration: none; color: #737373">N5</a>
+                    </li>
+                    <li>
+                        <a th:href="N4-detail" style="text-decoration: none; color: #737373">N4</a>
+                    </li>
+                    <li>
+                        <a th:href="N3-detail" style="text-decoration: none; color: #737373">N3</a>
+                    </li>
+                    <li>
+                        <a th:href="listhappyo" style="text-decoration: none; color: #737373">Happyo</a>
+                    </li>
+                    <li>
+                        <a th:href="weekly-words" style="text-decoration: none; color: #737373">Weekly</a>
+                    </li>
+                    <li>
+                        <a href="recipe" style="text-decoration: none; color: #737373">Recipe's cooking</a>
+                    </li>
+                    <li>
+                        <a href="https://e-jan.vn/" style="text-decoration: none; color: #737373">e-jan</a>
+                    </li>
+                </ul>
+                <div class="icon">
+                    <ul>
+                        <li><i class="fa fa-facebook"></i></li>
+                        <li><i class="fa fa-google"></i></li>
+                        <li><i class="fa fa-pinterest-p"></i></li>
+                        <li><i class="fa fa-twitter"></i></li>
+                        <li><i class="fa fa-vimeo"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="List-Body">
+                <div class="List-Grammar" style="background-image: url('https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco/k%2FPhoto%2FRecipes%2F2020-05-how-to-make-the-easiest-pancakes-ever%2FHT-Pancakes138'); background-repeat: no-repeat; background-size: cover;">
+                    <!-- <img style="border-radius: 50%; width: 120px; height: 120px;" src="https://images.pexels.com/photos/3380875/pexels-photo-3380875.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940 "> -->
+                    <p style="font-family: cursive; font-size: 50px; color: #fff;">美味しい料理</p>
+                    <p style="font-family: cursive; font-size: 50px; color: #fff;">Delicious Food</p>
+
+                </div>
+                <div class="Table-content">
+                    <p style="text-align: center; text-decoration: none;">調理レシピカテゴリー(Food's recipe category)</p>
+                </div>
+                <!-- <div class="List-table">
+                    <table>
+
+                        <tr>
+                            <td><a href="https://urbanlearning.herokuapp.com/happyo">1. ラーメン</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://urbanlearning.herokuapp.com/happyo">2. ベトナムのフォー</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://urbanlearning.herokuapp.com/happyo">3. ベトナムの　Hu Tieu</a></td>
+                        </tr>
+
+                    </table>
+                </div> -->
+            </div>
+
+            <div class="list-tutor">
+
+                <div class="list-img">
+                    <img style="border-radius: 50%; width: 180px; height: 180px;" src="https://cdn.huongnghiepaau.com/wp-content/uploads/2018/11/mi-ramen.jpg" alt="">
+                </div>
+
+                <div class="content-list">
+
+                    <div class="list-name">
+                        <p>Japanese's ramen</p>
+                        <p><a th:href="N3-vocabulary">JAPAN</a></p>
+                    </div>
+                    <div class="list-content">
+                        <p>This is ramen's recipe from japan to show how to cook ramen from Japan...</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="list-tutor">
+
+                <div class="list-img">
+                    <img style="border-radius: 50%; width: 180px; height: 180px;" src="https://anh.24h.com.vn/upload/3-2017/images/2017-07-28/1501242926-145636-cach-nau-bun-bo-hue-ngon.jpg" alt="">
+                </div>
+
+                <div class="content-list">
+
+                    <div class="list-name">
+                        <p>Vietnamese's Bun Bo Hue</p>
+                        <p><a th:href="N3-vocabulary">VIET NAM</a></p>
+                    </div>
+                    <div class="list-content">
+                        <p>Hue beef noodle dish is a dish with many nutritional values, and good for health. This is also a popular dish in all regions. However, not everyone can make this dish a standard dish, keeping its characteristic flavor. Here is
+                            a recipe to make delicious Hue beef noodle soup with bold Hue flavor right at your home...</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="list-tutor">
+
+                <div class="list-img">
+                    <img style="border-radius: 50%; width: 180px; height: 180px;" src="https://cdn.daotaobeptruong.vn/wp-content/uploads/2020/03/cach-nau-pho-bo.jpg" alt="">
+                </div>
+
+                <div class="content-list">
+
+                    <div class="list-name">
+                        <p>Vietnamese's Pho</p>
+                        <p><a th:href="N3-vocabulary">VIET NAM</a></p>
+                    </div>
+                    <div class="list-content">
+                        <p>This is traditional pho from Viet Nam, a long time ago Pho is believed to have originated from Nam Dinh. This is one of the typical dishes for Vietnamese cuisine. The main ingredients of pho are pho cakes and broth (or broth as
+                            the Southern way of calling) along with beef. There are also spices such as: soy sauce, pepper, lemon, fish sauce, chili ... These spices are added depending on the taste of each user...</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="list-tutor">
+
+                <div class="list-img">
+                    <img style="border-radius: 50%; width: 180px; height: 180px;" src="https://cdn.huongnghiepaau.com/wp-content/uploads/2017/09/com-tam.jpg" alt="">
+                </div>
+
+                <div class="content-list">
+
+                    <div class="list-name">
+                        <p>Vietnamese's Com Tam</p>
+                        <p><a th:href="N3-vocabulary">VIET NAM</a></p>
+                    </div>
+                    <div class="list-content">
+                        <p>Already a Vietnamese, no one does not know the famous delicious broken rice dishes from the sidewalk to the restaurant, from Vietnam to abroad. How do you think if you make a genuine Saigon broken rice by yourself? It is entirely
+                            possible, Cooky will join you in making delicious Saigon broken rice right at home to treat friends and family!...</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer" style="height:80px; margin-top: 14%;">
+                <p style="text-align: center; color: #e6e6e6; padding-top: 20px;">Copyright 2020 URBAN Viet Nam, All Right Reserved</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
