@@ -173,15 +173,15 @@
               id="dataTables-example"
             >
               <thead>
-                <tr style="text-align: center;">
-                  <th style="text-align: center; width: 100px;">STT</th>
-                  <th style="text-align: center; width: 75px;">Author</th>
-                  <th style="text-align: center; width: 100px;">Title</th>
-                  <th style="text-align: center; width: 300px;">Content</th>
-                  <th style="text-align: center; width: 75px;">Date</th>
-                  <th style="text-align: center; width: 75px;">Url Image</th>
-                  <th style="text-align: center; width: 50px;">Delete</th>
-                  <th style="text-align: center; width: 50px;">Edit</th>
+                <tr>
+                  <th style="text-align: center; width: 5%px;">STT</th>
+                  <th style="text-align: center; width: 5%px;">Author</th>
+                  <th style="text-align: center; width: 10%px;">Title</th>
+                  <th style="text-align: center; width: 50%;">Content</th>
+                  <!-- <th style="text-align: center; width: 75px;">Date</th>
+                  <th style="text-align: center; width: 5px;">Url Image</th> -->
+                  <th style="text-align: center; width: 10%px;">Delete</th>
+                  <th style="text-align: center; width: 10%px;">Edit</th>
                 </tr>
               </thead>
               <tbody>
@@ -191,10 +191,10 @@
                 >
                   <td th:text="${i.count}">STT</td>
                   <td th:text="${happyo.author}">Author</td>
-                  <td th:text="${happyo.title}">Title</td>
+                  <td th:text="${happyo.title}">Title</td>  
                   <td th:text="${happyo.content}">Content</td>
-                  <td th:text="${happyo.date}">Date</td>
-                  <td th:text="${happyo.image}" style="width: 50px;">Image</td>
+                  <!-- <td th:text="${happyo.date}">Date</td>
+                  <td th:text="${happyo.image}" style="width: 50px;">Image</td> -->
                   <td class="center">
                     <i class="fa fa-trash-o fa-fw"></i>
                     <a th:href="@{/admin/happyo/delete/{id}(id=${happyo.id})}"> Delete</a>
