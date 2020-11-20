@@ -27,6 +27,9 @@
                         <a th:href="homepage" style="text-decoration: none; color: #737373">Home</a>
                     </li>
                     <li>
+                        <a th:href="news" style="text-decoration: none; color: #737373">News</a>
+                    </li>
+                    <li>
                         <a th:href="N5-detail" style="text-decoration: none; color: #737373">N5</a>
                     </li>
                     <li>
@@ -76,7 +79,7 @@
                         </tr>
                         <tr style="border: solid 2px;" th:each="happyo,i : ${happyos}">
                             <!-- <td th:text="${i.count}"></td> -->
-                            <td style="border: solid 2px;">              
+                            <td style="border: solid 2px;">
                                 <a th:href="@{/happyo/{id}(id=${happyo.id})}" th:text="${happyo.title}"></a>
                             </td>
                             <td style="border: solid 2px;" th:text="${happyo.author}">

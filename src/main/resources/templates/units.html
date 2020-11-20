@@ -18,6 +18,9 @@
         <nav>
             <ul>
                 <li class="link"><a th:href="@{/index.html}">Home</a></li>
+                <li>
+                    <a th:href="news" style="text-decoration: none; color: #737373">News</a>
+                </li>
                 <li class="link"><a th:href="@{/detail.html}">N5</a></li>
                 <li class="link"><a th:href="@{/detail.html}">N4</a></li>
                 <li class="link"><a th:href="@{/detail.html}">N3</a></li>
@@ -29,10 +32,10 @@
     </header>
 
     <div class="wrapper">
-    	<div>
-    		<p class="units">UNITS</p>
-    		<P class="units-stt">Learn now</P>
-    	</div>
+        <div>
+            <p class="units">UNITS</p>
+            <P class="units-stt">Learn now</P>
+        </div>
         <div class="unitpage-content">
             <section class="units-title">
                 <tutorial-title>UNIT 1</tutorial-title>
@@ -58,11 +61,11 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script>
-        $(document).ready(function () {
-            $('.menu-toggle').click(function () {
+        $(document).ready(function() {
+            $('.menu-toggle').click(function() {
                 $('nav').toggleClass('active');
             });
-            $('.link').click(function () {
+            $('.link').click(function() {
                 $('nav').toggleClass('active');
             })
         })
