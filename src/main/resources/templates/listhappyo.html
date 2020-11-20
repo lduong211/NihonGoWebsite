@@ -66,14 +66,21 @@
                     <p style="font-family: cursive; font-size: 50px; color: #fff;">List Happyo</p>
                 </div>
                 <div class="Table-content">
-                    <p>Happyo's Title</p>
+                    <!-- <p>Happyo's Title</p> -->
                 </div>
                 <div class="List-table">
-                    <table>
-                        <tr th:each="happyo,i : ${happyos}">
-                            <td th:text="${i.count}"></td>
-                            <td>
+                    <table style="border: solid 2px; text-align: center;">
+                        <tr style="border: solid 2px;">
+                            <th style="border: solid 2px; font-size: 30px; background-color: blue; color: white;">Title</th>
+                            <th style="border: solid 2px; font-size: 30px;">Author</th>
+                        </tr>
+                        <tr style="border: solid 2px;" th:each="happyo,i : ${happyos}">
+                            <!-- <td th:text="${i.count}"></td> -->
+                            <td style="border: solid 2px;">              
                                 <a th:href="@{/happyo/{id}(id=${happyo.id})}" th:text="${happyo.title}"></a>
+                            </td>
+                            <td style="border: solid 2px;" th:text="${happyo.author}">
+                                <!-- <a th:href="@{/happyo/{id}(id=${happyo.id})}" th:text="${happyo.author}"></a> -->
                             </td>
                         </tr>
                     </table>
