@@ -16,7 +16,7 @@ public class WeeklyWordsController {
     @GetMapping("/weekly-words")
     private String getWeeklyWords(Model model) {
         model.addAttribute("weeklywords", weeklyWordRepo.findAll());
-        return "weekly-words";
+        return "Weekly-words";
     }
 
     // @GetMapping(value="/weekly-words")
