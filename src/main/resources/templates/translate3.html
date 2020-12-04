@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" th:href="@{/style.css}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="left-item">
+                <div class="logo" style="font-size: 25px; color: #737373;">
+                    日本語の勉強
+                </div>
+                <ul>
+                    <li>
+                        <a th:href="@{/homepage}" style="text-decoration: none; color: #737373">Home</a>
+                    </li>
+                    <li>
+                        <a th:href="news" style="text-decoration: none; color: #737373">News</a>
+                    </li>
+                    <li>
+                        <a th:href="@{/N5-detail}" style="text-decoration: none; color: #737373">N5</a>
+                    </li>
+                    <li>
+                        <a th:href="@{/N4-detail}" style="text-decoration: none; color: #737373">N4</a>
+                    </li>
+                    <li>
+                        <a th:href="@{/N3-detail}" style="text-decoration: none; color: #737373">N3</a>
+                    </li>
+                    <li>
+                        <a th:href="@{/listhappyo}" style="text-decoration: none; color: #737373">Happyo</a>
+                    </li>
+                    <li>
+                        <a th:href="@{/weekly-words}" style="text-decoration: none; color: #737373">Weekly</a>
+                    </li>
+                    <li>
+                        <a href="recipe" style="text-decoration: none; color: #737373">Recipe's cooking</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://e-jan.vn/" style="text-decoration: none; color: #737373">e-jan</a>
+                    </li>
+                </ul>
+                <div class="icon">
+                    <ul>
+                        <li><i class="fa fa-facebook"></i></li>
+                        <li><i class="fa fa-google"></i></li>
+                        <li><i class="fa fa-pinterest-p"></i></li>
+                        <li><i class="fa fa-twitter"></i></li>
+                        <li><i class="fa fa-vimeo"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="content-detail">
+                <div class="detail-top">
+                    <div class="detail-title">
+                        <h1>Daily life new</h1>
+                    </div>
+                    <div class="detail-inform">
+
+                    </div>
+                </div>
+
+                <div class="img-detail" style="text-align: center;">
+                    <img src="https://anhvientham.com/wp-content/uploads/%E1%BA%A3nh-vi%E1%BB%85n-th%C3%A1m-1.png" alt="">
+                    <a href="newsdetail3" style="font-weight: 700; color: blue;">Switch to English</a>
+                </div>
+
+                <div class="detail-body">
+                    <div class="detail-body-item">
+                    </div>
+                    <div class="detail-body-title">
+                        <p style="font-size: 40px; font-weight: bold; color: blue;"> 業界をリードするAIエキスパートがAI4VN2020に集結
+                        </p>
+                    </div>
+                    <div class="detail-body-content">
+                        <p>ビッグデータ、機械学習、コンピュータービジョンの専門家は、AIの研究開発と技術ソリューションの経験を共有します。
+                        </p>
+                        <p>
+                            AI4VN 2020は、人工知能の分野で何百人もの専門家、マネージャー、トレーナー、起業家が参加して、今朝27/11にホーチミン市3区7区のコンベンションセンター272 Vo ThiSauで開かれます。 （AI）国内および国際的に。
+                        </p>
+                        <p>
+                            その中で、カナダのElementAIの創設メンバーであるYoshuaBenjo教授が、開発途上国でのAIトレーニングへのアプローチとベトナムの人材へのアドバイスについてプレゼンテーションを行います。
+                        </p>
+                        <p style="text-align: center;">
+                            <img style="width: 600px; height: auto;" src="https://i1-vnexpress.vnecdn.net/2020/11/27/Yoshua-Bengio-5628-1606413511.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=3wkWGRiS4PB4a-tLFjqTtw" alt="">
+                            <p style="font-size: 15px; text-align: center;">ヨシュア・ベンジョ教授。写真：NVCC。</p>
+                        </p>
+                        <p>
+                            Yoshua Benjo教授は、コンピュータサイエンスで長年の研究を行っており、世界で主要な賞を受賞しています。彼は、AI分野での人材不足を補い、ベトナムなどの発展途上国でAIの知識にアプローチするための提案を行います。 </p>
+                        <p>
+                            また、AIの研究開発の経験について、Vingroupの人工知能研究所のBui Hai Hung博士が、彼が働いている実際の例から共有します。 </p>
+                        <p style="text-align: center;">
+                            <img style="width: 600px; height: auto;" src="https://i1-vnexpress.vnecdn.net/2020/11/27/Bui-Hai-Hung-7727-1606413511.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=BNM33nJMkH0J02Hr99U6Qg" alt="">
+                            <p style="font-size: 15px; text-align: center;">ブイハイフン博士。写真：NVCC。</p>
+                        </p>
+                        <p>
+                            グラフィカルモデル確率（確率的グラフィカルモデル）、肥沃度パターンの深さ（深い生成モデル）、ベイズ推定（ベイズ推定）、機械学習（機械学習）、特に文字列や関係データとしてのデータのモデルを含む、フン博士の研究分野（シーケンシャルおよびリレーショナルデータのモデル）人間の行動/行動傾向、認識可能なビデオ（ビデオ理解）および自然言語処理（自然言語処理）を識別するためのアプリケーション。
+                        </p>
+                        <p>
+                            仕事に戻る前は、Bui Hai Hung博士は、Google DeepMind、Adobe Research、およびNuance自然言語理解ラボ（Nuance自然言語理解ラボ）の研究者でした。 </p>
+                        <p style="text-align: center;">
+                            <img style="width: 600px; height: auto;" src="https://i1-vnexpress.vnecdn.net/2020/11/27/Do-Trung-Thong-3246-1606413511.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=4YfIVZjaFvacxKwyXg_3WQ" alt="">
+                            <p style="font-size: 15px; text-align: center;">ド・チュントン博士。写真：NVCC。 </p>
+                        </p>
+                        <p>
+                            ホーチミン市でのAIエコシステムに関するセッションでは、Do TrungThong博士がAIテクノロジーのいくつかのアプリケーションについて共有します。トン博士は、コンピュータービジョンと人工知能で5つの特許を取得しています。 </p>
+                        <p>
+                            トン博士は、小売業者が顧客の行動とパフォーマンスを測定できるようにする分析テクノロジーを提供するPalexy（コンピュータービジョンと人工知能のテクノロジー企業）の共同創設者兼CEOです。従業員の。 </p>
+                        <p style="text-align: center;">
+                            <img style="width: 600px; height: auto;" src="https://i1-vnexpress.vnecdn.net/2020/11/27/GS-Vu-Ha-Van-1149-1606413511.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=LpdNVcWqRmwl1Vux4xK8Aw" alt="">
+                            <p style="font-size: 15px; text-align: center;">ヴハヴァン教授。写真：NVCC。 </p>
+                        </p>
+                        <p>
+                            VingroupGroupのVinBigdataBig Data ResearchInstituteの科学ディレクターであるVuHa Van教授が、AI向けのオープンデータウェアハウスに関する記事を掲載します。 </p>
+                        <p>
+                            2018年にVingroupに参加し、科学ディレクターとして、Van教授はVinBigdataビッグデータ研究所の設立と発展の基礎を築いた最初の人々の1人でした。世界クラスの主要なベトナムデータサイエンスアンドテクノロジーリサーチセンターになることを目指しています。
+                        </p>
+                        <p style="text-align: center;">
+                            <img style="width: 600px; height: auto;" src="https://i1-vnexpress.vnecdn.net/2020/11/27/Thoai-Nam-3171-1606413511.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=T-Y75cDPWSMznn0usQQ7YA" alt="">
+                            <p style="font-size: 15px; text-align: center;">トーアイナム准教授。 </p>
+                        </p>
+                        <p>
+                            工科大学、ホーチミン国立大学、准教授から。 Thoai Nam博士は、HPC-AI-Bigdataの計算インフラストラクチャシステムと量子コンピューティングの展望について話します。 </p>
+                        <p>
+                            彼は、オーストリアのリンツのヨハネスケプラー大学から博士号を取得しました。彼は、工科大学のハイパフォーマンスコンピューティングラボの創設者であり、責任者です。研究分野には、ハイパフォーマンスコンピューティング、ハイパフォーマンスデータ分析と人工知能、クラウドコンピューティング、ネットワークプロトコルが含まれます。
+                        </p>
+                        <p style="text-align: center;">
+                            <img style="width: 600px; height: auto;" src="https://i1-vnexpress.vnecdn.net/2020/11/27/le-hong-viet-1394-1606413512.png?w=1020&h=0&q=100&dpr=1&fit=crop&s=IE1jZRyhFa3zKfS-Or-jGA" alt="">
+                            <p style="font-size: 15px; text-align: center;">ルホンビエトさん。写真：NVCC。. </p>
+                        </p>
+                        <p>
+                            FPT Smart CloudCompanyのゼネラルディレクターであるLeHong Viet氏は、技術研究開発企業から来て、FPTの新しい通常のAIについて共有しました。 </p>
+                        <p>
+                            2005年からFPTに入社し、Viet氏は多くの重要な役職を歴任し、戦略的な技術計画に貢献し、企業の生産および事業活動に貢献してきました。ベトナム氏は、FPTが米国、日本、フランス、シンガポールなどの国際市場を征服するのに役立つ技術の応用と開発の基礎を築いた人物の1人です... AI、クラウドコンピューティング、ビッグなどのさまざまな分野でデータ、IoT..。
+                        </p>
+                        <p style="text-align: center;">
+                            <img style="width: 600px; height: auto;" src="https://i1-vnexpress.vnecdn.net/2020/11/27/bio-vu-hai-quan-7963-160641351-7422-1825-1606439392.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=EKM_Zpv-K2rDW1bndx6kbw" alt="">
+                            <p style="font-size: 15px; text-align: center;">ヴハイクアン准教授。写真：NVCC。 </p>
+                        </p>
+                        <p>
+                            准教授ホーチミン市立大学副学長のVuHai Quan博士が、オープニングセッションでプレゼンテーションを行います。クアン氏は博士号を取得しました。イタリアのトレント大学でコンピューターサイエンスの博士号を取得。 </p>
+                        <p>
+                            彼が追求している研究分野は次のとおりです。サウンドモデリング、連続レア語彙認識の言語;コーパス言語学の発達（音とテキスト）;音楽と音の復元;スピーチを翻訳..。 </p>
+                        <p>
+                            毎年恒例のベトナム人工知能フェスティバル（AI4VN）は、研究機関や大学のエコシステム内のコンポーネントを接続することにより、ベトナムのAIテクノロジーの原動力となることが期待されています。学習、ビジネス、テクノロジー企業、AIコミュニティのスタートアップ。
+                        </p>
+                        <p>
+                            AI技術の研究と応用の目標は、健康、教育、商業、金融、農業など、ベトナムの多くの主要分野を対象としています... </p>
+                        <p>
+                            AI4VN 2020プログラムは、科学技術省、計画投資省、ホーチミン市人民委員会、VnExpressオンライン新聞が主催し、スポンサーのVietinbank、VinBigdata、FPT、VIB、Phenikaaが協力しています。
+                        </p>
+                        <p style="float: right; font-weight: 700;">
+                            著者：バオチ。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer" style="height:80px">
+                <p style="text-align: center; color: #e6e6e6; padding-top: 20px;">Copyright 2020 URBAN Viet Nam, All Right Reserved</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
