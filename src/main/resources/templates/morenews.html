@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        .container>.right {
+            margin-left: 0;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+        }
+        
+        .right>.header {
+            background-color: #009cd7;
+            height: auto;
+        }
+        
+        .header>ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .header>ul>li {
+            padding: 20px;
+            white-space: nowrap;
+        }
+        
+        ul>li>a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+            font: inherit;
+            vertical-align: baseline;
+            font-weight: 700;
+        }
+        
+        .header>.bottom {
+            background-color: royalblue;
+            margin: 0;
+        }
+        
+        .right>.footer {
+            background-color: #212a39;
+            height: auto;
+        }
+        
+        .wrapper>.right>.content>.row {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 30px;
+            justify-content: first baseline;
+            /* background-color: #2196F3; */
+            padding: 20px;
+        }
+        
+        .wrapper>.left>.content>.row {
+            padding: 20px;
+            margin: 15px;
+            text-align: center;
+        }
+        
+        .wrapper>.right>.content>.row {
+            padding: 20px;
+            margin: 15px;
+            text-align: center;
+        }
+        
+        .activity {
+            width: 88%;
+            box-shadow: none;
+            /* border-bottom: solid 1px #E5E5E5; */
+            border-radius: 0;
+            margin-bottom: 3px;
+        }
+        
+        .cotent>.title>img {
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        
+        .wrapper {
+            display: flex;
+            width: 100%;
+            height: auto;
+        }
+        
+        .wrapper>.left {
+            width: 30%;
+        }
+        
+        .wrapper>.right {
+            width: 70%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- <div class="left">
+            <div class="left-item">
+                <div class="logo" style="font-size: 25px; color: #737373;">
+                    日本語の勉強
+                </div>
+                <ul>
+                    <li>
+                        <a th:href="homepage" style="text-decoration: none; color: #737373">Home</a>
+                    </li>
+                    <li>
+                        <a th:href="news" style="text-decoration: none; color: #737373">News</a>
+                    </li>
+                    <li>
+                        <a th:href="N5-detail" style="text-decoration: none; color: #737373">N5</a>
+                    </li>
+                    <li>
+                        <a th:href="N4-detail" style="text-decoration: none; color: #737373">N4</a>
+                    </li>
+                    <li>
+                        <a th:href="N3-detail" style="text-decoration: none; color: #737373">N3</a>
+                    </li>
+                    <li>
+                        <a th:href="listhappyo" style="text-decoration: none; color: #737373">Happyo</a>
+                    </li>
+                    <li>
+                        <a th:href="weekly-words" style="text-decoration: none; color: #737373">Weekly</a>
+                    </li>
+                    <li>
+                        <a th:href="recipe" style="text-decoration: none; color: #737373">Recipe's cooking</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://e-jan.vn/" style="text-decoration: none; color: #737373">e-jan</a>
+                    </li>
+                </ul>
+                <div class="icon">
+                    <ul>
+                        <li><i class="fa fa-facebook"></i></li>
+                        <li><i class="fa fa-google"></i></li>
+                        <li><i class="fa fa-pinterest-p"></i></li>
+                        <li><i class="fa fa-twitter"></i></li>
+                        <li><i class="fa fa-vimeo"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div> -->
+        <div class="right">
+            <div class="header">
+                <ul>
+                    <li>
+                        <a href="homepage">
+                            <i class="fa fa-home"></i> Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="news">
+                            <i class="fa fa-newspaper-o"></i> News
+                        </a>
+                    </li>
+                    <li>
+                        <a href="N5-detail">
+                            <i class="N5"></i>N5
+                        </a>
+                    </li>
+                    <li>
+                        <a href="N4-detail">
+                            <i class="N4"></i>N4
+                        </a>
+                    </li>
+                    <li>
+                        <a href="N3-detail">
+                            <i class="N3"></i>N3
+                        </a>
+                    </li>
+                    <li>
+                        <a href="listhappyo">
+                            <i class=""></i>Happyo
+                        </a>
+                    </li>
+                    <li>
+                        <a href="weekly-words">
+                            <i class=""></i>Weekly
+                        </a>
+                    </li>
+                    <li>
+                        <a href="recipe">
+                            <i class="fa fa-cutlery"></i> Recipe's cooking
+                        </a>
+                    </li>
+
+                    <li>
+                        <a target="_blank" href="https://e-jan.vn/">
+                            <img src="https://theme.hstatic.net/1000351702/1000458192/14/logo.png?v=302" alt="" style="width: 100px; height: 30px; margin-top: -3px;">
+                        </a>
+                    </li>
+
+                </ul>
+                <div class="logo" style="text-align: center; color: #fff; font-size: 20px;">
+                    日本語の勉強のニュース (News)
+                </div>
+                <br>
+                <ul class="bottom">
+                    <li>
+                        <a href="">
+                             News
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            World
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Business
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Entertainment
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Sport
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Law
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Education
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Health
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Life
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Travel
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Science
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Digitizing
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Vehicle
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Opinion
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Comedy
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <br>
+            <div class="body">
+                <div class="content" style="text-align: center; justify-content: center;">
+                    <div class="title" style="display: flex; text-align: center  ">
+                        <img src="https://i1-vnexpress.vnecdn.net/2020/12/12/trump215-1607745122-5595-1607745198.jpg?w=680&h=408&q=100&dpr=1&fit=crop&s=Ux_BS-l7guDZRQI1ndL8aA" style="width: 600px; height: 340px;" alt="">
+                        <div class="content-title" style="background-color: #e6e6e6; padding: 20px; width: 30%; border-top-right-radius: 5px; border-bottom-right-radius: 5px;">
+                            <a style="font-size: 25px;">The US will vaccinate Covid-19 in the next 24 hours</a>
+                            <p style="font-size: 18px;">President Trump announced that the US will begin injecting Pfizer-BioNTech's Covid-19 vaccine within 24 hours after the FDA has approved its emergency use.</p>
+                            <p style="font-size: 18px;">Vu Anh (According to AFP).</p>
+                            <a style="font-size: 20px; text-decoration: none; color: blue;" href="morenewsdetail">Read Now =></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="border-bottom: 0.5px solid #E5E5E5; padding: 20px; width: 92%; margin-left: 3%;">
+                </div>
+
+                <div class="wrapper">
+                    <div class="left">
+                        <div class="title" style="text-align: center;">
+                            <p style="font-size: 25px; font-weight: 700;"> News (current event) </p>
+                        </div>
+                        <div class="content">
+                            <div class="row">
+                                <div class="activity">
+                                    <div class="activity_image">
+                                        <img src="https://i1-vnexpress.vnecdn.net/2020/12/13/CNT-6536-JPG-1718-1607855967.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=5Yr7RsQTkN-IEWOZXGVu2w" alt="">
+                                    </div>
+                                    <div class="activity_detail">
+                                        <p style="color: lightcoral; font-size: 15px;">NEWS</p>
+                                        <a href="morenewsdetail2" style="font-size: 20px; font-weight: bolder; color: blue;">Young talent promises to pioneer national construction
+                                        </a>
+                                        <p>The golden boy of the International Mathematical Olympiad, the valedictorian of the excellent university in 2020, promises to strive and pioneer to contribute to national construction. ..
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="activity">
+                                    <div class="activity_image">
+                                        <img src="https://i1-vnexpress.vnecdn.net/2020/12/13/cmt-cu-9549-1607851230.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=yAfV7_N6OfhBpBN-u6lCVw" alt="">
+                                    </div>
+                                    <div class="activity_detail">
+                                        <p style="color: lightcoral; font-size: 15px;">NEWS</p>
+                                        <a href="morenewsdetail3" style="font-size: 20px; font-weight: bolder; color: blue;">Change history of identity cards, citizen identification cards
+                                        </a>
+                                        <p>The first ID was issued in 1957 and has been changed 6 times. It is expected that by 2021, 50 million citizens will be provided with chip cards. ..
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="activity">
+                                    <div class="activity_image">
+                                        <img src="https://i1-giaitri.vnecdn.net/2020/12/12/tien-chi-tai-3-6013-1607745392.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=I0GcyjzzDctmEhMUeHvSBQ" alt="">
+                                    </div>
+                                    <div class="activity_detail">
+                                        <p style="color: lightcoral; font-size: 15px;">NEWS</p>
+                                        <a href="morenewsdetail4" style="font-size: 20px; font-weight: bolder; color: blue;">Artist visits Chi Tai
+                                        </a>
+                                        <p>Singer Tuan Ngoc, husband and wife Truong Giang - Nha Phuong, artists Tan Beo, Trinh Kim Chi ... visited Chi Tai, 12/12 morning...
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="border-right: 0.5px solid #E5E5E5; margin: 69px 0 0 0;">
+                    </div>
+
+                    <div class="right">
+                        <div class="title" style="text-align: center;">
+                            <p style="font-size: 25px; font-weight: 700;"> Other News </p>
+                        </div>
+                        <div class="content">
+                            <div class="row">
+                                <div class="activity">
+                                    <div class="activity_image">
+                                        <img src="https://image.tinnhanhchungkhoan.vn/w660/Uploaded/2020/gtnwae/2020_05_05/ais_wgwz.jpg" alt="">
+                                    </div>
+                                    <div class="activity_detail">
+                                        <p style="color: lightcoral; font-size: 15px;">NEWS</p>
+                                        <a href="morenewsdetail5" style="font-size: 20px; font-weight: bolder; color: blue;">Short-term adjustable securities
+                                        </a>
+                                        <p>Liquidity fell and the resistance level of 1,050 points made analysts concerned about the possibility of short-term correction. ...
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="activity">
+                                    <div class="activity_image">
+                                        <img src="https://i1-giaitri.vnecdn.net/2020/12/14/hoa-hau-thai-lan-2159-1607910758.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=_mK6lddZY4jbvwhtY4D54g" alt="">
+                                    </div>
+                                    <div class="activity_detail">
+                                        <p style="color: lightcoral; font-size: 15px;">NEWS</p>
+                                        <a href="morenewsdetail6" style="font-size: 20px; font-weight: bolder; color: blue;">The 27-year-old beauty was crowned Miss Thailand
+                                        </a>
+                                        <p>Natthapat Pongpraphan, 27 years old, won the crown of Miss Thailand in the final on December 13...
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="activity">
+                                    <div class="activity_image">
+                                        <img src="https://static.bongda24h.vn/medias/standard/2020/12/9/ronaldo-tiep-tuc-lap-ky-luc.jpg" alt="">
+                                    </div>
+                                    <div class="activity_detail">
+                                        <p style="color: lightcoral; font-size: 15px;">NEWS</p>
+                                        <a href="morenewsdetail7" style="font-size: 20px; font-weight: bolder; color: blue;">Ronaldo: 'The win over Barca raises Juventus'
+                                        </a>
+                                        <p>Cristiano Ronaldo believes that the high confidence in Juventus is now due to the effect of winning at Camp Nou five days ago...
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="activity">
+                                    <div class="activity_image">
+                                        <img src="https://i1-kinhdoanh.vnecdn.net/2020/11/27/im-265122-1606412418-1463-1606412726.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=lSdpLCLnizqBpnhGVk8rKQ" alt="">
+                                    </div>
+                                    <div class="activity_detail">
+                                        <p style="color: lightcoral; font-size: 15px;">NEWS</p>
+                                        <a href="newsdetail4" style="font-size: 20px; font-weight: bolder; color: blue;">Walt Disney will lay off 32,000 employees</a>
+                                        <p>32,000 employees will retire at the end of March 2021 when Covid-19 continues to damage Disney's amusement parks and resorts...
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="activity">
+                                    <div class="activity_image">
+                                        <img src="https://i1-suckhoe.vnecdn.net/2020/11/27/merlin-177700350-c07e0642-457d-4679-9113-1606439317.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=lipiuWCJklH2aU1qfE_7RQ" alt="">
+                                    </div>
+                                    <div class="activity_detail">
+                                        <p style="color: lightcoral; font-size: 15px;">NEWS</p>
+                                        <a href="newsdetail5" style="font-size: 20px; font-weight: bolder; color: blue;">Trump: Next week starts to vaccinate Covid-19
+                                        </a>
+                                        <p>President Donald Trump said it would launch vaccinations for doctors, health workers and the elderly next week...
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="activity">
+                                    <div class="activity_image">
+                                        <img src="https://i1-vnexpress.vnecdn.net/2020/11/26/Thu-tuong-4932-1606365063.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=5eOPC-m1k5yzhJvyBRpTUQ" alt="">
+                                    </div>
+                                    <div class="activity_detail">
+                                        <p style="color: lightcoral; font-size: 15px;">NEWS</p>
+                                        <a href="newsdetail6" style="font-size: 20px; font-weight: bolder; color: blue;">ASEAN strengthens cooperation in combating transnational crime
+                                        </a>
+                                        <p>ASEAN countries increase the building of trust, high-level information exchanges between law enforcement agencies, and prevent organizations and individuals from taking advantage of the territory of one country
+                                            against another. ...
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="border-top: 0.5px solid #E5E5E5; padding: 20px; width: 92%; margin-left: 3%;">
+                        </div>
+
+                        <div class="title" style="text-align: center;">
+                            <p style="font-size: 25px; font-weight: 700;"> Old News </p>
+                        </div>
+                        <div class="content">
+                            <div class="row">
+                                <div class="activity">
+                                    <div class="activity_image">
+                                        <img src="https://i1-kinhdoanh.vnecdn.net/2020/11/25/xang-dau-37-1606275788-6247-1606275834.jpg?w=300&h=180&q=100&dpr=1&fit=crop&s=MbT0qsYtUx4DQxX7ctLZUw" alt="">
+                                    </div>
+                                    <div class="activity_detail">
+                                        <p style="color: lightcoral; font-size: 15px;">NEWS</p>
+                                        <a href="newsdetail" style="font-size: 20px; font-weight: bolder; color: blue;">Gasoline and oil prices rose sharply</a>
+                                        <p>From 15:30, each liter of E5RON92 gasoline increased by VND 609, RON95 III increased by VND 650, and oil products increased by VND 576-651...
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="activity">
+                                    <div class="activity_image">
+                                        <img src="https://i1-thethao.vnecdn.net/2020/11/27/vocon-1414-1606441750.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=DGdfYtn27LvU-iqVV5M3NQ" alt="">
+                                    </div>
+                                    <div class="activity_detail">
+                                        <p style="color: lightcoral; font-size: 15px;">NEWS</p>
+                                        <a href="newsdetail2" style="font-size: 20px; font-weight: bolder; color: blue;">Maradona returned to his final resting place</a>
+                                        <p>Maradona returned to ARGENTINE's final resting place Two days after his death, Maradona was buried on the evening of November 26, at Bella Vista cemetery, where his parents were buried....
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="activity">
+                                    <div class="activity_image">
+                                        <img src="https://anhvientham.com/wp-content/uploads/%E1%BA%A3nh-vi%E1%BB%85n-th%C3%A1m-1.png" alt="">
+                                    </div>
+                                    <div class="activity_detail">
+                                        <p style="color: lightcoral; font-size: 15px;">NEWS</p>
+                                        <a href="newsdetail3" style="font-size: 20px; font-weight: bolder; color: blue;">Industry leading AI experts converge at AI4VN 2020</a>
+                                        <p>Experts in big data, machine learning, computer vision ... will share experiences in research and development and technical solutions for AI...
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <p style="text-align: center; color: #e6e6e6; padding-top: 20px;">Copyright 2020 URBAN Viet Nam, All Right Reserved</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
