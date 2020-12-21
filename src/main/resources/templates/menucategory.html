@@ -54,7 +54,7 @@
         
         .wrapper>.right>.content>.row {
             display: grid;
-            grid-template-columns: auto auto auto;
+            grid-template-columns: auto auto auto auto;
             grid-gap: 30px;
             justify-content: first baseline;
             /* background-color: #2196F3; */
@@ -91,14 +91,12 @@
             width: 100%;
             height: auto;
         }
-        
-        .wrapper>.left {
+        /* .wrapper>.left {
             width: 30%;
-        }
-        
-        .wrapper>.right {
+        } */
+        /* .wrapper>.right {
             width: 70%;
-        }
+        } */
         
         .dropbtn {
             background-color: royalblue;
@@ -144,6 +142,28 @@
         .dropdown:hover .dropbtn {
             background-color: #212a39;
             border-radius: 3px;
+        }
+        
+        .active {
+            background-color: #212a39;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            font-weight: 500;
+            border-radius: 3px;
+        }
+        
+        .content-category>a {
+            padding: 10px;
+            text-decoration: none;
+            color: blue;
+        }
+        
+        .content-category>a:hover {
+            padding: 10px;
+            text-decoration: none;
+            color: royalblue;
         }
     </style>
 </head>
@@ -254,11 +274,11 @@
                     <li>
                         <div class="dropdown">
                             <form action="menucategory">
-                                <button class="dropbtn">News</button>
+                                <button class="active">News</button>
                             </form>
                             <div class="dropdown-content">
-                                <a href="#">Politic</a>
-                                <a href="#">Traffic</a>
+                                <a href="detailmenu">Politic</a>
+                                <a href="detailmenu2">Traffic</a>
                             </div>
                         </div>
                     </li>
@@ -350,7 +370,7 @@
                                 <button class="dropbtn">Health & Life</button>
                             </form>
                             <div class="dropdown-content">
-                                <a href="#">News</a>
+                                <a href="">News</a>
                                 <a href="#">Heath & Beauty</a>
                                 <a href="">Advisory</a>
                                 <a href="">Nutrition</a>
@@ -393,14 +413,21 @@
             </div>
             <br>
             <div class="body">
+                <div class="content-category" style="text-align: center; font-size: 20px; font-weight: 700;">
+                    <p>News</p>
+                    <a href="detailmenu">Politic</a>
+                    <a href="">Traffic</a>
+                </div>
+                <div style="border-top: 0.5px solid #E5E5E5; padding: 20px; width: 92%; margin-left: 3%; margin-top: 1%;">
+                </div>
                 <div class="content" style="text-align: center; justify-content: center;">
-                    <div class="title" style="display: flex; text-align: center  ">
-                        <img src="https://i1-vnexpress.vnecdn.net/2020/12/12/trump215-1607745122-5595-1607745198.jpg?w=680&h=408&q=100&dpr=1&fit=crop&s=Ux_BS-l7guDZRQI1ndL8aA" style="width: 600px; height: 340px;" alt="">
+                    <div class="title" style="display: flex; text-align: center">
+                        <img src="https://i1-vnexpress.vnecdn.net/2020/12/19/1608371906006-1608372085-3301-1608372184.jpg?w=680&h=408&q=100&dpr=1&fit=crop&s=McFIul6YGwSP4aIg8axZXQ" style="width: 600px; height: 340px;" alt="">
                         <div class="content-title" style="background-color: #e6e6e6; padding: 20px; width: 30%; border-top-right-radius: 5px; border-bottom-right-radius: 5px;">
-                            <a style="font-size: 25px;">The US will vaccinate Covid-19 in the next 24 hours</a>
-                            <p style="font-size: 18px;">President Trump announced that the US will begin injecting Pfizer-BioNTech's Covid-19 vaccine within 24 hours after the FDA has approved its emergency use.</p>
-                            <p style="font-size: 18px;">Vu Anh (According to AFP).</p>
-                            <a style="font-size: 20px; text-decoration: none; color: blue;" href="morenewsdetail">Read Now =></a>
+                            <a style="font-size: 25px;">'Vietnam needs to prepare to adapt to an aging population'</a>
+                            <p style="font-size: 18px;">Assoc.Prof.Dr. Giang Thanh Long, Director of Public Policy and Management (National Economics University) answered VnExpress about the challenge of Vietnam entering an aging population period.</p>
+                            <p style="font-size: 18px;">Author: Viet Tuan.</p>
+                            <a style="font-size: 20px; text-decoration: none; color: blue;" href="newsdetail7">Read Now =></a>
                         </div>
                     </div>
                 </div>
@@ -409,7 +436,7 @@
                 </div>
 
                 <div class="wrapper">
-                    <div class="left">
+                    <!-- <div class="left">
                         <div class="title" style="text-align: center;">
                             <p style="font-size: 25px; font-weight: 700;"> News (current event) </p>
                         </div>
@@ -453,86 +480,59 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                     <div style="border-right: 0.5px solid #E5E5E5; margin: 69px 0 0 0;">
                     </div>
 
                     <div class="right">
-                        <div class="title" style="text-align: center;">
-                            <p style="font-size: 25px; font-weight: 700;"> Other News </p>
-                        </div>
                         <div class="content">
                             <div class="row">
                                 <div class="activity">
                                     <div class="activity_image">
-                                        <img src="https://image.tinnhanhchungkhoan.vn/w660/Uploaded/2020/gtnwae/2020_05_05/ais_wgwz.jpg" alt="">
+                                        <img src="https://i1-vnexpress.vnecdn.net/2020/12/18/BHYT-01-1608277333.jpg?w=0&h=0&q=100&dpr=1&fit=crop&s=NFHUxH16pg0wvpPN2fjDtQ" alt="">
                                     </div>
                                     <div class="activity_detail">
                                         <p style="color: lightcoral; font-size: 15px;">NEWS</p>
-                                        <a href="morenewsdetail5" style="font-size: 20px; font-weight: bolder; color: blue;">Short-term adjustable securities
+                                        <a href="morenewsdetail5" style="font-size: 20px; font-weight: bolder; color: blue;">Health insurance card changes from 2021
                                         </a>
-                                        <p>Liquidity fell and the resistance level of 1,050 points made analysts concerned about the possibility of short-term correction. ...
+                                        <p>More than 86.6 million people will switch to using a new health insurance card, small in size, convenient to look up medical information from April 1, 2021.
                                         </p>
                                     </div>
                                 </div>
                                 <div class="activity">
                                     <div class="activity_image">
-                                        <img src="https://i1-giaitri.vnecdn.net/2020/12/14/hoa-hau-thai-lan-2159-1607910758.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=_mK6lddZY4jbvwhtY4D54g" alt="">
+                                        <img src="https://i1-vnexpress.vnecdn.net/2020/12/13/HUY-2446-7455-1607872598.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=abr14tfiP4mOiHr0RuhYBg" alt="">
                                     </div>
                                     <div class="activity_detail">
                                         <p style="color: lightcoral; font-size: 15px;">NEWS</p>
-                                        <a href="morenewsdetail6" style="font-size: 20px; font-weight: bolder; color: blue;">The 27-year-old beauty was crowned Miss Thailand
+                                        <a href="morenewsdetail6" style="font-size: 20px; font-weight: bolder; color: blue;">'Major countries must respect ASEAN's rules of the game'
                                         </a>
-                                        <p>Natthapat Pongpraphan, 27 years old, won the crown of Miss Thailand in the final on December 13...
+                                        <p>In the spiral of strategic competition among major countries, Vietnam must strengthen defense relations, "actively make the rules of the game", according to Lieutenant General Nguyen Chi Vinh...
                                         </p>
                                     </div>
                                 </div>
                                 <div class="activity">
                                     <div class="activity_image">
-                                        <img src="https://static.bongda24h.vn/medias/standard/2020/12/9/ronaldo-tiep-tuc-lap-ky-luc.jpg" alt="">
+                                        <img src="https://i1-vnexpress.vnecdn.net/2020/12/17/BAC5118-6546-1608210189.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=zZo8YB5zHxbx-MEbleJd0g" alt="">
                                     </div>
                                     <div class="activity_detail">
                                         <p style="color: lightcoral; font-size: 15px;">NEWS</p>
-                                        <a href="morenewsdetail7" style="font-size: 20px; font-weight: bolder; color: blue;">Ronaldo: 'The win over Barca raises Juventus'
+                                        <a href="morenewsdetail7" style="font-size: 20px; font-weight: bolder; color: blue;">Voting to vote on personnel to participate in the Politburo
                                         </a>
-                                        <p>Cristiano Ronaldo believes that the high confidence in Juventus is now due to the effect of winning at Camp Nou five days ago...
+                                        <p>On December 17, the 14th Central Conference (Session XII) held a meeting on cadres work, according to a statement from the Office of the Party Central Committee...
                                         </p>
                                     </div>
                                 </div>
                                 <div class="activity">
                                     <div class="activity_image">
-                                        <img src="https://i1-kinhdoanh.vnecdn.net/2020/11/27/im-265122-1606412418-1463-1606412726.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=lSdpLCLnizqBpnhGVk8rKQ" alt="">
+                                        <img src="https://i1-vnexpress.vnecdn.net/2020/12/10/image001-5611-1607602638.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=jPifookmdyzBqZWdi7Vh8Q" alt="">
                                     </div>
                                     <div class="activity_detail">
                                         <p style="color: lightcoral; font-size: 15px;">NEWS</p>
-                                        <a href="newsdetail4" style="font-size: 20px; font-weight: bolder; color: blue;">Walt Disney will lay off 32,000 employees</a>
-                                        <p>32,000 employees will retire at the end of March 2021 when Covid-19 continues to damage Disney's amusement parks and resorts...
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="activity">
-                                    <div class="activity_image">
-                                        <img src="https://i1-suckhoe.vnecdn.net/2020/11/27/merlin-177700350-c07e0642-457d-4679-9113-1606439317.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=lipiuWCJklH2aU1qfE_7RQ" alt="">
-                                    </div>
-                                    <div class="activity_detail">
-                                        <p style="color: lightcoral; font-size: 15px;">NEWS</p>
-                                        <a href="newsdetail5" style="font-size: 20px; font-weight: bolder; color: blue;">Trump: Next week starts to vaccinate Covid-19
+                                        <a href="newsdetail4" style="font-size: 20px; font-weight: bolder; color: blue;">ADMM + commits to strengthen defense cooperation
                                         </a>
-                                        <p>President Donald Trump said it would launch vaccinations for doctors, health workers and the elderly next week...
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="activity">
-                                    <div class="activity_image">
-                                        <img src="https://i1-vnexpress.vnecdn.net/2020/11/26/Thu-tuong-4932-1606365063.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=5eOPC-m1k5yzhJvyBRpTUQ" alt="">
-                                    </div>
-                                    <div class="activity_detail">
-                                        <p style="color: lightcoral; font-size: 15px;">NEWS</p>
-                                        <a href="newsdetail6" style="font-size: 20px; font-weight: bolder; color: blue;">ASEAN strengthens cooperation in combating transnational crime
-                                        </a>
-                                        <p>ASEAN countries increase the building of trust, high-level information exchanges between law enforcement agencies, and prevent organizations and individuals from taking advantage of the territory of one country
-                                            against another. ...
+                                        <p>The 7th Meeting of Defense Ministers of ASEAN countries (ADMM +) held online, December 10...
                                         </p>
                                     </div>
                                 </div>
@@ -542,41 +542,49 @@
                         <div style="border-top: 0.5px solid #E5E5E5; padding: 20px; width: 92%; margin-left: 3%;">
                         </div>
 
-                        <div class="title" style="text-align: center;">
-                            <p style="font-size: 25px; font-weight: 700;"> Old News </p>
-                        </div>
                         <div class="content">
                             <div class="row">
                                 <div class="activity">
                                     <div class="activity_image">
-                                        <img src="https://i1-kinhdoanh.vnecdn.net/2020/11/25/xang-dau-37-1606275788-6247-1606275834.jpg?w=300&h=180&q=100&dpr=1&fit=crop&s=MbT0qsYtUx4DQxX7ctLZUw" alt="">
+                                        <img src="https://i1-vnexpress.vnecdn.net/2020/12/18/san-bay-VN-2-settop-v3-01.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=Zy9mAVslKWz7IfNTpAEhMQ" alt="">
                                     </div>
                                     <div class="activity_detail">
                                         <p style="color: lightcoral; font-size: 15px;">NEWS</p>
-                                        <a href="newsdetail" style="font-size: 20px; font-weight: bolder; color: blue;">Gasoline and oil prices rose sharply</a>
-                                        <p>From 15:30, each liter of E5RON92 gasoline increased by VND 609, RON95 III increased by VND 650, and oil products increased by VND 576-651...
+                                        <a href="newsdetail" style="font-size: 20px; font-weight: bolder; color: blue;">Vietnam's airport network is expected by 2030</a>
+                                        <p>According to the draft national airport planning, by 2030 there will be four more airports: Long Thanh, Phan Thiet, Sapa, Quang Tri...
                                         </p>
                                     </div>
                                 </div>
                                 <div class="activity">
                                     <div class="activity_image">
-                                        <img src="https://i1-thethao.vnecdn.net/2020/11/27/vocon-1414-1606441750.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=DGdfYtn27LvU-iqVV5M3NQ" alt="">
+                                        <img src="https://i1-vnexpress.vnecdn.net/2020/12/18/xedap6-1608287473-7341-1608287481.jpg?w=300&h=180&q=100&dpr=1&fit=crop&s=kwvQdQWG9F1tj9aErcysVA" alt="">
                                     </div>
                                     <div class="activity_detail">
                                         <p style="color: lightcoral; font-size: 15px;">NEWS</p>
-                                        <a href="newsdetail2" style="font-size: 20px; font-weight: bolder; color: blue;">Maradona returned to his final resting place</a>
-                                        <p>Maradona returned to ARGENTINE's final resting place Two days after his death, Maradona was buried on the evening of November 26, at Bella Vista cemetery, where his parents were buried....
+                                        <a href="newsdetail2" style="font-size: 20px; font-weight: bolder; color: blue;">Pilot public bicycle in central Saigon</a>
+                                        <p>388 bicycles parked at 43 stations in districts 1 and 3 are leased 10,000 VND per hour each, planned for a pilot year, to develop public transport...
                                         </p>
                                     </div>
                                 </div>
                                 <div class="activity">
                                     <div class="activity_image">
-                                        <img src="https://anhvientham.com/wp-content/uploads/%E1%BA%A3nh-vi%E1%BB%85n-th%C3%A1m-1.png" alt="">
+                                        <img src="https://i1-vnexpress.vnecdn.net/2020/12/18/raochan1-1608263444-2916-1608264069.jpg?w=300&h=180&q=100&dpr=1&fit=crop&s=8h8eaBHd-wtPLUpIT55iiw" alt="">
                                     </div>
                                     <div class="activity_detail">
                                         <p style="color: lightcoral; font-size: 15px;">NEWS</p>
-                                        <a href="newsdetail3" style="font-size: 20px; font-weight: bolder; color: blue;">Industry leading AI experts converge at AI4VN 2020</a>
-                                        <p>Experts in big data, machine learning, computer vision ... will share experiences in research and development and technical solutions for AI...
+                                        <a href="newsdetail3" style="font-size: 20px; font-weight: bolder; color: blue;">Barriers to Le Van Luong street are used for tunneling</a>
+                                        <p> Le Van Luong street next to Khuat Duy Tien intersection is fenced on each side 3 m for construction of underground tunnels, traffic congestion...
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="activity">
+                                    <div class="activity_image">
+                                        <img src="https://i1-vnexpress.vnecdn.net/2020/12/17/AnhchupManhinh20201217luc22095-2859-7857-1608218386.png?w=300&h=180&q=100&dpr=1&fit=crop&s=zLPFCmHIKhC-YKhAi_XPuw" alt="">
+                                    </div>
+                                    <div class="activity_detail">
+                                        <p style="color: lightcoral; font-size: 15px;">NEWS</p>
+                                        <a href="newsdetail3" style="font-size: 20px; font-weight: bolder; color: blue;">The driver was fined 17 million VND for running back on the highway</a>
+                                        <p> Running back more than 100 meters on the highway of Ho Chi Minh City - Long Thanh - Dau Giay, the driver of a tractor truck carrying 8 cars was fined 17 million dong...
                                         </p>
                                     </div>
                                 </div>
