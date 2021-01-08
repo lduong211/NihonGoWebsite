@@ -66,6 +66,11 @@ body {
     padding: 20px;
 }
 
+.left-item>ul>li:hover {
+    background-color: #fff;
+    border-radius: 5px;
+}
+
 .avatar {
     position: absolute;
 }
