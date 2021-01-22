@@ -44,8 +44,11 @@ body {
 }
 
 .left-item {
-    padding: 20px;
     text-align: center;
+}
+
+.left-item .icon ul {
+    padding: 20 0 20 0;
 }
 
 .left-item>.logo {
@@ -67,8 +70,7 @@ body {
 }
 
 .left-item>ul>li:hover {
-    background-color: #fff;
-    border-radius: 5px;
+    background-color: rgb(211, 211, 211);
 }
 
 .avatar {
