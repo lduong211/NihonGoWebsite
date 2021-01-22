@@ -1,560 +1,472 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylenew.css">
     <style>
-        .container>.right {
-            margin-left: 0;
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            height: auto;
-        }
-        
-        .right>.header {
-            background-color: #009cd7;
-            height: auto;
-        }
-        
-        .header>ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-        }
-        
-        .header>ul>li {
-            padding: 20px;
-            white-space: nowrap;
-        }
-        
-        ul>li>a {
-            text-decoration: none;
-            color: #fff;
-            font-size: 20px;
-            font: inherit;
-            vertical-align: baseline;
-            font-weight: 700;
-        }
-        
-        .header>.bottom {
-            background-color: royalblue;
-            margin: 0;
-        }
-        
-        .right>.footer {
-            background-color: #212a39;
-            height: auto;
-        }
-        
-        .wrapper>.right>.content>.row {
-            display: grid;
-            grid-template-columns: auto auto auto auto;
-            grid-gap: 30px;
-            justify-content: first baseline;
-            /* background-color: #2196F3; */
-            padding: 20px;
-        }
-        
-        .wrapper>.left>.content>.row {
-            padding: 20px;
-            margin: 15px;
-            text-align: center;
-        }
-        
-        .wrapper>.right>.content>.row {
-            padding: 20px;
-            margin: 15px;
-            text-align: center;
-        }
-        
-        .activity {
-            width: 88%;
-            box-shadow: none;
-            /* border-bottom: solid 1px #E5E5E5; */
-            border-radius: 0;
-            margin-bottom: 3px;
-        }
-        
-        .cotent>.title>img {
-            border-top-left-radius: 5px;
-            border-bottom-left-radius: 5px;
-        }
-        
-        .wrapper {
-            display: flex;
-            width: 100%;
-            height: auto;
-        }
-        /* .wrapper>.left {
-            width: 30%;
-        } */
-        /* .wrapper>.right {
-            width: 70%;
-        } */
-        
-        .dropbtn {
-            background-color: royalblue;
-            color: white;
-            padding: 16px;
-            font-size: 16px;
-            border: none;
-            font-weight: 500;
-        }
-        
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-        
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f1f1f1;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-            border-radius: 3px;
-        }
-        
-        .dropdown-content a {
-            color: blue;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            font-weight: 700;
-            border-radius: 3px;
-        }
-        
-        .dropdown-content a:hover {
-            background-color: #ddd;
-        }
-        
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-        
-        .dropdown:hover .dropbtn {
-            background-color: #212a39;
-            border-radius: 3px;
-        }
-        
-        .active {
-            background-color: #212a39;
-            color: white;
-            padding: 16px;
-            font-size: 16px;
-            border: none;
-            font-weight: 500;
-            border-radius: 3px;
-        }
-        
-        .content-category>a {
-            padding: 10px;
-            text-decoration: none;
-            color: blue;
-        }
-        
-        .content-category>a:hover {
-            padding: 10px;
-            text-decoration: none;
-            color: royalblue;
+        .centernav .title a:hover {
+            color: #636363;
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <!-- <div class="left">
-            <div class="left-item">
-                <div class="logo" style="font-size: 25px; color: #737373;">
-                    日本語の勉強
-                </div>
-                <ul>
-                    <li>
-                        <a th:href="homepage" style="text-decoration: none; color: #737373">Home</a>
-                    </li>
-                    <li>
-                        <a th:href="news" style="text-decoration: none; color: #737373">News</a>
-                    </li>
-                    <li>
-                        <a th:href="N5-detail" style="text-decoration: none; color: #737373">N5</a>
-                    </li>
-                    <li>
-                        <a th:href="N4-detail" style="text-decoration: none; color: #737373">N4</a>
-                    </li>
-                    <li>
-                        <a th:href="N3-detail" style="text-decoration: none; color: #737373">N3</a>
-                    </li>
-                    <li>
-                        <a th:href="listhappyo" style="text-decoration: none; color: #737373">Happyo</a>
-                    </li>
-                    <li>
-                        <a th:href="weekly-words" style="text-decoration: none; color: #737373">Weekly</a>
-                    </li>
-                    <li>
-                        <a th:href="recipe" style="text-decoration: none; color: #737373">Recipe's cooking</a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://e-jan.vn/" style="text-decoration: none; color: #737373">e-jan</a>
-                    </li>
-                </ul>
-                <div class="icon">
-                    <ul>
-                        <li><i class="fa fa-facebook"></i></li>
-                        <li><i class="fa fa-google"></i></li>
-                        <li><i class="fa fa-pinterest-p"></i></li>
-                        <li><i class="fa fa-twitter"></i></li>
-                        <li><i class="fa fa-vimeo"></i></li>
-                    </ul>
+    <div class="wrapper">
+        <div class="toppage">
+            <div class="topnav">
+                <div class="container">
+                    <nav>
+                        <ul>
+                            <!-- <li><a href="">日本語勉強</a></li> -->
+                            <li><a th:href="news">News</a></li>
+                            <li><a th:href="N5-detail">N5</a></li>
+                            <li><a th:href="N4-detail">N4</a></li>
+                            <li><a th:href="N3-detail">N3</a></li>
+                            <li><a th:href="listhappyo">Happyo</a></li>
+                            <li><a th:href="Weekly-words">Weekly</a></li>
+                            <li><a th:href="recipe">Receipt's Cooking</a></li>
+                            <li>
+                                <a href="https://e-jan.vn/">
+                                    <img src="https://theme.hstatic.net/1000351702/1000458192/14/logo.png?v=302" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
-        </div> -->
-        <div class="right">
-            <div class="header">
-                <ul>
-                    <li>
-                        <a href="homepage">
-                            <i class="fa fa-home"></i> Home
-                        </a>
-                    </li>
-                    <li>
-                        <a href="news">
-                            <i class="fa fa-newspaper-o"></i> News
-                        </a>
-                    </li>
-                    <li>
-                        <a href="N5-detail">
-                            <i class="N5"></i>N5
-                        </a>
-                    </li>
-                    <li>
-                        <a href="N4-detail">
-                            <i class="N4"></i>N4
-                        </a>
-                    </li>
-                    <li>
-                        <a href="N3-detail">
-                            <i class="N3"></i>N3
-                        </a>
-                    </li>
-                    <li>
-                        <a href="listhappyo">
-                            <i class=""></i>Happyo
-                        </a>
-                    </li>
-                    <li>
-                        <a href="weekly-words">
-                            <i class=""></i>Weekly
-                        </a>
-                    </li>
-                    <li>
-                        <a href="recipe">
-                            <i class="fa fa-cutlery"></i> Recipe's cooking
-                        </a>
-                    </li>
-
-                    <li>
-                        <a target="_blank" href="https://e-jan.vn/">
-                            <img src="https://theme.hstatic.net/1000351702/1000458192/14/logo.png?v=302" alt="" style="width: 100px; height: 30px; margin-top: -3px;">
-                        </a>
-                    </li>
-
-                </ul>
-                <div class="logo" style="text-align: center; color: #fff; font-size: 20px;">
-                    日本語の勉強のニュース (News)
-                </div>
-                <br>
-                <ul class="bottom">
-                    <li>
-                        <div class="dropdown">
-                            <form action="menucategory">
-                                <button class="dropbtn">News</button>
-                            </form>
-                            <div class="dropdown-content">
-                                <a href="detailmenu">Politic</a>
-                                <a href="detailmenu2">Traffic</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="dropdown">
-                            <form action="menucategory2">
-                                <button class="dropbtn">World</button>
-                            </form>
-                            <div class="dropdown-content">
-                                <a href="#">Data</a>
-                                <a href="#">Analysis</a>
-                                <a href="#">Military</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="dropdown">
-                            <form action="menucategory3">
-                                <button class="dropbtn">Business</button>
-                            </form>
-                            <div class="dropdown-content">
-                                <a href="#">International</a>
-                                <a href="#">Enterprise</a>
-                                <a href="#">Startup</a>
-                                <a href="#">Stock</a>
-                                <a href="#">Real Estate</a>
-
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="dropdown">
-                            <form action="menucategory4">
-                                <button class="dropbtn">Entertainment</button>
-                            </form>
-                            <div class="dropdown-content">
-                                <a href="#">World Stars</a>
-                                <a href="#">Video</a>
-                                <a href="#">Movie</a>
-                                <a href="#">Music</a>
-                                <a href="#">Fashion</a>
-                                <a href="#">Make Up</a>
-                                <a href="#">Arts, Book</a>
-                                <a href="">Comedy</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="dropdown">
-                            <form action="menucategory5">
-                                <button class="dropbtn">Sport</button>
-                            </form>
-                            <div class="dropdown-content">
-                                <a href="#">Soccer</a>
-                                <a href="#">Tennis</a>
-                                <a href="#">Other Subject</a>
-                                <a href="#">Schedule</a>
-                                <a href="#">World Cup</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="dropdown">
-                            <form action="menucategory6">
-                                <button class="dropbtn">Law</button>
-                            </form>
-                            <div class="dropdown-content">
-                                <a href="#">Criminal record</a>
-                                <a href="#">Advisory</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="dropdown">
-                            <form action="menucategory7">
-                                <button class="dropbtn">Education</button>
-                            </form>
-                            <div class="dropdown-content">
-                                <a href="#">Admissions</a>
-                                <a href="#">Study abroad</a>
-                                <a href="">Study foreign language</a>
-                                <a href="">Education 4.0</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="dropdown">
-                            <form action="menucategory8">
-                                <button class="dropbtn">Health & Life</button>
-                            </form>
-                            <div class="dropdown-content">
-                                <a href="">News</a>
-                                <a href="#">Heath & Beauty</a>
-                                <a href="">Advisory</a>
-                                <a href="">Nutrition</a>
-                                <a href="">Diseases</a>
-                                <a href="">Vaccine</a>
-                                <a href="">Home</a>
-                                <a href="">Life Lesson</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="dropdown">
-                            <form action="menucategory9">
-                                <button class="active">Travel</button>
-                            </form>
-                            <div class="dropdown-content">
-                                <a href="#">Destination</a>
-                                <a href="#">Image</a>
-                                <a href="">Advisory</a>
-                                <a href="">Hand's Book</a>
-                                <a href="">Safe Go</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="dropdown">
-                            <form action="menucategory10">
-                                <button class="dropbtn">Science</button>
-                            </form>
-                            <div class="dropdown-content">
-                                <a href="#">News</a>
-                                <a href="#">Invention</a>
-                                <a href="">Advisory</a>
-                                <a href="">Application</a>
-                                <a href="">Nature World</a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <br>
-            <div class="body">
-                <div class="content-category" style="text-align: center; font-size: 20px; font-weight: 700;">
-                    <p>Travel</p>
-                    <a href="#">Destination</a>
-                    <a href="#">Image</a>
-                    <a href="">Advisory</a>
-                    <a href="">Hand's Book</a>
-                    <a href="">Safe Go</a>
-                </div>
-                <div style="border-top: 0.5px solid #E5E5E5; padding: 20px; width: 92%; margin-left: 3%; margin-top: 1%;">
-                </div>
-                <div class="content" style="text-align: center; justify-content: center;">
-                    <div class="title" style="display: flex; text-align: center">
-                        <img src="https://i1-dulich.vnecdn.net/2021/01/07/471637washingtondcwebp-1610020-8096-4526-1610020874.jpg?w=680&h=408&q=100&dpr=1&fit=crop&s=xvOhhfQyvRtgD-mRRjRIfg" style="width: 600px; height: 340px;" alt="">
-                        <div class="content-title" style="background-color: #e6e6e6; padding: 20px; width: 30%; border-top-right-radius: 5px; border-bottom-right-radius: 5px;">
-                            <a style="font-size: 25px;">Capitol Hill before 'fall'</a>
-                            <p style="font-size: 18px;">Assoc.Prof.Dr. Giang Thanh Long, Director of Public Policy and Management (National Economics University) answered VnExpress about the challenge of Vietnam entering an aging population period.AMERICA Capitol Hill attracts visitors
-                                with iconic works such as the Capitol, Library of Congress, Supreme Court ...</p>
-                            <p style="font-size: 18px;">Author: Trung Nghia.</p>
-                            <a style="font-size: 20px; text-decoration: none; color: blue;" href="">Read Now =></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div style="border-bottom: 0.5px solid #E5E5E5; padding: 20px; width: 92%; margin-left: 3%;">
-                </div>
-
-                <div class="wrapper">
-                    <!-- <div class="left">
-                        <div class="title" style="text-align: center;">
-                            <p style="font-size: 25px; font-weight: 700;"> News (current event) </p>
-                        </div>
-                        <div class="content">
-                            <div class="row">
-                                <div class="activity">
-                                    <div class="activity_image">
-                                        <img src="https://i1-vnexpress.vnecdn.net/2020/12/13/CNT-6536-JPG-1718-1607855967.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=5Yr7RsQTkN-IEWOZXGVu2w" alt="">
-                                    </div>
-                                    <div class="activity_detail">
-                                        <p style="color: lightcoral; font-size: 15px;">NEWS</p>
-                                        <a href="morenewsdetail2" style="font-size: 20px; font-weight: bolder; color: blue;">Young talent promises to pioneer national construction
-                                        </a>
-                                        <p>The golden boy of the International Mathematical Olympiad, the valedictorian of the excellent university in 2020, promises to strive and pioneer to contribute to national construction. ..
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="activity">
-                                    <div class="activity_image">
-                                        <img src="https://i1-vnexpress.vnecdn.net/2020/12/13/cmt-cu-9549-1607851230.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=yAfV7_N6OfhBpBN-u6lCVw" alt="">
-                                    </div>
-                                    <div class="activity_detail">
-                                        <p style="color: lightcoral; font-size: 15px;">NEWS</p>
-                                        <a href="morenewsdetail3" style="font-size: 20px; font-weight: bolder; color: blue;">Change history of identity cards, citizen identification cards
-                                        </a>
-                                        <p>The first ID was issued in 1957 and has been changed 6 times. It is expected that by 2021, 50 million citizens will be provided with chip cards. ..
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="activity">
-                                    <div class="activity_image">
-                                        <img src="https://i1-giaitri.vnecdn.net/2020/12/12/tien-chi-tai-3-6013-1607745392.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=I0GcyjzzDctmEhMUeHvSBQ" alt="">
-                                    </div>
-                                    <div class="activity_detail">
-                                        <p style="color: lightcoral; font-size: 15px;">NEWS</p>
-                                        <a href="morenewsdetail4" style="font-size: 20px; font-weight: bolder; color: blue;">Artist visits Chi Tai
-                                        </a>
-                                        <p>Singer Tuan Ngoc, husband and wife Truong Giang - Nha Phuong, artists Tan Beo, Trinh Kim Chi ... visited Chi Tai, 12/12 morning...
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-
-                    <div style="border-right: 0.5px solid #E5E5E5; margin: 69px 0 0 0;">
-                    </div>
-
-                    <div class="right">
-                        <div class="content">
-                            <div class="row">
-                                <div class="activity">
-                                    <div class="activity_image">
-                                        <img src="https://i1-dulich.vnecdn.net/2021/01/07/hochieunhatban-1609994254-1609-3853-3631-1609995141.jpg?w=220&h=132&q=100&dpr=1&fit=crop&s=IhDedpGgg2m8i1Mz-L6mXw" alt="">
-                                    </div>
-                                    <div class="activity_detail">
-                                        <p style="color: lightcoral; font-size: 15px;">NEWS</p>
-                                        <a href="morenewsdetail5" style="font-size: 20px; font-weight: bolder; color: blue;">Three Asian countries have the most powerful passports of 2021
-                                        </a>
-                                        <p>Citizens of Japan, Singapore and South Korea can travel to most parts of the world without applying for a visa in advance.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="activity">
-                                    <div class="activity_image">
-                                        <img src="https://i1-dulich.vnecdn.net/2021/01/06/vaticancityastonishingfactsabo-1345-8799-1609904236.jpg?w=220&h=132&q=100&dpr=1&fit=crop&s=Jr-T-BSDUG7yX5I6uZPQzA" alt="">
-                                    </div>
-                                    <div class="activity_detail">
-                                        <p style="color: lightcoral; font-size: 15px;">NEWS</p>
-                                        <a href="morenewsdetail6" style="font-size: 20px; font-weight: bolder; color: blue;">Little people know about the smallest country in the world
-                                        </a>
-                                        <p>With an area of ​​less than 1km2, the Vatican is the smallest country in the world and has many interesting things that few visitors know.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="activity">
-                                    <div class="activity_image">
-                                        <img src="https://i1-dulich.vnecdn.net/2021/01/07/hoa-khoi-du-lich2-5344-1609932-2944-8115-1609987325.jpg?w=220&h=132&q=100&dpr=1&fit=crop&s=t3EF3tUaxN5QLkEBkJR9dg" alt="">
-                                    </div>
-                                    <div class="activity_detail">
-                                        <p style="color: lightcoral; font-size: 15px;">NEWS</p>
-                                        <a href="morenewsdetail7" style="font-size: 20px; font-weight: bolder; color: blue;">10 Vietnamese tourism beauties participate in greening the bare land
-                                        </a>
-                                        <p>The beauties will participate in planting about 2,700 trees in the Lam Binh - Na Hang ecological lake.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="activity">
-                                    <div class="activity_image">
-                                        <img src="https://i1-dulich.vnecdn.net/2020/12/19/130918993188523865829990778293-6073-7329-1608356686.jpg?w=220&h=132&q=100&dpr=1&fit=crop&s=twxwQE1rNWjEqFmArZ0vmQ" alt="">
-                                    </div>
-                                    <div class="activity_detail">
-                                        <p style="color: lightcoral; font-size: 15px;">NEWS</p>
-                                        <a href="newsdetail4" style="font-size: 20px; font-weight: bolder; color: blue;">Weekend visit Ca Mau forest
-                                        </a>
-                                        <p>Learn about mangrove forests, make fences to nurture the fish sauce forest, experience the lives of indigenous people only in 2 weekends.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div style="border-top: 0.5px solid #E5E5E5; padding: 20px; width: 92%; margin-left: 3%;">
-                        </div>
-
-                    </div>
+            <div class="centernav">
+                <div class="title">
+                    <p> <a href="homepage">日本語勉強</a></p>
                 </div>
             </div>
-            <div class="footer">
-                <p style="text-align: center; color: #e6e6e6; padding-top: 20px;">Copyright 2020 URBAN Viet Nam, All Right Reserved</p>
+            <div class="bottomnav">
+                <div class="container">
+                    <nav>
+                        <ul>
+                            <li>
+                                <div class="dropdown">
+                                    <a href="menucategory" class="dropbtn">News</a>
+                                    <div class="dropdown-content">
+                                        <a href="#">Politic</a>
+                                        <a href="#">Traffic</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <a th:href="menucategory2" class="dropbtn">World</a>
+                                    <div class="dropdown-content">
+                                        <a href="#">Data</a>
+                                        <a href="#">Analysis</a>
+                                        <a href="#">Military</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <a href="menucategory3" class="dropbtn">Business</a>
+                                    <div class="dropdown-content">
+                                        <a href="#">International</a>
+                                        <a href="#">Enterprise</a>
+                                        <a href="#">Startup</a>
+                                        <a href="#">Stock</a>
+                                        <a href="#">Real Estate</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <a href="menucategory4" class="dropbtn">Entertainment</a>
+                                    <div class="dropdown-content">
+                                        <a href="#">World Stars</a>
+                                        <a href="#">Video</a>
+                                        <a href="#">Movie</a>
+                                        <a href="#">Music</a>
+                                        <a href="#">Fashion</a>
+                                        <a href="#">Makeup</a>
+                                        <a href="#">Art, Book</a>
+                                        <a href="#">Comedy</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <a href="menucategory5" class="dropbtn">Sport</a>
+                                    <div class="dropdown-content">
+                                        <a href="#">Soccer</a>
+                                        <a href="#">Tennis</a>
+                                        <a href="#">Other Subject</a>
+                                        <a href="#">Schedule</a>
+                                        <a href="#">World Cup</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <a href="menucategory6" class="dropbtn">Law</a>
+                                    <div class="dropdown-content">
+                                        <a href="#">Criminal</a>
+                                        <a href="#">Advisory</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <a href="menucategory7" class="dropbtn">Education</a>
+                                    <div class="dropdown-content">
+                                        <a href="#">Heath & Life</a>
+                                        <a href="#">Admissions</a>
+                                        <a href="#">Study Aboard</a>
+                                        <a href="#">Study Language</a>
+                                        <a href="#">Education 4.0</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <a href="menucategory8" class="dropbtn">Travel</a>
+                                    <div class="dropdown-content">
+                                        <a href="#">Destination</a>
+                                        <a href="#">Image</a>
+                                        <a href="#">Advisory</a>
+                                        <a href="">Hand's Book</a>
+                                        <a href="">Safe Trip</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <a style="border-bottom: 1px solid #222;" href="menucategory9" class="dropbtn">Science</a>
+                                    <div class="dropdown-content">
+                                        <a href="#">News</a>
+                                        <a href="#">Invention</a>
+                                        <a href="#">Advisory</a>
+                                        <a href="#">Application</a>
+                                        <a href="#">Nature World</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
+        <div class="bodypage">
+            <div class="left">
+                <div class="container">
+                    <div class="title-left">
+                        <div class="img">
+                            <a href="">
+                                <img src="https://image.thanhnien.vn/660x370/uploaded/dongns/2021_01_22/hoangtung_mnok.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <a href="" class="title-content ">Chairman of H. Nha Be People's Committee is Chairman of Thu Duc City People's Committee</a>
+                        </div>
+                        <div class="date">
+                            <p>2021-01-17: 3 hours ago</p>
+                        </div>
+                    </div>
+                    <div class="nav-left">
+                        <nav>
+                            <ul>
+                                <li class="active">
+                                    <div class="title-left">
+                                        <a href="">LASTEST NEWS</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="item-left">
+                        <div class="item">
+                            <div class="img">
+                                <a href="">
+                                    <img src="https://image.thanhnien.vn/150x100/uploaded/lamvien/2021_01_22/h-06_ztpe.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item-title">
+                                <a href="">Da Lat: Building a hotel with 5 basements, causing subsidence and damage to 12 houses</a>
+                                <div class="date">
+                                    <p>3 hours ago</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img">
+                                <a href="">
+                                    <img src="https://image.thanhnien.vn/150x100/uploaded/khatm/2021_01_22/daidien_diqd.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item-title">
+                                <a href="">Ho Chi Minh City: Rescued 7 people trapped in the fire</a>
+                                <div class="date">
+                                    <p>3 hours ago</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img">
+                                <a href="">
+                                    <img src="https://image.thanhnien.vn/150x100/uploaded/lequan/2021_01_22/dinhlathang_ljsw.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item-title">
+                                <a href="">HCMC: Investigation of a shooting at a gas station in Binh Tan District</a>
+                                <div class="date">
+                                    <p>3 hours ago</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img">
+                                <a href="">
+                                    <img src="https://image.thanhnien.vn/150x100/uploaded/hoangnam/2021_01_22/thutuong_qxmh.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item-title">
+                                <a href="">Australia looks forward to elevating relations with Vietnam to a Comprehensive Strategic Partnership by 2023</a>
+                                <div class="date">
+                                    <p>3 hours ago</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img">
+                                <a href="">
+                                    <img src="https://image.thanhnien.vn/150x100/uploaded/hoangnam/2021_01_22/3_avke.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item-title">
+                                <a href="">Buy firecrackers through social networks to sell for a profit</a>
+                                <div class="date">
+                                    <p>3 hours ago</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img">
+                                <a href="">
+                                    <img src="https://image.thanhnien.vn/150x100/uploaded/hoangnam/2021_01_22/nguyen-thanh-binh_ahqc_cckd.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item-title">
+                                <a href="">LETTER XIII must have a steady transition between generations</a>
+                                <div class="date">
+                                    <p>3 hours ago</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img">
+                                <a href="">
+                                    <img src="https://image.thanhnien.vn/150x100/uploaded/hoangnam/2021_01_22/nguyenphutrong_exmf.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item-title">
+                                <a href="">The State President's Office has improved comprehensively in all working aspects</a>
+                                <div class="date">
+                                    <p>3 hours ago</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img">
+                                <a href="">
+                                    <img src="https://image.thanhnien.vn/uploaded/hoangnam/2021_01_22/xet-nghiem-5_pfmm_mlxw.gif" alt="">
+                                </a>
+                            </div>
+                            <div class="item-title">
+                                <a href="">Two more people entering from the US on Covid-19 positive flight VN441’</a>
+                                <div class="date">
+                                    <p>3 hours ago</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img">
+                                <a href="">
+                                    <img src="https://image.thanhnien.vn/150x100/uploaded/congthang/2021_01_21/3wecan_llrm.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item-title">
+                                <a href="">Warming with K warriors</a>
+                                <div class="date">
+                                    <p>3 hours ago</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img">
+                                <a href="">
+                                    <img src="https://image.thanhnien.vn/150x100/uploaded/linhnt.qc/2021_01_21/bigo/bigo_ava_qltr.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item-title">
+                                <a href="">Meet Vietnam's top idols at the 2021 BIGO Awards Gala</a>
+                                <div class="date">
+                                    <p>3 hours ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="nav-left">
+                        <nav>
+                            <ul>
+                                <li class="active">
+                                    <div class="title-left">
+                                        <a href="">POPULAR NEWS</a>
+                                    </div>
+                                </li>
 
+                                <li>
+                                    <div class="title-left">
+                                        <a href="">RECENT NEWS</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="title-left" style="padding-top: 10;">
+                        <div class="img">
+                            <a href="">
+                                <img src="https://image.thanhnien.vn/390x245/uploaded/hoangnam/2021_01_15/5b5251315dmy__pha__m_tro_i_no__i_du_o__c_ba_y_ba_n_ta_i_cho___de_m_la_ng_da_i_ho_c__qua__n_thu__du__c__tp_fhix.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <a href="" class="title-content ">Counterfeit stalls and goods bloomed in the Tet market</a>
+                        </div>
+                        <div class="date">
+                            <p>2021-01-17: 3 hours ago</p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="right">
+                <div class="container">
+                    <div class="title-right" style="margin-top: 0;">
+                        <div class="content">
+                            <a style="color: blue;" href="" class="title-content ">JANUARY EVENT</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content "> Never drink alcohol at these bad times</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content ">  Exposing the shirt in front of the lower projection team, Coach Truong Viet Hoang: 'Viettel is lacking a leader'</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content ">  Iran is constantly launching rockets</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content "> 6 amazing benefits of black carrots you may not know yet</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content">  Nguyen Quoc Tram, former director of the Khanh Hoa Department of Foreign Affairs, was sentenced to 7 years in prison</a>
+                        </div>
+                    </div>
+
+                    <div class="title-right">
+                        <div class="content">
+                            <a style="color: blue;" href="" class="title-content ">READ A LOT</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content ">1. Revealing the secret why 'young pilot' likes to 'fly a granny plane'? </a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content ">2. Nominated 4 key leadership titles of term XIII</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content ">3. Never drink alcohol at these bad times</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content ">4. Russia is about to restore its flight to Vietnam</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content ">5. US Vice President Mike Pence congratulates the opponent</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content ">6. Having been promised a free Covid-19 vaccine by China, the Philippines still mentioned the South China Sea</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content ">7. Nam Em - Lanh Thanh walked sweetly on the golden carpet</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content ">8. Premier League results: 'Fox' Leicester warmed up the great war between Liverpool and MU</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content ">9. Superstar Cristiano Ronaldo was suddenly criticized by the 'Juventus family' before Derby d'Italia</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content ">10. USD price today 17.1.2021: Increased despite the US economic relief</a>
+                        </div>
+                    </div>
+
+                    <div class="title-right">
+                        <div class="news-content">
+                            <div class="img">
+                                <img src="https://image.thanhnien.vn/390x245/uploaded/hoangnam/2021_01_22/a1-trang17-022_dsns.jpg" alt="">
+                            </div>
+                            <div class="news-content">
+                                <a href="" class="title-content "> There will be an 'unprecedented' multi-disciplinary university model in Vietnam</a>
+                            </div>
+                        </div>
+
+                        <div class="news-content">
+                            <div class="img">
+                                <img src="https://image.thanhnien.vn/390x245/uploaded/chicuong/2021_01_04/nbox/honda_kurukuru_cabin_air_filter_mask_lmod.jpg" alt="">
+                            </div>
+                            <div class="news-content">
+                                <a href="" class="title-content ">Air-conditioning filter prevents Covid from Honda from being able to fit in other brands</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="media">
+            <div class="container">
+                <div class="title-media">
+                    <p>MEDIA NEWS</p>
+                </div>
+                <div class="item">
+                    <div class="news-content">
+                        <div class="img">
+                            <img src="https://image.thanhnien.vn/150x100/uploaded/maiphuong/2021_01_16/hinh1dautuongan_wxst.jpg" alt="">
+                        </div>
+                        <div class="news-title" style="margin-top: 10;">
+                            <a style="color: #f2f2f2;" href="" class="title-content ">Listed enterprises have reported profits during the year Covid</a>
+                        </div>
+                    </div>
+
+                    <div class="news-content">
+                        <div class="img">
+                            <img src="https://image.thanhnien.vn/185x125/uploaded/xuanvu/than/dautieng_zing_7_zwjz.jpg" alt="">
+                        </div>
+                        <div class="news-title" style="margin-top: 10;">
+                            <a style="color: #f2f2f2;" href="" class="title-content ">5 solar power projects were fined, tax arrears 210 billion VND</a>
+                        </div>
+                    </div>
+
+                    <div class="news-content">
+                        <div class="img">
+                            <img src="https://image.thanhnien.vn/185x125/uploaded/xuanvu/%E1%BA%A3nh%20h%C3%A0ng%20gi%E1%BA%A3/2_gdwg_kuvl.jpg" alt="">
+                        </div>
+                        <div class="news-title" style="margin-top: 10;">
+                            <a style="color: #f2f2f2;" href="" class="title-content ">Natural disasters, extreme storms and floods ranked the top 10 outstanding natural</a>
+                        </div>
+                    </div>
+
+                    <div class="news-content">
+                        <div class="img">
+                            <img src="https://image.thanhnien.vn/185x125/uploaded/xuanvu/than/xe_hhew_qbpk.jpg" alt="">
+                        </div>
+                        <div class="news-title" style="margin-top: 10;">
+                            <a style="color: #f2f2f2;" href="" class="title-content ">Prime Minister directs to move away from using coal, honeycomb as early as 2021</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Copyright 2020 URBAN Viet Nam, All Right Reserved</p>
+        </div>
     </div>
 </body>
-
-</html>
