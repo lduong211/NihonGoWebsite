@@ -1,164 +1,332 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" th:href="@{/style.css}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylenew.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Document</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="left">
-            <div class="left-item">
-                <div class="logo" style="font-size: 25px; color: #737373;">
-                    日本語の勉強
+    <div class="wrapper">
+        <div class="toppage">
+            <div class="topnav" id="myTopnav">
+                <div class="container">
+                    <a href="homepage"><i class="fa fa-home"></i> Home</a>
+                    <a href="news">News</a>
+                    <a href="N5-detail">N5</a>
+                    <a href="N4-detail">N4</a>
+                    <a href="N3-detail">N3</a>
+                    <a href="listhappyo">Happyo</a>
+                    <a href="Weekly-words">Weekly</a>
+                    <a href="recipe">Receipt's Cooking</a>
+                    <a href="https://e-jan.vn/">
+                        <img src="https://theme.hstatic.net/1000351702/1000458192/14/logo.png?v=302" alt="">
+                    </a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
                 </div>
-                <ul>
-                    <li>
-                        <a th:href="@{/homepage}" style="text-decoration: none; color: #737373">Home</a>
-                    </li>
-                    <li>
-                        <a th:href="news" style="text-decoration: none; color: #737373">News</a>
-                    </li>
-                    <li>
-                        <a th:href="@{/N5-detail}" style="text-decoration: none; color: #737373">N5</a>
-                    </li>
-                    <li>
-                        <a th:href="@{/N4-detail}" style="text-decoration: none; color: #737373">N4</a>
-                    </li>
-                    <li>
-                        <a th:href="@{/N3-detail}" style="text-decoration: none; color: #737373">N3</a>
-                    </li>
-                    <li>
-                        <a th:href="@{/listhappyo}" style="text-decoration: none; color: #737373">Happyo</a>
-                    </li>
-                    <li>
-                        <a th:href="@{/weekly-words}" style="text-decoration: none; color: #737373">Weekly</a>
-                    </li>
-                    <li>
-                        <a href="recipe" style="text-decoration: none; color: #737373">Recipe's cooking</a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://e-jan.vn/" style="text-decoration: none; color: #737373">e-jan</a>
-                    </li>
-                </ul>
-                <div class="icon">
+            </div>
+            <div class="centernav">
+                <div class="title">
+                    <p>日本語勉強</p>
+                </div>
+            </div>
+            <div class="bottomnav">
+                <div class="container">
                     <ul>
-                        <li><i class="fa fa-facebook"></i></li>
-                        <li><i class="fa fa-google"></i></li>
-                        <li><i class="fa fa-pinterest-p"></i></li>
-                        <li><i class="fa fa-twitter"></i></li>
-                        <li><i class="fa fa-vimeo"></i></li>
+                        <li>
+                            <div class="dropdown">
+                                <a href="" class="dropbtn">News</a>
+                                <div class="dropdown-content">
+                                    <a href="#">Politic</a>
+                                    <a href="#">Traffic</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <a href="" class="dropbtn">World</a>
+                                <div class="dropdown-content">
+                                    <a href="#">Data</a>
+                                    <a href="#">Analysis</a>
+                                    <a href="#">Military</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <a href="" class="dropbtn">Business</a>
+                                <div class="dropdown-content">
+                                    <a href="#">International</a>
+                                    <a href="#">Enterprise</a>
+                                    <a href="#">Startup</a>
+                                    <a href="#">Stock</a>
+                                    <a href="#">Real Estate</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <a href="" class="dropbtn">Entertainment</a>
+                                <div class="dropdown-content">
+                                    <a href="#">World Stars</a>
+                                    <a href="#">Video</a>
+                                    <a href="#">Movie</a>
+                                    <a href="#">Music</a>
+                                    <a href="#">Fashion</a>
+                                    <a href="#">Makeup</a>
+                                    <a href="#">Art, Book</a>
+                                    <a href="#">Comedy</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <a href="" class="dropbtn">Sport</a>
+                                <div class="dropdown-content">
+                                    <a href="#">Soccer</a>
+                                    <a href="#">Tennis</a>
+                                    <a href="#">Other Subject</a>
+                                    <a href="#">Schedule</a>
+                                    <a href="#">World Cup</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <a href="" class="dropbtn">Law</a>
+                                <div class="dropdown-content">
+                                    <a href="#">Criminal</a>
+                                    <a href="#">Advisory</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <a href class="dropbtn">Education</a>
+                                <div class="dropdown-content">
+                                    <a href="#">Admissions</a>
+                                    <a href="#">Study Aboard</a>
+                                    <a href="#">Study Language</a>
+                                    <a href="#">Education 4.0</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <a href class="dropbtn">Travel</a>
+                                <div class="dropdown-content">
+                                    <a href="#">Destination</a>
+                                    <a href="#">Image</a>
+                                    <a href="#">Advisory</a>
+                                    <a href="">Hand's Book</a>
+                                    <a href="">Safe Trip</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <a href class="dropbtn">Science</a>
+                                <div class="dropdown-content">
+                                    <a href="#">News</a>
+                                    <a href="#">Invention</a>
+                                    <a href="#">Advisory</a>
+                                    <a href="#">Application</a>
+                                    <a href="#">Nature World</a>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="right">
-            <div class="content-detail">
-                <div class="detail-top">
-                    <div class="detail-title">
-                        <h1>Daily life new</h1>
-                    </div>
-                    <div class="detail-inform">
+        <div class="bodypage">
+            <div class="left">
+                <div class="container">
+                    <div class="title-left">
+                        <div class="img">
+                            <img src="https://image2.thanhnien.vn/c660x370/0,0,0,84/Uploaded/duyphuc/2021_01_22/4_FSUC.jpg" alt="">
+                        </div>
+                        <br>
+                        <div class="content">
+                            <a class="title-content ">Republicans want President Biden to strongly respond to China's embargo</a>
+                        </div>
+                        <div class="date">
+                            <p>2021-01-17: 3 hours ago</p>
+                        </div>
+                        <div class="read">
+                            <p>Republican lawmakers pressured and demanded that President Joe Biden's government take a stronger response after China embargoed 28 former officials in its predecessor, Donald Trump.
+                            </p>
+                            <p>
+                                China's Ministry of Foreign Affairs on January 20 announced imposing embargo on 28 former Republican Trump administration officials, including former Secretary of State Mike Pompeo, on the grounds of their "crazy" policies against China's interests, according
+                                to Reuters.
+                            </p>
+                            <p>
+                                In addition to Pompeo, China's embargo list includes former trade adviser Peter Navarro, former national security adviser Robert O'Brien and former health minister Alex Azar.
+                            </p>
+                            <p>
+                                On Twitter January 21, Republican Senator from the US Senate Foreign Relations Committee, Mr. Jim Risch said that Beijing "is challenging the new government's determination to maintain a tougher policy towards China. ". "Together, the Republicans and
+                                Democrats must show Beijing that we will not be discouraged in protecting American interests," said Risch.
+                            </p>
+                            <p>
+                                In addition, Michael McCaul, top Republican congressman at the House Foreign Affairs Committee, said the embargo was a "brazen and unfounded attempt to silence and intimidate" officials. has exposed Beijing's acts of coercion and human rights violations.
+                            </p>
+                            <p>
+                                Under the embargo, 28 former US officials and family members will be banned from entering mainland China, Hong Kong and Macau. These 28 companies and organizations are also prohibited from doing business with China. The Ministry of Foreign Affairs of
+                                China criticized these former officials for their "crazy" actions and policies to intervene in internal affairs, undermining China's interests and seriously affecting the second relationship. country.
+                            </p>
+                            <p>
+                                Beijing introduced a daily embargo on the day Mr. Biden took office January 20. Before that, in the final days of his term, the Trump government pushed hard against China on many issues, including trade, security, technology , and the origin of the Covid-19
+                                virus. and human rights.
+                            </p>
+                            <p>
+                                On January 21, US National Security Council spokesman Emily Horne criticized China's embargo as futile and intended to cause division among political parties in the United States, but has not yet given a specific response. .
 
-                    </div>
-                </div>
+                            </p>
+                            <p>
+                                However, the Biden government is expected to hold a tough stance on China, according to Reuters. In a Senate hearing on January 20, President Biden's candidate for the position of foreign minister, Antony Blinken, said that while he disagreed completely,
+                                he believed that President Trump was right to take the hard approach. more solid with China.
 
-                <div class="img-detail" style="text-align: center;">
-                    <img src="https://i1-vnexpress.vnecdn.net/2020/12/13/cmt-cu-9549-1607851230.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=yAfV7_N6OfhBpBN-u6lCVw" alt="">
-                    <a href="" style="font-weight: 700; color: blue;">Switch to Japan</a>
-                </div>
+                            </p>
+                            <p>
+                                Mr. Blinken noted that China poses the biggest challenge to the US and believes there is a very solid foundation for building a bipartisan policy against Beijing.
 
-                <div class="detail-body">
-                    <div class="detail-body-item">
-                    </div>
-                    <div class="detail-body-title">
-                        <p style="font-size: 40px; font-weight: bold; color: blue;"> Change history of identity cards, citizen identification cards
-                        </p>
-                    </div>
-                    <div class="detail-body-content">
-                        <p>The first ID was issued in 1957 and has been changed 6 times. It is expected that by 2021, 50 million citizens will be provided with chip cards.
-                        </p>
-                        <p>
-                            In 1957 , in order to meet the people's wishes, wanting to have identity certificates, convenient to use in everyday transactions, the Government issued Decree 577 providing for the Placing of Paper and the regulations for issuing identity cards.
-                        </p>
-                        <p>
-                            All Vietnamese citizens aged 18 years or over in cities and towns, cadres, employees and people in important economic and defense regions will be issued with 9-digit ID, valid for 5 years.
-                        </p>
-                        <p>
-                            In 1964, the Government issued a new Decree on the issuance of identity cards. The age, style, data ... of the new identity card is the same as the old one, adding cases that are not in the category such as: People with dementia, people being detained,
-                            being on probation.
-                        </p>
-                        <p>
-                            In addition, there is a new point that people between 14 and 17 years old will be issued with an Identification Certificate.
-                        </p>
-                        <p>
-                            In 1976 , in order to serve the travel needs of people in the North and the South, unifying a common identity form, the Government issued Decision No. 143 Granting identification to all citizens of the Socialist Republic of Vietnam. Vietnameseism started
-                            at the age of 15 and up, instead of 18 as before.
-                        </p>
-                        <p>
-                            The identity card at this time was granted a new unified name and national name to replace the identity papers that were previously issued and used in the North and the old regime in the South.
-                        </p>
-                        <p>
-                            In 1999, in order to overcome shortcomings such as easy counterfeiting, one person had many ID numbers or many people had the same number of ID cards, the Government issued Decree 05/1999 with new regulations. This is the first year, the ID is printed
-                            with light blue pattern and two-dimensional barcode is added on the back to prevent counterfeiting. In addition, citizens who are full 14 years old or older will be issued an ID card instead of being full 15 years old as in
-                            the Decree since 1976.
-                        </p>
-                        <p>
-                            By 2012, the Ministry of Public Security applied to issue ID cards according to new technology, using plastic materials designed in accordance with the industry's own technical and security standards, compact size, no breakage, flaking, peeling ... and
-                            difficult to fake. This is the first year that an ID card has 12 digits (instead of 9 numbers like the old model), the photo of the first citizen is printed directly on the card, with 2-dimensional barcode.
-                        </p>
-                        <p>
-                            At this time, the ID card is added with the information field on the name of the biological parent on the back, causing controversy. According to legal experts, the regulation of recording parents' names on identity cards will cause "trouble" for special
-                            cases such as artificial insemination, creating advantages for individuals whose parents make "big, big grandmothers".
-                        </p>
-                        <p>
-                            The Department of Justice then must admit errors regarding the identity cards of the parents. Not long after the new regulation took effect, the Ministry of Public Security ordered to stop issuing identity cards with parent information on the back.
-                        </p>
-                        <p>
-                            In 2016, according to the Law on Citizen's Identity, the Ministry of Public Security first issued a citizen's identity card instead of an ID card. Citizen's identity cards can use technology printed on hard plastic materials, have anti-counterfeiting
-                            stamps and are printed with personal identification numbers (12 digits) instead of the old ID number.
-                        </p>
-                        <p>
-                            A new point is that the back of the card also has electronic barcodes, encoding information fields of citizens. This card type is considered to be suitable with the world's trends and can replace a passport in case Vietnam and foreign countries sign a
-                            treaty.
-                        </p>
-                        <p>
-                            Due to the difficulties in investing in machinery and technology systems, from 2016 to now, only 16 provinces and cities are equipped to issue identification cards with personal identification numbers. The remaining 47 provinces and cities are still issuing
-                            9-digit and 12-digit identity cards.
-                        </p>
-                        <p>
-                            In September 2020, at the proposal of the Ministry of Public Security, the Prime Minister approved the project of manufacturing and exchanging citizen identification cards from magnetic cards to electronic chip cards to meet the requirements of administrative
-                            reform and development. E-government helps people in the future to go through the procedure less having to carry many papers at the same time.
-                        </p>
-                        <p>
-                            Chip-mounted ID cards are assessed to be better responsive in terms of security, retain more information, can add information fields in other fields such as banking, insurance ... Expected, in addition to data data managed by the police includes about
-                            20 fields of information (full name, hometown, permanent residence, fingerprint, identity ...), can supplement and integrate data of the tax industry, Customs, insurance, driver's license ... on chip tag.
-                        </p>
-                        <p>
-                            After more than 3 months of building the project, Major General To Van Hue, Head of Police Administration of the Social Order, Ministry of Public Security, said that up to now, the production of chip cards is meeting the requirements. It is expected that
-                            in early January 2021, the national police could issue new cards to citizens.
-                        </p>
-                        <p>
-                            On December 11, the Government Office announced the conclusion of Deputy Prime Minister Vu Duc Dam assigned ministries, branches and localities to coordinate with the Ministry of Public Security to integrate necessary data into citizenship identification
-                            cards, facilitating most for the people and savings for the state apparatus; assign the Vietnam Social Security to the Ministry of Public Security to synchronize data and integrate information into the card.
-                        </p>
-                        <p style="float: right; font-weight: 700;">
-                            Author: Hoang Thuy
-                        </p>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="footer" style="height:80px">
-                <p style="text-align: center; color: #e6e6e6; padding-top: 20px;">Copyright 2020 URBAN Viet Nam, All Right Reserved</p>
+            <div class="right">
+                <div class="container">
+                    <div class="title-right" style="margin-top: 0;">
+                        <div class="content">
+                            <a style="color: blue;" href="" class="title-content ">JANUARY EVENT</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content "> Never drink alcohol at these bad times</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content ">  Exposing the shirt in front of the lower projection team, Coach Truong Viet Hoang: 'Viettel is lacking a leader'</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content ">  Iran is constantly launching rockets</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content "> 6 amazing benefits of black carrots you may not know yet</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content">  Nguyen Quoc Tram, former director of the Khanh Hoa Department of Foreign Affairs, was sentenced to 7 years in prison</a>
+                        </div>
+                    </div>
+
+                    <!-- <div class="title-right">
+                        <div class="content">
+                            <a style="color: blue;" href="" class="title-content ">READ A LOT</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content ">1. Revealing the secret why 'young pilot' likes to 'fly a granny plane'? </a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content ">2. Nominated 4 key leadership titles of term XIII</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content ">3. Never drink alcohol at these bad times</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content ">4. Russia is about to restore its flight to Vietnam</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content ">5. US Vice President Mike Pence congratulates the opponent</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content ">6. Having been promised a free Covid-19 vaccine by China, the Philippines still mentioned the South China Sea</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content ">7. Nam Em - Lanh Thanh walked sweetly on the golden carpet</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content ">8. Premier League results: 'Fox' Leicester warmed up the great war between Liverpool and MU</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content ">9. Superstar Cristiano Ronaldo was suddenly criticized by the 'Juventus family' before Derby d'Italia</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content ">10. USD price today 17.1.2021: Increased despite the US economic relief</a>
+                        </div>
+                    </div> -->
+
+                    <div class="title-right">
+                        <div class="content">
+                            <a style="color: blue;" href="" class="title-content ">RECENT NEWS</a>
+                        </div>
+                        <div class="news-content">
+                            <div class="img">
+                                <img src="https://image.thanhnien.vn/390x245/uploaded/hoangnam/2021_01_22/a1-trang17-022_dsns.jpg" alt="">
+                            </div>
+                            <div class="news-content">
+                                <a href="" class="title-content "> There will be an 'unprecedented' multi-disciplinary university model in Vietnam</a>
+                            </div>
+                        </div>
+
+                        <div class="news-content">
+                            <div class="img">
+                                <img src="https://image.thanhnien.vn/390x245/uploaded/chicuong/2021_01_04/nbox/honda_kurukuru_cabin_air_filter_mask_lmod.jpg" alt="">
+                            </div>
+                            <div class="news-content">
+                                <a href="" class="title-content ">Air-conditioning filter prevents Covid from Honda from being able to fit in other brands</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="media">
+            <div class="container">
+                <div class="title-media">
+                    <p>MEDIA NEWS</p>
+                </div>
+                <div class="item">
+                    <div class="news-content">
+                        <div class="img">
+                            <img src="https://image.thanhnien.vn/150x100/uploaded/maiphuong/2021_01_16/hinh1dautuongan_wxst.jpg" alt="">
+                        </div>
+                        <div class="news-title" style="margin-top: 10;">
+                            <a style="color: #f2f2f2;" href="" class="title-content ">Listed enterprises have reported profits during the year Covid</a>
+                        </div>
+                    </div>
 
+                    <div class="news-content">
+                        <div class="img">
+                            <img src="https://image.thanhnien.vn/185x125/uploaded/xuanvu/than/dautieng_zing_7_zwjz.jpg" alt="">
+                        </div>
+                        <div class="news-title" style="margin-top: 10;">
+                            <a style="color: #f2f2f2;" href="" class="title-content ">5 solar power projects were fined, tax arrears 210 billion VND</a>
+                        </div>
+                    </div>
+
+                    <div class="news-content">
+                        <div class="img">
+                            <img src="https://image.thanhnien.vn/185x125/uploaded/xuanvu/%E1%BA%A3nh%20h%C3%A0ng%20gi%E1%BA%A3/2_gdwg_kuvl.jpg" alt="">
+                        </div>
+                        <div class="news-title" style="margin-top: 10;">
+                            <a style="color: #f2f2f2;" href="" class="title-content ">Natural disasters, extreme storms and floods ranked the top 10 outstanding natural</a>
+                        </div>
+                    </div>
+
+                    <div class="news-content">
+                        <div class="img">
+                            <img src="https://image.thanhnien.vn/185x125/uploaded/xuanvu/than/xe_hhew_qbpk.jpg" alt="">
+                        </div>
+                        <div class="news-title" style="margin-top: 10;">
+                            <a style="color: #f2f2f2;" href="" class="title-content ">Prime Minister directs to move away from using coal, honeycomb as early as 2021</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Copyright 2020 URBAN Viet Nam, All Right Reserved</p>
+        </div>
     </div>
+    <script src="responsive.js"></script>
 </body>
-
-</html>

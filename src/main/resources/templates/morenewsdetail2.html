@@ -1,159 +1,313 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" th:href="@{/style.css}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylenew.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Document</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="left">
-            <div class="left-item">
-                <div class="logo" style="font-size: 25px; color: #737373;">
-                    日本語の勉強
+    <div class="wrapper">
+        <div class="toppage">
+            <div class="topnav" id="myTopnav">
+                <div class="container">
+                    <a href="homepage"><i class="fa fa-home"></i> Home</a>
+                    <a href="news">News</a>
+                    <a href="N5-detail">N5</a>
+                    <a href="N4-detail">N4</a>
+                    <a href="N3-detail">N3</a>
+                    <a href="listhappyo">Happyo</a>
+                    <a href="Weekly-words">Weekly</a>
+                    <a href="recipe">Receipt's Cooking</a>
+                    <a href="https://e-jan.vn/">
+                        <img src="https://theme.hstatic.net/1000351702/1000458192/14/logo.png?v=302" alt="">
+                    </a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
                 </div>
-                <ul>
-                    <li>
-                        <a th:href="@{/homepage}" style="text-decoration: none; color: #737373">Home</a>
-                    </li>
-                    <li>
-                        <a th:href="news" style="text-decoration: none; color: #737373">News</a>
-                    </li>
-                    <li>
-                        <a th:href="@{/N5-detail}" style="text-decoration: none; color: #737373">N5</a>
-                    </li>
-                    <li>
-                        <a th:href="@{/N4-detail}" style="text-decoration: none; color: #737373">N4</a>
-                    </li>
-                    <li>
-                        <a th:href="@{/N3-detail}" style="text-decoration: none; color: #737373">N3</a>
-                    </li>
-                    <li>
-                        <a th:href="@{/listhappyo}" style="text-decoration: none; color: #737373">Happyo</a>
-                    </li>
-                    <li>
-                        <a th:href="@{/weekly-words}" style="text-decoration: none; color: #737373">Weekly</a>
-                    </li>
-                    <li>
-                        <a href="recipe" style="text-decoration: none; color: #737373">Recipe's cooking</a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://e-jan.vn/" style="text-decoration: none; color: #737373">e-jan</a>
-                    </li>
-                </ul>
-                <div class="icon">
+            </div>
+            <div class="centernav">
+                <div class="title">
+                    <p>日本語勉強</p>
+                </div>
+            </div>
+            <div class="bottomnav">
+                <div class="container">
                     <ul>
-                        <li><i class="fa fa-facebook"></i></li>
-                        <li><i class="fa fa-google"></i></li>
-                        <li><i class="fa fa-pinterest-p"></i></li>
-                        <li><i class="fa fa-twitter"></i></li>
-                        <li><i class="fa fa-vimeo"></i></li>
+                        <li>
+                            <div class="dropdown">
+                                <a href="menucategory" class="dropbtn">News</a>
+                                <div class="dropdown-content">
+                                    <a href="#">Politic</a>
+                                    <a href="#">Traffic</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <a href="menucategory2" class="dropbtn">World</a>
+                                <div class="dropdown-content">
+                                    <a href="#">Data</a>
+                                    <a href="#">Analysis</a>
+                                    <a href="#">Military</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <a href="menucategory3" class="dropbtn">Business</a>
+                                <div class="dropdown-content">
+                                    <a href="#">International</a>
+                                    <a href="#">Enterprise</a>
+                                    <a href="#">Startup</a>
+                                    <a href="#">Stock</a>
+                                    <a href="#">Real Estate</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <a href="menucategory4" class="dropbtn">Entertainment</a>
+                                <div class="dropdown-content">
+                                    <a href="#">World Stars</a>
+                                    <a href="#">Video</a>
+                                    <a href="#">Movie</a>
+                                    <a href="#">Music</a>
+                                    <a href="#">Fashion</a>
+                                    <a href="#">Makeup</a>
+                                    <a href="#">Art, Book</a>
+                                    <a href="#">Comedy</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <a href="menucategory5" class="dropbtn">Sport</a>
+                                <div class="dropdown-content">
+                                    <a href="#">Soccer</a>
+                                    <a href="#">Tennis</a>
+                                    <a href="#">Other Subject</a>
+                                    <a href="#">Schedule</a>
+                                    <a href="#">World Cup</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <a href="menucategory6" class="dropbtn">Law</a>
+                                <div class="dropdown-content">
+                                    <a href="#">Criminal</a>
+                                    <a href="#">Advisory</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <a href="menucategory7" class="dropbtn">Education</a>
+                                <div class="dropdown-content">
+                                    <a href="#">Admissions</a>
+                                    <a href="#">Study Aboard</a>
+                                    <a href="#">Study Language</a>
+                                    <a href="#">Education 4.0</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <a href="menucategory8" class="dropbtn">Travel</a>
+                                <div class="dropdown-content">
+                                    <a href="#">Destination</a>
+                                    <a href="#">Image</a>
+                                    <a href="#">Advisory</a>
+                                    <a href="">Hand's Book</a>
+                                    <a href="">Safe Trip</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <a href="menucategory9" class="dropbtn">Science</a>
+                                <div class="dropdown-content">
+                                    <a href="#">News</a>
+                                    <a href="#">Invention</a>
+                                    <a href="#">Advisory</a>
+                                    <a href="#">Application</a>
+                                    <a href="#">Nature World</a>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="right">
-            <div class="content-detail">
-                <div class="detail-top">
-                    <div class="detail-title">
-                        <h1>Daily life new</h1>
-                    </div>
-                    <div class="detail-inform">
-
-                    </div>
-                </div>
-
-                <div class="img-detail" style="text-align: center;">
-                    <img src="https://i1-vnexpress.vnecdn.net/2020/12/13/CNT-6536-JPG-1718-1607855967.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=5Yr7RsQTkN-IEWOZXGVu2w" alt="">
-                    <a href="" style="font-weight: 700; color: blue;">Switch to Japan</a>
-                </div>
-
-                <div class="detail-body">
-                    <div class="detail-body-item">
-                    </div>
-                    <div class="detail-body-title">
-                        <p style="font-size: 40px; font-weight: bold; color: blue;"> Young talent promises to pioneer national construction
-                        </p>
-                    </div>
-                    <div class="detail-body-content">
-                        <p>The golden boy of the International Mathematical Olympiad, the valedictorian of the excellent university in 2020, promises to strive and pioneer to contribute to national construction.
-                        </p>
-                        <p>
-                            On December 13, the 3rd Vietnam Young Talent Congress held in Hanoi with the theme "Vietnam Aspiration". 400 delegates who are young people with excellent achievements are attending, studying, researching, working at home and abroad.
-                        </p>
-                        <p>
-                            Two delegates Nguyen Anh Thu, valedictorian graduated from Hanoi Law University and Ngo Quy Dang (High School for Nature, University of Natural Sciences), the youngest man in Vietnam won the Olympic gold medal International study in 2020, gave the presentation
-                            "Aspiration of Vietnam 2045".
-                        </p>
-                        <p>
-                            Answering the question "whether Vietnam is big or small", Dang said that sometimes I think Vietnam is just a small country because the area of ​​more than 330,000 km2, of which 3/4 is hills and mountains, has very little land for cultivation. . The population
-                            is about 97 million people, the per capita income is just over 2,700 USD per year. Vietnam also does not have iconic works to show to international friends such as the Eiffel Tower (France), the Statue of Liberty (America),
-                            or the Great Wall (China).
-                        </p>
-                        <p>
-                            "But many times I think Vietnam is a big country," Dang said, emphasizing "how can we win against the most powerful empires if it is not big?" Having attended many math exams, Dang found that Vietnam is not inferior to any other country. And not only
-                            mathematics but arts, sports ..., Vietnam is not losing to anyone.
-                        </p>
-                        <p>
-                            According to the "golden boy" of mathematics, each person needs to contribute their efforts to build the country. As for me, as a student, I will always keep my patriotism, the desire to conquer the world, study tirelessly and practice sports to have
-                            good health to work and dedicate. "I will try to become a scientist, bring achievements to the country", Dang promised.
-                        </p>
-                        <p>
-                            In the same opinion, Nguyen Anh Thu - the excellent graduate of the Hanoi Law University, also said that no one can deny the solidarity spirit of the Vietnamese people that any country must respect. When many great powers were reeling over Covid-19, Vietnam
-                            took control. "In order for Vietnam to become a developed country with high income by 2045, we need collective strength, young pioneering dedication," Thu said.
-                        </p>
-                        <p>
-                            Captain Nguyen Van Thin (Navy Military Service) also said that if each individual self-consciously completes their assigned tasks, the country will develop better. As a soldier, in addition to successfully completing the assigned tasks, he also participates
-                            in scientific research with the desire to acquire the latest knowledge in the field of military science, bring it to application and master equipment. technology, especially to equip new and modern weapons of the Navy.
-                        </p>
-                        <p>
-                            "I always try to make a small contribution to the realization of the goal of bringing the Navy to modernize and contributing to the development of Vietnam's defense industry", Captain Thin said.
-                        </p>
-                        <p>
-                            And the talented girl - fishman Nguyen Thi Anh Vien sent the message "Vietnamese people when participating in the international arena are not inferior to anyone". She said that she and the young Vietnamese athletes will always try to practice and compete
-                            with good results to bring glory to the country.
-                        </p>
-                        <p>
-                            At the congress, Mr. Nguyen Anh Tuan, First Secretary of the Central Youth Union, Chairman of the Central Vietnam Youth Union, said that in the past 5 years, more than 1.1 million typical children have been , Commendation team. The Ho Chi Minh Communist
-                            Youth Union at all levels has created a rich practical environment for young talents to train and dedicate themselves through the movements "Assault, volunteering for socio-economic development and national defense", "Thanh
-                            Volunteer Year "," Creative Youth "...
-                        </p>
-                        <p>
-                            " Every young Vietnamese at home and abroad in general, young talents in particular, always burn within themselves the fire of the national spirit, aspirations for development. prosperous and happy country, "Tuan said.
-                        </p>
-                        <p>
-                            Speaking at the congress, Mr. Nguyen Xuan Thang, Secretary of the Party Central Committee, Director of Ho Chi Minh National Academy of Politics, affirmed that the national history from past to present always attaches special importance to genius. "400
-                            young talented delegates are truly exemplary examples of the intelligence and will of Vietnamese youth in study, research, labor and fighting; contribute to building a radiant image of Vietnam", he said.
-                        </p>
-                        <p>
-                            Mr. Thang wants young talents to always foster their ambitions and aspirations to contribute to the country, raise their national pride, constantly overcome difficulties to rise and continue to be a shining example in the world. children in particular
-                            and society in general. He suggested the Central Youth Union continue to study and concretize programs that arouse the spirit of pride and dedication among young people; listen, encourage, accompany and promote the talents
-                            of young people; Connect to create an environment for young people at home and abroad to contribute to the nation's building.
-                        </p>
-                        <p>
-                            The 3rd Vietnam Congress of Young Talent in 2020 aims to commend young talents in the 2015-2020 period; building action plans for the period 2020-2025; propose solutions to take care, foster and promote young Vietnamese talents in the coming time.
-                        </p>
-                        <p>
-                            Among 400 delegates, there were 256 males and 144 females; 75 delegates are young scientists, talented young teachers (19%); 30 delegates are young talented healers (7%); 32 young talented business delegates (8%) ... The oldest delegate is 35, the youngest
-                            is 10 years old.
-                        </p>
-                        <p style="float: right; font-weight: 700;">
-                            Author: Hoang Thuy
-                        </p>
+        <div class="bodypage">
+            <div class="left">
+                <div class="container">
+                    <div class="title-left">
+                        <div class="img">
+                            <img src="https://image.thanhnien.vn/660/uploaded/letan/2021_01_16/z2282644379891_135ea8638eb0757dcb63330448b644e9_qzdr.jpg" alt="">
+                        </div>
+                        <br>
+                        <div class="content">
+                            <a class="title-content ">Hundreds of police arrested the 75-year-old "boss " who headed the drug trafficking line</a>
+                        </div>
+                        <div class="date">
+                            <p>2021-01-17: 3 hours ago</p>
+                        </div>
+                        <div class="read">
+                            <p>Tonight, January 16, confirmed with Thanh Nien , leader of the Police Department for drug-related crime investigation of Thai Binh province, said the unit has successfully coordinated the destruction of complex drug trafficking
+                                complex. in Thai Binh City.
+                            </p>
+                            <p>
+                                Before that, around 9:30 a.m. on the same day, hundreds of police soldiers suddenly surrounded and stormed the 50B house number at Group 4, P.Quang Trung (Thai Binh City, Thai Binh Province), arresting suspects. Pham Tran Thi Dam (75 years old), at the
+                                same time searched the house, confiscated a large amount of meth and heroin.
+                            </p>
+                            <p>
+                                The incident attracted the attention of the local public, however, many people living around the target's house Dam did not appear surprised. Even though she is 75 years old this year, Dam is still known as the leader, operating a sophisticated and complex
+                                drug trafficking line.
+                            </p>
+                            <p>
+                                Notably, the main subjects in the line run by Mrs. Dam are descendants and relatives of this suspect's family.
+                            </p>
+                            <p>
+                                "Subject Dam has many convictions of drug trafficking, just released from prison in 2020, and now again. The subject's son is still serving a sentence for this crime," the head of the Police Department drug-related crime investigation Thai Binh province
+                                police information.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="footer" style="height:80px">
-                <p style="text-align: center; color: #e6e6e6; padding-top: 20px;">Copyright 2020 URBAN Viet Nam, All Right Reserved</p>
+            <div class="right">
+                <div class="container">
+                    <div class="title-right" style="margin-top: 0;">
+                        <div class="content">
+                            <a style="color: blue;" href="" class="title-content ">JANUARY EVENT</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content "> Never drink alcohol at these bad times</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content ">  Exposing the shirt in front of the lower projection team, Coach Truong Viet Hoang: 'Viettel is lacking a leader'</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content ">  Iran is constantly launching rockets</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content "> 6 amazing benefits of black carrots you may not know yet</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content">  Nguyen Quoc Tram, former director of the Khanh Hoa Department of Foreign Affairs, was sentenced to 7 years in prison</a>
+                        </div>
+                    </div>
+
+                    <!-- <div class="title-right">
+                        <div class="content">
+                            <a style="color: blue;" href="" class="title-content ">READ A LOT</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content ">1. Revealing the secret why 'young pilot' likes to 'fly a granny plane'? </a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content ">2. Nominated 4 key leadership titles of term XIII</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content ">3. Never drink alcohol at these bad times</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content ">4. Russia is about to restore its flight to Vietnam</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content ">5. US Vice President Mike Pence congratulates the opponent</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content ">6. Having been promised a free Covid-19 vaccine by China, the Philippines still mentioned the South China Sea</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content ">7. Nam Em - Lanh Thanh walked sweetly on the golden carpet</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content ">8. Premier League results: 'Fox' Leicester warmed up the great war between Liverpool and MU</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content ">9. Superstar Cristiano Ronaldo was suddenly criticized by the 'Juventus family' before Derby d'Italia</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content ">10. USD price today 17.1.2021: Increased despite the US economic relief</a>
+                        </div>
+                    </div> -->
+
+                    <div class="title-right">
+                        <div class="content">
+                            <a style="color: blue;" href="" class="title-content ">RECENT NEWS</a>
+                        </div>
+                        <div class="news-content">
+                            <div class="img">
+                                <img src="https://image.thanhnien.vn/390x245/uploaded/hoangnam/2021_01_22/a1-trang17-022_dsns.jpg" alt="">
+                            </div>
+                            <div class="news-content">
+                                <a href="" class="title-content "> There will be an 'unprecedented' multi-disciplinary university model in Vietnam</a>
+                            </div>
+                        </div>
+
+                        <div class="news-content">
+                            <div class="img">
+                                <img src="https://image.thanhnien.vn/390x245/uploaded/chicuong/2021_01_04/nbox/honda_kurukuru_cabin_air_filter_mask_lmod.jpg" alt="">
+                            </div>
+                            <div class="news-content">
+                                <a href="" class="title-content ">Air-conditioning filter prevents Covid from Honda from being able to fit in other brands</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="media">
+            <div class="container">
+                <div class="title-media">
+                    <p>MEDIA NEWS</p>
+                </div>
+                <div class="item">
+                    <div class="news-content">
+                        <div class="img">
+                            <img src="https://image.thanhnien.vn/150x100/uploaded/maiphuong/2021_01_16/hinh1dautuongan_wxst.jpg" alt="">
+                        </div>
+                        <div class="news-title" style="margin-top: 10;">
+                            <a style="color: #f2f2f2;" href="" class="title-content ">Listed enterprises have reported profits during the year Covid</a>
+                        </div>
+                    </div>
 
+                    <div class="news-content">
+                        <div class="img">
+                            <img src="https://image.thanhnien.vn/185x125/uploaded/xuanvu/than/dautieng_zing_7_zwjz.jpg" alt="">
+                        </div>
+                        <div class="news-title" style="margin-top: 10;">
+                            <a style="color: #f2f2f2;" href="" class="title-content ">5 solar power projects were fined, tax arrears 210 billion VND</a>
+                        </div>
+                    </div>
+
+                    <div class="news-content">
+                        <div class="img">
+                            <img src="https://image.thanhnien.vn/185x125/uploaded/xuanvu/%E1%BA%A3nh%20h%C3%A0ng%20gi%E1%BA%A3/2_gdwg_kuvl.jpg" alt="">
+                        </div>
+                        <div class="news-title" style="margin-top: 10;">
+                            <a style="color: #f2f2f2;" href="" class="title-content ">Natural disasters, extreme storms and floods ranked the top 10 outstanding natural</a>
+                        </div>
+                    </div>
+
+                    <div class="news-content">
+                        <div class="img">
+                            <img src="https://image.thanhnien.vn/185x125/uploaded/xuanvu/than/xe_hhew_qbpk.jpg" alt="">
+                        </div>
+                        <div class="news-title" style="margin-top: 10;">
+                            <a style="color: #f2f2f2;" href="" class="title-content ">Prime Minister directs to move away from using coal, honeycomb as early as 2021</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Copyright 2020 URBAN Viet Nam, All Right Reserved</p>
+        </div>
     </div>
+    <script src="responsive.js"></script>
 </body>
-
-</html>

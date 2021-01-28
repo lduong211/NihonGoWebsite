@@ -1,159 +1,323 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" th:href="@{/style.css}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylenew.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Document</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="left">
-            <div class="left-item">
-                <div class="logo" style="font-size: 25px; color: #737373;">
-                    日本語の勉強
+    <div class="wrapper">
+        <div class="toppage">
+            <div class="topnav" id="myTopnav">
+                <div class="container">
+                    <a href="homepage"><i class="fa fa-home"></i> Home</a>
+                    <a href="news">News</a>
+                    <a href="N5-detail">N5</a>
+                    <a href="N4-detail">N4</a>
+                    <a href="N3-detail">N3</a>
+                    <a href="listhappyo">Happyo</a>
+                    <a href="Weekly-words">Weekly</a>
+                    <a href="recipe">Receipt's Cooking</a>
+                    <a href="https://e-jan.vn/">
+                        <img src="https://theme.hstatic.net/1000351702/1000458192/14/logo.png?v=302" alt="">
+                    </a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
                 </div>
-                <ul>
-                    <li>
-                        <a th:href="@{/homepage}" style="text-decoration: none; color: #737373">Home</a>
-                    </li>
-                    <li>
-                        <a th:href="news" style="text-decoration: none; color: #737373">News</a>
-                    </li>
-                    <li>
-                        <a th:href="@{/N5-detail}" style="text-decoration: none; color: #737373">N5</a>
-                    </li>
-                    <li>
-                        <a th:href="@{/N4-detail}" style="text-decoration: none; color: #737373">N4</a>
-                    </li>
-                    <li>
-                        <a th:href="@{/N3-detail}" style="text-decoration: none; color: #737373">N3</a>
-                    </li>
-                    <li>
-                        <a th:href="@{/listhappyo}" style="text-decoration: none; color: #737373">Happyo</a>
-                    </li>
-                    <li>
-                        <a th:href="@{/weekly-words}" style="text-decoration: none; color: #737373">Weekly</a>
-                    </li>
-                    <li>
-                        <a href="recipe" style="text-decoration: none; color: #737373">Recipe's cooking</a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://e-jan.vn/" style="text-decoration: none; color: #737373">e-jan</a>
-                    </li>
-                </ul>
-                <div class="icon">
+            </div>
+            <div class="centernav">
+                <div class="title">
+                    <p>日本語勉強</p>
+                </div>
+            </div>
+            <div class="bottomnav">
+                <div class="container">
                     <ul>
-                        <li><i class="fa fa-facebook"></i></li>
-                        <li><i class="fa fa-google"></i></li>
-                        <li><i class="fa fa-pinterest-p"></i></li>
-                        <li><i class="fa fa-twitter"></i></li>
-                        <li><i class="fa fa-vimeo"></i></li>
+                        <li>
+                            <div class="dropdown">
+                                <a href="menucategory" class="dropbtn">News</a>
+                                <div class="dropdown-content">
+                                    <a href="#">Politic</a>
+                                    <a href="#">Traffic</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <a href="menucategory2" class="dropbtn">World</a>
+                                <div class="dropdown-content">
+                                    <a href="#">Data</a>
+                                    <a href="#">Analysis</a>
+                                    <a href="#">Military</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <a href="menucategory3" class="dropbtn">Business</a>
+                                <div class="dropdown-content">
+                                    <a href="#">International</a>
+                                    <a href="#">Enterprise</a>
+                                    <a href="#">Startup</a>
+                                    <a href="#">Stock</a>
+                                    <a href="#">Real Estate</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <a href="menucategory4" class="dropbtn">Entertainment</a>
+                                <div class="dropdown-content">
+                                    <a href="#">World Stars</a>
+                                    <a href="#">Video</a>
+                                    <a href="#">Movie</a>
+                                    <a href="#">Music</a>
+                                    <a href="#">Fashion</a>
+                                    <a href="#">Makeup</a>
+                                    <a href="#">Art, Book</a>
+                                    <a href="#">Comedy</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <a href="menucategory5" class="dropbtn">Sport</a>
+                                <div class="dropdown-content">
+                                    <a href="#">Soccer</a>
+                                    <a href="#">Tennis</a>
+                                    <a href="#">Other Subject</a>
+                                    <a href="#">Schedule</a>
+                                    <a href="#">World Cup</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <a href="menucategory6" class="dropbtn">Law</a>
+                                <div class="dropdown-content">
+                                    <a href="#">Criminal</a>
+                                    <a href="#">Advisory</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <a href="menucategory7" class="dropbtn">Education</a>
+                                <div class="dropdown-content">
+                                    <a href="#">Admissions</a>
+                                    <a href="#">Study Aboard</a>
+                                    <a href="#">Study Language</a>
+                                    <a href="#">Education 4.0</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <a href="menucategory8" class="dropbtn">Travel</a>
+                                <div class="dropdown-content">
+                                    <a href="#">Destination</a>
+                                    <a href="#">Image</a>
+                                    <a href="#">Advisory</a>
+                                    <a href="">Hand's Book</a>
+                                    <a href="">Safe Trip</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <a href="menucategory9" class="dropbtn">Science</a>
+                                <div class="dropdown-content">
+                                    <a href="#">News</a>
+                                    <a href="#">Invention</a>
+                                    <a href="#">Advisory</a>
+                                    <a href="#">Application</a>
+                                    <a href="#">Nature World</a>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="right">
-            <div class="content-detail">
-                <div class="detail-top">
-                    <div class="detail-title">
-                        <h1>Daily life new</h1>
-                    </div>
-                    <div class="detail-inform">
-
-                    </div>
-                </div>
-
-                <div class="img-detail" style="text-align: center;">
-                    <img src="https://i1-giaitri.vnecdn.net/2020/12/12/tien-chi-tai-3-6013-1607745392.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=I0GcyjzzDctmEhMUeHvSBQ" alt="">
-                    <a href="" style="font-weight: 700; color: blue;">Switch to Japan</a>
-                </div>
-
-                <div class="detail-body">
-                    <div class="detail-body-item">
-                    </div>
-                    <div class="detail-body-title">
-                        <p style="font-size: 40px; font-weight: bold; color: blue;"> Artist visits Chi Tai
-                        </p>
-                    </div>
-                    <div class="detail-body-content">
-                        <p>Singer Tuan Ngoc, husband and wife Truong Giang - Nha Phuong, artists Tan Beo, Trinh Kim Chi ... visited Chi Tai, 12/12 morning.
-                        </p>
-                        <p style="text-align: center;">
-                            <img style="width: 600px; height: auto;" src="https://i1-giaitri.vnecdn.net/2020/12/12/tang-le-chi-tai-7-3313-1607748721.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=zDjLq1AIJ1SzsdyDKI6Pjg" alt="">
-                        </p>
-                        <p>
-                            Comedian funeral was held at the National Funeral House in the South (Go Vap district). He died of a stroke on the afternoon of December 9. Chi Tai's full name is Nguyen Chi Tai, born in 1958. In the years 1999-2000, Chi Tai took the role of a comedian
-                            and was quickly loved by the audience. Together with Hoai Linh, he has many famous skits, such as Ru to chants, Flute across the river, Yin and Yang for a couple of roads, Luong Son Ba, Chuc Anh Dai ... He is also a familiar
-                            face of the screen with TV series - movies, including Winning No. (2015), The nostalgic nightmare (2017) ...
-                        </p>
-                        <p>
-                            Comedian Hoai Linh - the head of the funeral committee - and his colleagues displayed 20 photo frames to record memorable moments in Chi Tai's life and career. In the middle of the funeral, the song "Hey Little" (composed by Dao Quang Nhat) - the hit
-                            song Chi Tai once performed - sometimes resounded.
-                        </p>
-                        <p style="text-align: center;">
-                            <img style="width: 600px; height: auto;" src="https://i1-giaitri.vnecdn.net/2020/12/12/nghe-si-chi-tai-vnexpress38-16-5088-3427-1607746858.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=d0-EFTr6fhAEuPRMB_WC-w" alt="">
-                        </p>
-                        <p>
-                            Hoai Linh has been on duty since early to do the ceremony of import for close colleagues. The comedian's face showed a tired expression with dark circles eyes.
-                        </p>
-                        <p style="text-align: center;">
-                            <img style="width: 600px; height: auto;" src="https://i1-giaitri.vnecdn.net/2020/12/12/Hoai-Linh-VnExpress-Huu-Khoa2-6833-1607749744.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=M9x3fu8pvpPpuHXLFcxtFw" alt="">
-                        </p>
-                        <p>
-                            According to an acquaintance, since Chi Tai died, Hoai Linh rarely slept. When artist Tuyet Thu and a colleague came to share, the three hugged each other and cried.
-                        </p>
-                        <p style="text-align: center;">
-                            <img style="width: 600px; height: auto;" src="https://i1-giaitri.vnecdn.net/2020/12/12/tang-le-1-7571-1607750081.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=2QFhTYqBusuRYlFbrwUjHQ" alt="">
-                        </p>
-                        <p>
-                            Every turn of the audience, the artist came to light incense and leave, the comedian on behalf of family and friends bowed to give thanks.
-                        </p>
-                        <p>
-                            Viet Huong women Hoai Linh shop around for the funeral. She said: "Your wife - Ms. Be Heo (the nickname of singer Phuong Loan) - is very depressed. We live stream your entire funeral in Vietnam for you to watch. Tonight, the flight will carry the remains.
-                            You go to America ".
-                        </p>
-                        <p>
-                            Musician Duc Huy was the owner of the marriage ceremony of Chi Tai couple in 1987. Later, they kept their love affair. Chi Tai used to sing many songs by Duc Huy. He said: "Chi Tai sang any song well, to the point that many people said that Tai sang my
-                            music better than myself. We even scheduled to perform the same music night in Dalat early next year."
-                        </p>
-                        <p>
-                            Nha Phuong - Truong Giang couple is one of the earliest visitors. Occasionally, Truong Giang was comforted by his wife wiping her tears. He was shocked when the close elder passed away. Truong Giang confided: "From now on, no one will be gentle to me,
-                            there is no one left to play for me to sing."
-                        </p>
-                        <p>
-                            Vu Thanh said that recently Chi Tai had come home to ask him to write a script to bring to America to act. "The script is finished, but now he is gone." Vu Thanh said the memory he remembered the most was in the 38th anniversary liveshow at Trong Dong
-                            stage. Both practiced together for many days. At times, he said that his father-in-law was "you" and was abused by Chi Tai, making both laugh.
-                        </p>
-                        <p>
-                            Tan Beo said the late comedian was one of the artists closest to him. On the day when Chi Tai just returned to his country, he still had "wet feet" to perform, the artists had many opportunities to talk. Later, they went to the United States to film together.
-                            For him, the artist always keeps an innocent and carefree smile even in difficult circumstances. When I first got acquainted, Chi Tai donated a stack of leopard prints. Up to now, the gift is still carefully stored in the closet.
-                        </p>
-                        <p style="text-align: center;">
-                            <img style="width: 600px; height: auto;" src="https://i1-giaitri.vnecdn.net/2020/12/12/Tang-le-Chi-Tai-QuynhTran-2048-6419-9231-1607745393.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=SVH0KwWia9He6K5O1OgNow" alt="">
-                        </p>
-                        <p>
-                            The organizers arranged 180 people in security and logistics forces, of which 100 people played the role of ensuring security and order.
-                        </p>
-                        <p>
-                            The audience stood outside the fence area, commemorating the comedian from afar. The visit ceremony is expected to last until 16:00, then the coffin is taken to Tan Son Nhat airport, back to America according to the wishes of the family .
-                        </p>
-                        <p style="float: right; font-weight: 700;">
-                            Author: Nhat Tam
-                        </p>
+        <div class="bodypage">
+            <div class="left">
+                <div class="container">
+                    <div class="title-left">
+                        <div class="img">
+                            <img src="https://image.thanhnien.vn/660/uploaded/maiha/2021_01_22/anhmaybayvna-hm_jcco.jpg" alt="">
+                        </div>
+                        <br>
+                        <div class="content">
+                            <a class="title-content ">Passengers 'criticism' of flights on Tet holidays?
+                            </a>
+                        </div>
+                        <div class="date">
+                            <p>2021-01-17: 3 hours ago</p>
+                        </div>
+                        <div class="read">
+                            <p>The Civil Aviation Authority of Vietnam said: It is expected that during the 2021 Lunar New Year period from January 27 to February 26 (ie December 15 to January 15 of the lunar calendar), airlines will operate on average more
+                                than 1,000 domestic flights. / day, up 28% over the same period last year. Peak day reached 1,200 flights / day, up 25.3%.
+                            </p>
+                            <p>
+                                In addition to the flights in the daytime, Vietnamese airlines will increase the operating load on the night time from 10:00 am-7:00 the next day with an average total of 140-150 flights. /day.
+                            </p>
+                            <p>
+                                However, according to information from the Airport Corporation (ACV), passenger demand for flights after 23:00 peak Lunar New Year is very low.
+                            </p>
+                            <p>
+                                Specifically, according to the scheduled flight increase schedule, the peak period of Lunar New Year 2021 of domestic airlines, airlines have many flights after 23 hours at airports with operating time from 6 to 21. or 23 o'clock is Tho Xuan, Dong Hoi,
+                                Phu Cat, Chu Lai, Tuy Hoa.
+                            </p>
+                            <p>
+                                Statistics on the peak occasion of the Lunar New Year 2020 show that: At Dong Hoi Port, after 23:00, only Bamboo Airways operates 18 flights, accounting for 1.69% of flights at the port; Pleiku port has Jetstar Pacific (now Pacific Airlines) operating
+                                1 flight, accounting for 0.09%; Tho Xuan port is slightly higher, with a total of 10 flights after 23 hours, including: VietJet Air 5 flights, Vietnam Airlines 3 flights, Jetstar Pacific 2 flights, accounting for 0.43%
+                                of flights; Chu Lai Port serves 6 flights of Jetstar Pacific, accounting for 0.32% and finally Phu Cat port has 9 flights after 23 hours including: VietJet Air 4 flights, Bamboo Airways 4 flights, Jetstar Pacific 1 flight
+                                accounting for 0.36% of flights operating at ports.
+                            </p>
+                            <p>
+                                Thus, a total of 5 above ports operate only 44 out of 2,218 flights after 23 hours during the Lunar New Year 2020 season, reaching a rate of 0.5%, although the night flight fare is often significantly lower than flights. daytime.
+                            </p>
+                            <p>
+                                The representative of ACV added: This unit has made great efforts to invest and upgrade the infrastructure system, equipment, technical systems, human resources to ensure good service during peak times. ensure absolute security, safety, quality of passenger
+                                service in the peak period of Tet. The total capacity of aircraft parking lots at airports reaches 360 parking lots. In which, the two ports with the highest demand for moving, Tan Son Nhat and Noi Bai ports, are arranged
+                                118 and 90 parking positions respectively, meeting the needs of airlines' aprons.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="footer" style="height:80px">
-                <p style="text-align: center; color: #e6e6e6; padding-top: 20px;">Copyright 2020 URBAN Viet Nam, All Right Reserved</p>
+            <div class="right">
+                <div class="container">
+                    <div class="title-right" style="margin-top: 0;">
+                        <div class="content">
+                            <a style="color: blue;" href="" class="title-content ">JANUARY EVENT</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content "> Never drink alcohol at these bad times</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content ">  Exposing the shirt in front of the lower projection team, Coach Truong Viet Hoang: 'Viettel is lacking a leader'</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content ">  Iran is constantly launching rockets</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content "> 6 amazing benefits of black carrots you may not know yet</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content">  Nguyen Quoc Tram, former director of the Khanh Hoa Department of Foreign Affairs, was sentenced to 7 years in prison</a>
+                        </div>
+                    </div>
+
+                    <!-- <div class="title-right">
+                        <div class="content">
+                            <a style="color: blue;" href="" class="title-content ">READ A LOT</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content ">1. Revealing the secret why 'young pilot' likes to 'fly a granny plane'? </a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content ">2. Nominated 4 key leadership titles of term XIII</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content ">3. Never drink alcohol at these bad times</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content ">4. Russia is about to restore its flight to Vietnam</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content ">5. US Vice President Mike Pence congratulates the opponent</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content ">6. Having been promised a free Covid-19 vaccine by China, the Philippines still mentioned the South China Sea</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content ">7. Nam Em - Lanh Thanh walked sweetly on the golden carpet</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content ">8. Premier League results: 'Fox' Leicester warmed up the great war between Liverpool and MU</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content ">9. Superstar Cristiano Ronaldo was suddenly criticized by the 'Juventus family' before Derby d'Italia</a>
+                        </div>
+                        <div class="news-content">
+                            <a href="" class="title-content ">10. USD price today 17.1.2021: Increased despite the US economic relief</a>
+                        </div>
+                    </div> -->
+
+                    <div class="title-right">
+                        <div class="content">
+                            <a style="color: blue;" href="" class="title-content ">RECENT NEWS</a>
+                        </div>
+                        <div class="news-content">
+                            <div class="img">
+                                <img src="https://image.thanhnien.vn/390x245/uploaded/hoangnam/2021_01_22/a1-trang17-022_dsns.jpg" alt="">
+                            </div>
+                            <div class="news-content">
+                                <a href="" class="title-content "> There will be an 'unprecedented' multi-disciplinary university model in Vietnam</a>
+                            </div>
+                        </div>
+
+                        <div class="news-content">
+                            <div class="img">
+                                <img src="https://image.thanhnien.vn/390x245/uploaded/chicuong/2021_01_04/nbox/honda_kurukuru_cabin_air_filter_mask_lmod.jpg" alt="">
+                            </div>
+                            <div class="news-content">
+                                <a href="" class="title-content ">Air-conditioning filter prevents Covid from Honda from being able to fit in other brands</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="media">
+            <div class="container">
+                <div class="title-media">
+                    <p>MEDIA NEWS</p>
+                </div>
+                <div class="item">
+                    <div class="news-content">
+                        <div class="img">
+                            <img src="https://image.thanhnien.vn/150x100/uploaded/maiphuong/2021_01_16/hinh1dautuongan_wxst.jpg" alt="">
+                        </div>
+                        <div class="news-title" style="margin-top: 10;">
+                            <a style="color: #f2f2f2;" href="" class="title-content ">Listed enterprises have reported profits during the year Covid</a>
+                        </div>
+                    </div>
 
+                    <div class="news-content">
+                        <div class="img">
+                            <img src="https://image.thanhnien.vn/185x125/uploaded/xuanvu/than/dautieng_zing_7_zwjz.jpg" alt="">
+                        </div>
+                        <div class="news-title" style="margin-top: 10;">
+                            <a style="color: #f2f2f2;" href="" class="title-content ">5 solar power projects were fined, tax arrears 210 billion VND</a>
+                        </div>
+                    </div>
+
+                    <div class="news-content">
+                        <div class="img">
+                            <img src="https://image.thanhnien.vn/185x125/uploaded/xuanvu/%E1%BA%A3nh%20h%C3%A0ng%20gi%E1%BA%A3/2_gdwg_kuvl.jpg" alt="">
+                        </div>
+                        <div class="news-title" style="margin-top: 10;">
+                            <a style="color: #f2f2f2;" href="" class="title-content ">Natural disasters, extreme storms and floods ranked the top 10 outstanding natural</a>
+                        </div>
+                    </div>
+
+                    <div class="news-content">
+                        <div class="img">
+                            <img src="https://image.thanhnien.vn/185x125/uploaded/xuanvu/than/xe_hhew_qbpk.jpg" alt="">
+                        </div>
+                        <div class="news-title" style="margin-top: 10;">
+                            <a style="color: #f2f2f2;" href="" class="title-content ">Prime Minister directs to move away from using coal, honeycomb as early as 2021</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Copyright 2020 URBAN Viet Nam, All Right Reserved</p>
+        </div>
     </div>
+    <script src="responsive.js"></script>
 </body>
-
-</html>
