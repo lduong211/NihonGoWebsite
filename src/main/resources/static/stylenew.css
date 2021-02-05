@@ -179,6 +179,19 @@ a:hover {
     display: none;
 }
 
+.bottomnav .icon {
+    display: none;
+}
+
+.bottomnav a {
+    padding: 0 5 10 5;
+    font-weight: 700;
+}
+
+.bottomnav a:hover {
+    color: #333;
+}
+
 .topnav a img {
     width: 77px;
     height: 22px;
@@ -194,6 +207,8 @@ ul li a img {
 }
 
 .bottomnav {
+    padding: 10;
+    text-align: center;
     border-bottom: 1px solid #333;
 }
 
