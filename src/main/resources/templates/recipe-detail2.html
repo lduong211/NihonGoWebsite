@@ -5,170 +5,174 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" th:href="@{/style.css}">
+    <link rel="stylesheet" href="styleother.css">
+    <link rel="stylesheet" href="reponsiveAll.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="left">
-            <div class="left-item">
-                <div class="logo" style="font-size: 25px; color: #737373;">
-                    <a th:href="homepage" style="text-decoration: none; color: #737373; font-weight: 700;">日本語の勉強</a>
+    <div class="wrapper">
+        <div class="headpage">
+            <div class="container">
+                <div id="mySidebar" class="sidebar">
+                    <div class="logo" style="font-size: 25px; color: #737373;">
+                        <a th:href="homepage" style="font-weight: 700;">日本語の勉強</a>
+                    </div>
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                    <a th:href="news" style="text-decoration: none;"><i class="fa fa-newspaper-o"></i> News</a>
+                    <a th:href="N5-detail" style="text-decoration: none;"><i class="fa fa-book"></i> N5</a>
+                    <a th:href="N4-detail" style="text-decoration: none;"><i class="fa fa-book"></i> N4</a>
+                    <a th:href="N3-detail" style="text-decoration: none;"><i class="fa fa-book"></i> N3</a>
+                    <a th:href="listhappyo" style="text-decoration: none;"><i class="fa fa-comments-o"></i> Happyo</a>
+                    <a th:href="weekly-words" style="text-decoration: none;"><i class="fa fa-calendar"></i> Weekly</a>
+                    <a th:href="recipe" style="text-decoration: none;"><i class="fa fa-cutlery"></i> Recipe's cooking</a>
+                    <a target="_blank" href="https://e-jan.vn/">
+                        <img src="https://theme.hstatic.net/1000351702/1000458192/14/logo.png?v=302" alt="" style="width: 100px; height: 30px; margin-top: -3px;">
+                    </a>
                 </div>
-                <ul>
-                    <li>
-                        <a th:href="news" style="text-decoration: none; color: #737373"><i class="fa fa-newspaper-o"></i> News</a>
-                    </li>
-                    <li>
-                        <a th:href="@{/N5-detail}" style="text-decoration: none; color: #737373"><i class="fa fa-book"></i> N5</a>
-                    </li>
-                    <li>
-                        <a th:href="@{/N4-detail}" style="text-decoration: none; color: #737373"><i class="fa fa-book"></i> N4</a>
-                    </li>
-                    <li>
-                        <a th:href="@{/N3-detail}" style="text-decoration: none; color: #737373"><i class="fa fa-book"></i> N3</a>
-                    </li>
-                    <li>
-                        <a th:href="@{/listhappyo}" style="text-decoration: none; color: #737373"><i class="fa fa-comments-o"></i> Happyo</a>
-                    </li>
-                    <li>
-                        <a th:href="@{/weekly-words}" style="text-decoration: none; color: #737373"><i class="fa fa-calendar"></i> Weekly</a>
-                    </li>
-                    <li>
-                        <a href="recipe" style="text-decoration: none; color: #737373"><i class="fa fa-cutlery"></i> Recipe's cooking</a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://e-jan.vn/">
-                            <img src="https://theme.hstatic.net/1000351702/1000458192/14/logo.png?v=302" alt="" style="width: 100px; height: 30px; margin-top: -3px;">
-                        </a>
-                    </li>
-                </ul>
+            </div>
+            <div class="container" style="margin-top: 5%;">
+                <div id="main" style="position: fixed;">
+                    <button class="openbtn" onclick="openNav()">☰</button>
+                </div>
             </div>
         </div>
-        <div class="right">
+        <div class="bodypage">
             <div class="content-detail">
-                <div class="detail-top">
+                <div class="detail-top" style="text-align: center;">
                     <div class="detail-title">
                         <h1>Daily life food</h1>
                     </div>
-                    <div class="detail-inform">
-                    </div>
                 </div>
 
-                <div class="img-detail" style="text-align: center;">
+                <div class="img-detail" style="text-align: center; padding: 2%;">
                     <img src="https://cdn.cet.edu.vn/wp-content/uploads/2018/03/to-bun-bo-hue-nong-hoi-thom-lung.jpg" alt="">
-                    <a href="translaterecipe2">Switch to Japan</a>
                 </div>
 
-                <div class="detail-body">
-                    <div class="detail-body-item">
-                    </div>
-                    <div class="detail-body-title">
-                        <p style="font-size: larger; font-weight: bold; color: red;"> Bun Bo Hue </p>
-                    </div>
-                    <div class="detail-body-content">
-                        <p>
-                            Bun Bo Hue with English name is Beef Soup of Hue , is one of the typical dishes of Hue city, but today you can see it all over the corners of Vietnam. However, along with the spread of this dish, its cooking style has also been slightly modified. Today,
-                            i will guide you how to cook southern Hue beef noodle soup and satay with Hue standards.
-                        </p>
-                        <ul>
-                            <li>
-                                Beef: 600 gr
-                            </li>
-                            <li>
-                                Beef steak: 600 gr
-                            </li>
-                            <li>
-                                Beef flank: 400 gr
-                            </li>
-                            <li>
-                                Pork rolls (choose the first one): about 800 grams of one piece
-                            </li>
-                            <li>
-                                His bones: 1 kg
-                            </li>
-                            <li>
-                                Hue sauce: about 3 tbsp
-                            </li>
-                            <li>
-                                Lemongrass: 6 plants
-                            </li>
-                            <li>
-                                Ginger: 50 gr
-                            </li>
-                            <li>
-                                Purple onion, garlic
-                            </li>
-                            <li>
-                                Fresh noodles with big stems
-                            </li>
-                            <li>
-                                Raw vegetables (banana, bean sprouts, herbs, herb leaves, scallions, onion)
-                            </li>
-                            <li>
-                                Hue Cha (optional)
-                            </li>
-                            <li>
-                                Chili, satay, pepper, salt, fish sauce, cooking oil, white vinegar
-                            </li>
-                            <li>
-                                Pig blood (if you do not like to eat blood you can skip it)
-                            </li>
-                        </ul>
-                        <p>
-                            Meat and beef bones should be washed with salt water and then vinegar, then rinse thoroughly under water to completely eliminate the smell of beef, drain. The beef corn, you roll it up and tie it up with the thread.
-                        </p>
-                        <p>
-                            Pig's rolls: shave, wash, put in a pot of water, simmer until the pig's skin is clear, turn off the heat, take out. You can add a little salt to boil together.
-                        </p>
-                        <p>
-                            Vegetables: remove spoiled parts, wash, and drain. Fresh chili: chopped, put in fish sauce.
-                        </p>
-                        <p>
-                            Scallion: cut off the head of white onion, small iron fiber. Thin iron white onion. Lettuce is about 2/3 of the little finger. Lemongrass and ginger are crushed and washed.
-                        </p>
-                        <p>
-                            Blood: cook a pot of boiling water and boil the blood with a little salt and sugar. When the blood clots, you can use a chopstick to not see pink water dripping. Take out, soak in cold water, then cut into bite-sized pieces.
-                        </p>
-                        <p>
-                            Mix Hue fish sauce with ½ cup of water, stir well.
-                        </p>
-                        <p>
-                            You marinate all the meat according to the following recipe: 2 tablespoons of sugar + 1 tablespoon salt + ½ tablespoon of MSG + 1 tablespoon of mixed shrimp paste + 2 tablespoons of chopped shallots + 2 tablespoons of minced garlic + 2 tablespoons Chopped
-                            lemongrass soup.
-                        </p>
-                        <p>
-                            North the pot on the stove, put 3 lemongrass trees and ½ of the ginger in the bottom of the pot first, then add the bones and pork, pour in the amount of water that just cover the surface of the meat, cover, and boil. When the pot is old, lower the heat
-                            to low for a few more minutes, turn off the heat. Pick up the pork rolls and soak in a tub of cold water for firm meat.
-                        </p>
-                        <p>
-                            With beef beef, beef steak and beef tendon, you also simmer the bones and pork rolls with the remaining lemongrass and ginger.
-                        </p>
-                        <p>
-                            Note: Since beef and pork have different toughness, so they must be stewed separately.
-                        </p>
-                        <p>
-                            Put the 2 types of broth earlier in the same large pot and add the amount of water to make enough about 5 liters of water, boil and season with the following proportions: 3 tablespoons fish sauce + 2 tablespoons salt + 2 tablespoons sugar + 2 teaspoons
-                            of MSG + cup diluted Hue fish sauce. Finally, you put the pig's blood, pork ball in the pot of water. Wait until it boil and you have the broth for your beef noodle dish.
-                        </p>
-                        <p>
-                            If you want your broth to have a more beautiful color, you can do the following: Add 1.5 tablespoons of minced lemongrass + 1 tablespoon of minced garlic in a pan of hot oil to flavor and add 2-3 tablespoons of color. thing, stirring quickly, turn off
-                            the stove. Put this in the pot of cooking broth.
-                        </p>
-                        <p>
-                            Pour the vermicelli over boiling water and put it in a bowl, arrange the meat, tendons, rolls, rolls, sprinkle some cilantro and fill with broth. Served with split morning glory, shaved banana, bean sprouts, herbs, chili lime, satay ...
-                        </p>
+                <div style="text-align: center;">
+                    <a href="translaterecipe">Switch to Japan</a>
+                </div>
+
+                <div class="container">
+                    <div class="detail-body" style="padding: 5%;">
+                        <div class="detail-body-title" style="text-align: center;">
+                            <p style="font-size: 40px; font-weight: bold; color: red;"> Bun Bo hue </p>
+                        </div>
+                        <div class="detail-body-content">
+                            <p>
+                                Bun Bo Hue with English name is Beef Soup of Hue , is one of the typical dishes of Hue city, but today you can see it all over the corners of Vietnam. However, along with the spread of this dish, its cooking style has also been slightly modified. Today,
+                                i will guide you how to cook southern Hue beef noodle soup and satay with Hue standards.
+                            </p>
+                            <br>
+                            <ul>
+                                <li>
+                                    Beef: 600 gr
+                                </li>
+                                <li>
+                                    Beef steak: 600 gr
+                                </li>
+                                <li>
+                                    Beef flank: 400 gr
+                                </li>
+                                <li>
+                                    Pork rolls (choose the first one): about 800 grams of one piece
+                                </li>
+                                <li>
+                                    His bones: 1 kg
+                                </li>
+                                <li>
+                                    Hue sauce: about 3 tbsp
+                                </li>
+                                <li>
+                                    Lemongrass: 6 plants
+                                </li>
+                                <li>
+                                    Ginger: 50 gr
+                                </li>
+                                <li>
+                                    Purple onion, garlic
+                                </li>
+                                <li>
+                                    Fresh noodles with big stems
+                                </li>
+                                <li>
+                                    Raw vegetables (banana, bean sprouts, herbs, herb leaves, scallions, onion)
+                                </li>
+                                <li>
+                                    Hue Cha (optional)
+                                </li>
+                                <li>
+                                    Chili, satay, pepper, salt, fish sauce, cooking oil, white vinegar
+                                </li>
+                                <li>
+                                    Pig blood (if you do not like to eat blood you can skip it)
+                                </li>
+                            </ul>
+                            <br>
+                            <p>
+                                Meat and beef bones should be washed with salt water and then vinegar, then rinse thoroughly under water to completely eliminate the smell of beef, drain. The beef corn, you roll it up and tie it up with the thread.
+                            </p>
+                            <p>
+                                Pig's rolls: shave, wash, put in a pot of water, simmer until the pig's skin is clear, turn off the heat, take out. You can add a little salt to boil together.
+                            </p>
+                            <p>
+                                Vegetables: remove spoiled parts, wash, and drain. Fresh chili: chopped, put in fish sauce.
+                            </p>
+                            <p>
+                                Scallion: cut off the head of white onion, small iron fiber. Thin iron white onion. Lettuce is about 2/3 of the little finger. Lemongrass and ginger are crushed and washed.
+                            </p>
+                            <p>
+                                Blood: cook a pot of boiling water and boil the blood with a little salt and sugar. When the blood clots, you can use a chopstick to not see pink water dripping. Take out, soak in cold water, then cut into bite-sized pieces.
+                            </p>
+                            <p>
+                                Mix Hue fish sauce with ½ cup of water, stir well.
+                            </p>
+                            <p>
+                                You marinate all the meat according to the following recipe: 2 tablespoons of sugar + 1 tablespoon salt + ½ tablespoon of MSG + 1 tablespoon of mixed shrimp paste + 2 tablespoons of chopped shallots + 2 tablespoons of minced garlic + 2 tablespoons Chopped
+                                lemongrass soup.
+                            </p>
+                            <p>
+                                North the pot on the stove, put 3 lemongrass trees and ½ of the ginger in the bottom of the pot first, then add the bones and pork, pour in the amount of water that just cover the surface of the meat, cover, and boil. When the pot is old, lower the heat
+                                to low for a few more minutes, turn off the heat. Pick up the pork rolls and soak in a tub of cold water for firm meat.
+                            </p>
+                            <p>
+                                With beef beef, beef steak and beef tendon, you also simmer the bones and pork rolls with the remaining lemongrass and ginger.
+                            </p>
+                            <p>
+                                Note: Since beef and pork have different toughness, so they must be stewed separately.
+                            </p>
+                            <p>
+                                Put the 2 types of broth earlier in the same large pot and add the amount of water to make enough about 5 liters of water, boil and season with the following proportions: 3 tablespoons fish sauce + 2 tablespoons salt + 2 tablespoons sugar + 2 teaspoons
+                                of MSG + cup diluted Hue fish sauce. Finally, you put the pig's blood, pork ball in the pot of water. Wait until it boil and you have the broth for your beef noodle dish.
+                            </p>
+                            <p>
+                                If you want your broth to have a more beautiful color, you can do the following: Add 1.5 tablespoons of minced lemongrass + 1 tablespoon of minced garlic in a pan of hot oil to flavor and add 2-3 tablespoons of color. thing, stirring quickly, turn off
+                                the stove. Put this in the pot of cooking broth.
+                            </p>
+                            <p>
+                                Pour the vermicelli over boiling water and put it in a bowl, arrange the meat, tendons, rolls, rolls, sprinkle some cilantro and fill with broth. Served with split morning glory, shaved banana, bean sprouts, herbs, chili lime, satay ...
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="footer" style="height:80px">
-                <p style="text-align: center; color: #e6e6e6; padding-top: 20px;">Copyright 2020 URBAN Viet Nam, All Right Reserved</p>
+                <div class="footer">
+                    <p style="text-align: center; color: #e6e6e6; padding-top: 20px;">Copyright 2020 URBAN Viet Nam, All Right Reserved</p>
+                </div>
             </div>
         </div>
-
     </div>
 </body>
+<script>
+    function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+    }
+</script>
 
 </html>

@@ -5,152 +5,146 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" th:href="@{/style.css}">
+    <link rel="stylesheet" href="styleother.css">
+    <link rel="stylesheet" href="reponsiveAll.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="left">
-            <div class="left-item">
-                <div class="logo" style="font-size: 25px; color: #737373;">
-                    日本語の勉強
+    <div class="wrapper">
+        <div class="headpage">
+            <div class="container">
+                <div id="mySidebar" class="sidebar">
+                    <div class="logo" style="font-size: 25px; color: #737373;">
+                        <a th:href="homepage" style="font-weight: 700;">日本語の勉強</a>
+                    </div>
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                    <a th:href="news" style="text-decoration: none;"><i class="fa fa-newspaper-o"></i> News</a>
+                    <a th:href="N5-detail" style="text-decoration: none;"><i class="fa fa-book"></i> N5</a>
+                    <a th:href="N4-detail" style="text-decoration: none;"><i class="fa fa-book"></i> N4</a>
+                    <a th:href="N3-detail" style="text-decoration: none;"><i class="fa fa-book"></i> N3</a>
+                    <a th:href="listhappyo" style="text-decoration: none;"><i class="fa fa-comments-o"></i> Happyo</a>
+                    <a th:href="weekly-words" style="text-decoration: none;"><i class="fa fa-calendar"></i> Weekly</a>
+                    <a th:href="recipe" style="text-decoration: none;"><i class="fa fa-cutlery"></i> Recipe's cooking</a>
+                    <a target="_blank" href="https://e-jan.vn/">
+                        <img src="https://theme.hstatic.net/1000351702/1000458192/14/logo.png?v=302" alt="" style="width: 100px; height: 30px; margin-top: -3px;">
+                    </a>
                 </div>
-                <ul>
-                    <li>
-                        <a th:href="@{/homepage}" style="text-decoration: none; color: #737373">Home</a>
-                    </li>
-                    <li>
-                        <a th:href="news" style="text-decoration: none; color: #737373">News</a>
-                    </li>
-                    <li>
-                        <a th:href="@{/N5-detail}" style="text-decoration: none; color: #737373">N5</a>
-                    </li>
-                    <li>
-                        <a th:href="@{/N4-detail}" style="text-decoration: none; color: #737373">N4</a>
-                    </li>
-                    <li>
-                        <a th:href="@{/N3-detail}" style="text-decoration: none; color: #737373">N3</a>
-                    </li>
-                    <li>
-                        <a th:href="@{/listhappyo}" style="text-decoration: none; color: #737373">Happyo</a>
-                    </li>
-                    <li>
-                        <a th:href="@{/weekly-words}" style="text-decoration: none; color: #737373">Weekly</a>
-                    </li>
-                    <li>
-                        <a href="recipe" style="text-decoration: none; color: #737373">Recipe's cooking</a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://e-jan.vn/" style="text-decoration: none; color: #737373">e-jan</a>
-                    </li>
-                </ul>
-                <div class="icon">
-                    <ul>
-                        <li><i class="fa fa-facebook"></i></li>
-                        <li><i class="fa fa-google"></i></li>
-                        <li><i class="fa fa-pinterest-p"></i></li>
-                        <li><i class="fa fa-twitter"></i></li>
-                        <li><i class="fa fa-vimeo"></i></li>
-                    </ul>
+            </div>
+            <div class="container" style="margin-top: 5%;">
+                <div id="main" style="position: fixed;">
+                    <button class="openbtn" onclick="openNav()">☰</button>
                 </div>
             </div>
         </div>
-        <div class="right">
+        <div class="bodypage">
             <div class="content-detail">
-                <div class="detail-top">
+                <div class="detail-top" style="text-align: center;">
                     <div class="detail-title">
                         <h1>Daily life food</h1>
                     </div>
-                    <div class="detail-inform">
-                    </div>
                 </div>
 
-                <div class="img-detail" style="text-align: center;">
+                <div class="img-detail" style="text-align: center; padding: 2%;">
                     <img src="https://cdn.cet.edu.vn/wp-content/uploads/2018/03/to-bun-bo-hue-nong-hoi-thom-lung.jpg" alt="">
-                    <a href="recipe-detail2">Switch to English</a>
                 </div>
 
-                <div class="detail-body">
-                    <div class="detail-body-item">
-                    </div>
-                    <div class="detail-body-title">
-                        <p style="font-size: larger; font-weight: bold; color: red;"> ブンボーフエ </p>
-                    </div>
-                    <div class="detail-body-content">
-                        <p>
-                            英語名のブンボーフエはフエのビーフスープで、フエ市の代表的な料理のひとつですが、今日ではベトナムのいたるところに見られます。しかし、この料理の普及に伴い、調理スタイルも少し変更されました。今日は、フエ南部の牛肉麺のスープを調理し、フエの基準でサテを作る方法をご案内します。
-                        </p>
-                        <ul>
-                            <li>
-                                牛肉：600グラム </li>
-                            <li>
-                                ビーフステーキ：600グラム </li>
-                            <li>
-                                ビーフフランク：400グラム </li>
-                            <li>
-                                ポークロール（最初のものを選択してください）：約800グラムのワンピース </li>
-                            <li>
-                                彼の骨：1 kg </li>
-                            <li>
-                                フエソース：大さじ約3 </li>
-                            <li>
-                                レモングラス：6本の植物 </li>
-                            <li>
-                                生姜：50グラム </li>
-                            <li>
-                                紫玉ねぎ、にんにく </li>
-                            <li>
-                                茎の大きい生麺 </li>
-                            <li>
-                                生野菜（バナナ、もやし、ハーブ、ハーブの葉、ねぎ、玉ねぎ） </li>
-                            <li>
-                                フエチャ（オプション） </li>
-                            <li>
-                                唐辛子、サテ、唐辛子、塩、魚醤、食用油、白酢 </li>
-                            <li>
-                                豚の血（血を食べたくない場合はスキップできます） </li>
-                        </ul>
-                        <p>
-                            肉と牛肉の骨を塩水、次に酢で洗い、水で十分にすすいで牛肉の臭いを完全に取り除き、水気を切る必要があります。ビーフコーン、巻き上げて糸で縛ります。 </p>
-                        <p>
-                            豚のロールパン：剃る、洗う、鍋に水を入れる、豚の皮が透明になるまで煮る、火を止め、取り出す。塩を少し加えて一緒に沸騰させます。 </p>
-                        <p>
-                            野菜：腐った部分を取り除き、洗い、水気を切る。新鮮な唐辛子：みじん切りにし、魚醤に入れます。 </p>
-                        <p>
-                            ねぎ：白ねぎ、小さな鉄繊維の頭を切り落とします。薄い鉄の白ねぎ。レタスは小指の約2/3です。レモングラスと生姜を砕いて洗います。 </p>
-                        <p>
-                            血液：沸騰したお湯の鍋を調理し、少量の塩と砂糖で血液を沸騰させます。血栓ができたら、箸を使ってピンク色の水が滴るのを防ぐことができます。取り出して冷水に浸し、一口大に切ります。 </p>
-                        <p>
-                            フエ魚醤を1/2カップの水と混ぜ、よくかき混ぜます。 </p>
-                        <p>
-                            次のレシピに従ってすべての肉をマリネします：砂糖大さじ2+塩大さじ1 + MSG大さじ1/2 +混合シュリンプペースト大さじ1+みじん切りシャロット大さじ2+ニンニクのみじん切り大さじ2+レモングラスみじん切りスープ大さじ2。
-                        </p>
-                        <p>
-                            ストーブの上で鍋を北に置き、まず鍋の底にレモングラスの木3本と生姜の1/2を入れ、次に骨と豚肉を加え、肉の表面を覆うだけの量の水を注ぎ、覆い、沸騰させます。鍋が古くなったら、さらに数分弱火にして火を止めます。ポークロールを手に取り、冷水に浸して固い肉にします。
-                        </p>
-                        <p>
-                            ビーフビーフ、ビーフステーキ、ビーフテンドンを使って、残りのレモングラスと生姜と一緒に骨とポークロールを煮込みます。 </p>
-                        <p>
-                            注：牛肉と豚肉は靭性が異なるため、別々に煮込む必要があります。 </p>
-                        <p>
-                            先に2種類のスープを同じ大きな鍋に入れ、水を加えて約5リットルの水を作り、次の比率で沸騰させて味付けします：魚醤大さじ3+塩大さじ2+砂糖大さじ2+小さじ2 MSG +カップ希釈フエ魚醤の。最後に、豚の血と豚肉のボールを鍋に入れます。沸騰して牛肉麺のスープができるまで待ちます。
-                        </p>
-                        <p>
-                            スープの色をもっと美しくしたい場合は、次のようにします。レモングラス大さじ1.5とニンニク大さじ1を熱い油の鍋に入れて風味を付け、色を大さじ2〜3杯加えます。物事、すばやくかき混ぜ、ストーブをオフにします。これを調理用スープの鍋に入れます。
-                        </p>
-                        <p>
-                            春雨を沸騰したお湯に注ぎ、ボウルに入れ、肉、腱、ロール、ロールを並べ、コリアンダーを振りかけ、スープを入れます。スプリットアサガオ、削ったバナナ、もやし、ハーブ、チリライム、サテを添えて... </p>
+                <div style="text-align: center;">
+                    <a href="translaterecipe">Switch to English</a>
+                </div>
+
+                <div class="container">
+                    <div class="detail-body" style="padding: 5%;">
+                        <div class="detail-body-title" style="text-align: center;">
+                            <p style="font-size: 40px; font-weight: bold; color: red;"> Bun Bo hue </p>
+                        </div>
+                        <div class="detail-body-content">
+                            <p>
+                                英語名のブンボーフエはフエのビーフスープで、フエ市の代表的な料理のひとつですが、今日ではベトナムのいたるところに見られます。しかし、この料理の普及に伴い、調理スタイルも少し変更されました。今日は、フエ南部の牛肉麺のスープを調理し、フエの基準でサテを作る方法をご案内します。
+                            </p>
+                            <br>
+                            <ul>
+                                <li>
+                                    牛肉：600グラム </li>
+                                <li>
+                                    ビーフステーキ：600グラム </li>
+                                <li>
+                                    ビーフフランク：400グラム </li>
+                                <li>
+                                    ポークロール（最初のものを選択してください）：約800グラムのワンピース </li>
+                                <li>
+                                    彼の骨：1 kg </li>
+                                <li>
+                                    フエソース：大さじ約3 </li>
+                                <li>
+                                    レモングラス：6本の植物 </li>
+                                <li>
+                                    生姜：50グラム </li>
+                                <li>
+                                    紫玉ねぎ、にんにく </li>
+                                <li>
+                                    茎の大きい生麺 </li>
+                                <li>
+                                    生野菜（バナナ、もやし、ハーブ、ハーブの葉、ねぎ、玉ねぎ） </li>
+                                <li>
+                                    フエチャ（オプション） </li>
+                                <li>
+                                    唐辛子、サテ、唐辛子、塩、魚醤、食用油、白酢 </li>
+                                <li>
+                                    豚の血（血を食べたくない場合はスキップできます） </li>
+                            </ul>
+                            <br>
+                            <p>
+                                肉と牛肉の骨を塩水、次に酢で洗い、水で十分にすすいで牛肉の臭いを完全に取り除き、水気を切る必要があります。ビーフコーン、巻き上げて糸で縛ります。 </p>
+                            <p>
+                                豚のロールパン：剃る、洗う、鍋に水を入れる、豚の皮が透明になるまで煮る、火を止め、取り出す。塩を少し加えて一緒に沸騰させます。 </p>
+                            <p>
+                                野菜：腐った部分を取り除き、洗い、水気を切る。新鮮な唐辛子：みじん切りにし、魚醤に入れます。 </p>
+                            <p>
+                                ねぎ：白ねぎ、小さな鉄繊維の頭を切り落とします。薄い鉄の白ねぎ。レタスは小指の約2/3です。レモングラスと生姜を砕いて洗います。 </p>
+                            <p>
+                                血液：沸騰したお湯の鍋を調理し、少量の塩と砂糖で血液を沸騰させます。血栓ができたら、箸を使ってピンク色の水が滴るのを防ぐことができます。取り出して冷水に浸し、一口大に切ります。 </p>
+                            <p>
+                                フエ魚醤を1/2カップの水と混ぜ、よくかき混ぜます。 </p>
+                            <p>
+                                次のレシピに従ってすべての肉をマリネします：砂糖大さじ2+塩大さじ1 + MSG大さじ1/2 +混合シュリンプペースト大さじ1+みじん切りシャロット大さじ2+ニンニクのみじん切り大さじ2+レモングラスみじん切りスープ大さじ2。
+                            </p>
+                            <p>
+                                ストーブの上で鍋を北に置き、まず鍋の底にレモングラスの木3本と生姜の1/2を入れ、次に骨と豚肉を加え、肉の表面を覆うだけの量の水を注ぎ、覆い、沸騰させます。鍋が古くなったら、さらに数分弱火にして火を止めます。ポークロールを手に取り、冷水に浸して固い肉にします。
+                            </p>
+                            <p>
+                                ビーフビーフ、ビーフステーキ、ビーフテンドンを使って、残りのレモングラスと生姜と一緒に骨とポークロールを煮込みます。 </p>
+                            <p>
+                                注：牛肉と豚肉は靭性が異なるため、別々に煮込む必要があります。 </p>
+                            <p>
+                                先に2種類のスープを同じ大きな鍋に入れ、水を加えて約5リットルの水を作り、次の比率で沸騰させて味付けします：魚醤大さじ3+塩大さじ2+砂糖大さじ2+小さじ2 MSG +カップ希釈フエ魚醤の。最後に、豚の血と豚肉のボールを鍋に入れます。沸騰して牛肉麺のスープができるまで待ちます。
+                            </p>
+                            <p>
+                                スープの色をもっと美しくしたい場合は、次のようにします。レモングラス大さじ1.5とニンニク大さじ1を熱い油の鍋に入れて風味を付け、色を大さじ2〜3杯加えます。物事、すばやくかき混ぜ、ストーブをオフにします。これを調理用スープの鍋に入れます。
+                            </p>
+                            <p>
+                                春雨を沸騰したお湯に注ぎ、ボウルに入れ、肉、腱、ロール、ロールを並べ、コリアンダーを振りかけ、スープを入れます。スプリットアサガオ、削ったバナナ、もやし、ハーブ、チリライム、サテを添えて... </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="footer" style="height:80px">
-                <p style="text-align: center; color: #e6e6e6; padding-top: 20px;">Copyright 2020 URBAN Viet Nam, All Right Reserved</p>
+                <div class="footer">
+                    <p style="text-align: center; color: #e6e6e6; padding-top: 20px;">Copyright 2020 URBAN Viet Nam, All Right Reserved</p>
+                </div>
             </div>
         </div>
-
     </div>
 </body>
+<script>
+    function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+    }
+</script>
 
 </html>
